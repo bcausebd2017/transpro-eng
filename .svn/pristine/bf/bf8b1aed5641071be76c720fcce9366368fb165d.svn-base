@@ -1,0 +1,287 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>FAQ (for clients)</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <ul class="list-inline">
+                <li><a href="#">For first-time users</a> </li>
+                <li><a href="#">About Trans-Pro.</a> </li>
+                <li><a href="#">About Fee</a> </li>
+                <li><a href="#">Estimate, order, delivery time State of delivery, petition, payment, receipt</a> </li>
+                <li><a>State of delivery, petition, payment, receipt</a> </li>
+                <li><a href="#">About translators, quality, and delivery </a></li>
+                <li><a> Cancel translation</a></li>
+                <li><a href="#">Delivery, after service, refund </a> </li>
+                <li><a href="#"> About certificate of translation</a> </li>
+                <li><a href="#"> To Translator </a> </li>
+            </ul>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>1. For first-time users</h3>
+                    <ul class="list-unstyled">
+                        <li class="light-red"><i class="fa fa-question-circle" aria-hidden="true"></i> Can anyone use the service?</li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Estimates can be accessed automatically by anyone, but you have to log in to pay (make order).
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Is it possible if I need someone to translate immediately? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Documents can be delivered within 30 minutes as the shortest time (depend on the amount)
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> My amount of volume is pretty small… </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            We handle with a minimum fee of 150 JPY (the lowest charge for credit cards)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>2. About Trans-Pro. </h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I can't find the language I wish you to translate. </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            In the case when you cannot find your target language, the auto estimate will not be completed, and our coordinators will do the estimation (within 1 hr. from 9:00am - 7:00pm, or the next day if out of business hours.)
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Is there any way to make the quality of the translation better? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            1. One way is to use the online translation to do a native check (separate fee)
+                            2. You can also use the "translator ＋ coordinator" service. Our in-house staffs will check the contents with accuracy.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I wish to take jobs as a translator... </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You would need to register in order to receive translation request mails. Once registered, you will be expected to follow the rules and quality Trans-Pro. is aiming for.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>3. About the translation fee.</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> What if I've got only 1 word to translate? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            The minimum fee for credit card payment starts from 150 JPY.
+                            (the lowest charge for credit cards)
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Is there any way to lower the translation fee? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You can choose the "Light" service. It takes longer time but cheaper.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I would like to know the rough indication... </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Please check the price table of Trans-Pro.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I don't quite understand the difference of "Light", "Business", and "Expert"...</li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Please check the quality of each service.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>4. About estimates, orders, and delivery time. </h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can we receive the estimates in PDF? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Estimate using our form
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I wish to receive an estimate with legal seal...</li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            During estimation, we can only respond with e-mail, but we can mail an estimate with legal seal along with the petition.
+                            Unfortunately, personal individuals are not applicable.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I pay later? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Only credit card payments can be payed later.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I wish to know the shortest delivery time. </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            The shortest delivery time will be 30 minutes. However, we have a word limit of 200 words.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Is it possible to count the text on files or pictures other than Text, Word, or Excel? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            No, since we cannot count the text on files other than Text, Word, or Excel, please choose the normal "translator ＋ coordinator" service.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>5. About statement of delivery, petition, payment, and receipt.</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I receive a statement of delivery? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Downloadable in the translation project detail page.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I wish to cancel my order of translation. </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            The estimate is automatic and can be canceled, but you cannot cancel your order after paying.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> How do I appoint my favorite translator? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You can choose up to 5 favorite translators through the "appointed translation" service.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> What if there are mistakes in the finished translation? Can I ask for translation again? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You can interact with the same translator through message, but you can't change translators.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I pay through convenience stores? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Personal individuals can only pay by credit cards. For legal entities, universities, public organizations, and public offices, we will mail the petition (needs investigation for first time), so please pay through bank transfer.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>6. About translators, quality, and delivery. </h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> What kind of translators are doing the job?  </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            All translations are done by native speakers. You may also appoint specific translators.
+                            After you upload the translation-required content, the registered translator will receive the request mail. Translators may also check the recruiting status through the website.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> How is the quality? What if we have problems?  </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            The quality of the translation differs in the level of "Light", "Business", and "Expert." In the case where problems occurred on the quality, you can interact with the same translator as many times as you wish within 2 weeks after delivery.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I ask the same translator I asked before?  </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            he search engine after logging in allows only searches for "My Favorite translators" and "Past translators."
+                            You may also go through the past logs on "MY PAGE" to identify the translator and appoint.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> I don't quite understand the difference of "Light", "Business", and "Expert"...  </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Light...some experience in translation.
+                            Experience in translation for 1~3 years without the knowledge in special fields.
+                            This is a recommended translator for simple contents such as personal letters and e-mails.
+                            Business...Professional
+                            Experience in translation for 3~5 years. Have experience in handling special fields.
+                            This is a recommended translator for contents used in business situations such as business documents, manuals, and instructions.
+                            Expert...Selected Professional
+                            Experience in translation for more than 10 years. Acquainted with more than 1 special field.
+                            This is a recommended translator for difficult contents such as contracts and documents of medical, law, and patent.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> How many translators can I appoint at most? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You may appoint up to 5 translators.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I change the translator I appointed? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You cannot change the translator after the order is made, but you can before the translator accepts the order.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Is there any tip to receive a better translation? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            While placing the order, if you fill in the details of the background and purpose of the content in the comment box for the translator, the translator will translate as you wish.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I know the delivery date when I place an order? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You can choose the delivery time you wish during estimation. However, the official date will be after the payment, and the delivery date will be e-mailed to you after the translator is decided.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>7. About canceling translation  </h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Is it possible for me to cancel the translation I ordered? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            You can only cancel if the translator has not been decided yet.
+                            Enter the ""Case details"" from MY PAGE, and cancel the translation by pressing the cancel button.
+                            You credit card payment will also be canceled at the same time.
+                            Time of cancelations may differ due to credit card types.
+                            *You cannot cancel your translation if the translator has been decided.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> You order has been canceled due to no translator available. </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Please reorder by changing the delivery level, time, or contact a coordinator.
+                            Contact a coordinator⇒Online Translation's Trans-Pro. office 81-3-5733-4264
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>8. About delivery, after service, and refund. </h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> If I sent the wrong document after the order is made, or if the quality is poor, can I get a refund? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Basically there will be no refunds after the payment is done. If you sent the wrong documents please contact our office immediately. We will handle it as soon as we confirmed the situation, but we cannot refund if the translation is already finished.
+                            In the case of poor quality, you may interact with the translator as many times as you wish within 2 weeks after delivery. However, due to the translator's schedule, there may be a possibility that they cannot fix it as you wish.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Please tell me the detail of after service. </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            Our translators can interact with your questions within 2 weeks after the delivery. Please send your questions through the message to solve your problems.
+                        </li>
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can we as for revision of the translation? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            At this point, we do not offer revision after the translation is delivered.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>9. About certificate of translation </h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-question-circle" aria-hidden="true"></i> Can I get a certificate of translation? </li>
+                        <li>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                            The certificate of translation can be issued by the trans-Pro office.
+                            There will be a 2700 JPY (tax included) fee to issue the certificate of translation.
+                            Please contact us from the URL below.*Advance payment by bank transfer.
+                            https://www.Trans-Pro.net/03customer/contact.aspx
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="flex-container button">
+                <div class="button-holder">
+                    <div class="clearfix"></div>
+                    <a class="btn btn-primary">Estimate</a>
+                    <a class="btn btn-primary">Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

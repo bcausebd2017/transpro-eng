@@ -1,0 +1,153 @@
+<div class="total-content">
+    <!-- Report-errors-page-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Report errors of webisite</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form class="form-horizontal" name="errReportWebForm">
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> E-mail address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="email" placeholder="E-mail Address" ng-model="vm.model.Email" 
+                                          ng-class="{'invalid:-input':isTriedSave && errReportWebForm.email.$error.required }" required/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" placeholder="Name"  name="name" ng-model="vm.model.Name" 
+                                        ng-class="{'invalid:-input':isTriedSave && errReportWebForm.name.$error.required }" required/>
+                                    <span>Ex) Taro Yamada</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Error pageのURL</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" placeholder="Error URL" name="url" ng-model="vm.model.ErrorPageUrl" 
+                                        ng-class="{'invalid:-input':isTriedSave && errReportWebForm.url.$error.required }" required/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> エラーMessage</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" placeholder="Error message"  name="errmsg" ng-model="vm.model.ErrorMessage" 
+                                        ng-class="{'invalid:-input':isTriedSave && errReportWebForm.errmsg.$error.required }" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> OS</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" placeholder="OS"  name="os" ng-model="vm.model.OsName" 
+                                        ng-class="{'invalid:-input':isTriedSave && errReportWebForm.os.$error.required }" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i>Browser and version</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" placeholder="Web Browser"   name="browser" ng-model="vm.model.BrowserVersion" 
+                                        ng-class="{'invalid:-input':isTriedSave && errReportWebForm.browser.$error.required }" required/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i>何度も発生しますか？(再現性)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" placeholder="何度も発生しますか？(再現性)" name="repo" ng-model="vm.model.Reproducibility"
+                                            ng-class="{'invalid:-input':isTriedSave && errReportWebForm.repo.$error.required }" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x p3x">
+                                <p><i class="fa fa-arrow-circle-right"></i> *エラーContents （できるだけ詳しく記入してください）</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <textarea name="errordes" rows="2" cols="20" id="errorDescription" placeholder="Error Description" style="height:250px; width:98%;  max-width:100%; min-width: 200px;" 
+                                              ng-model="vm.model.ErrorDescription" ng-class="{'invalid:-input':isTriedSave && errReportWebForm.errordes.$error.required }" required></textarea>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-trams text-center">
+                    <input type="submit" ng-click="saveReportError() "value="Send" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

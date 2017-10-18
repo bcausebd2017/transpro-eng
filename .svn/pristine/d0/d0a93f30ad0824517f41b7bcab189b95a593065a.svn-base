@@ -1,0 +1,204 @@
+﻿
+<div class="total-content">
+
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-pencil-square-o"></i>
+            <h3>Native check</h3>
+        </div>
+
+        <div class="transpro-content">
+
+            <form>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Language
+                            <select id="srcLanguage" class="form-control"
+                                    data-ng-model="srcLanguage" ng-change="srcLangChanged(srcLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in ::languages">
+                            </select>
+                            <i class="fa fa-play"></i>
+                            <select id="destLanguage" class="form-control"
+                                    data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in ::languages">
+                                <option value="" selected="selected">Native check</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Translation field
+                            <select id="selectLanguage" class="form-control"
+                                    data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                    ng-options="t.ID as t.Name for t in ::translationFields">
+                                <option value="" selected="selected">▼--------------</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--<div class="transpro-tab-area">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" >Input manuscript directly</a></li>
+                        <li><a data-toggle="tab" >Upload a file</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-item-1" class="tab-pane transpro-tabpan fade in active">
+                            <div class="transpro-text-area">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                            </div>
+                            <p>* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.</p>
+                            <p>(For other languages, ​​you can enter up to 20,000 words.)</p>
+                        </div>
+                        <div id="tab-item-2" class="tab-pane transpro-tabpan fade">
+                            <p>Some content in menu 1.</p>
+                        </div>/>
+                    </div>
+                </div>-->
+                <uib-tabset active="activePill">
+                    <uib-tab index="0" heading="Input manuscript directly">
+                        <div class="transpro-text-area">
+                            <textarea cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                        </div>
+                        <div class="orange">
+                            * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                            <br>
+                            (For other languages, ​​you can enter up to 20,000 words.)
+                        </div>
+                    </uib-tab>
+                    <uib-tab index="1" heading="Upload a file">
+                        <div class="transpro-fileupload-area">
+                            <input type="file" multiple load-file ng-model="Estimation.File" id="fileName" />
+                        </div>
+                    </uib-tab>
+
+                </uib-tabset>
+                <div class="sample-tab-btn text-center">
+                    <button type="button" class="btn btn-primary" ng-click="UploadDocument()">Check Estimation</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> About native check </h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="box1">
+                    <p>
+                        For "native check", your translation will be checked by a native speaker of the target language. For example, if you translated the draft by yourself but are uneasy about its quality, you can use this service to improve the quality of translation.
+                        <br>
+                        <br> Send your translated draft through <strong><a ui-sref="/">estimation form</a></strong> to confirm information including delivery time.
+                        <br> You can order <strong>24 hours a day, 365 days a year,</strong> and receive translation in <strong>30 minutes (shortest).</strong>
+                        <br>
+                        <br><strong>
+                            * However, we decline checking machine-translated draft using services such as Google or Yahoo.
+                            <br> * Please note that we may charge additional fee for machine-translated drafts made by services such as Google or Yahoo.
+                            <br>
+                            <br>Register first! →
+                        </strong>
+                        <input ui-sref="userRegistration" id="" class="btn-primary btn-sm" name="" value=" To the registration screen " type="button">
+                    </p>
+                    <hr>
+                    <h3>Application</h3>
+                    <div class="trans-appli-area">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-1.png" alt="" />
+                                    <p><a href="">Estimate</a> using our form</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-2.png" alt="" />
+                                    <p><a href="">Membership registration (free)</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-3.png" alt="" />
+                                    <p>Choose payment method</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-4.png" alt="" />
+                                    <p>
+                                        Log in with a registered
+                                        <br><a href="">ID and password</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-5.png" alt="" />
+                                    <p>Reconfirm and order</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-6.png" alt="" />
+                                    <p>Choose up to <a href="">Payment process </a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-7.png" alt="" />
+                                    <p>Notify a Checker </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-8.png" alt="" />
+                                    <p>Checker confirms the order </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-9.png" alt="" />
+                                    <p>Check complete </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-10.png" alt="" />
+                                    <p>
+                                        Deliver
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-11.png" alt="" />
+                                    <p>
+                                        Receive the documents
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <a ui-sref="application" class="btn btn-primary">More information</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+        <div class="gotopText" style="margin:0px;">
+            <a ui-sref="contact">Contact Us</a><span>|</span><a ui-sref="/">Estimate</a><span>|</span><a ui-sref="/">TOP</a>
+        </div>
+    </div>
+</div>
+
+

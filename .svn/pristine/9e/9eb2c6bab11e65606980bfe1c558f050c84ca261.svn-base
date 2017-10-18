@@ -1,0 +1,10 @@
+﻿(function () {
+    'use strict';
+    function translatorController($scope, $state, $uibModal, transproService) {
+        var vm = this;
+    }
+    angular
+       .module("app")
+       .controller("translatorController", homeController);
+    translatorController.$inject = ["$scope", "$state", "$uibModal", "transproService"]
+})();

@@ -1,0 +1,31 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("pricelistController", function ($scope, $state, $rootScope, $uibModal,STORAGE_TYPE,appStorageFactory, transproService) {
+        
+        Activate();
+        function Activate() {
+            $scope.selectLanguage = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+                $scope.languageList = response;
+                $scope.srcLanguage = _.find(response, function (f) { return f.Code == 'eng' }).ID;
+                if (!$scope.selectLanguage)
+                    $scope.destLanguage = _.find(response, function (f) { return f.Code == 'jpn' }).ID;
+                else
+                    $scope.destLanguage = $scope.selectLanguage;
+            }).catch(function (error) {
+                toastr.error(error);
+            });
+
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+            }).catch(function (error) {
+                alertMsg.show('error', error);
+            });
+        }
+        $scope.$on('targetLanguageChanged', function (event, data) {
+            $scope.destLanguage = data;
+        });
+    });
+
+})();

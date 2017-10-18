@@ -1,0 +1,24 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("registrationController", function ($scope, $state, $rootScope, $uibModal, transproService, COMPANY_REGISTRATION_TYPE) {
+        $scope.RegistrationType = COMPANY_REGISTRATION_TYPE;
+        $scope.isIndustryLoaded = false;
+        Activate();
+        function Activate() {
+            transproService.getIndustryClassifications().then(function (response) {
+                $scope.industryClassifications = response;
+                $scope.isIndustryLoaded = true;
+            }).catch(function (error) {
+
+            });
+        }
+        $scope.goIndividualReg = function (type) {
+            $scope.regType = type;
+            $state.go("registration");
+        }
+        $scope.goTranslatorReg = function () {
+            $state.go("translatorReg");
+        }
+    });
+
+})();

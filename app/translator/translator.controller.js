@@ -1,0 +1,373 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("translatorController", function ($scope, $state, $rootScope, $uibModal, transproService, translatorService, APP_SETTINGS, appStorageFactory, STORAGE_TYPE,alertMsg) {
+        var vm = this;
+        $scope.isTranslatorLoaded = false;
+        vm.RegEmail2 = "";
+        vm.Repass = "";
+        vm.model = {};
+        vm.model.Staffbank = {};
+        //vm.Sex = "female";
+        //vm.model = {};
+        //vm.model.Sex = false;
+        vm.Terms = false;
+        $scope.selectField = "";
+        vm.tempBankBranchList = [];
+        var tempBankList = [];
+        $scope.BankBranchList = [];
+        $scope.Variable = {};
+        $scope.Variable.srcLanguage;
+        $scope.Variable.destLanguage;
+        
+
+        if ($state.params.modelData) {
+            vm.model = $state.params.modelData;
+            vm.IsModifyState = true;
+        } else {
+            vm.IsModifyState = false;
+        }
+        
+
+        Activate();
+        function Activate() {
+            $scope.selectLanguage = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            getTranslationFields();
+            transproService.getCountries().then(function (response) {
+                vm.country = response;
+            }).catch(function (error) {
+            });
+
+            transproService.getEducatinalDegree().then(function (response) {
+                vm.educations = response;
+            }).catch(function (error) {
+            });
+
+            transproService.getBank().then(function (response) {
+                vm.banks = response;
+
+            }).catch(function (error) {
+            });
+
+            transproService.getBankBranch().then(function (response) {
+                vm.tempBankBranchList = response;
+            }).catch(function (error) {
+            });
+
+            transproService.getBankAccountType().then(function (response) {
+                vm.bankaccounttype = response;
+            }).catch(function (error) {
+            });
+
+            
+
+            
+            transproService.getLanguages().then(function (response) {
+                vm.languages = response;
+                $scope.languageList = response;
+                
+                
+                if ($state.params.SearchTranslatorData) {
+                    $scope.Variable.srcLanguage = $state.params.SearchTranslatorData.srcSearchLanguage;
+                    $scope.Variable.destLanguage = $state.params.SearchTranslatorData.destSearchLanguage;
+                    $scope.selectField = $state.params.SearchTranslatorData.selectSearchField;
+                }
+                else {
+                    $scope.Variable.srcLanguage = _.find(response, function (f) { return f.Code == 'eng' }).ID;
+                    if (!$scope.selectLanguage)
+                        $scope.Variable.destLanguage = _.find(response, function (f) { return f.Code == 'jpn' }).ID;
+                    else
+                        $scope.Variable.destLanguage = $scope.selectLanguage;
+                }
+
+                translatorService.searchTranslator($scope.Variable.srcLanguage, $scope.Variable.destLanguage, $scope.selectField).then(function (response) {
+                    $scope.translators = response;
+                    //errorMsg.show('success', "Success happened here");
+                }).catch(function (error) {
+                    alertMsg.show('error', error);
+                });
+            }).catch(function (error) {
+            });
+
+            transproService.getLanguageslvl().then(function (response) {
+                vm.languagelvl = response.LanguageLevelList;
+            }).catch(function (error) {
+                console.log("My error")
+            });
+
+            //transproService.getCurrentState().then(function (response) {
+            //    vm.currentstate = response;
+            //    _.forEach(response, function (f) { f.IsSelected = false; });
+            //    //for (c = 0; c < response.length; c++) {
+            //    //    Object.defineProperties(vm.currentstate[c], "IsSelected", { value: false, writable: true, enumerable: true, configurable: true })
+            //    //    vm.currentstate[i].IsSelected = false;
+            //    //}
+            //}).catch(function (error) {
+            //});
+
+            //transproService.gettranslatorsoftwareskills().then(function (response) {
+            //    vm.software = response;
+            //    _.forEach(response, function (f) { f.IsSelected = false; });
+            //}).catch(function (error) {
+            //});
+
+            translatorService.GetMasterData().then(function (response) {
+                vm.profession = response.SpecializedFieldList;
+                vm.software = response.SoftwareSkillList;
+                vm.currentstate = response.CurrentStateList;
+                var c;
+                //_.forEach(vm.profession, function (f) { f.IsSelected = false; });
+                //_.forEach(vm.software, function (f) { f.IsSelected = false; });
+                //_.forEach(vm.currentstate, function (f) { f.IsSelected = false; });
+                for (c = 0; c < vm.profession.length; c += 1) {
+                    Object.defineProperty(vm.profession[c], "IsSelected", { value: false, writable: true, enumerable: true, configurable: false });
+                    Object.defineProperty(vm.profession[c], "CheckID", { value: -1, writable: true, enumerable: true, configurable: false });
+                    vm.profession[c].IsSelected = false;
+                }
+                for (c = 0; c < vm.software.length; c += 1) {
+                    Object.defineProperty(vm.software[c], "IsSelected", { value: false, writable: true, enumerable: true, configurable: false });
+                    Object.defineProperty(vm.software[c], "CheckID", { value: "", writable: true, enumerable: true, configurable: false });
+                    vm.software[c].IsSelected = false;
+                }
+                for (c = 0; c < vm.currentstate.length; c += 1) {
+                    Object.defineProperty(vm.currentstate[c], "IsSelected", { value: false, writable: true, enumerable: true, configurable: false });
+                    Object.defineProperty(vm.currentstate[c], "CheckID", { value: -1, writable: true, enumerable: true, configurable: false });
+                    vm.currentstate[c].IsSelected = false;
+                }
+
+                $scope.isTranslatorLoaded = true;
+
+                if (vm.IsModifyState == true) {
+                    var i, j;
+                    for (i = 0; i < vm.profession.length; i += 1) {
+                        for (j = 0; j < vm.model.StaffProfessional.length; j += 1) {
+                            if (vm.profession[i].ID == vm.model.StaffProfessional[j].ProfessionalID) {
+                                vm.profession[i].IsSelected = vm.model.StaffProfessional[j].IsSelected;
+                                vm.profession[i].CheckID = vm.model.StaffProfessional[j].ID;
+                                break;
+                            }
+                        }
+                    }
+                    for (i = 0; i < vm.software.length; i += 1) {
+                        for (j = 0; j < vm.model.staffsoft.length; j += 1) {
+                            if (vm.software[i].ID == vm.model.staffsoft[j].StaffSoftwareSkillID) {
+                                vm.software[i].IsSelected = vm.model.staffsoft[j].IsSelected;
+                                vm.software[i].CheckID = vm.model.staffsoft[j].ID;
+                                break;
+                            }
+                        }
+                    }
+                    for (i = 0; i < vm.currentstate.length; i += 1) {
+                        for (j = 0; j < vm.model.StaffCurrentState.length; j += 1) {
+                            if (vm.currentstate[i].ID == vm.model.StaffCurrentState[j].CurrentStateID) {
+                                vm.currentstate[i].IsSelected = vm.model.StaffCurrentState[j].IsSelected;
+                                vm.currentstate[i].CheckID = vm.model.StaffCurrentState[j].ID;
+                                break;
+                            }
+                        }
+                    }
+                }
+            }).catch(function (error) {
+            });
+
+        }
+
+
+        $scope.$on('targetLanguageChanged', function (event, data) {
+            $scope.Variable.destLanguage = data;
+            translatorService.searchTranslator($scope.Variable.srcLanguage, $scope.Variable.destLanguage, $scope.selectField).then(function (response) {
+                $scope.translators = response;
+                //errorMsg.show('success', "Success happened here");
+            }).catch(function (error) {
+                // alertMsg.show('error', error);
+            });
+        });
+
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationField = response;
+            }).catch(function (error) {
+            });
+        }
+
+        $scope.getBankBranchList = function () {
+            var key = $scope.vm.banks;
+            var filters = _.filter(vm.tempBankBranchList, function (f) {
+                return f.BankID == vm.model.Staffbank.BankID;
+            });
+            $scope.BankBranchList = [];
+            $scope.BankBranchList = filters;
+        };
+
+        $scope.SaveTranslator = function () {
+            $scope.isTriedSave = true;
+            if (!isValidInput())
+                return;
+            if (!isAgree())
+                return
+            vm.model.ApplicationID = APP_SETTINGS.ApplicationId;
+            vm.model.CurrentCulture = APP_SETTINGS.CultureCode;
+            vm.model.StaffTypeID = 1;
+           
+            var CurrentStateList = new Array(vm.currentstate.length);
+            var i;
+            for (i = 0; i < CurrentStateList.length; i++) {
+                var obj = {};
+                obj.ID = vm.currentstate[i].CheckID;
+                obj.StaffID = vm.model.ID;
+                obj.CurrentStateID = vm.currentstate[i].ID;
+                obj.IsSelected = vm.currentstate[i].IsSelected;
+                CurrentStateList[i] = obj;
+            }
+
+
+            var ProfessionList = new Array(vm.profession.length);
+            var p;
+            for (p = 0; p < ProfessionList.length; p++) {
+                var obj = {};
+                obj.ID = vm.profession[p].CheckID;
+                obj.StaffID = vm.model.ID;
+                obj.ProfessionalID = vm.profession[p].ID;
+                obj.IsSelected = vm.profession[p].IsSelected;
+                ProfessionList[p] = obj;
+            }
+
+            var Staffsoftwarelist = new Array(vm.software.length);
+            var s;
+            for (s = 0; s < Staffsoftwarelist.length; s++) {
+                var obj = {};
+                obj.ID = vm.software[s].CheckID;
+                obj.StaffID = vm.model.ID;
+                obj.StaffSoftwareSkillID = vm.software[s].ID;
+                obj.IsSelected = vm.software[s].IsSelected;
+                Staffsoftwarelist[s] = obj;
+            }
+            vm.model.StaffCurrentState = CurrentStateList;
+            vm.model.StaffProfessional = ProfessionList;
+            vm.model.staffsoft = Staffsoftwarelist;
+            translatorService.registerTranslator(vm.model).then(onSuccessSave).catch(function (error) {
+
+            });
+        }
+        $scope.SearchTranslators = function () {
+            translatorService.searchTranslator($scope.Variable.srcLanguage, $scope.Variable.destLanguage, $scope.selectField).then(function (response) {
+                $scope.translators = response;
+                //errorMsg.show('success', "Success happened here");
+            }).catch(function (error) {
+                alertMsg.show('error', error);
+            });
+        }
+        
+        var onSuccessSave = function (response) {
+
+            alertMsg.show('success', 'Your registration has been submitted successfully.');
+        }
+        
+        function isValidInput() {
+
+            if (!vm.IsModifyState) {
+            if (!vm.model.StaffEmailID || !vm.RegEmail2 || vm.model.StaffEmailID == "") {
+                return false;
+            }
+            if (!vm.model.StaffEmailID !== !vm.RegEmail2) {
+                return false;
+            }
+            if (!vm.model.Password || !vm.Repass || vm.model.Password == "") {
+                return false;
+            }
+            if (!vm.model.Password !== !vm.Repass) {
+                return false;
+               }
+             }
+            if (!vm.model.LastName || vm.model.LastName == "") {
+                return false;
+            }
+            if (!vm.model.FirstName || vm.model.FirstName == "") {
+                return false;
+            }
+            if (!vm.model.PostalCode || vm.model.PostalCode == "") {
+                return false;
+            }
+            if (!vm.model.CityOfOverseas || vm.model.CityOfOverseas == "") {
+                return false;
+            }
+            if (!vm.model.Street || vm.model.Street == "") {
+                return false;
+            }
+            if (!vm.model.ApartmentName || vm.model.ApartmentName == "") {
+                return false;
+            }
+            if (!vm.model.MainCareer || vm.model.MainCareer == "") {
+                return false;
+            }
+            if (!vm.model.SelfPR || vm.model.SelfPR == "") {
+                return false;
+            }
+            if (!vm.model.TelephoneNo || vm.model.TelephoneNo == "") {
+                return false;
+            }
+            if (!vm.model.MobileNo || vm.model.MobileNo == "") {
+                return false;
+            }
+            if (!vm.model.HomeCountryPhone || vm.model.HomeCountryPhone == "") {
+                return false;
+            }
+            if (!vm.model.Staffbank.AccountNo || vm.model.Staffbank.AccountNo == "") {
+                return false;
+            }
+            if (!vm.model.Staffbank.AccountHolderName || vm.model.Staffbank.AccountHolderName == "") {
+                return false;
+            }
+           
+            return true;
+        }
+        function isAgree() {
+            if (vm.Terms === false) {
+                alertMsg.show('alert', 'Please Agree Terms of Service to Register');
+                return false;
+            }
+            return true;
+        }
+
+
+
+
+        $scope.checkExistingTranslator = function () {
+            if (!vm.IsModifyState) {
+                if (!vm.model.StaffEmailID || vm.model.StaffEmailID == "") {
+                    // toastr.error("Please enter valid Email ID");
+                    vm.IsOperationCompleted = false;
+                    alertMsg.show('alert', 'Please enter valid Email ID.');
+                    return false;
+                }
+            }
+
+            translatorService.checkExistingTranslator(vm.model.StaffEmailID, APP_SETTINGS.CultureCode).then(function (response) {
+                
+                vm.IsOperationCompleted = true;
+                vm.translatorExisted = true;
+                alertMsg.show('alert', "Email ID already exist,please use another one.");
+            }).catch(function (error) {
+                vm.IsOperationCompleted = true;
+                vm.translatorExisted = false;
+            });
+        }
+
+
+        $scope.openTranslatorWindow = function (translator) {
+            $uibModal.open({
+                component: "translatorProfileWindow",
+                transclude: true,
+                animation: true,
+                resolve: {
+                    translatorNo: function () {
+                        return translator.TranslatorNo;
+                    }
+                },
+                size: 'lg',
+
+            });
+        };
+
+    });
+
+})();

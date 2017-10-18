@@ -1,0 +1,35 @@
+<div class="total-content">
+    <!-- my-page-area-area start -->
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-share-square-o"></i>
+            <h3>Sent message</h3>
+        </div>
+        <div class="receive-msg-wrap common-sub-block">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Sender</th>
+                        <th>Order No.</th>
+                        <th>Title</th>
+                        <th>Date sent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">01</a></td>
+                        <td><a href="">Mr. Roy</a></td>
+                        <td><a href="">2543</a></td>
+                        <td><a href="">Some title goes here..</a></td>
+                        <td><a href="">321/09/2018</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" colspan="5">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- my-page-area end -->
+</div>

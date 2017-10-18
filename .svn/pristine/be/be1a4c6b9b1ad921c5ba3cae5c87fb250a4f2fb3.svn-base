@@ -1,0 +1,306 @@
+﻿
+<div class="total-content">
+    <div class="appointed-trans-area">
+
+        <!-- editing-sample-area start -->
+        <div class="editing-sample-area">
+            <div class="site-title">
+                <i class="fa fa-pencil-square-o"></i>
+                <h3>Appointed translation</h3>
+            </div>
+            <div class="sample-content">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Language
+                                <select id="srcLanguage" class="form-control"
+                                        data-ng-model="srcLanguage" ng-change="srcLangChanged(srcLanguage)"
+                                        ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                <i class="fa fa-play"></i>
+                                <select id="destLanguage" class="form-control"
+                                        data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+                                        ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Translation field
+                                <select id="selectLanguage" class="form-control"
+                                        data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                        ng-options="t.ID as t.Name for t in ::translationFields">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sample-tab-area">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-item-1">Input manuscript directly</a></li>
+                            <li><a data-toggle="tab" href="#tab-item-2">Upload a file</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-item-1" class="tab-pane sample-tabpan fade in active">
+                                <div class="sample-text-area">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder=" Enter text directly here"></textarea>
+                                </div>
+
+                                <div class="orange">
+                                    * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                                    <br>
+                                    (For other languages, ​​you can enter up to 20,000 words.)
+                                </div>
+                            </div>
+                            <div id="tab-item-2" class="tab-pane sample-tabpan fade">
+                                <p>Some content in menu 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sample-tab-btn text-center">
+                        <button type="button" class="btn btn-primary">Check Estimation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- editing-sample-area start -->
+
+
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>About appointed translation</h3>
+        </div>
+        <div class="about-appointed_trans common-sub-block mb30">
+            <p><b>What is appointed translation?</b></p>
+            <p>In "appointed translation" service, you can choose up to <b>5 translators</b> who have received high evaluation in each field. You can use this service easily in the similar manner to "online translation" service, but can expect <b>higher translation quality</b>.</p>
+            <p>Send your draft through <a ui-sref="/">estimation form</a> to confirm information including delivery time. For "online translation" service, you will go straight to the payment method, while in "appointed translation" service, you are required to <b>"appoint translators"</b>.</p>
+            <p>
+                <span><b>Register first! →</b></span>
+                <span><input ui-sref="userRegistration" id="" class="btn-primary btn-sm appoi-trans-reg-btn" name="" value="To the registration screen" type="submit"></span>
+            </p>
+
+            <div class="trans-appli-area">
+                <p><b>Application</b></p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-1.png" alt="">
+                            <p><a ui-sref="/">Estimate</a> using our form</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-2.png" alt="">
+                            <p><a ui-sref="userRegistration">Membership registration (free)</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-3.png" alt="">
+                            <p>Choose payment method</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-4.png" alt="">
+                            <p>Log in with a registered <a href="">ID and password</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-5.png" alt="">
+                            <p>Reconfirm and order</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-6.png" alt="">
+                            <p>Choose up to <strong>5 translators</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-7.png" alt="">
+                            <p>Payment process</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-8.png" alt="">
+                            <p>Notify a translator</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-9.png" alt="">
+                            <p>Translator confirms the order</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-10.png" alt="">
+                            <p>Deliver</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-11.png" alt="">
+                            <p>Receive the documents</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <a ui-sref="application" class="btn btn-primary">More information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="individuals-reg-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>List of translators</h3>
+            </div>
+            <div class="sample-content">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Language
+                                <select class="form-control">
+                                    <option>Japanese</option>
+                                    <option>English</option>
+                                    <option>Chinese(Mandarin)</option>
+                                    <option>Korean</option>
+                                </select>
+                                <i class="fa fa-play"></i>
+                                <select class="form-control">
+                                    <option>Japanese</option>
+                                    <option>English</option>
+                                    <option>Chinese(Mandarin)</option>
+                                    <option>Korean</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Translation field
+                                <select class="form-control">
+                                    <option>Japanese</option>
+                                    <option>English</option>
+                                    <option>Chinese(Mandarin)</option>
+                                    <option>Korean</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="checkbox">
+                                <label><input value="" type="checkbox">Search for native speakers </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-right">
+                                <input value="Search" class="btn btn-primary" type="submit"> <input value="Clear" class="btn btn-primary" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="individuals-reg-wrap bt0">
+                <div class="flex-container">
+                    <div class="">
+                        <div class="feedback-wrap">
+                            <div class="row">
+                              
+                                <div class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="tanslator in translators">
+                                    <div class="feedback-box">
+                                        <img src="assets/img/feedback-1.jpg" alt="">
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="feedback-name">
+                                            <p>{{tanslator.FullName}} </p>
+                                            <a class="btn btn-primary">Appoint</a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="table-pagination text-center">
+                                <ul>
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">4</a></li>
+                                    <li><a href="">5</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <br>
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>List of on-line translation projects</h3>
+        </div>
+        <div class="receive-msg-wrap common-sub-block" style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="">Request Dates</a></th>
+                        <th><a href="">Status</a></th>
+                        <th><a href="">Plan</a></th>
+                        <th><a href="">Original language</a></th>
+                        <th><a href="">Target language</a></th>
+                        <th><a href="">Field</a></th>
+                        <th><a href="">Translator</a></th>
+                        <th><a href="">Fee</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="orders && orders.length>0" ng-repeat="ord in orders">
+                        <td><a href="">{{ord.RequestDate | utcToLocal:'dd/MM/yyyy hh:mm:ss'}}</a></td>
+                        <td><a href="">{{ord.OrderStatusName}}</a></td>
+                        <td><a href="">{{ord.DeliveryPlan}}</a></td>
+                        <td><a href="">{{ord.SourceLanguage}}</a></td>
+                        <td><a href="">{{ord.TargetLanguage}}</a></td>
+                        <td><a href="">{{ord.TranslationFieldName}}</a></td>
+                        <td><a href="">{{ord.TranslatorName}}</a></td>
+                        <td><a href="">{{ord.OrderAmount}}{{ord.CurrencySymbol}}</a></td>
+                    </tr>
+
+                    <tr ng-if="!orders || orders.length<=0">
+                        <td class="text-left" colspan="8">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+</div>

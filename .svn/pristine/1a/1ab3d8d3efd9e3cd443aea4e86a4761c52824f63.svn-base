@@ -1,0 +1,235 @@
+<div class="total-content">
+    <!-- Notice section-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Partners ・Business alliance wanted</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <p>At Trans-Pro., we are seeking sales partners of the cloud translation service.</p>
+            <div class="flex-container">
+                <div class="box">
+                    <h3> Eligible companies</h3>
+                    <p>The first customer of Trans-Pro. Will receive 10% discount from the estimate!</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Anytime you evaluate a translator (10%) </h3>
+                    <P>Companies offering translation services
+                        <br> →Companies which need translators of rare languages
+                        <br> →Companies which need to serve clients with limited budget
+                        <br> Companies which offer foreigner-recruiting services
+                        <br> Companies which employ users who need translation or dealing with foreigners
+                        <br> Companies offering outsourcing services
+                        <br> Others
+                    </P>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3> The strength of Trans-Pro.</h3>
+                    <P> ・38 languages (including rare languages) are available
+                        <br> ・Cloud type translation available delivered after 30 minutes at earliest, operating for 24 hours
+                        <br> ・Estimate, payment, delivery via the site possible
+                        <br> ・Reliable because you can confirm past jobs and customer evaluations of a translator
+                        <br> ・Not only prompt payment using a credit card but payment after receiving a bill possible (Review of the first customer necessary)
+                        <br> ・Issuance of estimates, bills, delivery statements or receipts possible
+                    </P>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Agreement requirements</h3>
+                    <P>・You need to acquire your company's own domain
+                        <br> ・Please create the menu for this service on your company's website
+                        <br> ・Please prepare flyers to promote sales of this service
+                        <br> ※Please ask us any questions regarding contents above.
+                        <br> ※Neither contract fee nor fixed cost is required
+                        <br> ※The bill is closed at the end of the month and paid at the end of next month
+                        <br> ※50% of gross revenue (= sales minus cost, including payment to a translator and discount) will be paid</P>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3> Example of business partners</h3>
+                    <strong><P>* A temporary foreign language instructor recruitment agency</p></strong>
+                    <strong><p>* A temporary forein staff againcy </p></strong>
+                    <strong><p>* A narrator agency </p></strong>
+                    <strong><p>* A temp staff agency </p></strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Inquiry about Trans-Pro. Partnership</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input name="receive-mail" checked="checked" type="radio">Contact Us
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="receive-mail" type="radio"> Application
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Your company name </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input placeholder=" Name" type="text">
+                                    <span>Ex) Yamada Inc</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Name </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input placeholder="" type="text">
+                                    <span>Ex) Taro Yamada</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Division name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input placeholder="" type="text">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Tel number </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input placeholder="" type="text">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> E-mail address </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input placeholder="" type="text">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x p3x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Company strength・appeal</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <textarea name="" rows="2" cols="20" id="errorDescription" placeholder="" style="height:250px; width:98%;  max-width:100%; min-width: 200px;"></textarea>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h5x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Your company Homepage </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input placeholder="http://wwww." type="text">
+                                    <input placeholder="http://wwww." type="text">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h4x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Preffered web system</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input value="" type="checkbox">Unique domain </label>
+                                        <input placeholder="http://wwww." type="text">
+                                        <p class="orange">* You need to acquire a unique domain</p>
+                                        <p class="orange">* Please note that your application may be reviewed</p>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="button-holder text-center">
+                    <input type="button" name="" class="btn btn-primary" value="Clear">
+                    <input type="button" name="" class="btn btn-primary" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1232 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="assets/img/fevicon.png">
+	
+    <title></title>
+
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<!-- header-top-area start -->
+	<div class="header-top-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="top-left">
+						<p>
+                            <span>
+                                Cloud type online translation by native speakers of Chinese(Mandarin).
+                                   <strong>24,764</strong> or more translators and more than <strong>10,000</strong> corporate customers.
+                            </span>
+                        </p>
+					</div>
+				</div>
+				<div class="col-sm-5 text-right">
+					<div class="top-right">
+						<ul class="login-area">
+							<li ng-if="CurrentUser.IsAuthenticated" ng-click="getUserById()"><a href="">Modify info</a></li>
+							<li ng-if="!CurrentUser.IsAuthenticated"  ng-click="open()"><a href="">Translator registration/Login</a></li>
+                            <li ng-if="CurrentUser.IsAuthenticated">
+                                <!--<a ng-if="!CurrentUser.IsAuthenticated" href=""  ng-click="open()">Login</a>-->
+                                <a  href="" ng-click="logout()">Log out</a>
+                            </li>
+							<li><a ui-sref="aboutus">About us</a></li>
+						</ul>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header-top-area end -->
+	
+	
+	
+	<!-- mobile-menu-area start -->
+	<div class="mobile-menu-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8">
+                        <div class="mobile_logo">
+                            <a href=""><img src="/assets/img/logo_transpro.png" alt=""></a>
+                        </div>
+                </div>
+				<div class="col-xs-4">
+                    <div class="responsive-menu-wrap"></div>				
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- mobile-menu-area end -->
+	
+	
+	
+	<!-- tab-menu-area start -->
+	<div class="tab-menu-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="tab-menu">
+						<ul id="navigation">
+							<li><a ui-sref="/">HOME</a></li>
+							<li><a ui-sref="userguide">User Guide</a></li>
+							<li><a ui-sref="application">Application</a></li>
+							<li><a ui-sref="faq">FAQ</a></li>
+                            <li><a href="">Evaluation <i class="fa fa-caret-down"></i></a>
+                                <ul class="tab_dropdown">
+                                    <li><a ui-sref="transevaluation">Translation Evaluation Method</a></li>
+                                    <li><a ui-sref="evaluation">Customer Evaluation</a></li>
+                                </ul>
+                            </li>
+                            <li><a ui-sref="quality">Quality & Knack</a></li>
+                            <li><a ui-sref="strength">Strengths</a></li>
+                            <li><a ui-sref="translator">Search Translators</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- tab-menu-area end -->
+	
+	
+	
+	<!-- main-menu-area start -->
+    <div class="main-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <a ui-sref="/">
+                                    <div class="menu-item">
+                                        <i class="fa fa-home"></i>
+                                        <p>HOME</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="userguide">
+                                    <div class="menu-item">
+                                        <i class="fa fa-pencil-square-o"></i>
+                                        <p>User Guide</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="application">
+                                    <div class="menu-item">
+                                        <i class="fa fa-file-text-o "></i>
+                                        <p>Application</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="faq">
+                                    <div class="menu-item">
+                                        <i class="fa fa-user"></i>
+                                        <p>FAQ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="pricelist">
+                                    <div class="menu-item">
+                                        <i class="fa fa-language"></i>
+                                        <p>Price List</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="menu-item">
+                                        <i class="fa fa-eye"></i>
+                                        <p>Evaluation <i class="fa fa-caret-down"></i></p>
+                                    </div>
+                                </a>                                
+                                <ul class="main-dropdown">
+                                    <li>
+                                        <a ui-sref="transevaluation">
+                                            <div class="menu-item">
+                                                <i class="fa fa-eye"></i>
+                                                <p>Translation Evaluation Method</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a ui-sref="evaluation">
+                                            <div class="menu-item">
+                                                <i class="fa fa-cube"></i>
+                                                <p>Customer Evaluation</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>                            
+                            <li>
+                                <a ui-sref="quality">
+                                    <div class="menu-item">
+                                        <i class="fa fa-paint-brush"></i>
+                                        <p>Quality & Knack</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="strength">
+                                    <div class="menu-item">
+                                        <i class="fa fa-diamond"></i>
+                                        <p>Strengths</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="translator">
+                                    <div class="menu-item">
+                                        <i class="fa fa-search"></i>
+                                        <p>Search Translators</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- main-menu-area end -->
+	
+	
+	
+	<!-- slider-area start -->
+    <div class="slider-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="single-slider">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                    <div class="slider_logo">
+                                      <a ui-sref="/"><img src="/assets/img/logo_transpro.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-right p7x">
+                                        <select id="selectLanguage"
+                                                data-ng-model="selectLanguage" ng-change="selectLangChanged(selectLanguage)"
+                                                ng-options="lang.ID as lang.Name for lang in ::languages">
+                                            <option value="" selected="selected">Select target Language</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 pr0">
+                                <div class="sldm1" ui-sref="onlinetranslation">
+                                    <p class="pmt">Cloud-based <br/> 24-Hour</p>
+                                    <h4>Online Translation</h4>
+                                </div>
+							</div>	
+
+                            <div class="col-md-3 col-sm-6 pr0">
+                                <div class="sldm1" ui-sref="appointed-translation">
+                                    <p> Choose a translator Ask translation to the translator I asked before</p>
+                                    <h4>Appointed Translation</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="sldm1" ui-sref="nativecheck">
+                                    <p class="pmt">Higher quality <br/> with multiple checks</p>
+                                    <h4>Native Check</h4>
+                                </div>
+                            </div>
+							<div class="col-md-3 col-sm-6 pl0">
+								<div class="sldm1" ui-sref="translatorCoordinator">
+									<p>Precise translation of difficult contents through detailed consultation</p>
+									<h4>Translator+Coordinator</h4>
+								</div>
+							</div>								
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- slider-area end -->
+	
+	
+	<!-- main-content-area start -->
+	<div class="main-content-area">
+		<div class="container">            
+            <div class="row">
+                <div class="col-md-9" ui-view>
+                    <div class="total-content">
+                        <!-- pricing-table-area start -->
+                        <div class="pricing-table-area">
+                            <div class="site-title">
+                                <i class="fa fa-th-large"></i>
+                                <h3>You can choose the translational level.</h3>
+                            </div>
+                            <div class="transpro-content">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="single-pricing-box light">
+                                            <div class="pricing-photo">
+                                                <img src="assets/img/p-box-bg-light.png" alt="" />
+                                            </div>
+                                            <div class="priceittle">
+                                                <h2>Light</h2>
+                                                <div class="pricecircle">
+                                                    <h2><span>0</span>.08</h2>
+                                                    <h3>AUD</h3>
+                                                </div>
+                                                <h4>Native Speaker</h4>
+                                            </div>
+                                            <div class="pricing-btn">
+                                                <a href="">Details >></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                            <div class="single-pricing-box business">
+                                                <div class="pricing-photo">
+                                                    <img src="assets/img/p-box-bg-business.png" alt="" />
+                                                </div>
+                                                <div class="priceittle">
+                                                    <h2>Business</h2>
+                                                    <div class="pricecircleb">
+                                                        <h2><span>0</span>.12</h2>
+                                                        <h3>AUD</h3>
+                                                    </div>
+                                                    <h4>Professional</h4>
+                                                </div>
+                                                <div class="pricing-btn">
+                                                    <a href="">Details >></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <div class="single-pricing-box expert">
+                                                    <div class="pricing-photo">
+                                                        <img src="assets/img/p-box-bg-expert.png" alt="" />
+                                                    </div>
+                                                    <div class="priceittle">
+                                                        <h2>Expert</h2>
+                                                        <div class="pricecirclee">
+                                                            <h2><span>0</span>.22</h2>
+                                                            <h3>AUD</h3>
+                                                        </div>
+                                                        <h4>Selected Professional</h4>
+                                                    </div>
+                                                    <div class="pricing-btn">
+                                                        <a href="">Details >></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- pricing-table-area end -->
+                        <!-- editing-transpro-area start -->
+                        <div class="editing-transpro-area">
+                            <div class="site-title">
+                                <i class="fa fa-pencil-square-o"></i>
+                                <h3>You can upload menuscripts and estimate here</h3>
+                            </div>
+
+                            <div class="transpro-content">
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-7">
+                                            <p>
+                                                <!--<i class="fa fa-play-circle"></i> Language
+                                <select class="form-control"
+                                        id="ddlCountry"
+                                        ng-model="srcLanguage"
+                                        ng-options="item.Name for item in languages"
+                                        ng-change="srcLangChanged(srcLanguage)"></select>
+                                <i class="fa fa-play"></i>
+                                <select class="form-control"
+                                        id="ddlCountry"
+                                        ng-model="destLanguage"
+                                        ng-options="item.Name for item in languages"
+                                        ng-change="destLangChanged(destLanguage)"></select>-->
+
+                                                <i class="fa fa-play-circle"></i> Language
+                                                <select id="srcLanguage" class="form-control"
+                                                        data-ng-model="srcLanguage" ng-change="srcLangChanged(srcLanguage)"
+                                                        ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                                <i class="fa fa-play"></i>
+                                                <select id="destLanguage" class="form-control"
+                                                        data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+                                                        ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <p>
+                                                <i class="fa fa-play-circle"></i> Translation field
+                                                <select id="selectField" class="form-control"
+                                                        data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                                        ng-options="t.ID as t.Name for t in ::translationFields">
+                                                    <option value="" selected="selected">▼--------------</option>
+                                                </select>
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <uib-tabset active="activePill">
+                                        <uib-tab index="0" heading="Input manuscript directly">
+                                            <div class="transpro-text-area">
+                                                <textarea cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                                            </div>
+                                            <div class="orange">
+                                                * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                                                <br>
+                                                (For other languages, ​​you can enter up to 20,000 words.)
+                                            </div>
+                                        </uib-tab>
+                                        <uib-tab index="1" heading="Upload a file">
+                                            <div class="transpro-fileupload-area">
+                                                <input type="file" multiple load-file ng-model="Estimation.File" id="fileName" />
+                                            </div>
+                                        </uib-tab>
+
+                                    </uib-tabset>
+                                    <div class="sample-tab-btn text-center">
+                                        <button type="button" class="btn btn-primary" ng-click="UploadDocument()">Check Estimation</button>
+                                    </div>
+                                </form>
+
+
+                            </div>
+                        </div>
+                        <!-- editing-sample-area start -->
+                        <!-- strength section -->
+                        <div class="editing-transpro-area">
+                            <div class="site-title">
+                                <i class="fa fa-th-large"></i>
+                                <h3> The strength of Trans-Pro. </h3>
+                            </div>
+                            <div class="individuals-reg-wrap">
+                                <div class="flex-container">
+                                    <div class="flowcircle blue">
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    1
+                                                </div>
+                                                <div class="fc_title">
+                                                    30 minutes (shortest)
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Minimum of 30 minutes to deliver, 24-hours operating
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    2
+                                                </div>
+                                                <div class="fc_title">
+                                                    Reasonable price
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Direct contact made lowest price
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    3
+                                                </div>
+                                                <div class="fc_title">
+                                                    Quick estimation
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Check the price and delivery time on the spot
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    4
+                                                </div>
+                                                <div class="fc_title">
+                                                    38 languages available
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Natives speakers for 38 languages standing by
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end strength  -->
+                        <!-- List of on-line translation projects -->
+                        <div class="editing-transpro-area">
+                            <div class="site-title">
+                                <i class="fa fa-th-large"></i>
+                                <h3> List of on-line translation projects </h3>
+                            </div>
+                            <div class="order-breakdown-wrap receive-msg-wrap common-sub-block " style="overflow-x:auto;">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Request Dates</th>
+                                            <th>Status</th>
+                                            <th>Plan</th>
+                                            <th>Original language</th>
+                                            <th>Target language</th>
+                                            <th>Field</th>
+                                            <th>Translator</th>
+                                            <th>Fee</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="">17/08/15</a></td>
+                                            <td><a href="">delivery</a></td>
+                                            <td><a href="">1 day</a></td>
+                                            <td><a href="">Japanese</a></td>
+                                            <td><a href="">English</a></td>
+                                            <td><a href="">Commercial &amp; IR</a></td>
+                                            <td><a href="">220154</a></td>
+                                            <td><a href="">＄285.03</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">16/09/28</a></td>
+                                            <td><a href="">delivery</a></td>
+                                            <td><a href=""> 3days.</a></td>
+                                            <td><a href="">Japanese</a></td>
+                                            <td><a href="">English</a></td>
+                                            <td><a href="">MfgT &amp; science technology</a></td>
+                                            <td><a href="">220154</a></td>
+                                            <td><a href="">＄170.37</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">16/09/28</a></td>
+                                            <td><a href="">delivery</a></td>
+                                            <td><a href="">24 hr.</a></td>
+                                            <td><a href="">Japanese</a></td>
+                                            <td><a href="">English</a></td>
+                                            <td><a href="">Commercial &amp; IR</a></td>
+                                            <td><a href="">401104</a></td>
+                                            <td><a href="">＄4.37</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">17/08/15</a></td>
+                                            <td><a href="">delivery</a></td>
+                                            <td><a href=""> 1day</a></td>
+                                            <td><a href="">Japanese</a></td>
+                                            <td><a href="">English</a></td>
+                                            <td><a href="">Medicalcare,Medicine</a></td>
+                                            <td><a href="">400809</a></td>
+                                            <td><a href="">＄105.84</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">16/09/28</a></td>
+                                            <td><a href="">delivery</a></td>
+                                            <td><a href="">24 hr.</a></td>
+                                            <td><a href="">Japanese</a></td>
+                                            <td><a href="">English</a></td>
+                                            <td><a href="">Business documents</a></td>
+                                            <td><a href="">220154</a></td>
+                                            <td><a href="">＄6.14</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="">16/09/28</a></td>
+                                            <td><a href="">delivery</a></td>
+                                            <td><a href="">30 hr.</a></td>
+                                            <td><a href="">English</a></td>
+                                            <td><a href="">Chinese</a></td>
+                                            <td><a href="">Business documents</a></td>
+                                            <td><a href="">400003</a></td>
+                                            <td><a href="">＄2.20</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- end List of on-line translation projects -->
+                        <!-- feedback-area start -->
+                        <div class="feedback-area">
+                            <div class="site-title">
+                                <i class="fa fa-users"></i>
+                                <h3>List of translators</h3>
+                            </div>
+                            <div class="feedback-wrap">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-1.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-2.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-3.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-4.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-5.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-6.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-4.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-7.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-2.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-8.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-9.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                                        <div class="feedback-box">
+                                            <img src="assets/img/feedback-5.jpg" alt="" />
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="feedback-name">
+                                                <p>日本学（学士） ライプチヒ大学 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <div class="row">
+                            <div class="col-md-12  col-sm-6" ng-if="CurrentUser.IsAuthenticated">
+                                <div class="my-page-sidebar">
+                                    <div class="my-page-logout">
+                                        <p ng-if="CurrentUser.UserType == UserType.Customer">Client No：{{CurrentUser.RegistrationID}}</p>
+                                        <p ng-if="CurrentUser.UserType == UserType.Translator">Translator No：{{CurrentUser.RegistrationID}}</p>
+                                        <p>{{CurrentUser.Name}}</p>
+                                        <!--<p>テストアカウント</p>-->
+                                        <div class="logout-btn">
+                                            <a class="btn btn-primary" ng-click="logout()">Logout</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="logout-menu">
+                                        <ul>
+                                            <li><a ui-sref="mypage"><i class="fa fa-angle-double-right"></i> MY PAGE</a></li>
+                                            <li><a ui-sref="receivemessage"><i class="fa fa-angle-double-right"></i> Received message</a></li>
+                                            <li><a ui-sref="sentmessage"><i class="fa fa-angle-double-right"></i> Sent message</a></li>
+                                            <li><a ui-sref="orderbreakdown"><i class="fa fa-angle-double-right"></i> Order breakdown</a></li>
+                                            <li><a ui-sref="billbreakdown"><i class="fa fa-angle-double-right"></i> Bill breakdown</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="logout-menu">
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-angle-double-right"></i> Past appointed translators</a></li>
+                                            <li><a href=""><i class="fa fa-angle-double-right"></i> Past relied translators</a></li>
+                                            <li><a href=""><i class="fa fa-angle-double-right"></i> My Favorite translators</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="logout-menu">
+                                        <ul>
+                                            <li><a ui-sref="rearrangeregistered"><i class="fa fa-angle-double-right"></i> Rearrange registered information</a></li>
+                                            <li><a ui-sref="receiving-mails"><i class="fa fa-angle-double-right"></i> Setting up for receiving mails</a></li>
+                                            <li><a ui-sref="report_errors"><i class="fa fa-angle-double-right"></i> Report errors of webisite</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <div class="add-box3">
+                                    <p>Please feel free to contact us</p>
+                                    <div class="bx3">
+                                        <h2><span class="glyphicon glyphicon-phone-alt"></span>  00-0000-0000</h2>
+                                        <p>* Business Hours 9:00 am to 6:00 pm, except Sat, Sun, holidays</p>
+                                        <div class="inq" ui-sref="contact">
+                                                <button type="button" value="Inquiry from here" class=""><i class="fa fa-envelope"></i>  Inquiry from here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-box1">
+                                    <a ui-sref="discount">
+                                        <div class="row">
+                                            <h2>10% OFF<br>
+                                            YOUR FIRST ORDER</h2>
+                                            <p>Evaluate a translator &rarr; 10% off from the<br> next time project </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="add-box2" ui-sref="pricelist">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/pricelist.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p1">
+                                            <h2>Price List</h2>
+                                            <p>Check Price list</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO" >
+                                        </div>
+                                </div>
+                                <div class="add-box2" ui-sref="translatorCoordinator">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/estimate.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p">
+                                            <h2>Estimate Inquiry</h2>
+                                            <p>Ask a coordinator for an estimate here right away</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO" >
+                                        </div>
+                                </div>
+                                <div class="add-box2"ui-sref="/">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/online.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p">
+                                            <h2>Online Estimate </h2>
+                                            <p>You can check the estimate here right away!</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO"  >
+                                        </div>
+                                </div>
+                                <div class="add-box2"  ui-sref="contact">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/contact.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p">
+                                            <h2>Contact Us </h2>
+                                            <p>Please feel free to contact us</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- business advertise -->
+                            <div class="col-md-12 col-sm-6">
+                                <div class="add-box">
+                                    <a ui-sref="business"><img src="assets/img/application_200x135.jpg" alt="business" /></a>
+                                </div>
+                            </div>
+                            <!-- start search -->
+                            <div class="col-md-12 col-sm-6">
+                                <div class="sidebar-faq ">
+                                    <div class="sidebar-faq-heding ">
+                                        <a ui-sref="translator">Search Translator</a>
+                                    </div>
+                                    <div class="table-responsive srct">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select name="" style="width: 100%">
+                                                            <option selected="selected" value="113">Japanese</option>
+                                                            <option value="032">English</option>
+                                                            <option value="097">Chinese(Mandarin)</option>
+                                                            <option value="096">Chinese(Cantonese)</option>
+                                                            <option value="088">Chinese(Original)</option>
+                                                            <option value="037">Korean</option>
+                                                            <option value="016">Italian</option>
+                                                            <option value="020">Indonesian</option>
+                                                            <option value="025">Ukrainian</option>
+                                                            <option value="034">Dutch</option>
+                                                            <option value="073">Swedish</option>
+                                                            <option value="076">Spanish(Latinamerica)</option>
+                                                            <option value="077">Spanish(Spain)</option>
+                                                            <option value="087">Thai</option>
+                                                            <option value="089">Tagalog</option>
+                                                            <option value="094">Czech</option>
+                                                            <option value="105">German</option>
+                                                            <option value="109">Turkish</option>
+                                                            <option value="123">Hungarian</option>
+                                                            <option value="133">French</option>
+                                                            <option value="136">Bulgarian</option>
+                                                            <option value="138">Vietnamese</option>
+                                                            <option value="139">Hebrew</option>
+                                                            <option value="144">Polish</option>
+                                                            <option value="148">Portuguese(Portugal)</option>
+                                                            <option value="149">Portuguese(Brazilian)</option>
+                                                            <option value="159">Malay</option>
+                                                            <option value="170">Rumania</option>
+                                                            <option value="175">Russian</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <ul class="list-unstyled">
+                                                            <li style="">⇒</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <select name="" style="width:100%">
+                                                            <option value="113">Japanese</option>
+                                                            <option selected="selected" value="032">English</option>
+                                                            <option value="097">Chinese(Mandarin)</option>
+                                                            <option value="096">Chinese(Cantonese)</option>
+                                                            <option value="088">Chinese(Original)</option>
+                                                            <option value="037">Korean</option>
+                                                            <option value="016">Italian</option>
+                                                            <option value="020">Indonesian</option>
+                                                            <option value="025">Ukrainian</option>
+                                                            <option value="034">Dutch</option>
+                                                            <option value="073">Swedish</option>
+                                                            <option value="076">Spanish(Latinamerica)</option>
+                                                            <option value="077">Spanish(Spain)</option>
+                                                            <option value="087">Thai</option>
+                                                            <option value="089">Tagalog</option>
+                                                            <option value="094">Czech</option>
+                                                            <option value="105">German</option>
+                                                            <option value="109">Turkish</option>
+                                                            <option value="123">Hungarian</option>
+                                                            <option value="133">French</option>
+                                                            <option value="136">Bulgarian</option>
+                                                            <option value="138">Vietnamese</option>
+                                                            <option value="139">Hebrew</option>
+                                                            <option value="144">Polish</option>
+                                                            <option value="148">Portuguese(Portugal)</option>
+                                                            <option value="149">Portuguese(Brazilian)</option>
+                                                            <option value="159">Malay</option>
+                                                            <option value="170">Rumania</option>
+                                                            <option value="175">Russian</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="">
+                                            <span>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <select name=" " id=" " style="width: 100%">
+                                                            <option selected="selected " value="00 ">Special fields----</option>
+                                                            <option value="06 ">Business documents</option>
+                                                            <option value="01 ">Contract &amp; legal documents</option>
+                                                            <option value="10 ">Special permission &amp; Intellectual property</option>
+                                                            <option value="13 ">Family register copy &amp; all kinds of certificate</option>
+                                                            <option value="12 ">Normal documentsletters, etc.</option>
+                                                            <option value="02 ">Finance, stock, and insurance</option>
+                                                            <option value="03 ">Politics, economy, and society</option>
+                                                            <option value="04 ">Medicalcare, Medicine and Pharmacy</option>
+                                                            <option value="07 ">Thesis, scholarship, research &amp; development</option>
+                                                            <option value="11 ">Video picture, movie, drama, and entertainment</option>
+                                                            <option value="14 ">Manuals, catalogs, and pamphlet</option>
+                                                            <option value="15 ">Commercial, IR, marketing, and media</option>
+                                                            <option value="05 ">IT &amp; computer</option>
+                                                            <option value="08 ">Manufacturing technology &amp; Science technology</option>
+                                                            <option value="09 ">Machinery, automobile, manufacturing, and industry</option>
+                                                            <option value="16 ">Electric, Electronic, and semiconductor</option>
+                                                            <option value="17 ">Energy, nuclear power, and environment</option>
+                                                            <option value="18 ">Chemistry &amp; Bio technology</option>
+                                                            <option value="19 ">Construction &amp; public works</option>
+                                                            <option value="99 ">Miscellaneous documents</option>
+                                                        </select>
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                            <div class="button-folder text-center">
+                                                <input ui-sref="translator" value="Search" type="button" class="btn-primary btn-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End search -->
+                            <!-- Customer evaluation -->
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-faq ">
+                                    <div class="sidebar-faq-heding ">
+                                        <a ui-sref="detail">Customer evaluation</a>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td><a ui-sref="detail">16/02/01</a></td>
+                                                    <td><a ui-sref="detail"><img src="assets/img/rating_stars_80x34.png"></a></td>
+                                                    <td><a ui-sref="detail">I like your...</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a ui-sref="detail">14/02/01</a></td>
+                                                    <td><a ui-sref="detail"><img src="assets/img/rating_stars_80x34.png"></a></td>
+                                                    <td><a ui-sref="detail">Thank you…</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a ui-sref="detail">03/02/01</a></td>
+                                                    <td><a ui-sref="detail"><img src="assets/img/rating_stars_80x34.png"></a></td>
+                                                    <td><a ui-sref="detail">Great job…</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end customer evaluation -->
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-faq ">
+                                    <div class="sidebar-faq-heding ">
+                                        <a ui-sref="faq">FAQ</a>
+                                    </div>
+                                    <div class="sidebar-faq-content ">
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/faq-q.png " alt=" " />
+                                                <p ui-sref="faq" >Is it possible if I need someone to translate immediately? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/faq-a.png " alt=" " />
+                                                <a ui-sref="faq">Documents can be delivered within 30 minutes…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/faq-q.png " alt=" " />
+                                                <p>Can anyone use the service? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/faq-a.png " alt=" " />
+                                                <a ui-sref="faq">Estimates can be accessed automatically…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/faq-q.png " alt=" " />
+                                                <p>I wish to cancel my order of translation. </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/faq-a.png " alt=" " />
+                                                <a ui-sref="faq">The estimate is automatic and can…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/faq-q.png " alt=" " />
+                                                <p>Is there any way to make the quality of the translation better? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/faq-a.png " alt=" " />
+                                                <a ui-sref="faq">One way is to use the online translation to do…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/faq-q.png " alt=" " />
+                                                <p>Is there any way to lower the translation fee? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/faq-a.png " alt=" " />
+                                                <a ui-sref="faq">You can choose the "Light " service…</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-faq sidebar-box fb ">
+                                    <div class="sidebar-faq-heding sidebar-title ">
+                                        <a href="https://www.facebook.com/transPro.net/" target="_blank">Facebook</a>
+                                    </div>
+                                    <div class="sidebar-faq-content sidebar-content ">
+                                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrans-pro-net&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-faq sidebar-box editor-interview ">
+                                    <div class="sidebar-faq-heding sidebar-title ">
+                                        <a ui-sref="strength">What is trans-Pro?</a>
+                                    </div>
+                                    <div class="sidebar-faq-content sidebar-content ">
+                                        <p>
+                                            <a ui-sref="strength"><strong>A cloud-based online translation service</strong> which has been provided for translation companies and adjusted for you to use more easily.</a><br><br>
+                                            <a ui-sref="strength">Estimate shows the fee so you can check it on the spot.</a><br><br>
+                                            <a ui-sref="strength">Orders can be made to meet your cost. Other than translation, <strong>check / proofreading</strong> are done too by <strong>native speakers</strong> of your target languages.</a><br><br>
+                                            <a ui-sref="strength">You can order <strong>24 hours a day, 365 days a year,</strong> and receive translation in <strong>30 minutes</strong> (shortest).</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- clock -->
+                            <div class="col-md-12 col-sm-6">
+                                <div class="sidebar-faq-heding sidebar-title ">
+                                    <a href="">Local Time</a>
+                                </div>
+                                <div class="sidebar-faq-content sidebar-content clock ">
+                                    <ds-widget-clock></ds-widget-clock>
+                                </div>
+                            </div>
+                        </div>
+                        <br/> <br/>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<!-- main-content-area end -->
+	
+	
+	
+	<!-- footer-area start -->
+    <footer class="footer-area">
+        <div class="footer-top ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-3 ">
+                        <div class="site-map ">
+                            <h4><i class="fa fa-home "> </i>  Clients</h4>
+                            <div class="sitemap-menu ">
+                                <ul>
+                                    <li><a ui-sref="/"><i class="fa fa-arrow-circle-right "></i> Top </a></li>
+                                    <li><a ui-sref="onlinetranslation"><i class="fa fa-arrow-circle-right "></i> Online Translation </a></li>
+                                    <li><a ui-sref="appointed-translation"><i class="fa fa-arrow-circle-right "></i> Appointed Translation</a></li>
+                                    <li><a ui-sref="nativecheck"><i class="fa fa-arrow-circle-right "></i> Native Check(Proofreading)</a></li>
+                                    <li><a ui-sref="translatorCoordinator"><i class="fa fa-arrow-circle-right "></i>  Translator + Coordinator</a></li>
+                                    <li><a ui-sref="translator"><i class="fa fa-arrow-circle-right "></i> Search Translators </a></li>
+                                    <li><a ui-sref="/"><i class="fa fa-arrow-circle-right "></i> Estimate</a></li>
+                                    <li><a ui-sref="contact"><i class="fa fa-arrow-circle-right "></i> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="site-map">
+                            <div class="sitemap-menu ">
+                                <ul>
+                                    <li><a ui-sref="userguide"><i class="fa fa-arrow-circle-right "></i>  User Guide</a></li>
+                                    <li><a ui-sref="application"><i class="fa fa-arrow-circle-right "></i> Application</a></li>
+                                    <li><a ui-sref="faq"><i class="fa fa-arrow-circle-right "></i>  FAQ</a></li>
+                                    <li><a ui-sref="evaluation"><i class="fa fa-arrow-circle-right "></i>  Customer Evaluation</a></li>
+                                    <li><a ui-sref="quality"><i class="fa fa-arrow-circle-right "></i>   Quality & Knack </a></li>
+                                    <li><a ui-sref="strength"><i class="fa fa-arrow-circle-right "></i>   Strengths</a></li>
+                                    <li><a ui-sref="pricelist"><i class="fa fa-arrow-circle-right "></i>   Price List</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="site-map">
+                            <div class="sitemap-menu ">
+                                <h4><i class="fa fa-user "></i>To Translators</h4>
+                                <ul>
+                                    <li><a ui-sref="caution"><i class="fa fa-arrow-circle-right "></i> Caution</a></li>
+                                    <li><a ui-sref="guideTranslator"><i class="fa fa-arrow-circle-right "></i> User Guide </a></li>
+                                    <li><a ui-sref="faqTranslator"><i class="fa fa-arrow-circle-right "></i> FAQ</a></li>
+                                    <li><a ui-sref="translatorReg"><i class="fa fa-arrow-circle-right "></i> Translator Registration</a></li>
+                                    <!--<li><a><i class="fa fa-arrow-circle-right "></i> Translator Log-in</a></li>-->
+                                    <li><a ui-sref="contact"><i class="fa fa-arrow-circle-right "></i> Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 ">
+                        <div class="site-map">
+                            <div class="sitemap-menu ">
+                                <ul>
+                                    <li><a ui-sref="aboutus"><i class="fa fa-arrow-circle-right "></i>  Company Profile</a></li>
+                                    <li><a ui-sref="notice"><i class="fa fa-arrow-circle-right "></i> Notice </a></li>
+                                    <li><a ui-sref="sitemenu"><i class="fa fa-arrow-circle-right "></i>  Site Map</a></li>
+                                    <li><a ui-sref="privacy"><i class="fa fa-arrow-circle-right "></i>   About Privacy Policy </a></li>
+                                    <li><a ui-sref="notation"><i class="fa fa-arrow-circle-right "></i>   Notation on the Act on Specified Commercial Transactions </a></li>
+                                    <li><a ui-sref="terms"><i class="fa fa-arrow-circle-right "></i>   Terms of Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copywrite ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-12 text-center ">
+                        <h5>東京本社 〒105-0013東京都港区浜松町2-1-3 第二森ビル4階 Tel： 03-5733-4264 Fax： 03-3433-3320</h5>
+                        <p>Copyright &copy; by b-cause,Inc. 2003-2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <back-top></back-top>
+
+	<!-- footer-area end -->
+
+
+    <!--script src="assets/js/bootstrap.min.js"></script>-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/active.js"></script>
+</body>
+
+</html>

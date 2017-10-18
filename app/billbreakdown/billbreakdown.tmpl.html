@@ -1,0 +1,67 @@
+<div class="total-content">
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-envelope-o"></i>
+            <h3>Translation fee inquiry</h3>
+        </div>
+        <div class="receive-msg-wrap common-sub-block">
+            <p style="color:#e70f0f; margin:0px;">* Updated on 3rd every month.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Number of completed cases</th>
+                        <th>the amount</th>
+                        <th>Tax withholding</th>
+                        <th>payment amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="receivemsg && receivemsg.length>0" ng-repeat="rec in receivemsg">
+                        <td><a href="" ng-click="details(rec.monthNumber)">{{rec.Period}}</a></td>
+                        <td><a href="" ng-click="details(rec.monthNumber)">{{rec.Task}}</a></td>
+                        <td><a href="">{{rec.PaymentAmount}}</a></td>
+                        <td><a href="">0 Yen</a></td>
+                        <td><a href="">{{rec.PaymentAmount}}</a></td>
+                    </tr>
+                    <tr ng-if="!receivemsg || receivemsg.length<=0">
+                        <td class="text-left" colspan="8">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Order list</h3>
+        </div>
+        <div class="order-breakdown-wrap receive-msg-wrap common-sub-block">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proposal No.</th>
+                        <th>Situation</th>
+                        <th>Contents</th>
+                        <th>Acceptance Date</th>
+                        <th>Delivery Date</th>
+                        <th>Translation Fee</th>
+                    </tr>
+                </thead>
+                <tbody>  
+                    <tr ng-if="breakdowndetails && breakdowndetails.length>0" ng-repeat="rec in breakdowndetails">
+                        <td>{{rec.OrderNo}}</td>  
+                        <td>{{rec.DeliveryLevelName}}</td>   
+                        <td>{{rec.Contents}}</td> 
+                        <td>{{rec.OrderDateString}}</td> 
+                        <td>{{rec.DeliveryDateString}}</td> 
+                        <td>{{rec.PaymentAmount}}</td>                     
+                    </tr>
+                    <tr ng-if="!breakdowndetails || breakdowndetails.length<=0">
+                        <td class="text-left" colspan="8">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

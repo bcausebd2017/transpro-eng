@@ -1,0 +1,351 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Personal Individuals Registration</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form class="form-horizontal" name="customerForm">
+                <div class="spinner" ng-if="!isIndustryLoaded">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <h3>Sections with * need to be entered</h3>
+                <h4>Account</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>E-mail(ID)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p><input type="text" ng-model="vm.model.Email"/><span><input type="submit" value="ID Check"  /></span></p>
+                                <p class="red-text"><input type="text" ng-model="vm.ReEmail"/><span>* Enter again</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>PW</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p class="red-text"><input class="input-pass" type="password" ng-model="vm.model.Password"/><span>* 8 or more characters</span></p>
+                                <p class="red-text"><input class="input-pass" type="password" ng-model="vm.RePass"/><span>* Enter again</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mt30">Your information</h4>
+                <div class="reg-row">
+                    <div class="row" ng-if="vm.regType = 1">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" ng-model="vm.model.Name" /></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" ng-if="vm.regType = 2 || vm.regType = 3">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Company Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" ng-model="vm.model.Name_Global"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Location</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text">
+                                    <select id="location"
+                                            data-ng-model="vm.model.CompanyLocationID"
+                                            ng-options="c.ID as c.Name for c in ::vm.countries">
+                                        <option value="" selected="selected">▼--------------</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Tel Number</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" ng-model="vm.model.TelephoneNo"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> FAX</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" ng-model="vm.model.Fax"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Mobile phone</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" ng-model="vm.model.MobileNo"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Postal code	</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text" ng-model="vm.model.PostalCode"/> <span>Ex)000-0000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Address1</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd80"><input type="text" ng-model="vm.model.Address1"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Address2</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd80"><input type="text" ng-model="vm.model.Address2"/></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+
+                        <div class="col-sm-3 pr5">
+                            
+                            <div class="item-name h3x p3x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Industry (multiple selections possible)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value">
+                               
+                                <div class="industry-check-wrap">
+                                    <div class="row">
+                                        <div class="col-sm-12 remove-padding-left" ng-repeat="industry in vm.classifications" ng-if="!industry.IsOther && industry.itemList.length > 0">
+                                            <h5><i class="fa fa-angle-double-left remove-padding-left"></i> {{industry.Name}} <i class="fa fa-angle-double-right"></i></h5>
+                                            <!--<div class="row" >-->
+                                                <div class="col-sm-6 remove-padding-left" ng-repeat="item in industry.itemList">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" value="item.ID" ng-model="item.IsSelected">{{item.Name}}</label>
+                                                    </div>
+                                                </div>
+
+                                            <!--</div>-->
+
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                               
+                                <h5><i class="fa fa-angle-double-left"></i> Others <i class="fa fa-angle-double-right"></i></h5>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="red-text"><input type="text" /></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h4 class="mt30">Your information</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-4 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Receive campaign mails	</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input type="radio" name="receive-mail" checked="checked"  ng-checked="vm.RecieveEmail" ng-model="vm.RecieveEmail">Receive
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="receive-mail" ng-model="vm.NoRecieveEmail">Do not receive
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-4 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Allow posting transaction results</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input type="radio" name="allow-posting" checked="checked" ng-checked="vm.AllowPostingTransactions" ng-model="vm.AllowPostingTransactions">Allow
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="allow-posting" ng-model="vm.DisAllowPostingTransactions">Do not allow
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-trams text-center">
+                    <h4 class="mt30">Terms of Service</h4>
+                    <textarea name="" id="" cols="30" rows="10">
+                        b-cause,. Inc.(referred as our company) uses this homepage(referred as homepage) to introduce, promote, and gather information for the online translation service "trans-Pro," and only offer it for personal use of all who uses this homepage (referred as user)
+                        By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions.
+                        There may be times that we update the term of use without notification, please be sure to confirm before using our service.
+
+                        【To use our homepage】
+                        This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions.
+
+                        In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required. All terms of registration should be precise and truthful, following the format our company provided and the rules set. Registered ID and password are to be carefully kept by the registrants, and all results of the use of ID and password will fall into the registrant's responsibility.  Users should take responsibility of all information transmitted on this homepage, and deal no damage to our company.  In the case when user causes damage to our company or a third party by using this homepage, or conflicts happened between users or a third party, the user should take full responsibility to solve the problem without causing damage to our company.
+
+                        【About information and disclaimer of this homepage】
+                        Although the information contained on this homepage have been formulated with all due care, our company does not warrant or represent that the information is free from errors or omissions, nor that they are exhaustive. The information may change without notice, changes are periodically added to the information, and our company may make improvements or changes in the information or stop the operation of the homepage at any time.
+                        our company is in no way warrant or responsible for any change or omission of the information, or the damage caused by stopping or temporally stopping the operation of the homepage. This homepage further does not warrant or accept any liability in relation to the quality, operability or accuracy of the Data.
+                        【About stopping the operation of the homepage】
+                        In the case of the following situations, the homepage may stop or omit the registration without notice.
+                        1) Falsehood in registering information
+                        2) Abuse use of ID or password
+                        3) Abuse use of the information using the translation result or any service this homepage provides.
+                        4) Violation of this term of use
+                        5) Other situations which our company considers inappropriate
+                        【About the operation of this homepage】
+                        This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the system, or any form of natural disasters, fire, and breakdown.  our company is in no way warrant or responsible for any damage occurred due to stopping the service.
+                        【Indicated Price】
+                        All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are placed.  In this case, we will put the price listed when orders are actually placed as first priority.  We appreciate your understanding due to the nature of this service.
+                        In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual price will be based on the fixed price (less).  On the contrary, if the price has risen after the order is placed, the actual price will be based on the price before it has risen.
+                        All indicated price for our service are not tax-included.  Please check the order confirmation e-mail for the final service fee.  In the case when the indicated price is not correct, we will immediately resend an e-mail with the correct price indicated. In such case, the final fee will be based on the price notified despite the automatic responding e-mail.  Any discount after the order confirmation e-mail will not be applicable.
+                        【About the establishment time】
+                        The order is established when both sides are confirmed of willing to seal the contract.  Specifically, the order is established after the user requests to make an order through this homepage, and the translator uses the system of this homepage to accept the final request.  Please confirm the following.  After the order is established, the user is expected to agree to the "term of use".
+                        【About revision after the translation is delivered】
+                        If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made.
+                        1. Revision due to changes in original document are to be paid separately.
+                        2. Request for revision after 2 weeks are not applicable.
+                        【About cancelations due to the user's circumstance】
+                        You can cancel any time from when the request is made until the translator accepts the order.
+                        You cannot cancel for any reason after the translator accepts the order.
+                        【About compensation】
+                        Although all service provided by our company are formulated all due care, in the case where the service provided caused damage to the user, our company will compensate the damage. The compensation is limited to the exact order price indicated, and our company will not be warrant to any other responsibility.
+                        【About copyrights and trademarks】
+                        The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks all belongs to our company.  Any copy, alternation, or distribution, sale, release to third party will be prohibited.  All trademarks, logos, service marks shown in this homepage belongs to our company and associated companies.
+                        【About personal information protection】
+                        1. The usage of personal information
+                        In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service.
+                        In other cases when personal information are asked, please confirm
+                        2. Collecting personal information
+                        To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way.
+
+                        3. Personal information management
+                        Personal information will not be shown to a third party unless in the following situations.
+                        (1) With the agreement of the client
+                        (2) In the case where the client cannot be defined unless personal information is shown.
+                        (3) Reasons during consignment in order to make the task smoother.
+                        (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management)
+                        (4) Questions which our company consider appropriate to answer
+                        (5) When petition for paid service or product orders are necessary.
+                        (In this case, we will only exchange personal information with the financial institution.)
+                        (6) When asked to release the information by laws and regulations.
+
+                        【About headhunting of translators】
+                        Headhunting of translators is strictly prohibited.
+                        Any action discovered will result in us taking the appropriate legal actions.
+
+                        【About governing law】
+                        Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws of Japan the Terms of Use shall be governed in accordance with the laws of Japan
+                    </textarea>
+
+                    <div class="item-value">
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" checked="checked">Agree
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams">Disagree
+                        </label>
+                    </div>
+
+                    <input type="submit" value="To registration confirmation" ng-click="register()"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

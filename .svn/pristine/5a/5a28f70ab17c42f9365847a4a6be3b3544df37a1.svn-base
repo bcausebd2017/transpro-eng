@@ -1,0 +1,1997 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Translator Registration</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <h3>Sections with * need to be entered</h3>
+                <h4>Account</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>E-mail address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p>
+                                    <input type="text" /><span><input type="submit" value="ID Check" /></span>
+                                </p>
+                                <p class="red-text">
+                                    <input type="text" /><span>* Enter again</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>PW</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p class="red-text">
+                                    <input type="text" /><span>* 8 or more characters</span>
+                                </p>
+                                <p class="red-text">
+                                    <input type="text" /><span>* Enter again</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt30">Your information</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Last Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>First Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Gender</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label class="radio-inline">
+                                        <input name="reg-trams" checked="checked" type="radio">Male
+                                        <label class="radio-inline">
+                                            <input name="reg-trams" checked="checked" type="radio"> Female
+                                        </label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Birthday</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="">1951</option>
+                                    <option value="">1952</option>
+                                    <option value="">1953</option>
+                                    <option value="">1954</option>
+                                    <option value="">1955</option>
+                                    <option value="">1956</option>
+                                    <option value="">1957</option>
+                                    <option value="">1958</option>
+                                    <option value="">1959</option>
+                                    <option value="">1960</option>
+                                    <option value="">1961</option>
+                                    <option value="">1962</option>
+                                    <option value="">1963</option>
+                                    <option value="">1964</option>
+                                    <option value="">1965</option>
+                                    <option value="">1966</option>
+                                    <option value="">1967</option>
+                                    <option value="">1968</option>
+                                    <option value="">1969</option>
+                                    <option value="">1970</option>
+                                    <option value="">1971</option>
+                                    <option value="">1972</option>
+                                    <option value="">1973</option>
+                                    <option value="">1974</option>
+                                    <option value="">1975</option>
+                                    <option value="">1976</option>
+                                    <option value="">1977</option>
+                                    <option value="">1978</option>
+                                    <option value="">1979</option>
+                                    <option value="">1980</option>
+                                    <option value="">1981</option>
+                                    <option value="">1982</option>
+                                    <option value="">1983</option>
+                                    <option value="">1984</option>
+                                    <option value="">1985</option>
+                                    <option value="">1986</option>
+                                    <option value="">1987</option>
+                                    <option value="">1988</option>
+                                    <option value="">1989</option>
+                                    <option value="">1990</option>
+                                    <option value="">1990</option>
+                                    <option value="">1991</option>
+                                    <option value="">1992</option>
+                                    <option value="">1992</option>
+                                    <option value="">1993</option>
+                                    <option value="">1994</option>
+                                    <option value="">1995</option>
+                                    <option value="">1996</option>
+                                    <option value="">1997</option>
+                                    <option value="">1998</option>
+                                    <option value="">1999</option>
+                                </select>
+                                <label> Year</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                </select>
+                                <label> Month</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="01">01</option>
+                                    <option value="01">02</option>
+                                    <option value="01">03</option>
+                                    <option value="01">04</option>
+                                    <option value="01">05</option>
+                                    <option value="01">06</option>
+                                    <option value="01">07</option>
+                                    <option value="01">08</option>
+                                    <option value="01">09</option>
+                                    <option value="01">10</option>
+                                    <option value="01">11</option>
+                                    <option value="01">12</option>
+                                    <option value="01">13</option>
+                                    <option value="01">14</option>
+                                    <option value="01">15</option>
+                                    <option value="01">16</option>
+                                    <option value="01">17</option>
+                                    <option value="01">18</option>
+                                    <option value="01">19</option>
+                                    <option value="01">20</option>
+                                    <option value="01">21</option>
+                                    <option value="01">22</option>
+                                    <option value="01">23</option>
+                                    <option value="01">24</option>
+                                    <option value="01">25</option>
+                                    <option value="01">26</option>
+                                    <option value="01">27</option>
+                                    <option value="01">28</option>
+                                    <option value="01">29</option>
+                                    <option value="01">30</option>
+                                    <option value="01">31</option>
+                                </select>
+                                <label> Day</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Nationality</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="">Japanese</option>
+                                    <option value="">English</option>
+                                    <option value="">Chinese(Mandarin)</option>
+                                    <option value="">Chinese(Cantonese)</option>
+                                    <option value="">Chinese(Original)</option>
+                                    <option value="">Korean</option>
+                                    <option value="">Italian</option>
+                                    <option value="">Indonesian</option>
+                                    <option value="">Ukrainian</option>
+                                    <option value="">Dutch</option>
+                                    <option value="">Swedish</option>
+                                    <option value="">Spanish(Latinamerica)</option>
+                                    <option value="">Spanish(Spain)</option>
+                                    <option value="">Thai</option>
+                                    <option value="">Tagalog</option>
+                                    <option value="">Czech</option>
+                                    <option value="">German</option>
+                                    <option value="">Turkish</option>
+                                    <option value="">Hungarian</option>
+                                    <option value="">French</option>
+                                    <option value="">Bulgarian</option>
+                                    <option value="">Vietnamese</option>
+                                    <option value="">Hebrew</option>
+                                    <option value="">Polish</option>
+                                    <option value="">Portuguese(Portugal)</option>
+                                    <option value="">Portuguese(Brazilian)</option>
+                                    <option value="">Malay</option>
+                                    <option value="">Rumania</option>
+                                    <option value="">Russian</option>
+                                    <option value="">Japanese</option>
+                                    <option value="">Chinese(Mandarin)</option>
+                                    <option value="">Chinese(Cantonese)</option>
+                                    <option value="">Chinese(Original)</option>
+                                    <option value="">Korean</option>
+                                    <option value="">Italian</option>
+                                    <option value="">Indonesian</option>
+                                    <option value="">Ukrainian</option>
+                                    <option value="">Dutch</option>
+                                    <option value="">Swedish</option>
+                                    <option value="">Spanish(Latinamerica)</option>
+                                    <option value="">Spanish(Spain)</option>
+                                    <option value="">Thai</option>
+                                    <option value="">Tagalog</option>
+                                    <option value="">Czech</option>
+                                    <option value="">German</option>
+                                    <option value="">Turkish</option>
+                                    <option value="">Hungarian</option>
+                                    <option value="">French</option>
+                                    <option value="">Bulgarian</option>
+                                    <option value="">Vietnamese</option>
+                                    <option value="">Hebrew</option>
+                                    <option value="">Polish</option>
+                                    <option value="">Portuguese(Portugal)</option>
+                                    <option value="">Portuguese(Brazilian)</option>
+                                    <option value="">Malay</option>
+                                    <option value="">Rumania</option>
+                                    <option value="">Russian</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Native Language</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option selected="selected" value="000">▼------</option>
+                                    <option value="">Japanese</option>
+                                    <option value="">English</option>
+                                    <option value="">Chinese(Cantonese)</option>
+                                    <option value="">Chinese(Mandarin)</option>
+                                    <option value="">Korean</option>
+                                    <option value="">Icelandic</option>
+                                    <option value="">Irish</option>
+                                    <option value="">Azerbaijani</option>
+                                    <option value="">Akkadian</option>
+                                    <option value="">Assamese</option>
+                                    <option value="">Afghani</option>
+                                    <option value="">Afrikaans</option>
+                                    <option value="">Amharic</option>
+                                    <option value="">Arabic</option>
+                                    <option value="">Alemannic</option>
+                                    <option value="">Aramaic</option>
+                                    <option value="">Algerian</option>
+                                    <option value="">Albanian</option>
+                                    <option value="">Armenian</option>
+                                    <option value="">Yiddish</option>
+                                    <option value="">Italian</option>
+                                    <option value="">Ilokano</option>
+                                    <option value="">Indonesian</option>
+                                    <option value="">Uigur</option>
+                                    <option value="">Welsh</option>
+                                    <option value="">Wolof</option>
+                                    <option value="">Ugandan</option>
+                                    <option value="">Ukrainian</option>
+                                    <option value="">Uzbek</option>
+                                    <option value="">Uldu</option>
+                                    <option value="">Estonian</option>
+                                    <option value="">Esperanto</option>
+                                    <option value="">Ethiopian</option>
+                                    <option value="">Occitan</option>
+                                    <option value="">Dutch</option>
+                                    <option value="">Oriya (India)</option>
+                                    <option value="">Ghanaian</option>
+                                    <option value="">Kazak</option>
+                                    <option value="">Hakka</option>
+                                    <option value="">Kashmiri</option>
+                                    <option value="">Catalonia</option>
+                                    <option value="">Catalan</option>
+                                    <option value="">Kachin</option>
+                                    <option value="">Kapampangan</option>
+                                    <option value="">Kamilaroi</option>
+                                    <option value="">Galician</option>
+                                    <option value="">Kannada(India)</option>
+                                    <option value="">Cambodian</option>
+                                    <option value="">Greek</option>
+                                    <option value="">Ancient Greek</option>
+                                    <option value="">Kirghiz</option>
+                                    <option value="">Kuwaiti</option>
+                                    <option value="">Coorgi(India)</option>
+                                    <option value="">Gujarati</option>
+                                    <option value="">Khmer</option>
+                                    <option value="">Georgian</option>
+                                    <option value="">Kurdish</option>
+                                    <option value="">Croatian</option>
+                                    <option value="">Kroner</option>
+                                    <option value="">Gaelic</option>
+                                    <option value="">Quechua(Bolivia)</option>
+                                    <option value="">Quechua(Cusco)</option>
+                                    <option value="">Xhosa</option>
+                                    <option value="">Coptic</option>
+                                    <option value="">Konkani(India)</option>
+                                    <option value="">Sami</option>
+                                    <option value="">Samo</option>
+                                    <option value="">Sanskrit</option>
+                                    <option value="">Javanese</option>
+                                    <option value="">Syriac</option>
+                                    <option value="">Shanghai</option>
+                                    <option value="">Sinhala</option>
+                                    <option value="">Swedish</option>
+                                    <option value="">Sudanese</option>
+                                    <option value="">Zulu</option>
+                                    <option value="">Spanish(Latinamerica)</option>
+                                    <option value="">Spanish(Spain)</option>
+                                    <option value="">Slovak</option>
+                                    <option value="">Slovene</option>
+                                    <option value="">Swahili</option>
+                                    <option value="">Basa Sunda</option>
+                                    <option value="">Senegal</option>
+                                    <option value="">Cebu</option>
+                                    <option value="">Serbian</option>
+                                    <option value="">Somali</option>
+                                    <option value="">Dzongkha</option>
+                                    <option value="">Thai</option>
+                                    <option value="">Chinese(Original)</option>
+                                    <option value="">Tagalog</option>
+                                    <option value="">Tajik</option>
+                                    <option value="">Tamil</option>
+                                    <option value="">Tarian</option>
+                                    <option value="">Dali</option>
+                                    <option value="">Czech</option>
+                                    <option value="">Korean(North)</option>
+                                    <option value="">Tibetan</option>
+                                    <option value="">Chamorro</option>
+                                    <option value="">Divehi</option>
+                                    <option value="">Igbo</option>
+                                    <option value="">Delta</option>
+                                    <option value="">Telegu</option>
+                                    <option value="">Danish</option>
+                                    <option value="">German</option>
+                                    <option value="">Twi</option>
+                                    <option value="">Turkmen</option>
+                                    <option value="">Dogri(India)</option>
+                                    <option value="">Turkish</option>
+                                    <option value="">Nigerian</option>
+                                    <option value="">Nepalese</option>
+                                    <option value="">Norwegian</option>
+                                    <option value="">Haitian-Creol</option>
+                                    <option value="">Hausa</option>
+                                    <option value="">Pakistani</option>
+                                    <option value="">Pashto</option>
+                                    <option value="">Basque</option>
+                                    <option value="">Papiamento</option>
+                                    <option value="">Khalkha</option>
+                                    <option value="">Palestinian</option>
+                                    <option value="">Hawaiian</option>
+                                    <option value="">Hungarian</option>
+                                    <option value="">Bangladesh</option>
+                                    <option value="">Punjab</option>
+                                    <option value="">Bambara</option>
+                                    <option value="">Visaya</option>
+                                    <option value="">Hindi</option>
+                                    <option value="">Fijian</option>
+                                    <option value="">Finnish</option>
+                                    <option value="">Hmong</option>
+                                    <option value="">Flemish</option>
+                                    <option value="">French</option>
+                                    <option value="">French(Canadian)</option>
+                                    <option value="">Frisian</option>
+                                    <option value="">Bulgarian</option>
+                                    <option value="">Breton</option>
+                                    <option value="">Vietnamese</option>
+                                    <option value="">Hebrew</option>
+                                    <option value="">Belarus</option>
+                                    <option value="">Persian</option>
+                                    <option value="">Berber</option>
+                                    <option value="">Bengali</option>
+                                    <option value="">Polish</option>
+                                    <option value="">Bhojpuri</option>
+                                    <option value="">Bobangi</option>
+                                    <option value="">Boran</option>
+                                    <option value="">Portuguese(Portugal)</option>
+                                    <option value="">Portuguese(Brazilian)</option>
+                                    <option value="">Maori</option>
+                                    <option value="">Macedonian</option>
+                                    <option value="">Magyar</option>
+                                    <option value="">Mayan</option>
+                                    <option value="">Marathi</option>
+                                    <option value="">Malagasy</option>
+                                    <option value="">Mahratti</option>
+                                    <option value="">Malayalam</option>
+                                    <option value="">Maltese</option>
+                                    <option value="">Malay</option>
+                                    <option value="">Mandinka</option>
+                                    <option value="">Myanmar</option>
+                                    <option value="">Mordovian</option>
+                                    <option value="">Mongolian</option>
+                                    <option value="">Jordan</option>
+                                    <option value="">Yoruba</option>
+                                    <option value="">Lao</option>
+                                    <option value="">Latin</option>
+                                    <option value="">Latvian</option>
+                                    <option value="">Lithuanian</option>
+                                    <option value="">Rumania</option>
+                                    <option value="">Luo</option>
+                                    <option value="">Luganda</option>
+                                    <option value="">Rwanda</option>
+                                    <option value="">Lummi</option>
+                                    <option value="">Russian</option>
+                                    <option value="">Walloon</option>
+                                    <option value="">Ashanti</option>
+                                    <option value="">Abkhaz</option>
+                                    <option value="">Ossetian</option>
+                                    <option value="">Australia</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Foreign Language 1 </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option selected="selected" value="000">▼------</option>
+                                    <option value="113">Japanese</option>
+                                    <option value="032">English</option>
+                                    <option value="096">Chinese(Cantonese)</option>
+                                    <option value="097">Chinese(Mandarin)</option>
+                                    <option value="037">Korean</option>
+                                    <option value="001">Icelandic</option>
+                                    <option value="002">Irish</option>
+                                    <option value="003">Azerbaijani</option>
+                                    <option value="004">Akkadian</option>
+                                    <option value="005">Assamese</option>
+                                    <option value="006">Afghani</option>
+                                    <option value="007">Afrikaans</option>
+                                    <option value="008">Amharic</option>
+                                    <option value="009">Arabic</option>
+                                    <option value="010">Alemannic</option>
+                                    <option value="011">Aramaic</option>
+                                    <option value="012">Algerian</option>
+                                    <option value="013">Albanian</option>
+                                    <option value="014">Armenian</option>
+                                    <option value="015">Yiddish</option>
+                                    <option value="016">Italian</option>
+                                    <option value="019">Ilokano</option>
+                                    <option value="020">Indonesian</option>
+                                    <option value="021">Uigur</option>
+                                    <option value="022">Welsh</option>
+                                    <option value="023">Wolof</option>
+                                    <option value="024">Ugandan </option>
+                                    <option value="025">Ukrainian</option>
+                                    <option value="026">Uzbek</option>
+                                    <option value="027">Uldu</option>
+                                    <option value="028">Estonian</option>
+                                    <option value="029">Esperanto</option>
+                                    <option value="030">Ethiopian</option>
+                                    <option value="033">Occitan</option>
+                                    <option value="034">Dutch</option>
+                                    <option value="035">Oriya (India)</option>
+                                    <option value="036">Ghanaian</option>
+                                    <option value="038">Kazak</option>
+                                    <option value="039">Hakka</option>
+                                    <option value="040">Kashmiri</option>
+                                    <option value="041">Catalonia</option>
+                                    <option value="042">Catalan</option>
+                                    <option value="043">Kachin</option>
+                                    <option value="044">Kapampangan</option>
+                                    <option value="045">Kamilaroi</option>
+                                    <option value="046">Galician</option>
+                                    <option value="047">Kannada(India)</option>
+                                    <option value="048">Cambodian</option>
+                                    <option value="049">Greek</option>
+                                    <option value="050">Ancient Greek</option>
+                                    <option value="051">Kirghiz</option>
+                                    <option value="052">Kuwaiti </option>
+                                    <option value="053">Coorgi(India)</option>
+                                    <option value="054">Gujarati</option>
+                                    <option value="055">Khmer</option>
+                                    <option value="056">Georgian</option>
+                                    <option value="057">Kurdish</option>
+                                    <option value="058">Croatian</option>
+                                    <option value="059">Kroner</option>
+                                    <option value="060">Gaelic</option>
+                                    <option value="061">Quechua(Bolivia)</option>
+                                    <option value="062">Quechua(Cusco)</option>
+                                    <option value="063">Xhosa</option>
+                                    <option value="064">Coptic</option>
+                                    <option value="065">Konkani(India)</option>
+                                    <option value="066">Sami</option>
+                                    <option value="067">Samo</option>
+                                    <option value="068">Sanskrit</option>
+                                    <option value="069">Javanese</option>
+                                    <option value="070">Syriac</option>
+                                    <option value="071">Shanghai</option>
+                                    <option value="072">Sinhala</option>
+                                    <option value="073">Swedish</option>
+                                    <option value="074">Sudanese</option>
+                                    <option value="075">Zulu</option>
+                                    <option value="076">Spanish(Latinamerica)</option>
+                                    <option value="077">Spanish(Spain)</option>
+                                    <option value="078">Slovak</option>
+                                    <option value="079">Slovene</option>
+                                    <option value="080">Swahili</option>
+                                    <option value="081">Basa Sunda</option>
+                                    <option value="082">Senegal</option>
+                                    <option value="083">Cebu</option>
+                                    <option value="084">Serbian</option>
+                                    <option value="085">Somali</option>
+                                    <option value="086">Dzongkha</option>
+                                    <option value="087">Thai</option>
+                                    <option value="088">Chinese(Original)</option>
+                                    <option value="089">Tagalog</option>
+                                    <option value="090">Tajik</option>
+                                    <option value="091">Tamil</option>
+                                    <option value="092">Tarian</option>
+                                    <option value="093">Dali</option>
+                                    <option value="094">Czech</option>
+                                    <option value="095">Korean(North)</option>
+                                    <option value="098">Tibetan</option>
+                                    <option value="099">Chamorro</option>
+                                    <option value="100">Divehi</option>
+                                    <option value="101">Igbo</option>
+                                    <option value="102">Delta </option>
+                                    <option value="103">Telegu</option>
+                                    <option value="104">Danish</option>
+                                    <option value="105">German</option>
+                                    <option value="106">Twi</option>
+                                    <option value="107">Turkmen</option>
+                                    <option value="108">Dogri(India)</option>
+                                    <option value="109">Turkish</option>
+                                    <option value="110">Nigerian</option>
+                                    <option value="111">Nepalese</option>
+                                    <option value="112">Norwegian</option>
+                                    <option value="114">Haitian-Creol</option>
+                                    <option value="115">Hausa</option>
+                                    <option value="116">Pakistani</option>
+                                    <option value="117">Pashto</option>
+                                    <option value="118">Basque</option>
+                                    <option value="119">Papiamento</option>
+                                    <option value="120">Khalkha</option>
+                                    <option value="121">Palestinian</option>
+                                    <option value="122">Hawaiian</option>
+                                    <option value="123">Hungarian</option>
+                                    <option value="124">Bangladesh</option>
+                                    <option value="125">Punjab</option>
+                                    <option value="126">Bambara</option>
+                                    <option value="127">Visaya</option>
+                                    <option value="128">Hindi</option>
+                                    <option value="129">Fijian</option>
+                                    <option value="130">Finnish</option>
+                                    <option value="131">Hmong</option>
+                                    <option value="132">Flemish</option>
+                                    <option value="133">French</option>
+                                    <option value="134">French(Canadian)</option>
+                                    <option value="135">Frisian</option>
+                                    <option value="136">Bulgarian</option>
+                                    <option value="137">Breton</option>
+                                    <option value="138">Vietnamese</option>
+                                    <option value="139">Hebrew</option>
+                                    <option value="140">Belarus</option>
+                                    <option value="141">Persian</option>
+                                    <option value="142">Berber</option>
+                                    <option value="143">Bengali</option>
+                                    <option value="144">Polish</option>
+                                    <option value="145">Bhojpuri</option>
+                                    <option value="146">Bobangi</option>
+                                    <option value="147">Boran</option>
+                                    <option value="148">Portuguese(Portugal)</option>
+                                    <option value="149">Portuguese(Brazilian)</option>
+                                    <option value="150">Maori</option>
+                                    <option value="151">Macedonian</option>
+                                    <option value="152">Magyar</option>
+                                    <option value="153">Mayan</option>
+                                    <option value="154">Marathi</option>
+                                    <option value="155">Malagasy</option>
+                                    <option value="156">Mahratti</option>
+                                    <option value="157">Malayalam</option>
+                                    <option value="158">Maltese</option>
+                                    <option value="159">Malay</option>
+                                    <option value="160">Mandinka</option>
+                                    <option value="161">Myanmar</option>
+                                    <option value="162">Mordovian</option>
+                                    <option value="163">Mongolian</option>
+                                    <option value="164">Jordan</option>
+                                    <option value="165">Yoruba</option>
+                                    <option value="166">Lao</option>
+                                    <option value="167">Latin</option>
+                                    <option value="168">Latvian</option>
+                                    <option value="169">Lithuanian</option>
+                                    <option value="170">Rumania</option>
+                                    <option value="171">Luo</option>
+                                    <option value="172">Luganda</option>
+                                    <option value="173">Rwanda</option>
+                                    <option value="174">Lummi</option>
+                                    <option value="175">Russian</option>
+                                    <option value="176">Walloon</option>
+                                    <option value="177">Ashanti</option>
+                                    <option value="180">Abkhaz</option>
+                                    <option value="181">Ossetian</option>
+                                    <option value="182">Australia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Level </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="0">▼------</option>
+                                    <option value="1">Native Level</option>
+                                    <option value="2">Business Level</option>
+                                    <option value="3">Daily Conversation Level</option>
+                                    <option value="4">Amateur Level</option>
+                                    <option value="5">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Foreign Language 2</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option selected="selected" value="000">▼------</option>
+                                    <option value="113">Japanese</option>
+                                    <option value="032">English</option>
+                                    <option value="096">Chinese(Cantonese)</option>
+                                    <option value="097">Chinese(Mandarin)</option>
+                                    <option value="037">Korean</option>
+                                    <option value="001">Icelandic</option>
+                                    <option value="002">Irish</option>
+                                    <option value="003">Azerbaijani</option>
+                                    <option value="004">Akkadian</option>
+                                    <option value="005">Assamese</option>
+                                    <option value="006">Afghani</option>
+                                    <option value="007">Afrikaans</option>
+                                    <option value="008">Amharic</option>
+                                    <option value="009">Arabic</option>
+                                    <option value="010">Alemannic</option>
+                                    <option value="011">Aramaic</option>
+                                    <option value="012">Algerian</option>
+                                    <option value="013">Albanian</option>
+                                    <option value="014">Armenian</option>
+                                    <option value="015">Yiddish</option>
+                                    <option value="016">Italian</option>
+                                    <option value="019">Ilokano</option>
+                                    <option value="020">Indonesian</option>
+                                    <option value="021">Uigur</option>
+                                    <option value="022">Welsh</option>
+                                    <option value="023">Wolof</option>
+                                    <option value="024">Ugandan </option>
+                                    <option value="025">Ukrainian</option>
+                                    <option value="026">Uzbek</option>
+                                    <option value="027">Uldu</option>
+                                    <option value="028">Estonian</option>
+                                    <option value="029">Esperanto</option>
+                                    <option value="030">Ethiopian</option>
+                                    <option value="033">Occitan</option>
+                                    <option value="034">Dutch</option>
+                                    <option value="035">Oriya (India)</option>
+                                    <option value="036">Ghanaian</option>
+                                    <option value="038">Kazak</option>
+                                    <option value="039">Hakka</option>
+                                    <option value="040">Kashmiri</option>
+                                    <option value="041">Catalonia</option>
+                                    <option value="042">Catalan</option>
+                                    <option value="043">Kachin</option>
+                                    <option value="044">Kapampangan</option>
+                                    <option value="045">Kamilaroi</option>
+                                    <option value="046">Galician</option>
+                                    <option value="047">Kannada(India)</option>
+                                    <option value="048">Cambodian</option>
+                                    <option value="049">Greek</option>
+                                    <option value="050">Ancient Greek</option>
+                                    <option value="051">Kirghiz</option>
+                                    <option value="052">Kuwaiti </option>
+                                    <option value="053">Coorgi(India)</option>
+                                    <option value="054">Gujarati</option>
+                                    <option value="055">Khmer</option>
+                                    <option value="056">Georgian</option>
+                                    <option value="057">Kurdish</option>
+                                    <option value="058">Croatian</option>
+                                    <option value="059">Kroner</option>
+                                    <option value="060">Gaelic</option>
+                                    <option value="061">Quechua(Bolivia)</option>
+                                    <option value="062">Quechua(Cusco)</option>
+                                    <option value="063">Xhosa</option>
+                                    <option value="064">Coptic</option>
+                                    <option value="065">Konkani(India)</option>
+                                    <option value="066">Sami</option>
+                                    <option value="067">Samo</option>
+                                    <option value="068">Sanskrit</option>
+                                    <option value="069">Javanese</option>
+                                    <option value="070">Syriac</option>
+                                    <option value="071">Shanghai</option>
+                                    <option value="072">Sinhala</option>
+                                    <option value="073">Swedish</option>
+                                    <option value="074">Sudanese</option>
+                                    <option value="075">Zulu</option>
+                                    <option value="076">Spanish(Latinamerica)</option>
+                                    <option value="077">Spanish(Spain)</option>
+                                    <option value="078">Slovak</option>
+                                    <option value="079">Slovene</option>
+                                    <option value="080">Swahili</option>
+                                    <option value="081">Basa Sunda</option>
+                                    <option value="082">Senegal</option>
+                                    <option value="083">Cebu</option>
+                                    <option value="084">Serbian</option>
+                                    <option value="085">Somali</option>
+                                    <option value="086">Dzongkha</option>
+                                    <option value="087">Thai</option>
+                                    <option value="088">Chinese(Original)</option>
+                                    <option value="089">Tagalog</option>
+                                    <option value="090">Tajik</option>
+                                    <option value="091">Tamil</option>
+                                    <option value="092">Tarian</option>
+                                    <option value="093">Dali</option>
+                                    <option value="094">Czech</option>
+                                    <option value="095">Korean(North)</option>
+                                    <option value="098">Tibetan</option>
+                                    <option value="099">Chamorro</option>
+                                    <option value="100">Divehi</option>
+                                    <option value="101">Igbo</option>
+                                    <option value="102">Delta </option>
+                                    <option value="103">Telegu</option>
+                                    <option value="104">Danish</option>
+                                    <option value="105">German</option>
+                                    <option value="106">Twi</option>
+                                    <option value="107">Turkmen</option>
+                                    <option value="108">Dogri(India)</option>
+                                    <option value="109">Turkish</option>
+                                    <option value="110">Nigerian</option>
+                                    <option value="111">Nepalese</option>
+                                    <option value="112">Norwegian</option>
+                                    <option value="114">Haitian-Creol</option>
+                                    <option value="115">Hausa</option>
+                                    <option value="116">Pakistani</option>
+                                    <option value="117">Pashto</option>
+                                    <option value="118">Basque</option>
+                                    <option value="119">Papiamento</option>
+                                    <option value="120">Khalkha</option>
+                                    <option value="121">Palestinian</option>
+                                    <option value="122">Hawaiian</option>
+                                    <option value="123">Hungarian</option>
+                                    <option value="124">Bangladesh</option>
+                                    <option value="125">Punjab</option>
+                                    <option value="126">Bambara</option>
+                                    <option value="127">Visaya</option>
+                                    <option value="128">Hindi</option>
+                                    <option value="129">Fijian</option>
+                                    <option value="130">Finnish</option>
+                                    <option value="131">Hmong</option>
+                                    <option value="132">Flemish</option>
+                                    <option value="133">French</option>
+                                    <option value="134">French(Canadian)</option>
+                                    <option value="135">Frisian</option>
+                                    <option value="136">Bulgarian</option>
+                                    <option value="137">Breton</option>
+                                    <option value="138">Vietnamese</option>
+                                    <option value="139">Hebrew</option>
+                                    <option value="140">Belarus</option>
+                                    <option value="141">Persian</option>
+                                    <option value="142">Berber</option>
+                                    <option value="143">Bengali</option>
+                                    <option value="144">Polish</option>
+                                    <option value="145">Bhojpuri</option>
+                                    <option value="146">Bobangi</option>
+                                    <option value="147">Boran</option>
+                                    <option value="148">Portuguese(Portugal)</option>
+                                    <option value="149">Portuguese(Brazilian)</option>
+                                    <option value="150">Maori</option>
+                                    <option value="151">Macedonian</option>
+                                    <option value="152">Magyar</option>
+                                    <option value="153">Mayan</option>
+                                    <option value="154">Marathi</option>
+                                    <option value="155">Malagasy</option>
+                                    <option value="156">Mahratti</option>
+                                    <option value="157">Malayalam</option>
+                                    <option value="158">Maltese</option>
+                                    <option value="159">Malay</option>
+                                    <option value="160">Mandinka</option>
+                                    <option value="161">Myanmar</option>
+                                    <option value="162">Mordovian</option>
+                                    <option value="163">Mongolian</option>
+                                    <option value="164">Jordan</option>
+                                    <option value="165">Yoruba</option>
+                                    <option value="166">Lao</option>
+                                    <option value="167">Latin</option>
+                                    <option value="168">Latvian</option>
+                                    <option value="169">Lithuanian</option>
+                                    <option value="170">Rumania</option>
+                                    <option value="171">Luo</option>
+                                    <option value="172">Luganda</option>
+                                    <option value="173">Rwanda</option>
+                                    <option value="174">Lummi</option>
+                                    <option value="175">Russian</option>
+                                    <option value="176">Walloon</option>
+                                    <option value="177">Ashanti</option>
+                                    <option value="180">Abkhaz</option>
+                                    <option value="181">Ossetian</option>
+                                    <option value="182">Australia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Level </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="0">▼------</option>
+                                    <option value="1">Native Level</option>
+                                    <option value="2">Business Level</option>
+                                    <option value="3">Daily Conversation Level</option>
+                                    <option value="4">Amateur Level</option>
+                                    <option value="5">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Foreign Language 3 </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option selected="selected" value="000">▼------</option>
+                                    <option value="113">Japanese</option>
+                                    <option value="032">English</option>
+                                    <option value="096">Chinese(Cantonese)</option>
+                                    <option value="097">Chinese(Mandarin)</option>
+                                    <option value="037">Korean</option>
+                                    <option value="001">Icelandic</option>
+                                    <option value="002">Irish</option>
+                                    <option value="003">Azerbaijani</option>
+                                    <option value="004">Akkadian</option>
+                                    <option value="005">Assamese</option>
+                                    <option value="006">Afghani</option>
+                                    <option value="007">Afrikaans</option>
+                                    <option value="008">Amharic</option>
+                                    <option value="009">Arabic</option>
+                                    <option value="010">Alemannic</option>
+                                    <option value="011">Aramaic</option>
+                                    <option value="012">Algerian</option>
+                                    <option value="013">Albanian</option>
+                                    <option value="014">Armenian</option>
+                                    <option value="015">Yiddish</option>
+                                    <option value="016">Italian</option>
+                                    <option value="019">Ilokano</option>
+                                    <option value="020">Indonesian</option>
+                                    <option value="021">Uigur</option>
+                                    <option value="022">Welsh</option>
+                                    <option value="023">Wolof</option>
+                                    <option value="024">Ugandan </option>
+                                    <option value="025">Ukrainian</option>
+                                    <option value="026">Uzbek</option>
+                                    <option value="027">Uldu</option>
+                                    <option value="028">Estonian</option>
+                                    <option value="029">Esperanto</option>
+                                    <option value="030">Ethiopian</option>
+                                    <option value="033">Occitan</option>
+                                    <option value="034">Dutch</option>
+                                    <option value="035">Oriya (India)</option>
+                                    <option value="036">Ghanaian</option>
+                                    <option value="038">Kazak</option>
+                                    <option value="039">Hakka</option>
+                                    <option value="040">Kashmiri</option>
+                                    <option value="041">Catalonia</option>
+                                    <option value="042">Catalan</option>
+                                    <option value="043">Kachin</option>
+                                    <option value="044">Kapampangan</option>
+                                    <option value="045">Kamilaroi</option>
+                                    <option value="046">Galician</option>
+                                    <option value="047">Kannada(India)</option>
+                                    <option value="048">Cambodian</option>
+                                    <option value="049">Greek</option>
+                                    <option value="050">Ancient Greek</option>
+                                    <option value="051">Kirghiz</option>
+                                    <option value="052">Kuwaiti </option>
+                                    <option value="053">Coorgi(India)</option>
+                                    <option value="054">Gujarati</option>
+                                    <option value="055">Khmer</option>
+                                    <option value="056">Georgian</option>
+                                    <option value="057">Kurdish</option>
+                                    <option value="058">Croatian</option>
+                                    <option value="059">Kroner</option>
+                                    <option value="060">Gaelic</option>
+                                    <option value="061">Quechua(Bolivia)</option>
+                                    <option value="062">Quechua(Cusco)</option>
+                                    <option value="063">Xhosa</option>
+                                    <option value="064">Coptic</option>
+                                    <option value="065">Konkani(India)</option>
+                                    <option value="066">Sami</option>
+                                    <option value="067">Samo</option>
+                                    <option value="068">Sanskrit</option>
+                                    <option value="069">Javanese</option>
+                                    <option value="070">Syriac</option>
+                                    <option value="071">Shanghai</option>
+                                    <option value="072">Sinhala</option>
+                                    <option value="073">Swedish</option>
+                                    <option value="074">Sudanese</option>
+                                    <option value="075">Zulu</option>
+                                    <option value="076">Spanish(Latinamerica)</option>
+                                    <option value="077">Spanish(Spain)</option>
+                                    <option value="078">Slovak</option>
+                                    <option value="079">Slovene</option>
+                                    <option value="080">Swahili</option>
+                                    <option value="081">Basa Sunda</option>
+                                    <option value="082">Senegal</option>
+                                    <option value="083">Cebu</option>
+                                    <option value="084">Serbian</option>
+                                    <option value="085">Somali</option>
+                                    <option value="086">Dzongkha</option>
+                                    <option value="087">Thai</option>
+                                    <option value="088">Chinese(Original)</option>
+                                    <option value="089">Tagalog</option>
+                                    <option value="090">Tajik</option>
+                                    <option value="091">Tamil</option>
+                                    <option value="092">Tarian</option>
+                                    <option value="093">Dali</option>
+                                    <option value="094">Czech</option>
+                                    <option value="095">Korean(North)</option>
+                                    <option value="098">Tibetan</option>
+                                    <option value="099">Chamorro</option>
+                                    <option value="100">Divehi</option>
+                                    <option value="101">Igbo</option>
+                                    <option value="102">Delta </option>
+                                    <option value="103">Telegu</option>
+                                    <option value="104">Danish</option>
+                                    <option value="105">German</option>
+                                    <option value="106">Twi</option>
+                                    <option value="107">Turkmen</option>
+                                    <option value="108">Dogri(India)</option>
+                                    <option value="109">Turkish</option>
+                                    <option value="110">Nigerian</option>
+                                    <option value="111">Nepalese</option>
+                                    <option value="112">Norwegian</option>
+                                    <option value="114">Haitian-Creol</option>
+                                    <option value="115">Hausa</option>
+                                    <option value="116">Pakistani</option>
+                                    <option value="117">Pashto</option>
+                                    <option value="118">Basque</option>
+                                    <option value="119">Papiamento</option>
+                                    <option value="120">Khalkha</option>
+                                    <option value="121">Palestinian</option>
+                                    <option value="122">Hawaiian</option>
+                                    <option value="123">Hungarian</option>
+                                    <option value="124">Bangladesh</option>
+                                    <option value="125">Punjab</option>
+                                    <option value="126">Bambara</option>
+                                    <option value="127">Visaya</option>
+                                    <option value="128">Hindi</option>
+                                    <option value="129">Fijian</option>
+                                    <option value="130">Finnish</option>
+                                    <option value="131">Hmong</option>
+                                    <option value="132">Flemish</option>
+                                    <option value="133">French</option>
+                                    <option value="134">French(Canadian)</option>
+                                    <option value="135">Frisian</option>
+                                    <option value="136">Bulgarian</option>
+                                    <option value="137">Breton</option>
+                                    <option value="138">Vietnamese</option>
+                                    <option value="139">Hebrew</option>
+                                    <option value="140">Belarus</option>
+                                    <option value="141">Persian</option>
+                                    <option value="142">Berber</option>
+                                    <option value="143">Bengali</option>
+                                    <option value="144">Polish</option>
+                                    <option value="145">Bhojpuri</option>
+                                    <option value="146">Bobangi</option>
+                                    <option value="147">Boran</option>
+                                    <option value="148">Portuguese(Portugal)</option>
+                                    <option value="149">Portuguese(Brazilian)</option>
+                                    <option value="150">Maori</option>
+                                    <option value="151">Macedonian</option>
+                                    <option value="152">Magyar</option>
+                                    <option value="153">Mayan</option>
+                                    <option value="154">Marathi</option>
+                                    <option value="155">Malagasy</option>
+                                    <option value="156">Mahratti</option>
+                                    <option value="157">Malayalam</option>
+                                    <option value="158">Maltese</option>
+                                    <option value="159">Malay</option>
+                                    <option value="160">Mandinka</option>
+                                    <option value="161">Myanmar</option>
+                                    <option value="162">Mordovian</option>
+                                    <option value="163">Mongolian</option>
+                                    <option value="164">Jordan</option>
+                                    <option value="165">Yoruba</option>
+                                    <option value="166">Lao</option>
+                                    <option value="167">Latin</option>
+                                    <option value="168">Latvian</option>
+                                    <option value="169">Lithuanian</option>
+                                    <option value="170">Rumania</option>
+                                    <option value="171">Luo</option>
+                                    <option value="172">Luganda</option>
+                                    <option value="173">Rwanda</option>
+                                    <option value="174">Lummi</option>
+                                    <option value="175">Russian</option>
+                                    <option value="176">Walloon</option>
+                                    <option value="177">Ashanti</option>
+                                    <option value="180">Abkhaz</option>
+                                    <option value="181">Ossetian</option>
+                                    <option value="182">Australia</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Level </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="0">▼------</option>
+                                    <option value="1">Native Level</option>
+                                    <option value="2">Business Level</option>
+                                    <option value="3">Daily Conversation Level</option>
+                                    <option value="4">Amateur Level</option>
+                                    <option value="5">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name hi4x pi4x">
+                                <p><i class="fa fa-arrow-circle-right"></i> *Current state</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value">
+                                <div class="check-wrap2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Between
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Regular employee, contract employee
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Part-time
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Miscellaneous status
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Student
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Temporary employee
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Free Lance
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Postal Code</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" /><span>* Ex)000-0000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="radio" />
+                                    <label> Country/Region </label>
+                                    <select>
+                                        <option selected="selected" value="000">▼------</option>
+                                        <option value="">Abkhazia</option>
+                                        <option value="">Afghanistan</option>
+                                        <option value="">Albania</option>
+                                        <option value="">Algeria</option>
+                                        <option value="">Andorra</option>
+                                        <option value="">Angola</option>
+                                        <option value="">Antigua and Barbuda</option>
+                                        <option value="">Argentine Republic</option>
+                                        <option value="">Armenia</option>
+                                        <option value="">Australia</option>
+                                        <option value="">Austria</option>
+                                        <option value="">Azerbaijan</option>
+                                        <option value="">Bahamas</option>
+                                        <option value="">Bahrain</option>
+                                        <option value="">Bangladesh</option>
+                                        <option value="">Barbados</option>
+                                        <option value="">Belarus</option>
+                                        <option value="">Belgium</option>
+                                        <option value="">Belize</option>
+                                        <option value="">Benin</option>
+                                        <option value="">Bhutan</option>
+                                        <option value="">Bolivia</option>
+                                        <option value="">Bosnia Herzegovina</option>
+                                        <option value="">Botswana</option>
+                                        <option value="">Brazil</option>
+                                        <option value="">Brunei Darussalam</option>
+                                        <option value="">Bulgaria</option>
+                                        <option value="">Burkina Faso</option>
+                                        <option value="">Burundi</option>
+                                        <option value="">Cambodia</option>
+                                        <option value="">Cameroon</option>
+                                        <option value="">Canada</option>
+                                        <option value="">Cape Verde</option>
+                                        <option value="">Central Africa</option>
+                                        <option value="">Chad</option>
+                                        <option value="">Chile</option>
+                                        <option value="">China</option>
+                                        <option value="">Colombia</option>
+                                        <option value="">Commonwealth of Dominica </option>
+                                        <option value="">Comoros</option>
+                                        <option value="">Congo</option>
+                                        <option value="">Costa Rica</option>
+                                        <option value="">Cote d&#39;Ivoire</option>
+                                        <option value="">Croatia</option>
+                                        <option value="">Cuba</option>
+                                        <option value="">Cyprus</option>
+                                        <option value="">Czech Republic</option>
+                                        <option value="">Denmark</option>
+                                        <option value="">Djibouti</option>
+                                        <option value="">Dominican Republic</option>
+                                        <option value="">Ecuador</option>
+                                        <option value="">Egypt</option>
+                                        <option value="">El Salvador</option>
+                                        <option value="">Eritrea</option>
+                                        <option value="">Estonia</option>
+                                        <option value="">Ethiopia</option>
+                                        <option value="">Fiji Islands</option>
+                                        <option value="">Finland</option>
+                                        <option value="">France</option>
+                                        <option value="">Gabon</option>
+                                        <option value="">Gambia</option>
+                                        <option value="">Georgia</option>
+                                        <option value="">Germany</option>
+                                        <option value="">Ghana</option>
+                                        <option value="">Grenada</option>
+                                        <option value="">Guatemala</option>
+                                        <option value="">Guinea</option>
+                                        <option value="">Guyana</option>
+                                        <option value="">Haiti</option>
+                                        <option value="">Hellenic</option>
+                                        <option value="">Honduras</option>
+                                        <option value="">Hongkong</option>
+                                        <option value="">Hungary</option>
+                                        <option value="">Iceland</option>
+                                        <option value="">India</option>
+                                        <option value="">Indonesia</option>
+                                        <option value="">Iran</option>
+                                        <option value="">Iraq</option>
+                                        <option value="">Ireland</option>
+                                        <option value="">Israel</option>
+                                        <option value="">Italy</option>
+                                        <option value="">Jamaica</option>
+                                        <option value="">Japan</option>
+                                        <option value="">Jordan</option>
+                                        <option value="">Kazakhstan</option>
+                                        <option value="">Kenya</option>
+                                        <option value="">Kiribati</option>
+                                        <option value="">Korea</option>
+                                        <option value="">Kosovo</option>
+                                        <option value="">Kuwait</option>
+                                        <option value="">Kyrgyzstan</option>
+                                        <option value="">Lao</option>
+                                        <option value="">Latvia</option>
+                                        <option value="">Lebanon</option>
+                                        <option value="">Lesotho</option>
+                                        <option value="">Liberia</option>
+                                        <option value="">Libya</option>
+                                        <option value="">Liechtenstein</option>
+                                        <option value="">Lithuania</option>
+                                        <option value="">Luxembourg</option>
+                                        <option value="">Macedonia</option>
+                                        <option value="">Madagascar</option>
+                                        <option value="">Malawi</option>
+                                        <option value="">Malaysia</option>
+                                        <option value="">Maldives</option>
+                                        <option value="">Mali</option>
+                                        <option value="">Malta</option>
+                                        <option value="">Marshall Islands</option>
+                                        <option value="">Mauritania</option>
+                                        <option value="">Mauritius</option>
+                                        <option value="">Mexico</option>
+                                        <option value="">Micronesia</option>
+                                        <option value="">Moldova</option>
+                                        <option value="">Monaco</option>
+                                        <option value="">Mongolia</option>
+                                        <option value="">Montenegro</option>
+                                        <option value="">Morocco</option>
+                                        <option value="">Mozambique</option>
+                                        <option value="">Myanmar</option>
+                                        <option value="">Namibia</option>
+                                        <option value="">Nauru</option>
+                                        <option value="">Nepal</option>
+                                        <option value="">Netherlands</option>
+                                        <option value="">New Zealand</option>
+                                        <option value="">Nicaragua</option>
+                                        <option value="">Niger</option>
+                                        <option value="">Nigeria</option>
+                                        <option value="">North Korea</option>
+                                        <option value="">Norway</option>
+                                        <option value="">Oman</option>
+                                        <option value="">Pakistan</option>
+                                        <option value="">Palau</option>
+                                        <option value="">Panama</option>
+                                        <option value="">Papua New Guinea</option>
+                                        <option value="">Paraguay</option>
+                                        <option value="">Peru</option>
+                                        <option value="">Philippines</option>
+                                        <option value="">Poland</option>
+                                        <option value="">Portugal</option>
+                                        <option value="">Qatar</option>
+                                        <option value="">Romania</option>
+                                        <option value="">Russia</option>
+                                        <option value="">Rwanda</option>
+                                        <option value="">Saint Lucia</option>
+                                        <option value="">Samoa</option>
+                                        <option value="">San Marino</option>
+                                        <option value="">SaoTome&amp;Principe</option>
+                                        <option value="">Saudi Arabia</option>
+                                        <option value="">Senegal</option>
+                                        <option value="">Serbia</option>
+                                        <option value="">Seychelles</option>
+                                        <option value="">Sierra Leone</option>
+                                        <option value="">Singapore</option>
+                                        <option value="">Slovakia</option>
+                                        <option value="">Slovenia</option>
+                                        <option value="">Solomon Islands</option>
+                                        <option value="">Somalia</option>
+                                        <option value="">South Africa</option>
+                                        <option value="">South Ossetia</option>
+                                        <option value="">Spain</option>
+                                        <option value="">Sri Lanka</option>
+                                        <option value="">Sudan</option>
+                                        <option value="">Suriname</option>
+                                        <option value="">Swaziland</option>
+                                        <option value="">Sweden</option>
+                                        <option value="">Swiss</option>
+                                        <option value="">Syria</option>
+                                        <option value="">Taiwan</option>
+                                        <option value="">Tajikistan</option>
+                                        <option value="">Tanzania</option>
+                                        <option value="">Thailand</option>
+                                        <option value="">Timor-Leste</option>
+                                        <option value="">Togo</option>
+                                        <option value="">Tonga</option>
+                                        <option value="">Trinidad and Tobago</option>
+                                        <option value="">Tunisia</option>
+                                        <option value="">Turkey</option>
+                                        <option value="">Turkmenistan</option>
+                                        <option value="">Tuvalu</option>
+                                        <option value="">Uganda</option>
+                                        <option value="">Ukraine</option>
+                                        <option value="">United Arab Emirates</option>
+                                        <option value="">United Kingdom</option>
+                                        <option value="">United States of America</option>
+                                        <option value="">Uruguay</option>
+                                        <option value="">Uzbekistan</option>
+                                        <option value="">Vanuatu</option>
+                                        <option value="">Vatican City</option>
+                                        <option value="">Venezuela</option>
+                                        <option value="">Viet Nam</option>
+                                        <option value="">Yemen</option>
+                                        <option value="">Zambia</option>
+                                        <option value="">Zimbabwe</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> City</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Street</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Room number and the building name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h3x p3x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Professional and specialty</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value">
+                                <div class="industry-check-wrap">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Contract & legal documents
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Video picture, movie, drama, and entertainment
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Finance, stock, and insurance
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Normal documents (letters, etc.)
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Politics, economy, and society
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Family register copy & all kinds of certificate
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Medicalcare, Medicine and Pharmacy
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Manuals, catalogs, and pamphlet
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">IT & computer
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Commercial, IR, marketing, and media
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Business documents
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Electric, Electronic, and semiconductor
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Thesis, scholarship, research & development
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Energy, nuclear power, and environment
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Manufacturing technology & Science technology
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Chemistry & Bio technology
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Machinery, automobile, manufacturing, and industry
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Construction & public works
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Special permission & Intellectual property
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> Miscellaneous documents
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name hi4x pi4x">
+                                <p><i class="fa fa-arrow-circle-right"></i>Software you can use</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value">
+                                <div class="check-wrap2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> WORD
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> ACCESS
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> PHOTOSHOP
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> TRADOS
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> EXCEL
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> DREAM WEAVER
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value=""> ILLUSTRATOR
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">QuarkXPress
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">IT & computer
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Commercial, IR, marketing, and media
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Educational background1 (highest)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label> Degree </label>
+                                    <select>
+                                        <option selected="selected" value="00">▼------</option>
+                                        <option value="01">High School Graduate</option>
+                                        <option value="02">Vocational School Student</option>
+                                        <option value="03">Vocational School Graduate</option>
+                                        <option value="04">Junior College Student</option>
+                                        <option value="05">Junior College Graduate</option>
+                                        <option value="06">College Student</option>
+                                        <option value="07">College Graduate</option>
+                                        <option value="08">Graduate School Masters (current)</option>
+                                        <option value="09">Graduate School Masters (holder)</option>
+                                        <option value="10">Graduate School PhD (current)</option>
+                                        <option value="11">Graduate School PhD (holder)</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Educational background1 (highest)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label> Degree </label>
+                                    <select>
+                                        <option selected="selected" value="00">▼------</option>
+                                        <option value="01">High School Graduate</option>
+                                        <option value="02">Vocational School Student</option>
+                                        <option value="03">Vocational School Graduate</option>
+                                        <option value="04">Junior College Student</option>
+                                        <option value="05">Junior College Graduate</option>
+                                        <option value="06">College Student</option>
+                                        <option value="07">College Graduate</option>
+                                        <option value="08">Graduate School Masters (current)</option>
+                                        <option value="09">Graduate School Masters (holder)</option>
+                                        <option value="10">Graduate School PhD (current)</option>
+                                        <option value="11">Graduate School PhD (holder)</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Educational background1 (highest)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label> Degree </label>
+                                    <select>
+                                        <option selected="selected" value="00">▼------</option>
+                                        <option value="01">High School Graduate</option>
+                                        <option value="02">Vocational School Student</option>
+                                        <option value="03">Vocational School Graduate</option>
+                                        <option value="04">Junior College Student</option>
+                                        <option value="05">Junior College Graduate</option>
+                                        <option value="06">College Student</option>
+                                        <option value="07">College Graduate</option>
+                                        <option value="08">Graduate School Masters (current)</option>
+                                        <option value="09">Graduate School Masters (holder)</option>
+                                        <option value="10">Graduate School PhD (current)</option>
+                                        <option value="11">Graduate School PhD (holder)</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h4x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> The main career</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p>Please enter your past jobs which you think will appeal to the clients</p>
+                                <p>English</p>
+                                <p class="red-text">
+                                    <input type="text" placeholder="Please type in English" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h4x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Self-PR</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p>Please enter your past jobs which you think will appeal to the clients</p>
+                                <p>English</p>
+                                <p class="red-text">
+                                    <input type="text" placeholder="Please type in English" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Tel No</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Mobile Phone No</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Cell text address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt30">Account information</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name of Financial institution</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Branch name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account type</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account number</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-trams text-center">
+                    <h4 class="mt30">Terms of Service</h4>
+                    <textarea name="" id="" cols="30" rows="10">
+                        株式会社 ビーコス(referred as our company) uses this homepage(referred as homepage) to introduce, promote, and gather information for the online translation service "trans-Pro," and only offer it for personal use of all who uses this homepage (referred as user) By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. There may be times that we update the term of use without notification, please be sure to confirm before using our service. 【To use our homepage】 This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required. All terms of registration should be precise and truthful, following the format our company provided and the rules set. Registered ID and password are to be carefully kept by the registrants, and all results of the use of ID and password will fall into the registrant's responsibility. Users should take responsibility of all information transmitted on this homepage, and deal no damage to our company. In the case when user causes damage to our company or a third party by using this homepage, or conflicts happened between users or a third party, the user should take full responsibility to solve the problem without causing damage to our company. 【About information and disclaimer of this homepage】 Although the information contained on this homepage have been formulated with all due care, our company does not warrant or represent that the information is free from errors or omissions, nor that they are exhaustive. The information may change without notice, changes are periodically added to the information, and our company may make improvements or changes in the information or stop the operation of the homepage at any time. our company is in no way warrant or responsible for any change or omission of the information, or the damage caused by stopping or temporally stopping the operation of the homepage. This homepage further does not warrant or accept any liability in relation to the quality, operability or accuracy of the Data. 【About stopping the operation of the homepage】 In the case of the following situations, the homepage may stop or omit the registration without notice. 1) Falsehood in registering information 2) Abuse use of ID or password 3) Abuse use of the information using the translation result or any service this homepage provides. 4) Violation of this term of use 5) Other situations which our company considers inappropriate 【About the operation of this homepage】 This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the system, or any form of natural disasters, fire, and breakdown. our company is in no way warrant or responsible for any damage occurred due to stopping the service. 【Indicated Price】 All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are placed. In this case, we will put the price listed when orders are actually placed as first priority. We appreciate your understanding due to the nature of this service. In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual price will be based on the fixed price (less). On the contrary, if the price has risen after the order is placed, the actual price will be based on the price before it has risen. All indicated price for our service are not tax-included. Please check the order confirmation e-mail for the final service fee. In the case when the indicated price is not correct, we will immediately resend an e-mail with the correct price indicated. In such case, the final fee will be based on the price notified despite the automatic responding e-mail. Any discount after the order confirmation e-mail will not be applicable. 【About the establishment time】 The order is established when both sides are confirmed of willing to seal the contract. Specifically, the order is established after the user requests to make an order through this homepage, and the translator uses the system of this homepage to accept the final request. Please confirm the following. After the order is established, the user is expected to agree to the "term of use". 【About revision after the translation is delivered】 If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made. 1. Revision due to changes in original document are to be paid separately. 2. Request for revision after 2 weeks are not applicable. 【About cancelations due to the user's circumstance】 You can cancel any time from when the request is made until the translator accepts the order. You cannot cancel for any reason after the translator accepts the order. 【About compensation】 Although all service provided by our company are formulated all due care, in the case where the service provided caused damage to the user, our company will compensate the damage. The compensation is limited to the exact order price indicated, and our company will not be warrant to any other responsibility. 【About copyrights and trademarks】 The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks all belongs to our company. Any copy, alternation, or distribution, sale, release to third party will be prohibited. All trademarks, logos, service marks shown in this homepage belongs to our company and associated companies. 【About personal information protection】 1. The usage of personal information In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service. In other cases when personal information are asked, please confirm 2. Collecting personal information To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way. 3. Personal information management Personal information will not be shown to a third party unless in the following situations. (1) With the agreement of the client (2) In the case where the client cannot be defined unless personal information is shown. (3) Reasons during consignment in order to make the task smoother. (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management) (4) Questions which our company consider appropriate to answer (5) When petition for paid service or product orders are necessary. (In this case, we will only exchange personal information with the financial institution.) (6) When asked to release the information by laws and regulations. 【About headhunting of translators】 Headhunting of translators is strictly prohibited. Any action discovered will result in us taking the appropriate legal actions. 【About governing law】 Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws of Japan the Terms of Use shall be governed in accordance with the laws of Japan
+                    </textarea>
+                    <div class="item-value">
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" checked="checked">Agree
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams">Disagree
+                        </label>
+                    </div>
+                    <input type="submit" value="To registration confirmation" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

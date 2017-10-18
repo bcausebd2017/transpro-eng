@@ -1,0 +1,179 @@
+<div class="total-content">
+        <!-- my-page-area-area start -->
+        <div class="my-page-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>About translators' penalty</h3>
+            </div>
+            <div class="order-breakdown-wrap receive-msg-wrap common-sub-block penalty" style="overflow-x:auto;">
+                <p>Penalty is imposed if there are mistakes in the translation. Although mistakes tend to occur due to translation being a human task, it is the translator's responsibility to reduce mistakes to the least before delivering it to the customer.</p>
+                <h3 class="txt2">The penalties for translation mistakes are listed as below.</h3>
+                <p>Translators with 3 penalty points will be put into a black list, and cannot receive or accept any order. Translators on the black list will not be put off the list until they improve and earn enough creditability as a translator, judge by b-cause.</p>
+                <br>
+                <a href="#" style="font-weight: bold">＞＞Download a PDF file listing trans-Pro penalties</a>
+                <br><br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                            <th>Item</th>
+                            <th>Contents</th>
+                            <th>Response</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>Abandonment
+                                <br> (no contact)</td>
+                            <td>In case you walk off your job without notifying after you have accepted it</td>
+                            <td>You will not get paid.
+                                <br> In case a customer's claim for compensation arises, you might be requested to pay within a reasonable scope.<strong style="color: orangered">Forced withdrawal.</strong></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>Abandonment
+                                <br> (no contact)</td>
+                            <td>In case you walk off the job and notify the trans-Pro office when there is still enough time till delivery </td>
+                            <td>You will not get paid.
+                                <br> <strong style="color:#3e74a2">Prohibition of acceptance</strong> of jobs for a certain period of time or <strong style="color:#3e74a2">forced withdrawal. </strong></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>Late delivery
+                                <br>(no contact) </td>
+                            <td>In case you does not meet the deadline without notifying </td>
+                            <td>You will not get paid.
+                                <br><strong style="color:#3e74a2">Prohibition</strong> of acceptance of jobs for a certain period of time or <strong style="color:#3e74a2">forced withdrawal.</strong></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Late delivery
+                                <br>level 3
+                                <br> (with contact)</td>
+                            <td>In the case of translation does not meet the deadline and it gets beyond the bounds of customer permissibility </td>
+                            <td>fee may be reduced or zero.
+                                <br> Access to the site will be <strong style="color:#3e74a2">denied</strong> for a certain period of time.</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Late delivery
+                                <br> level 2
+                                <br>(with contact)</td>
+                            <td>In the case of translation does not meet the deadline but it gets within the bounds of customer permissibility </td>
+                            <td>Fee might be reduced.
+                                <br>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td> Late delivery
+                                <br>level 1
+                                <br>(with contact) </td>
+                            <td>You did not meet the deadline but other translator made it </td>
+                            <td>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>Mistake level 5</td>
+                            <td><a href="">Translation</a> does not make sense at all </td>
+                            <td>You will not get paid.
+                                <br>In case a customer's claim for compensation arises, you might be requested to pay within a reasonable scope.<strong style="color: orangered">Forced withdrawal.</strong></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>4</td>
+                            <td>Mistake level 4 </td>
+                            <td>Meaning is clearly different from the original draft </td>
+                            <td>You will not get paid. <strong style="color:#3e74a2">Prohibition of acceptance</strong> of jobs for a certain period of time or <strong style="color:#3e74a2">forced withdrawal.</strong></td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td> Mistake level 3</td>
+                            <td>Word-level misinterpretation exist occasionally </td>
+                            <td>Fee might be reduced.
+                                <br>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>Mistake level 2</td>
+                            <td><a href="#">Translation</a> is too direct and done word by word and unnatural as a whole </td>
+                            <td>Fee might be reduced.
+                                <br>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mistake level 1</td>
+                            <td><a href="">Translation</a> does not follow the specification </td>
+                            <td>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>3</td>
+                            <td>Untranslation level 3 </td>
+                            <td>10% or more is not translated</td>
+                            <td>fee may be reduced or zero.
+                                <br> Access to the site will be <strong style="color:#3e74a2">denied</strong> for a certain period of time.</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td >2</td>
+                            <td >Untranslation
+                                <br> level 2 </td>
+                            <td>5 to 10% is not translated </td>
+                            <td>Fee might be reduced.
+                                <br>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td >1</td>
+                            <td >Untranslation
+                                <br> level 1 </td>
+                            <td>Less than 1% is not translated </td>
+                            <td>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong> to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td >0</td>
+                            <td >Usage of
+                                <br>individual names </td>
+                            <td>Usage of individual names </td>
+                            <td>Accumulated minus points may <strong style="color:#3e74a2">deny your access</strong>to the site for a certain period of time. </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <!-- inquiry button section -->
+                <div class="individuals-reg-area">
+                    <div class="flex-container">
+                        <div class="button-holder text-center">
+                            <a class="btn btn-primary"> Inguiry from here </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- my-page-area end -->
+    </div>

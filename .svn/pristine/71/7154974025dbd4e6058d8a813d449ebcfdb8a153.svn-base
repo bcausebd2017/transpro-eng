@@ -1,0 +1,28 @@
+﻿
+
+
+angular.module("app").directive('loadFile', ['alertMsg', function (alertMsg) {
+
+    var validFormats = ['pdf', 'doc', 'docx', 'ppt', 'pptx'];
+
+    return {
+        require: "ngModel",
+        restrict: 'A',
+        link: function ($scope, el, attrs, ngModel) {
+            el.bind('change', function (event) {
+                var isMultiple = attrs.multiple;
+                var FileList = event.target.files;
+                var File = FileList[0];
+                var Extension = File.name.substring(File.name.lastIndexOf('.') + 1).toLowerCase();
+                if (validFormats.indexOf(Extension) !== -1) {
+                    ngModel.$setViewValue(FileList);
+                    $scope.$apply();
+                }
+                else {
+                    el.val(null);
+                    alertMsg.show('error', Extension.toUpperCase() + " files are not allowed for upload. \Please select a valid file type");
+                }
+            });
+        }
+    };
+}]);

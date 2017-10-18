@@ -1,0 +1,80 @@
+﻿<div class="total-content">
+    <!-- User Guide Links start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>User Guide</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <p>
+                Translations fee will differ due to the customers' evaluation.
+                <br> A translator's evaluation will be decided by the average points of the points earned by each order.
+                <br> A translator with high evaluation would be pay more.
+                <br> Also, translators with high evaluation will be posted on the top list of translator search engine, thus making them easier to be appointed.
+            </p>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>  What is the ★ mark of translator evaluation?</h3>
+                    <p>
+                        Evaluate the translators from a 1~5 scale.
+                        <br>
+                        <br>Please evaluate the 4 categories below with a scale from 1~5.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>1. How are the choices and unification of terms?</li>
+                        <li>2. How does the writing style fit with the document?</li>
+                        <li>3. Please evaluate the total quality.</li>
+                        <li>4. How did the translator handle the order? (meeting the deadline, exchanging messages, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>  Concepts of evaluation method. </h3>
+                    <p>
+                        Total points earned by each order ÷ total orders ＝ average evaluation.
+                        <br>
+                    </p>
+                    <span>
+                        <p>EX)</p>
+                    </span>
+                    <ul class="list-unstyled">
+                        <li>Order A 5 pt.</li>
+                        <li>Order B 4 pt.</li>
+                        <li>Order C 3 pt.</li>
+                        <li>Order D 2 pt.</li>
+                        <li>Order E 1 pt.</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>Average 3.4/5 pt ＝ Translator's evaluation. </li>
+                        <li>★ marks will be posted. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> To receive good translation evaluation </h3>
+                    <ul class="list-unstyled">
+                        <li> ・Confirm all cautions of the customer's request.</li>
+                        <li> ・Understand the overall picture before starting the translation.</li>
+                        <li> ・Always ask questions if you do not understand the content.</li>
+                        <li> ・Always double check before you deliver (cautions/specific terms, etc.)</li>
+                        <li> ・When necessary, leave comments on specific areas for further interaction.</li>
+                        <li> ・Always deliver by the deadline (*Immediately notify the customer and office if you are going to be late.)</li>
+                        <li> ・Follow up carefully and politely after delivery (answering customer questions and so)</li>
+                    </ul>
+                    <strong><a href="#">→ Cautions for Trans-Pro.</a></strong>
+                </div>              
+            </div>
+            <div class="gotopText">
+                <a href="">Contact Us</a><span>|</span><a href="">Estimate</a><span>|</span><a href="">TOP</a>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <p class="">You will be paid more if you are appointed by the client.<br> Translators with more appointment are listed in the top list. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Guide Links end -->
+</div>

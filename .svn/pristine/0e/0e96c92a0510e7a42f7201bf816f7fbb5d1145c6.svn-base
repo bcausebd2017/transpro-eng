@@ -1,0 +1,64 @@
+﻿(function () {
+    "use strict";
+    function transproService($q, $http, API_URL, $httpParamSerializer, APP_SETTINGS) {
+        var vm = this;     
+        //get hotel specifications
+        function getLanguages() {
+            return $http({
+                url: API_URL.URL + "language/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode}
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getCountries() {
+            return $http({
+                url: API_URL.URL + "country/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getTranslationFileds() {
+            return $http({
+                url: API_URL.URL + "estSpecializedFields/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getIndustryClassifications() {
+            return $http({
+                url: API_URL.URL + "companyindustryclassification/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        var service =
+            {
+                getLanguages: getLanguages,
+                getCountries:getCountries,
+                getTranslationFileds: getTranslationFileds,
+                getIndustryClassifications: getIndustryClassifications
+            }
+        return service;
+    }
+
+    angular
+    .module("app")
+    .service("transproService", transproService);
+    transproService.$inject = ["$q", "$http", "API_URL", "$httpParamSerializer","APP_SETTINGS"]
+})();

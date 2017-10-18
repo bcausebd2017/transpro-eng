@@ -1,0 +1,73 @@
+<div class="total-content">
+    <!-- my-page-area-area start -->
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Order breakdown</h3>
+        </div>
+       
+        <div class="order-breakdown-wrap common-sub-block ">
+			<div class="tbl_translation_pro receive-msg-wrap" style="overflow-x:auto;">
+                <div class="spinner" ng-if="!orders">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+				<table>
+					<thead>
+						<tr>
+							<th>Request Dates</th>
+							<th>Status</th>
+							<th>Plan</th>
+							<th>Original language</th>
+							<th>Target language</th>
+							<th>Field</th>
+							<th>Translator</th>
+							<th>Fee</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-if="orders && orders.length>0" ng-repeat="ord in filterOrders">
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.OrderDate | utcToLocal:'dd/MM/yyyy'}}</a></td>
+							<td>
+								<a ng-class="{'trans-operation':ord.OrderStatus == OrderStatus.InProgress,
+																   'trans-complete':ord.OrderStatus == OrderStatus.OrderCompleted,
+																   'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation,
+																   'trans-cancel':ord.OrderStatus == OrderStatus.Cancel}"
+								   ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.OrderStatusName}}</a>
+							</td>
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.DeliveryPlan}}</a></td>
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.SourceLanguage}}</a></td>
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.TargetLanguage}}</a></td>
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.TranslationFieldName}}</a></td>
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.TranslatorNo}}</a></td>
+							<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.CurrencySymbol}}{{ord.PaymentAmount}}</a></td>
+						</tr>
+
+						<tr ng-if="!orders || orders.length<=0">
+							<td class="text-left" colspan="8">Data not available</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <paging class="small"
+                            ng-if="orders.length > numPerPageOrders"
+                            page="1"
+                            page-size="numPerPageOrders"
+                            total="totalOrders"
+                            show-prev-next="true"
+                            show-first-last="true"
+                            paging-action="doCtrlPagingOrders( page )"
+                            text-next-class="glyphicon glyphicon-chevron-right"
+                            text-prev-class="glyphicon glyphicon-chevron-left"
+                            text-first-class="glyphicon glyphicon-backward"
+                            text-last-class="glyphicon glyphicon-forward">
+                    </paging>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my-page-area end -->
+</div>

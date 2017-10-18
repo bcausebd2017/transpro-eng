@@ -1,0 +1,269 @@
+﻿<div class="total-content">
+                <!-- Application-page-area- start -->
+              <div class="my-page-area">
+                   <div class="site-title">
+                      <i class="fa fa-th-large"></i>
+                      <h3>Process from application to completion of translation</h3>
+                   </div>
+                   <div class="individuals-reg-wrap text-center bgapp border-top0 ">
+                      <div class="padd20">
+                         <div class="row ">
+                            <div class="col-sm-4">
+                               <div class="appstyle1">
+                                  <h4><i class="fa fa-laptop fa"></i> Online Translation</h4>
+                               </div>
+                            </div>
+                            <div class="col-sm-4">
+                               <div class="appstyle2">
+                                  <h4> <i class="fa fa-hand-o-up"></i> Appointed Translation</h4>
+                               </div>
+                            </div>
+                            <div class="col-sm-4">
+                               <div class="appstyle3">
+                                  <h4> <i class="fa fa-check-circle-o"></i> Native Check</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><span>1</span> Check translation fee and delivery time through automatic estimate form</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstylesml" style="border:2px solid #A7C5D6">
+                                  <h4><span>2</span> choose translators of your priority</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <img src="assets/img/icon2.png">
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><strong>Membership registration (free)</strong></h4>
+                                  <h4><span>3</span> After registration, send your member information through the email address registered</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><strong>Input payment information</strong></h4>
+                                  <h4><span>4</span> trans-pro can only pay by credit cards(Paypal).</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><span>5</span>  <strong>Log in</strong> with a registered ID and password <br>Orders can be made after logging in.</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><span>6</span> Order after you reconfirm translation fee and delivery time<br> Estimates, statements of delivery, and receipts are issuable.</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="appstylesml"  style="border:2px solid #A7C5D6">
+                               <h4><span>7</span> choose up to <strong><br>5 translators</strong> of your priority.</h4>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <img src="assets/img/icon2.png">
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><strong>Payment process</strong></h4>
+                                  <h4>the play Button</h4>
+                                  <h4> <span>8</span> Enter credit card information after confirming the fee through the pay screen.</h4>
+                                  <h4><strong>Click the transmit button</strong></h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-8">
+                               <div class="appstyle">
+                                  <h4><strong> <span>9</span> Notify a translator</strong></h4>
+                                  <h4> translation request mail will be transmit automatically</h4>
+                                  <h4> right after the translation application is made</h4>
+                               </div>
+                            </div>
+                            <div class="col-sm-4">
+                               <div class="appstylesmlX">
+                                  <h4><strong> Notify a checker</strong></h4>
+                                  <h4> Translation request mail will be transmit request maill will be transmit automatically</h4>
+                                  <h4> right after the native check application made</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><strong>Notify registration</strong></h4>
+                                  <h4> <span>10.</span> Choose the translator in charge from the translator appointed</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <img src="assets/img/icon2.png">
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                                  <h4><span>11</span> Translator/checker that can handle the translation by the delivery time will accept the order.</h4>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon1.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon2.png">
+                            </div>
+                            <div class="col-sm-4">
+                               <img src="assets/img/icon3.png">
+                            </div>
+                         </div>
+                         <div class="row">
+                            <div class="col-sm-12">
+                               <div class="appstyle">
+                               <h4><strong>Deliver</strong></h4>
+                               <h4> The translator will upload the document to the server from and exclusive page after the translation is finished</h4>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                         <div class="col-sm-4">
+                            <img src="assets/img/icon1.png">
+                         </div>
+                         <div class="col-sm-4">
+                            <img src="assets/img/icon2.png">
+                         </div>
+                         <div class="col-sm-4">
+                            <img src="assets/img/icon3.png">
+                         </div>
+                      </div>
+                      <div class="row">
+                         <div class="col-sm-12">
+                            <div class="appstyle">
+                               <h4><strong>Receiving the document</strong></h4>
+                               <h4>please log in to the exclusive page to receive the document (Download)</h4>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="row">
+                         <div class="col-sm-4">
+                            <img src="assets/img/icon1.png">
+                         </div>
+                         <div class="col-sm-4">
+                            <img src="assets/img/icon2.png">
+                         </div>
+                         <div class="col-sm-4">
+                            <img src="assets/img/icon3.png">
+                         </div>
+                      </div>
+                      <div class="row">
+                         <div class="col-sm-12">
+                            <div class="appstyle">
+                               <h4>Translator evaluation</h4>
+                               <h4> Evaluate the translators and get <strong>10% discount next time</strong></h4>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                
+             </div>
+             
+    <div class="gotopBox">
+        <a ui-sref="contact" href="#/contact">Contact Us</a><span>|</span><a ui-sref="/" href="#/">Estimate</a><span>|</span><a ui-sref="/" href="#/">TOP</a>
+    </div>
+             <!-- End-page-area end -->
+</div>

@@ -1,0 +1,189 @@
+﻿<div class="total-content">
+    <div>
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>What is customer evaluation?</h3>
+        </div>
+        <div class="flex-container">
+            <div class="box">
+                <p class="Text">
+                    At Trans-Pro., we are seeking five step evalution of four items from all the customers. The average score will be shown with the number of
+                    <br> ★. The score below is the result of automatic analysis of all the scores in the last 12 months.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Customer evaluation</h3>
+        </div>
+        <div class="individuals-reg-wrap">           
+            <div class="flex-container">
+                <div class="box">
+                    <p class="textRight orange">* One year statistics since 2016/08/21</p>
+                    <table>
+                        <tr>
+                            <th width="20%">Score</th>
+                            <th width="20%">4.5～5.0</th>
+                            <th width="20%">4.0～4.4</th>
+                            <th width="20%">3.5～3.9</th>
+                            <th width="20%">Below 3.5</th>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>Ratio</th>
+                            <th>89%</th>
+                            <th>75%</th>
+                            <th>80%</th>
+                            <th>50%</th>
+                        </tr>
+                    </table>
+                    <br>
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th>Evaluation</th>
+                                <th>Customer</th>
+                                <th>Translator</th>
+                                <th>Service Name</th>
+                                <th>Comments</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>I like your translation, thank you so much. (2016/02/01)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>Thank you for the good translation. I am very satisfied with your work. (2016/01/27)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>Thank you for your quick response, appreciate it. (2016/01/21)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>The end is the translation in time, it was no problem on the contents. Thank you. (2015/11/12)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>I like your translation, thank you so much. (2016/02/01)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>I like your translation, thank you so much. (2016/02/01)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>I like your translation, thank you so much. (2016/02/01)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>I like your translation, thank you so much. (2016/02/01)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <div style="margin-top:2px;">
+                                        <span class="rating">
+                                            <span class="rating" style="background-position: 0px -17px;
+                                                    width: 100.00%;"><span class="value-title" title="5.0"></span></span>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td>300018</td>
+                                <td>300018</td>
+                                <td>Japanese→English Appointed translation Commercial, IR, marketing, and med</td>
+                                <td>I like your translation, thank you so much. (2016/02/01)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

@@ -1,0 +1,1114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="assets/img/fevicon.png">
+	
+    <title></title>
+
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<!-- header-top-area start -->
+	<div class="header-top-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="top-left">
+						<p>
+                            <span>
+                                Cloud type online translation by native speakers of {{languageName}}.
+                                   <strong>24,764</strong> or more translators and more than <strong>10,000</strong> corporate customers.
+                            </span>
+                        </p>
+					</div>
+				</div>
+				<div class="col-sm-5 text-right">
+					<div class="top-right">
+						<ul class="login-area">
+							<li ng-if="CurrentUser.IsAuthenticated" ng-click="getUserById()"><a href="">Modify info</a></li>
+							<li ng-if="!CurrentUser.IsAuthenticated"  ng-click="open()"><a href="">Registration/Login</a></li>
+                            <li ng-if="CurrentUser.IsAuthenticated">
+                                <!--<a ng-if="!CurrentUser.IsAuthenticated" href=""  ng-click="open()">Login</a>-->
+                                <a  href="" ng-click="logout()">Log out</a>
+                            </li>
+							<li><a ui-sref="aboutus">About us</a></li>
+						</ul>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header-top-area end -->
+	
+	
+	
+	<!-- mobile-menu-area start -->
+	<div class="mobile-menu-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8">
+                        <div class="mobile_logo">
+                            <a href=""><img src="/assets/img/logo_transpro.png" alt=""></a>
+                        </div>
+                </div>
+				<div class="col-xs-4">
+                    <div class="responsive-menu-wrap"></div>				
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- mobile-menu-area end -->
+	
+	
+	
+	<!-- tab-menu-area start -->
+	<div class="tab-menu-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="tab-menu">
+						<ul id="navigation">
+							<li ng-click="goHome()"><a ui-sref="/">HOME</a></li>
+							<li><a ui-sref="userguide">User Guide</a></li>
+							<li><a ui-sref="application">Application</a></li>
+							<li><a ui-sref="faq">FAQ</a></li>
+                            <li><a href="">Evaluation <i class="fa fa-caret-down"></i></a>
+                                <ul class="tab_dropdown">
+                                    <li><a ui-sref="transevaluation">Translation Evaluation Method</a></li>
+                                    <li><a ui-sref="evaluation">Customer Evaluation</a></li>
+                                </ul>
+                            </li>
+                            <li><a ui-sref="quality">Quality & Knack</a></li>
+                            <li><a ui-sref="strength">Strengths</a></li>
+                            <li><a ui-sref="translator">Search Translators</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- tab-menu-area end -->
+	
+	
+	
+	<!-- main-menu-area start -->
+    <div class="main-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-menu">
+                        <ul>
+                            <li ng-click="goHome()">
+                                <a ui-sref="/">
+                                    <div class="menu-item">
+                                        <p>HOME</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="userguide">
+                                    <div class="menu-item">
+                                        <p>User Guide</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="application">
+                                    <div class="menu-item">
+                                        <p>Application</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="faq">
+                                    <div class="menu-item">
+                                        <p>FAQ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="pricelist">
+                                    <div class="menu-item">
+                                        <p>Price List</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="transevaluation">
+                                    <div class="menu-item">
+                                        <p>Translation Evaluation Method</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="evaluation">
+                                    <div class="menu-item">
+                                        <p>Customer Evaluation</p>
+                                    </div>
+                                </a>
+                            </li>                           
+                            <li>
+                                <a ui-sref="quality">
+                                    <div class="menu-item">
+                                        <p>Quality & Knack</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="strength">
+                                    <div class="menu-item">
+                                        <p>Strengths</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a ui-sref="translator">
+                                    <div class="menu-item">
+                                        <p>Search Translators</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- main-menu-area end -->
+	
+	
+	
+	<!-- slider-area start -->
+    <div  ng-class="{'slider-login-area':CurrentUser}" class="slider-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="single-slider" ng-class="{'single-slider-login':CurrentUser}">
+                        <div class="row" >
+                            <div class="col-sm-6">
+                                    <div class="slider_logo">
+                                      <a ui-sref="/"><img src="/assets/img/logo_transpro.png" alt=""></a>
+                                    </div>
+                                </div>
+                            <div class="col-sm-6" ng-show="!CurrentUser || !CurrentUser.IsAuthenticated">
+                                <div class="text-right p7x">
+                                    <select id="selectLanguage"
+                                            data-ng-model="selectLanguage" ng-change="selectLangChanged(selectLanguage)"
+                                            ng-options="lang.ID as lang.Name for lang in ::languages">
+                                        <option value="" selected="selected">Select target Language</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row"  ng-if="!CurrentUser">
+                            <div class="col-md-3 col-sm-6 pr0">
+                                <div class="sldm1 slidebox1" ui-sref="onlineTranslation">
+                                    <p class="pmt">Cloud-based 24-Hour</p>
+                                    <h4>Online Translation</h4>
+                                </div>
+							</div>	
+
+                            <div class="col-md-3 slidebox2 col-sm-6 pr0">
+                                <div class="sldm1" ui-sref="appointedTranslation">
+                                    <p> Choose a translator Ask translation to the translator I asked before</p>
+                                    <h4>Appointed Translation</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="sldm1 slidebox3" ui-sref="nativeCheck">
+                                    <p class="pmt">Higher quality with multiple checks</p>
+                                    <h4>Native Check</h4>
+                                </div>
+                            </div>
+							<div class="col-md-3 col-sm-6 pl0">
+								<div class="sldm1 slidebox4" ui-sref="translatorCoordinator">
+									<p>Precise translation of difficult contents through detailed consultation</p>
+									<h4>Translator+Coordinator</h4>
+								</div>
+							</div>								
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- slider-area end -->	
+	
+	
+	
+	<!-- slider after login start -->
+    <!--<div ng-if="CurrentUser" class="slider-login-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="single-slider-login">
+                        <div class="row" >
+                            <div class="col-sm-6">
+                                    <div class="slider_logo">
+                                      <a ui-sref="/"><img src="/assets/img/logo_transpro.png" alt=""></a>
+                                    </div>
+                                </div>
+                            <div class="col-sm-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+	<!-- slider after login end -->
+	
+	
+	
+	<!-- main-content-area start -->
+	<div class="main-content-area">
+		<div class="container">            
+            <div class="row">
+			
+			
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <div class="row">
+                            <div class="col-md-12  col-sm-6" ng-if="CurrentUser.IsAuthenticated">
+                                <div class="my-page-sidebar">
+                                    <div class="my-page-logout">
+                                        <div class="cltd">
+                                        <p ng-if="CurrentUser.UserType == UserType.Customer">Client No：{{CurrentUser.RegistrationID}}</p>
+                                        <p ng-if="CurrentUser.UserType == UserType.Translator">Translator No：{{CurrentUser.RegistrationID}}</p>
+                                        <p>{{CurrentUser.Name}}</p>
+                                        <!--<p>テストアカウント</p>-->
+                                        <div class="logout-btn">
+                                            <a class="btn btn-primary" ng-click="logout()">Logout</a>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="logout-menu">
+                                        <ul>
+                                            <li class="active" ng-if="CurrentUser.UserType == UserType.Customer"><a ui-sref="mypage"> MY PAGE</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="mypageTranslator"> MY PAGE</a></li>
+                                            <li><a ui-sref="receivemessage">Received message</a></li>
+                                            <li><a ui-sref="sentmessage">Sent message</a></li>
+                                            <li><a ui-sref="orderbreakdown">Order breakdown</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Customer"><a ui-sref="billbreakdown"> Bill breakdown</a></li>
+                                            <!-- <li><a ui-sref="billbreakdown"><i class="fa fa-angle-double-right"></i> Bill breakdown</a></li> -->
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="orderAppointed"> Orders Appointed</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="listOfOrders"> List of orders that can be translated</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="translationFee"> Translation fee inquiry</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="logout-menu"  >
+                                        <ul>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="userguideTranslator"> User Guide</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="caution"> Cautions for trans-Pro.</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="guideTranslator"> User Guide</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="penalty"> Translators' penalty</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="faqTranslator"> FAQ</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="terms"> Terms of use for translators</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="contact"> Contact Us</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Customer"><a ui-sref="contact"> Past appointed translators</a></li>
+                                            <li ng-if="CurrentUser.UserType == UserType.Customer"><a ui-sref="contact"> Past relied translators</a></li>
+                                            <li  ng-if="CurrentUser.UserType == UserType.Customer"><a ui-sref="contact"> My favourite translators</a></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <div class="logout-menu">
+                                        <ul>
+                                            <li ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="tranDetailProfile({no:CurrentUser.RegistrationID})"> My Profile</a></li>
+                                            <li ng-click="getUserById()"><a href=""> Rearrange registered information</a></li>
+                                            <li ng-click="getImageById()"  ng-if="CurrentUser.UserType == UserType.Translator"><a href=""> Change Profile Photo</a></li>                                         
+                                            <li  ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="changePassword"> Change Password</a></li>
+                                            <li  ng-if="CurrentUser.UserType == UserType.Translator"><a ui-sref="withdrawal"> Withdrawal from membership</a></li>
+                                            <li><a ui-sref="receivingMails"> Setting up for receiving mails</a></li>
+                                            <li><a ui-sref="reportErrors"> Report errors of webisite</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <!--<div class="add-box3">
+                                    <p>Please feel free to contact us</p>
+                                    <div class="bx3">
+                                        <h2><span class="glyphicon glyphicon-phone-alt"></span>  00-0000-0000</h2>
+                                        <p>* Business Hours 9:00 am to 6:00 pm, except Sat, Sun, holidays</p>
+                                        <div class="inq" ui-sref="contact">
+                                                <button type="button" value="Inquiry from here" class=""><i class="fa fa-envelope"></i>  Inquiry from here</button>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <div class="add-box1">
+                                    <a ui-sref="discount">
+                                        <div class="row">
+                                            <h2>10% off<br>
+                                            your first order</h2>
+                                            <p>Evaluate a translator &rarr; 10% off from the next time project </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="add-box2" ui-sref="pricelist">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/pricelist.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p1">
+                                            <h2>Price List</h2>
+                                            <p>Check Price list</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO" >
+                                        </div>
+                                </div>
+                                <div class="add-box2" ui-sref="translatorCoordinator">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/estimate.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p">
+                                            <h2>Estimate Inquiry</h2>
+                                            <p>Ask a coordinator for an estimate here right away</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO" >
+                                        </div>
+                                </div>
+                                <div class="add-box2"ui-sref="/">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/online.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p">
+                                            <h2>Online Estimate </h2>
+                                            <p>You can check the estimate here right away!</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO"  >
+                                        </div>
+                                </div>
+                                <div class="add-box2"  ui-sref="contact">
+                                        <div class="col-sm-3 pd0">
+                                            <center><img src="assets/img/contact.png" alt="" /></center>
+                                        </div>
+                                        <div class="col-sm-7 pd0 bl1p">
+                                            <h2>Contact Us </h2>
+                                            <p>Please feel free to contact us</p>
+                                        </div>
+                                        <div class="col-sm-2 pd0">
+                                            <input type="button" value="GO">
+                                        </div>
+                                </div>
+                            </div>
+                            <!-- business advertise -->
+                            <div class="col-md-12 col-sm-6">
+                                <div class="add-box">
+                                    <a ui-sref="business"><img src="assets/img/application_200x135.jpg" alt="business" /></a>
+                                </div>
+                            </div>
+                            <!-- start search -->
+                            <div class="col-md-12 col-sm-6">
+                                <div class="sidebar-wrap">
+                                <div class="sidebar-faq">
+                                    <div class="sidebar-faq-heding ">
+                                        <a ui-sref="translator">Search Translator</a>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select id="srcLanguage" class="form-control" style="height:26px;padding:0px;"
+                                                                data-ng-model="srcSearchLanguage" ng-change="srcLangChanged(srcLanguage)"
+                                                                ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                                      
+                                                    </td>
+                                                    <td>
+                                                        <ul class="list-unstyled">
+                                                            <li style="">⇒</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <select id="destLanguage" class="form-control" style="height:26px;padding:0px;"
+                                                                data-ng-model="destSearchLanguage" ng-change="destLangChanged(destLanguage)"
+                                                                ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <span>
+                                                <!--<ul class="list-unstyled">
+                                                    <li>-->
+                                                        <select id="selectField" class="form-control" style="height:26px;padding:0px;"
+                                                                data-ng-model="selectSearchField" ng-change="fieldChanged(selectField)"
+                                                                ng-options="t.ID as t.Name for t in ::translationFields">
+                                                            <option value="" selected="selected">Special fields----</option>
+                                                         </select>
+                                                    <!--</li>
+                                                </ul>-->
+                                            </span>
+                                            <div class="button-folder text-center" style="margin:8px">
+                                                <input ui-sref="translator" value="Search" type="button" class="btn-primary btn-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- End search -->
+                            <!-- Customer evaluation -->
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-wrap">
+                                <div class="sidebar-faq ">
+                                    <div class="sidebar-faq-heding ">
+                                        <a ui-sref="detail">Customer evaluation</a>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table border-dashed">
+                                            <tbody>
+                                                <tr>
+                                                    <td><a ui-sref="detail">16/02/01</a></td>
+                                                    <td><a ui-sref="detail"><img src="assets/img/rating_stars_80x34.png"></a></td>
+                                                    <td><a ui-sref="detail">I like your...</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a ui-sref="detail">14/02/01</a></td>
+                                                    <td><a ui-sref="detail"><img src="assets/img/rating_stars_80x34.png"></a></td>
+                                                    <td><a ui-sref="detail">Thank you…</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a ui-sref="detail">03/02/01</a></td>
+                                                    <td><a ui-sref="detail"><img src="assets/img/rating_stars_80x34.png"></a></td>
+                                                    <td><a ui-sref="detail">Great job…</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- end customer evaluation -->
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-wrap">
+                                <div class="sidebar-faq ">
+                                    <div class="sidebar-faq-heding ">
+                                        <a ui-sref="faq">FAQ</a>
+                                    </div>
+                                    <div class="sidebar-faq-content ">
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/qna_q_16x16.png" alt=" " />
+                                                <p ui-sref="faq" >Is it possible if I need someone to translate immediately? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/qna_a_16x16.png" alt=" " />
+                                                <a ui-sref="faq">Documents can be delivered within 30 minutes…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/qna_q_16x16.png" alt=" " />
+                                                <p>Can anyone use the service? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/qna_a_16x16.png" alt=" " />
+                                                <a ui-sref="faq">Estimates can be accessed automatically…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/qna_q_16x16.png" alt=" " />
+                                                <p>I wish to cancel my order of translation. </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/qna_a_16x16.png" alt=" " />
+                                                <a ui-sref="faq">The estimate is automatic and can…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/qna_q_16x16.png" alt=" " />
+                                                <p>Is there any way to make the quality of the translation better? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/qna_a_16x16.png" alt=" " />
+                                                <a ui-sref="faq">One way is to use the online translation to do…</a>
+                                            </div>
+                                        </div>
+                                        <div class="single-faq-box ">
+                                            <div class="faq-q ">
+                                                <img src="assets/img/qna_q_16x16.png" alt=" " />
+                                                <p>Is there any way to lower the translation fee? </p>
+                                            </div>
+                                            <div class="faq-a ">
+                                                <img src="assets/img/qna_a_16x16.png" alt=" " />
+                                                <a ui-sref="faq">You can choose the "Light " service…</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-wrap">
+                                <div class="sidebar-faq sidebar-box fb ">
+                                    <div class="sidebar-faq-heding sidebar-title ">
+                                        <a href="https://www.facebook.com/transPro.net/" target="_blank">Facebook</a>
+                                    </div>
+                                    <div class="sidebar-faq-content sidebar-content ">
+                                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrans-pro-net&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-12 col-sm-6 ">
+                                <div class="sidebar-wrap">
+                                <div class="sidebar-faq sidebar-box editor-interview ">
+                                    <div class="sidebar-faq-heding sidebar-title ">
+                                        <a ui-sref="strength">What is trans-Pro?</a>
+                                    </div>
+                                    <div class="sidebar-faq-content sidebar-content ">
+                                        <p>
+                                            <a ui-sref="strength"><strong>A cloud-based online translation service</strong> which has been provided for translation companies and adjusted for you to use more easily.</a><br><br>
+                                            <a ui-sref="strength">Estimate shows the fee so you can check it on the spot.</a><br><br>
+                                            <a ui-sref="strength">Orders can be made to meet your cost. Other than translation, <strong>check / proofreading</strong> are done too by <strong>native speakers</strong> of your target languages.</a><br><br>
+                                            <a ui-sref="strength">You can order <strong>24 hours a day, 365 days a year,</strong> and receive translation in <strong>30 minutes</strong> (shortest).</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- clock -->
+                            <div class="col-md-12 col-sm-6">
+                                <div class="sidebar-wrap">
+                                <div class="sidebar-faq-heding sidebar-title ">
+                                    <a href="">Local Time</a>
+                                </div>
+                                <div class="sidebar-faq-content sidebar-content clock ">
+                                    <ds-widget-clock></ds-widget-clock>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <br/> <br/>
+                    </div>
+                </div>
+
+				
+                <div class="col-md-9" ui-view>
+                    <div class="total-content">
+                        <!-- pricing-table-area start -->
+                        <div class="pricing-table-area" ng-if="!CurrentUser || CurrentUser.UserType == 1">
+                            <div class="site-title">
+                                <i class="fa fa-th-large"></i>
+                                <h3>You can choose the translational level.</h3>
+                            </div>
+                            <div class="transpro-content border-b0">
+                                <div class="row">
+                                    <div class="col-sm-4 pricing-box-pr">
+                                        <div class="single-pricing-box">
+                                            <div class="pricing-photo">
+                                                <img src="assets/img/nw-light.gif" alt="" />
+                                            </div>
+											<div class="nw_pricecircle">
+												<h2 style="color:#5f929e">0.08<br />AUD</h2>
+											</div>
+                                        </div>
+										
+										<!--
+                                        <div class="single-pricing-box light">
+                                            <div class="pricing-photo">
+                                                <img src="assets/img/p-box-bg-light.png" alt="" />
+                                            </div>
+                                            <div class="priceittle">
+                                                <h2>Light</h2>
+                                                <div class="pricecircle">
+                                                    <h2><span>0</span>.08</h2>
+                                                    <h3>AUD</h3>
+                                                </div>
+                                                <h4>Native Speaker</h4>
+                                            </div>
+                                        </div>
+										-->
+                                    </div>
+
+                                    <div class="col-sm-4 pricing-box-pc">
+                                        <div class="single-pricing-box">
+                                            <div class="pricing-photo">
+                                                <img src="assets/img/nw-business.gif" alt="" />
+                                            </div>
+											<div class="nw_pricecircle">
+												<h2 style="color:#4888bf">0.12<br />AUD</h2>
+											</div>
+                                        </div>
+										
+										<!--
+										<div class="single-pricing-box business">
+											<div class="pricing-photo">
+												<img src="assets/img/p-box-bg-business.png" alt="" />
+											</div>
+											<div class="priceittle">
+												<h2>Business</h2>
+												<div class="pricecircleb">
+													<h2><span>0</span>.12</h2>
+													<h3>AUD</h3>
+												</div>
+												<h4>Professional</h4>
+											</div>
+										</div>
+										-->
+									</div>
+									
+									<div class="col-sm-4 pricing-box-pl">
+                                        <div class="single-pricing-box">
+                                            <div class="pricing-photo">
+                                                <img src="assets/img/nw-expert.gif" alt="" />
+                                            </div>
+											<div class="nw_pricecircle">
+												<h2 style="color:#23487d">0.22<br />AUD</h2>
+											</div>
+                                        </div>
+										
+										<!--
+										<div class="single-pricing-box expert">
+											<div class="pricing-photo">
+												<img src="assets/img/p-box-bg-expert.png" alt="" />
+											</div>
+											<div class="priceittle">
+												<h2>Expert</h2>
+												<div class="pricecirclee">
+													<h2><span>0</span>.22</h2>
+													<h3>AUD</h3>
+												</div>
+												<h4>Selected Professional</h4>
+											</div>
+											
+										</div>
+										-->
+									</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- pricing-table-area end -->
+						
+                        <!-- editing-transpro-area start -->
+                        <div class="editing-transpro-area"  ng-if="!CurrentUser || CurrentUser.UserType == 1">
+                            <div class="transpro-content editing-estimate">
+								<div class="estimate-wrap">
+									<form>
+										<div class="row">
+											<div class="col-sm-7">
+												<p>
+													<i class="fa fa-play-circle"></i> Language
+													<select id="srcLanguage" class="form-control"
+															data-ng-model="srcLanguage" ng-change="srcLangChanged(srcLanguage)"
+															ng-options="lang.ID as lang.Name for lang in ::languages">
+													</select>
+													<i class="fa fa-play"></i>
+													<select id="destLanguage" class="form-control"
+															data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+															ng-options="lang.ID as lang.Name for lang in ::languages">
+													</select>
+												</p>
+											</div>
+											<div class="col-sm-5">
+												<p>
+													<i class="fa fa-play-circle"></i> Translation field
+													<select id="selectField" class="form-control"
+															data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+															ng-options="t.ID as t.Name for t in ::translationFields">
+														<option value="" selected="selected">▼--------------</option>
+													</select>
+												</p>
+											</div>
+										</div>
+
+										<uib-tabset active="activePill">
+											<uib-tab index="0" heading="Input Manuscript Directly">
+												<div class="estimate-tab-contact">
+													<div class="transpro-text-area">
+														<textarea cols="30" rows="10" ng-model="Estimation.Manuscript.InputText" placeholder="Enter text directly here"></textarea>
+													</div>
+													<div class="orange">
+														* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+														<br>
+														(For other languages, ​​you can enter up to 20,000 words.)
+													</div>
+												</div>
+											</uib-tab>
+											<uib-tab index="1" heading="Upload a File">
+											
+												<div class="estimate-tab-contact">
+													<div class="transpro-fileupload-area">
+														<div class="col-sm-12">
+															<div class="col-sm-3">
+																<input type="file" ng-change="UpdateFileInfo()" ng-model="Estimation.FileList"
+                                                                       multiple load-file use-document-filter broadcast="listenTranslationFileSelection" id="fileName" />
+															</div>
+															<div class="col-sm-9">
+																<span style="float:right;" ng-if="Estimation.FileList != null">
+																	{{Estimation.FileList.length}} files selected, total size {{Estimation.FileSizeTotalString}}&nbsp&nbsp
+																	<button class="btn btn-default btn-xs" style="float:right;" ng-click="ClearFileSelector()">Clear</button>
+																</span>
+																
+															</div>
+														</div>
+                                                        <div class="col-sm-12">
+                                                            <button ng-if="Estimation.FileList != null" ng-disabled="Estimation.DocumentList != null && Estimation.DocumentList.length > 0"
+                                                                    class="btn btn-default btn-sm" ng-click="UploadTranslationDocuments()">Upload</button>
+                                                            <span ng-if="Estimation.DocumentList != null && Estimation.DocumentList.length > 0">{{Variable.UploadStatus}}</span>
+                                                            
+                                                        </div>
+														<!--<button class="btn" ng-click="ClearFileSelector()">Clear</button>-->
+														<div class="col-sm-12">
+															<br />
+															Supported file formats for uploading:
+															<ul>
+																<li>
+																	Adobe's Portable Document Format (.PDF)
+																</li>
+																<li>
+																	Microsoft Word 97 - 2003 (.DOC)
+																</li>
+																<li>
+																	Microsoft Word 2007 (.DOCX)
+																</li>
+																<li>
+																	Microsoft Excel 97 - 2003 (.XLS)
+																</li>
+																<li>
+																	Microsoft Excel 2007 (.XLSX)
+																</li>
+																<li>
+																	Microsoft PowerPoint 97 - 2003 (.PPT)
+																</li>
+																<li>
+																	Microsoft PowerPoint 2007 (.PPTX)
+																</li>
+																<li>
+																	Rich Text Format (.RTF)
+																</li>
+																<li>
+																	Unicode & ASCII Plain Text (.TXT)
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												
+											</uib-tab>
+
+										</uib-tabset>
+										<div class="sample-tab-btn text-center">
+											<button type="button" class="btn btn-primary" ng-click="CheckEstimation()">Check Estimation</button>
+										</div>
+									</form>
+								</div>
+                            </div>
+                        </div>
+                        <!-- editing-sample-area start -->
+                        <!-- strength section -->
+                        <div class="editing-transpro-area">
+                            <div class="site-title">
+                                <i class="fa fa-th-large"></i>
+                                <h3> The strength of Trans-Pro. </h3>
+                            </div>
+                            <div class="individuals-reg-wrap border-top0">
+                                <div class="flex-container">
+                                    <div class="flowcircle blue">
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    1
+                                                </div>
+                                                <div class="fc_title">
+                                                    30 minutes (shortest)
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Minimum of 30 minutes to deliver, 24-hours operating
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    2
+                                                </div>
+                                                <div class="fc_title">
+                                                    Reasonable price
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Direct contact made lowest price
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    3
+                                                </div>
+                                                <div class="fc_title">
+                                                    Quick estimation
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Check the price and delivery time on the spot
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="fc_aquacircle">
+                                            <a ui-sref="strength">
+                                                <div class="fc_number">
+                                                    4
+                                                </div>
+                                                <div class="fc_title">
+                                                    38 languages available
+                                                </div>
+                                                <div class="fc_descript">
+                                                    Natives speakers for 38 languages standing by
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end strength  -->
+                        <!-- List of on-line translation projects -->
+                        <div class="editing-transpro-area">
+                            <div class="site-title">
+                                <i class="fa fa-th-large"></i>
+                                <h3> List of on-line translation projects </h3>
+                            </div>                          
+                            <div class="order-breakdown-wrap common-sub-block">
+								<div class="tbl_translation_pro receive-msg-wrap" style="overflow-x:auto;">
+									<div class="spinner" ng-if="!orders">
+										<div class="bounce1"></div>
+										<div class="bounce2"></div>
+										<div class="bounce3"></div>
+									</div>
+									<table>
+										<thead>
+											<tr>
+												<th>Request Dates</th>
+												<th>Status</th>
+												<th>Plan</th>
+												<th>Original language</th>
+												<th>Target language</th>
+												<th>Field</th>
+												<th>Translator</th>
+												<th>Fee</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-if="orders && orders.length>0" ng-repeat="ord in filterOrders">
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.OrderDate | utcToLocal:'dd/MM/yyyy'}}</a></td>
+												<td>
+													 <a ng-class="{'trans-operation':ord.OrderStatus == OrderStatus.InProgress,
+																   'trans-complete':ord.OrderStatus == OrderStatus.OrderCompleted,
+																   'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation,
+																   'trans-cancel':ord.OrderStatus == OrderStatus.Cancel}"
+														 ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.OrderStatusName}}</a>
+												</td>
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.DeliveryPlan}}</a></td>
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.SourceLanguage}}</a></td>
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.TargetLanguage}}</a></td>
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.TranslationFieldName}}</a></td>
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.TranslatorNo}}</a></td>
+												<td><a ng-class="{'trans-looking':ord.OrderStatus == OrderStatus.WaitingForConfirmation}" ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.CurrencySymbol}}{{ord.PaymentAmount}}</a></td>
+											</tr>
+											<tr ng-if="!orders || orders.length<=0">
+												<td class="text-left" colspan="8">Data not available</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>	
+                                
+                                <div class="gotopBox">
+                                    <a ui-sref="contact" href="#/contact">Contact Us</a><span>|</span><a ui-sref="/" href="#/">Estimate</a><span>|</span><a ui-sref="/" href="#/">TOP</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <paging class="small"
+                                                ng-if="orders.length > numPerPageOrders"
+                                                page="1"
+                                                page-size="numPerPageOrders"
+                                                total="totalOrders"
+                                                show-prev-next="true"
+                                                show-first-last="true"
+                                                paging-action="doCtrlPagingOrders( page )"
+                                                text-next-class="glyphicon glyphicon-chevron-right"
+                                                text-prev-class="glyphicon glyphicon-chevron-left"
+                                                text-first-class="glyphicon glyphicon-backward"
+                                                text-last-class="glyphicon glyphicon-forward">
+                                        </paging>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        </div>
+                        
+                        <!-- end List of on-line translation projects -->
+                        <!-- feedback-area start -->
+                        <div class="feedback-area">
+                            <div class="site-title">
+                                <i class="fa fa-users"></i>
+                                <h3>List of translators</h3>
+                            </div>
+                            <div class="feedback-wrap border-top0">
+                                <div class="spinner" ng-if="!filterTranslators || filterTranslators.length == 0">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="translator in filterTranslators">
+                                        <div ng-click="openTranslatorWindow(translator)" class="feedback-box">
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <img width="80" height="100" ng-src="{{translator.Image ? translator.Image : '../assets/img/avatar.png'}}">                                            
+                                            <div class="feedback-name trans-desc">
+                                                <span class="no-padding">{{translator.NativeLanguageName}} </span>
+                                                <span class="no-padding">{{translator.EducationDegree3Name}} </span>
+                                            </div>
+                                        </div>
+                                    </div>                                 
+                                </div>
+                                <div class="row" >
+                                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <paging class="small"
+                                                ng-if="translators.length > numPerPage"
+                                                page="1"
+                                                page-size="numPerPage"
+                                                total="totalTranslators"
+                                                show-prev-next="true"
+                                                show-first-last="true"
+                                                paging-action="doCtrlPagingAct( page )"
+                                                text-next-class="glyphicon glyphicon-chevron-right"
+                                                text-prev-class="glyphicon glyphicon-chevron-left"
+                                                text-first-class="glyphicon glyphicon-backward"
+                                                text-last-class="glyphicon glyphicon-forward">
+                                        </paging>  
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				
+				
+				
+
+            </div>
+		</div>
+	</div>
+	<!-- main-content-area end -->
+	
+	
+	
+	<!-- footer-area start -->
+    <footer class="footer-area">
+        <div class="footer-top ">
+            <div class="container ">
+			
+				<div class="row">
+					<div id="clientFooter" ng-if="!CurrentUser.IsAuthenticated || CurrentUser.UserType == UserType.Customer">
+						<div class="col-md-2">
+							<div class="site-map-title">
+								<h4>Clients</h4>
+							</div>
+						</div>
+						<div class="col-md-10">
+							<div class="sitemap-menu ">
+								<ul>
+									<li><a ui-sref="/">Top </a></li>
+									<li><a ui-sref="onlineTranslation">Online Translation </a></li>
+									<li><a ui-sref="appointedTranslation">Appointed Translation</a></li>
+									<li><a ui-sref="nativeCheck">Native Check(Proofreading)</a></li>
+									<li><a ui-sref="translatorCoordinator">Translator + Coordinator</a></li>
+									<li><a ui-sref="translator">Search Translators </a></li>
+									<li><a ui-sref="/">Estimate</a></li>
+									<li><a ui-sref="contact">Contact Us</a></li>
+									<li><a ui-sref="userguide">User Guide</a></li>
+									<li><a ui-sref="application">Application</a></li>
+									<li><a ui-sref="faq">FAQ</a></li>
+									<li><a ui-sref="evaluation">Customer Evaluation</a></li>
+									<li><a ui-sref="quality">Quality & Knack </a></li>
+									<li><a ui-sref="strength">Strengths</a></li>
+									<li><a ui-sref="pricelist">Price List</a></li>
+								</ul>
+							</div>						
+						</div>
+					</div>
+				</div>	
+				
+				<div class="row">
+					<div id="translatorFooter" ng-if="!CurrentUser.IsAuthenticated || CurrentUser.UserType == UserType.Translator">
+						<div class="col-md-2">
+							<div class="site-map-title">
+								<h4>To Translators</h4>
+							</div>						
+						</div>
+						<div class="col-md-10">
+							<div class="sitemap-menu ">
+								<ul>
+									<li><a ui-sref="caution">Caution</a></li>
+									<li><a ui-sref="guideTranslator">User Guide </a></li>
+									<li><a ui-sref="faqTranslator">FAQ</a></li>
+									<li><a ui-sref="translatorReg">Translator Registration</a></li>
+									<!--<li><a><i class="fa fa-arrow-circle-right "></i> Translator Log-in</a></li>-->
+									<li><a ui-sref="contact">Contact Us</a></li>
+									<li><a ui-sref="aboutus">Company Profile</a></li>
+									<li><a ui-sref="notice">Notice </a></li>
+									<li><a ui-sref="sitemenu">Site Map</a></li>
+									<li><a ui-sref="privacy">About Privacy Policy </a></li>
+									<li><a ui-sref="notation">Notation on the Act on Specified Commercial Transactions </a></li>
+									<li><a ui-sref="terms">Terms of Service</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+				</div>
+            </div>
+        </div>
+        <div class="footer-copywrite ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-12 text-center ">
+                        <h5>東京本社 〒105-0013東京都港区浜松町2-1-3 第二森ビル4階 Tel： 03-5733-4264 Fax： 03-3433-3320</h5>
+                        <p>Copyright &copy; by b-cause,Inc. 2003-2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <back-top></back-top>
+
+	<!-- footer-area end -->
+
+
+    <!--script src="assets/js/bootstrap.min.js"></script>-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/active.js"></script>
+</body>
+
+</html>

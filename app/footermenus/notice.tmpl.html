@@ -1,0 +1,43 @@
+﻿<div class="total-content">
+    <!-- Notice section-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Notice</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="box" ng-init="vm.init()">
+                    <div id="accordion" simple-accordion toggle-speed="fast" ng-if="notice.Priority==1" ng-repeat="notice in  vm.notices" toggle-easing="linear" slide-up-speed="fast" slide-up-easing="linear">
+                        
+                            <h4 class="accordion-toggle first-priority">
+                                {{notice.Title}}
+                                <em class="pull-right">
+                                    <span>{{notice.RegisteredDate | date :  "dd.MM.y"}}</span>
+                                </em>
+                            </h4>
+                            <div class="accordion-content default">
+                                {{notice.Description}}
+                            </div>
+
+                   </div> 
+                    <div id="accordion" simple-accordion toggle-speed="fast" ng-if="notice.Priority==2" ng-repeat="notice in  vm.notices" toggle-easing="linear" slide-up-speed="fast" slide-up-easing="linear">
+
+                        <h4 class="accordion-toggle">
+                            {{notice.Title}}
+                            <em class="pull-right">
+                                <span>{{notice.RegisteredDate | date :  "dd.MM.y"}}</span>
+                            </em>
+                        </h4>
+                        <div class="accordion-content default">
+                            {{notice.Description}}
+                        </div>
+
+                    </div> 
+                    </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- end notice section -->
+</div>

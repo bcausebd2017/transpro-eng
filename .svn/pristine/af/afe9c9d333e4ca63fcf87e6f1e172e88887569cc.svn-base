@@ -1,0 +1,154 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="fa fa-close pull-right" ng-click="$ctrl.Close()"></button>
+        <h4 class="modal-title" align="center">Login</h4>
+    </div>
+    <div class="modal-body">
+        <uib-tabset active="activePill">
+            <uib-tab index="0" heading="Customer">
+                <div class="clearfix" style="margin-top: 10px;"></div>
+                <form name="loginCustomerForm">
+                    <!--<span style="color:red;" ng-show="isInvalidUser">{{'INVALIDUSER' | translator}}</span>-->
+                    <div class="form-group has-feedback">
+                        <!--<input type="email" class="form-control" placeholder="Email">-->
+                        <input type="email" name="username" class="form-control" placeholder="ID@e-mail" ng-model="$ctrl.Email" ng-pattern="$ctrl.emailFormat" required>
+
+                        <span style="color:red;" ng-show="loginCustomerForm.username.$error.pattern">
+                            Not valid email!
+                        </span>
+                    </div>
+                    <div class="clearfix" style="height: 3px;"></div>
+                    <div class="form-group has-feedback">
+                        <!--<input type="password" class="form-control" placeholder="Password">-->
+                        <input type="password" name="password" class="form-control" placeholder="Password" ng-model="$ctrl.Password" required>
+
+                        <!--<span style="color:red;" ng-show="isTriedForLogin && loginForm.password.$error.required">{{'ENTERPASSWORD' | translator}}</span>-->
+                    </div>
+                    <div class="clearfix" style="height: 3px;"></div>
+                    <div class="form-group has-feedback">
+
+                        <!--<select id="selectLanguage" class="form-control"
+                    data-ng-model="selectLanguage" ng-change="languageChanged(selectLanguage)"
+                    ng-options="lang.Code as lang.Name for lang in ::languages"></select>-->
+                    </div>
+                    <div class="form-group">
+
+                        <!-- /.col -->
+                        <div class="col-xs-12 text-center">
+                            <button ng-click="$ctrl.login()" class="btn btn-primary ">Login</button>
+                        </div>
+                        <!-- /.col -->
+
+                    </div>
+                    <div class="clearfix" style="height: 20px;"></div>
+                    <div class="form-group has-feedback">
+                        <div class="col-xs-12 text-center">
+                            <a href="" ng-click="$ctrl.openResetWindow(1)">Forget your password?</a>
+                        </div>
+                    </div>
+                    <div class="clearfix" style="height: 20px;"></div>
+                    <div class="modal-footer">
+                        <div class="col-xs-12 text-center">
+                            <a class="btn btn-primary" ng-click="$ctrl.GoRegistration()">Customer Registration</a>
+                        </div>
+                    </div>
+                </form>
+            </uib-tab>
+            <uib-tab index="1" heading="Translator">
+                <div class="clearfix" style="margin-top: 10px;"></div>
+                <form name="loginTranslatorForm">
+                    <!--<span style="color:red;" ng-show="isInvalidUser">{{'INVALIDUSER' | translator}}</span>-->
+                    <div class="form-group has-feedback">
+                        <!--<input type="email" class="form-control" placeholder="Email">-->
+                        <input type="text" name="username" class="form-control" placeholder="ID@e-mail" required>
+
+                        <!--<span style="color:red;" ng-show="isTriedForLogin && loginForm.username.$error.required">{{'ENTERUSER' | translator}}</span>-->
+                    </div>
+                    <div class="clearfix" style="height: 3px;"></div>
+                    <div class="form-group has-feedback">
+                        <!--<input type="password" class="form-control" placeholder="Password">-->
+                        <input type="password" name="password" class="form-control" ng-model="Password" placeholder="Password" required>
+
+                        <!--<span style="color:red;" ng-show="isTriedForLogin && loginForm.password.$error.required">{{'ENTERPASSWORD' | translator}}</span>-->
+                    </div>
+                    <div class="clearfix" style="height: 3px;"></div>
+                    <div class="form-group has-feedback">
+
+                        <!--<select id="selectLanguage" class="form-control"
+                    data-ng-model="selectLanguage" ng-change="languageChanged(selectLanguage)"
+                    ng-options="lang.Code as lang.Name for lang in ::languages"></select>-->
+                    </div>
+                    <div class="form-group">
+
+                        <!-- /.col -->
+                        <div class="col-xs-12 text-center">
+                            <button ng-click="login()" class="btn btn-primary ">Login</button>
+                        </div>
+                        <!-- /.col -->
+
+                    </div>
+                    <div class="clearfix" style="height: 20px;"></div>
+                    <div class="form-group has-feedback">
+                        <div class="col-xs-12 text-center">
+                            <a href="" ng-click="$ctrl.openResetWindow(2)">Forget your password?</a>
+                        </div>
+                    </div>
+                    <div class="clearfix" style="height: 20px;"></div>
+                    <div class="modal-footer">
+                        <div class="col-xs-12 text-center">
+                            <a class="btn btn-primary" ng-click="$ctrl.GoTranslatorReg()">Translator Registration</a>
+                        </div>
+                    </div>
+                </form>
+            </uib-tab>
+            <uib-tab index="2" heading="Partner">
+                <div class="clearfix" style="margin-top: 10px;"></div>
+                <form name="loginPartnerForm">
+                    <!--<span style="color:red;" ng-show="isInvalidUser">{{'INVALIDUSER' | translator}}</span>-->
+                    <div class="form-group has-feedback">
+                        <!--<input type="email" class="form-control" placeholder="Email">-->
+                        <input type="text" name="username" class="form-control" placeholder="ID@e-mail" required>
+
+                        <!--<span style="color:red;" ng-show="isTriedForLogin && loginForm.username.$error.required">{{'ENTERUSER' | translator}}</span>-->
+                    </div>
+                    <div class="clearfix" style="height: 3px;"></div>
+                    <div class="form-group has-feedback">
+                        <!--<input type="password" class="form-control" placeholder="Password">-->
+                        <input type="password" name="password" class="form-control" ng-model="Password" placeholder="Password" required>
+
+                        <!--<span style="color:red;" ng-show="isTriedForLogin && loginForm.password.$error.required">{{'ENTERPASSWORD' | translator}}</span>-->
+                    </div>
+                    <div class="clearfix" style="height: 3px;"></div>
+                    <div class="form-group has-feedback">
+
+                        <!--<select id="selectLanguage" class="form-control"
+                data-ng-model="selectLanguage" ng-change="languageChanged(selectLanguage)"
+                ng-options="lang.Code as lang.Name for lang in ::languages"></select>-->
+                    </div>
+                    <div class="form-group">
+
+                        <!-- /.col -->
+                        <div class="col-xs-12 text-center">
+                            <button ng-click="login()" class="btn btn-primary ">Login</button>
+                        </div>
+                        <!-- /.col -->
+
+                    </div>
+                    <div class="clearfix" style="height: 20px;"></div>
+                    <div class="form-group has-feedback">
+                        <div class="col-xs-12 text-center">
+                            <a href="" ng-click="$ctrl.openResetWindow(2)">Forget your password?</a>
+                        </div>
+                    </div>
+                    <div class="clearfix" style="height: 20px;"></div>
+                    <div class="modal-footer">
+                        <div class="col-xs-12 text-center">
+                            <a class="btn btn-primary">Partner Registration</a>
+                        </div>
+                    </div>
+                </form>
+            </uib-tab>
+        </uib-tabset>
+
+    </div>
+</div>

@@ -1,0 +1,200 @@
+﻿
+<div class="total-content">
+
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-pencil-square-o"></i>
+            <h3>Native check</h3>
+        </div>
+
+        <div class="transpro-content">
+
+            <form>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Language
+                            <select id="srcLanguage" class="form-control"
+                                    data-ng-model="srcLanguage" ng-change="srcLangChanged(srcLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                            <i class="fa fa-play"></i>
+                            <select id="destLanguage" class="form-control"
+                                    data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Translation field
+                            <select id="selectLanguage" class="form-control"
+                                    data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                    ng-options="t.ID as t.Name for t in ::translationFields">
+                                <option value="" selected="selected">▼--------------</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--<div class="transpro-tab-area">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" >Input manuscript directly</a></li>
+                        <li><a data-toggle="tab" >Upload a file</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-item-1" class="tab-pane transpro-tabpan fade in active">
+                            <div class="transpro-text-area">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                            </div>
+                            <p>* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.</p>
+                            <p>(For other languages, ​​you can enter up to 20,000 words.)</p>
+                        </div>
+                        <div id="tab-item-2" class="tab-pane transpro-tabpan fade">
+                            <p>Some content in menu 1.</p>
+                        </div>/>
+                    </div>
+                </div>-->
+                <uib-tabset active="activePill">
+                    <uib-tab index="0" heading="Input manuscript directly">
+                        <div class="transpro-text-area">
+                            <textarea cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                        </div>
+                        <div class="orange">
+                            * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                            <br>
+                            (For other languages, ​​you can enter up to 20,000 words.)
+                        </div>
+                    </uib-tab>
+                    <uib-tab index="1" heading="Upload a file">
+                        <div class="transpro-fileupload-area">
+                            <input type="file" multiple load-file ng-model="Estimation.File" id="fileName" />
+                        </div>
+                    </uib-tab>
+
+                </uib-tabset>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" ng-click="UploadDocument()">Check Estimation</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> About native check </h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="box1">
+                    <p>
+                        For "native check", your translation will be checked by a native speaker of the target language. For example, if you translated the draft by yourself but are uneasy about its quality, you can use this service to improve the quality of translation.
+                        <br>
+                        <br> Send your translated draft through <strong><a hre="">estimation form</a></strong> to confirm information including delivery time.
+                        <br> You can order <strong>24 hours a day, 365 days a year,</strong> and receive translation in <strong>30 minutes (shortest).</strong>
+                        <br>
+                        <br><strong>
+                            * However, we decline checking machine-translated draft using services such as Google or Yahoo.
+                            <br> * Please note that we may charge additional fee for machine-translated drafts made by services such as Google or Yahoo.
+                            <br>
+                            <br>Register first! →
+                        </strong>
+                        <input id="" class="btn-primary btn-sm" name="" value=" To the registration screen " type="submit">
+                    </p>
+                    <hr>
+                    <h3>Application</h3>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>1</span>
+                                <p><a href="">Estimate</a> using our form </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>2</span>
+                                <a href="">
+                                    <p>
+                                        Membership
+                                        <br>registration (free)
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>3</span>
+                                <p>Choose payment method</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>4</span>
+                                <p>
+                                    Log in with a registered
+                                    <br><a href="">ID and password</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>5</span>
+                                <p>Reconfirm and order </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>6</span>
+                                <p>Payment process </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>7</span>
+                                <p>Notify a translator </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>8</span>
+                                <p>
+                                    Translator confirms
+                                    <br>the order
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>9</span>
+                                <p>Payment process </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="app">
+                                <span>10</span>
+                                <p>
+                                    Notify a translator
+                                </p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <a class="btn btn-primary">More information</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

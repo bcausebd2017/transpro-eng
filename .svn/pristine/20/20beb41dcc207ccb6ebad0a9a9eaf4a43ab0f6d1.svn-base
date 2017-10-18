@@ -1,0 +1,15 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("resetPasswordController", function ($scope, $state, $rootScope, $uibModal, transproService, alertMsg) {
+        $scope.Email = "";
+        var usrType = $state.params.type;
+        $scope.sendEmail = function () {
+            transproService.resetCustomerPassword($scope.Email, usrType).then(function (response) {
+                alertMsg.show('success', 'Password reset hint has been sent to your mail,Pelase check.');              
+            }).catch(function (error) {
+                alertMsg.show('error', error);
+            });
+        }
+    });
+
+})();

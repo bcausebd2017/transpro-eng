@@ -1,0 +1,45 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("translatorController", function ($scope, $state, $rootScope, $uibModal, transproService, translatorService, APP_SETTINGS) {
+        var vm = this;
+        $scope.isTranslatorLoaded = false;
+        vm.model = {};
+        Activate();
+        function Activate() {
+            transproService.getCountries().then(function (response) {
+                vm.country = response;
+            }).catch(function (error) {
+                console.log("My error")
+            });
+
+            transproService.getEducatinalDegree().then(function (response) {
+                vm.educations = response;
+            }).catch(function (error) {
+                console.log("My error")
+            });
+
+
+            transproService.getLanguages().then(function (response) {
+                vm.languages = response;
+                $scope.isTranslatorLoaded = true;
+            }).catch(function (error) {
+
+            });
+
+        }
+      
+
+        $scope.SaveTranslator = function () {
+            $scope.isTriedSave = true;
+
+            vm.model.ApplicationId = APP_SETTINGS.ApplicationId;
+            vm.model.CurrentCulture = APP_SETTINGS.CultureCode;
+            vm.model.RegistrationType = vm.regType;
+            
+
+
+          
+        }
+    });
+
+})();

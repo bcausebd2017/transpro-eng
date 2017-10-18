@@ -1,0 +1,136 @@
+﻿<div class="total-content">
+    <!-- User Guide Links start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>For personal individuals</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <ul class="list-inline guide-menu">
+                <li><a ui-sref="userguideOffice">For Universities/Public Organizations/Offices </a> </li>
+                <li><a ui-sref="userguide">For Corporate Customers </a> </li>
+                <li><a ui-sref="userguideIndividual">For Individuals</a> </li>
+                <li class="last"><a ui-sref="userguideTranslator">For Translators</a> </li>
+            </ul>
+            <div class="flex-container">
+                <div class="box">
+                    <p class="Text">
+                        If you enter the necessary information in the automatic estimation form of this site, estimates and delivery time can be confirmed on the spot for you to request.
+                        You will need member registration to request translation. Service can be used right after you registered.
+                        You can order 24 hours a day, 365 days a year, and receive translation in 30 minutes (shortest).
+                        Please be aware that you can only pay by credit card.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Automatic estimation </h3>
+                    <a href="#" class="btn btn-primary pull-right">Estimate</a>
+                    <ul class="list-unstyled">
+                        <li> To estimate Text, Word, and Excel data.</li>
+                        <li>
+                            Translation requests for picture data/PDF,
+                            please <a href="#">click here</a>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Confirm estimated price	</h3>
+                    <ul class="list-unstyled custom-list-style">
+                        <li>* Please choose the field and plan of translation </li>
+                        <li>* Translators are appointable </li>
+                        <li>* Please input comments to translators</li>
+                        <li>
+                            . You can expect better quality by commenting on the usage and other details of your translation<
+                            Special discount for first time (10%)) or anytime you evaluate a translator (10%)
+                            A maximum of 20% discount
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Registration・Log-in</h3>
+
+                    <ul class="list-unstyled">
+                        <li> * Free registration</li>
+                        <li> * Service can be used right after you registered
+                        <li> E-mail will be sent to you after registration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Payment by credit cards </h3>
+                    <ul class="list-unstyled">
+                        <li> * Registration by personal individuals can only pay by credit cards</li>
+                        <li> * The credit card pay screen will open once you clicked "To pay screen" </li>
+                        <li> Enter credit card information after confirming the fee and press transmit button to finish your order. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Translator arrangement starts </h3>
+                    <ul class="list-unstyled">
+                        <li> * Please hold on until the translator takes your order. </li>
+                        <li>
+                            * About appointing the priority of translatorsPlace checks from 1-4 on the "<strong> appoint box </strong>" in "<strong>appointing priority of translators</strong>"
+                            by clicking "<strong>rearrange registered information" on MY PAGE.</strong>
+                            You may appoint the priority of the translators
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Translator arranged</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            * An e-mail notifying that the translation has started will be send to you
+                            You may interact with the translator using the message system to confirm the situation of the translation
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Document delivered by the translator</h3>
+                    <ul class="list-unstyled">
+                        <li> * After the translation is finished, your document will be delivered by the translator </li>
+                        <li> Document will be uploaded onto the server. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Download document</h3>
+                    <ul class="list-unstyled">
+                        <li> * Please download the translation from the server</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>After service after delivery</h3>
+                    <ul class="list-unstyled">
+                        <li> *You may ask questions about the translation after it is delivered </li>
+                        <li> *You may ask questions as many times as you wish within 2 weeks after delivery. </li>
+                        <li> <strong>Evaluate the translators</strong> and get a <strong>10% discount next time.</strong> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="flex-container button">
+                <div class="button-holder">
+                    <div class="clearfix"></div>
+                    <a class="btn btn-primary">Estimate</a>
+                    <a class="btn btn-primary">Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Guide Links end -->
+</div>

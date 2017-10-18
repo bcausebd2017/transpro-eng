@@ -1,0 +1,94 @@
+﻿<div class="total-content">
+    <!-- User Guide Links start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>To translators</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <ul class="list-inline guide-menu">
+                <li><a ui-sref="userguideOffice">For Universities/Public Organizations/Offices </a> </li>
+                <li><a ui-sref="userguide">For Corporate Customers </a> </li>
+                <li><a ui-sref="userguideIndividual">For Individuals</a> </li>
+                <li class="last"><a ui-sref="userguideTranslator">For Translators</a> </li>
+            </ul>
+
+            <div class="flex-container">
+                <div class="box one-col">
+                    <a class="btn btn-primary pull-right remove-top-margin"> Registar Now</a>
+
+                    <p>
+                        Trans-Pro. Is a cloud-based translation website
+                        Although you are free to apply, it is a better way to get more orders
+                        by receiving high evaluations from the customers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Confirm orders on TOP page or Log-in</h3>
+
+                    <ul class="list-unstyled">
+                        <li>Trans-Pro. Is a cloud-based translation website</li>
+                        <li>Although you are free to apply, it is a better way to get more orders</li>
+                        <li>by receiving high evaluations from the customers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Translator registration</h3>
+
+                    <ul class="list-unstyled">
+                        <li>* Register by special fields</li>
+                        <li>* Appeal to customers as a translator</li>
+                        <li>* Appeal with records and education background</li>
+                        <li>* Use photos that show professional image.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Confirm translation orders, booked orders, and fee on MyPage </h3>
+
+                    <ul class="list-unstyled">
+                        <li> * Orders that you can apply will be shown on the screen </li>
+                        <li> * You can manage the orders you have applied </li>
+                        <li> * You can confirm the fee you earned by translating </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Information for those who want to be a translator </h3>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#"> Cautions for trans-Pro. </a></li>
+                        <li><a href="#">User Guide</a></li>
+                        <li><a href="#">Translators' penalty</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of use for translators</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report errors of webisite</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="flex-container button">
+                <div class="button-holder">
+                    <div class="clearfix"></div>
+
+                    <a class="btn btn-primary"> Translator Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Guide Links end -->
+
+</div>

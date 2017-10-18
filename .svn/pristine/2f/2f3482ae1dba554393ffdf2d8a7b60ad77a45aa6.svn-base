@@ -1,0 +1,1150 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Personal Individuals Registration</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <h3>Sections with * need to be entered</h3>
+                <h4>Account</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>E-mail(ID)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p><input type="text" /><span><input type="submit" value="ID Check" /></span></p>
+                                <p class="red-text"><input type="text" /><span>* Enter again</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>PW</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p class="red-text"><input type="text" /><span>* 8 or more characters</span></p>
+                                <p class="red-text"><input type="text" /><span>* Enter again</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="mt30">Your information</h4>
+                <div class="reg-row">
+                    <div class="row" ng-if="regType = RegistrationType.Individual">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" ng-if="regType = RegistrationType.LegalEntity || regType = RegistrationType.Public">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Company Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> <span>*</span>Tel Number</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> FAX</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Mobile phone</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Postal code	</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text" /> <span>Ex)000-0000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Address1</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd80"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Address2</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd80"><input type="text" /></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h3x p3x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Industry (multiple selections possible)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value">
+                                <div class="industry-check-wrap">
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Fisheries, agriculture & forestry, and mining <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Agriculture, forestry, and fisheries</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Agriculture</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Forestry</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Fisheries and aquaculture</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Mining and quarrying of stone and gravel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Construction <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Construction work, general including public and private construction work</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Construction work by specialist contractor, except equipment installation work</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Equipment installation work</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Manufacturing <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of food</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of beverages</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of feed</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of Tobacco</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of textile mill products</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of lumber and wood products, except furniture</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of furniture and fixtures</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of pulp, paper and paper products</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of chemical and allied products</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of plastic products, except otherwise classified</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of plastic products, except otherwise classified</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of rubber products</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of leather tanning, leather products and fur</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of ceramic, stone and clay products</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of iron and steel</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of non-ferrous metals and products</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of production machinery</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of business oriented machinery</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of electronic parts, devices, and electronic circuits</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of electrical machinery, equipment and supplies</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of information and communication electronics equipment</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of transportation equipment</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Manufacture of medical supplies</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous manufacturing industries</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Energy <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Production, transmission and distribution of electricity</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Production and distribution of gas</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Heat supply</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Ppurification and distribution of water, and sewage collection</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Real estate <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Real estate agencies</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Real estate lessors and managers</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Goods rental and leasing(production machinery, etc.)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Transport activities <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Railway transport</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Road passenger transport</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Road freight transport</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Water transport</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Air transport</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Warehousing</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Services incidental to transport	</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Information and communications <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Communications</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Broadcasting</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Newspaper publishing</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Magazine publishing</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Video picture, sound information, Character information production</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Postal services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Advertising</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous information and communication</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> IT related <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Software development</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">System development, operation, maintenance</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Internet communication and processing</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Game development and operation</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">SEO Trade</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">WEB design, edit, revision, and CAD development</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous internet services	</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Wholesale trade <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Dry goods, apparel and apparel accessories</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Food and beverage</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Building materials, minerals and metals, etc</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Machinery and equipment</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous wholesale trade</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Education <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">General trading company</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Specialized trading company</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Department store</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Supermarket</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Convenience Store</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Non-store retail trade (Internet shops)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous retail trade</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Retail trade <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Recruitment</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Human resource agency</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Human resource related <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Translation and interpretation</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Localization</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Research agency</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Finance <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Banking</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Financial, institutions for cooperative organizations</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Non-deposit money corporations, including lending and credit card business</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Financial products transaction dealers and futures commodity transaction dealers</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Financial auxiliaries</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Insurance institutions, including insurance agents, brokers</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Education <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">College and junior college</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Vocational School</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Research institution</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Language School</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous education, learning support	</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Services <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Printing and allied industries</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Consulting and Think Tank</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Accommodations</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Travel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Eating and drinking places</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Food take out and delivery services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Laundry, beauty and bath services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Services for amusement and hobbies　(movies, games)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Waste disposal business</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Automobile maintenance services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Machine, ETC. repair services, except otherwise classified</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Notary public and lawyer</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous business services</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Miscellaneous living-related and personal services</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Finance <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Social insurance and social welfare</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Sanitation</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Cooperative association</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">National Government Official</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">NPO ・ NGO ・ Affiliate</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">International organization</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Public utility organization</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Political, business, cultural organizations, and religion</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- *** -->
+
+
+                                    <h5><i class="fa fa-angle-double-left"></i> Others <i class="fa fa-angle-double-right"></i></h5>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="red-text"><input type="text" /></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h4 class="mt30">Your information</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-4 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Receive campaign mails	</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input type="radio" name="receive-mail" checked="checked">Receive
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="receive-mail">Do not receive
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-4 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Allow posting transaction results</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input type="radio" name="allow-posting" checked="checked">Allow
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="allow-posting">Do not allow
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-trams text-center">
+                    <h4 class="mt30">Terms of Service</h4>
+                    <textarea name="" id="" cols="30" rows="10">
+                        b-cause,. Inc.(referred as our company) uses this homepage(referred as homepage) to introduce, promote, and gather information for the online translation service "trans-Pro," and only offer it for personal use of all who uses this homepage (referred as user)
+                        By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions.
+                        There may be times that we update the term of use without notification, please be sure to confirm before using our service.
+
+                        【To use our homepage】
+                        This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions.
+
+                        In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required. All terms of registration should be precise and truthful, following the format our company provided and the rules set. Registered ID and password are to be carefully kept by the registrants, and all results of the use of ID and password will fall into the registrant's responsibility.  Users should take responsibility of all information transmitted on this homepage, and deal no damage to our company.  In the case when user causes damage to our company or a third party by using this homepage, or conflicts happened between users or a third party, the user should take full responsibility to solve the problem without causing damage to our company.
+
+                        【About information and disclaimer of this homepage】
+                        Although the information contained on this homepage have been formulated with all due care, our company does not warrant or represent that the information is free from errors or omissions, nor that they are exhaustive. The information may change without notice, changes are periodically added to the information, and our company may make improvements or changes in the information or stop the operation of the homepage at any time.
+                        our company is in no way warrant or responsible for any change or omission of the information, or the damage caused by stopping or temporally stopping the operation of the homepage. This homepage further does not warrant or accept any liability in relation to the quality, operability or accuracy of the Data.
+                        【About stopping the operation of the homepage】
+                        In the case of the following situations, the homepage may stop or omit the registration without notice.
+                        1) Falsehood in registering information
+                        2) Abuse use of ID or password
+                        3) Abuse use of the information using the translation result or any service this homepage provides.
+                        4) Violation of this term of use
+                        5) Other situations which our company considers inappropriate
+                        【About the operation of this homepage】
+                        This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the system, or any form of natural disasters, fire, and breakdown.  our company is in no way warrant or responsible for any damage occurred due to stopping the service.
+                        【Indicated Price】
+                        All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are placed.  In this case, we will put the price listed when orders are actually placed as first priority.  We appreciate your understanding due to the nature of this service.
+                        In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual price will be based on the fixed price (less).  On the contrary, if the price has risen after the order is placed, the actual price will be based on the price before it has risen.
+                        All indicated price for our service are not tax-included.  Please check the order confirmation e-mail for the final service fee.  In the case when the indicated price is not correct, we will immediately resend an e-mail with the correct price indicated. In such case, the final fee will be based on the price notified despite the automatic responding e-mail.  Any discount after the order confirmation e-mail will not be applicable.
+                        【About the establishment time】
+                        The order is established when both sides are confirmed of willing to seal the contract.  Specifically, the order is established after the user requests to make an order through this homepage, and the translator uses the system of this homepage to accept the final request.  Please confirm the following.  After the order is established, the user is expected to agree to the "term of use".
+                        【About revision after the translation is delivered】
+                        If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made.
+                        1. Revision due to changes in original document are to be paid separately.
+                        2. Request for revision after 2 weeks are not applicable.
+                        【About cancelations due to the user's circumstance】
+                        You can cancel any time from when the request is made until the translator accepts the order.
+                        You cannot cancel for any reason after the translator accepts the order.
+                        【About compensation】
+                        Although all service provided by our company are formulated all due care, in the case where the service provided caused damage to the user, our company will compensate the damage. The compensation is limited to the exact order price indicated, and our company will not be warrant to any other responsibility.
+                        【About copyrights and trademarks】
+                        The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks all belongs to our company.  Any copy, alternation, or distribution, sale, release to third party will be prohibited.  All trademarks, logos, service marks shown in this homepage belongs to our company and associated companies.
+                        【About personal information protection】
+                        1. The usage of personal information
+                        In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service.
+                        In other cases when personal information are asked, please confirm
+                        2. Collecting personal information
+                        To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way.
+
+                        3. Personal information management
+                        Personal information will not be shown to a third party unless in the following situations.
+                        (1) With the agreement of the client
+                        (2) In the case where the client cannot be defined unless personal information is shown.
+                        (3) Reasons during consignment in order to make the task smoother.
+                        (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management)
+                        (4) Questions which our company consider appropriate to answer
+                        (5) When petition for paid service or product orders are necessary.
+                        (In this case, we will only exchange personal information with the financial institution.)
+                        (6) When asked to release the information by laws and regulations.
+
+                        【About headhunting of translators】
+                        Headhunting of translators is strictly prohibited.
+                        Any action discovered will result in us taking the appropriate legal actions.
+
+                        【About governing law】
+                        Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws of Japan the Terms of Use shall be governed in accordance with the laws of Japan
+                    </textarea>
+
+                    <div class="item-value">
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" checked="checked">Agree
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams">Disagree
+                        </label>
+                    </div>
+
+                    <input type="submit" value="To registration confirmation" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

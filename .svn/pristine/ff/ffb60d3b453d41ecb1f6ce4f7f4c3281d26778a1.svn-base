@@ -1,0 +1,41 @@
+﻿
+<div class="total-content">
+    <!-- user-registration-translator-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Set new password</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form name="setPasswordForm">
+                <div class="panel panel-bordered z-depth-1">                  
+                    <div class="panel-body">
+                        <div class="input-field">
+                            <label style="width:150px;" for="new">New Password</label>
+                            <input type="password" name="new" id="pass1" ng-model="NewPassword" ng-class="{'invalid-input':isTriedSave && setPasswordForm.new.$error.required}" required>
+                        </div>
+                        <div class="input-field">
+                            <label style="width:150px;" for="repass">Confirm Password</label>
+                            <input type="password" name="repass" id="pass2" ng-model="vm.model.Password" ng-class="{'invalid-input':isTriedSave && setPasswordForm.repass.$error.required}" required>
+                            
+                        </div>
+                        <p ng-if="NewPassword.length > 0 && NewPassword !== vm.model.Password" ng-style="{'color':'red'}">Password does not match</p>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="text-center">
+                            <!--<a href="" class="btn-flat waves-effect">
+                                Login
+                            </a>-->
+                            
+                            <button type="button" ng-readonly="NewPassword.length < 0 || !vm.model.Password" class="btn btn-primary" ng-click="SetNewPassword()">
+                                SET PASSWORD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

@@ -1,0 +1,13 @@
+﻿(function () {
+    'use strict';
+
+    function contactController($scope, $state, $uibModal, transproService, STORAGE_TYPE, appStorageFactory, USER_TYPE, API_URL) {
+        var vm = this;
+
+    }
+
+    angular
+       .module("app")
+       .controller("contactController", contactController);
+    contactController.$inject = ["$scope", "$state", "$uibModal", "transproService", "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL"];
+})();

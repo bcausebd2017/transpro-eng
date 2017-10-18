@@ -1,0 +1,395 @@
+<div class="total-content">
+    <!-- Notice section-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Partners ・Business alliance wanted</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <p>At Trans-Pro., we are seeking sales partners of the cloud translation service.</p>
+            <div class="flex-container">
+                <div class="box">
+                    <h3> Eligible companies</h3>
+                    <p>The first customer of Trans-Pro. Will receive 10% discount from the estimate!</p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Anytime you evaluate a translator (10%) </h3>
+                    <P>Companies offering translation services
+                        <br> →Companies which need translators of rare languages
+                        <br> →Companies which need to serve clients with limited budget
+                        <br> Companies which offer foreigner-recruiting services
+                        <br> Companies which employ users who need translation or dealing with foreigners
+                        <br> Companies offering outsourcing services
+                        <br> Others
+                    </P>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3> The strength of Trans-Pro.</h3>
+                    <P> ・38 languages (including rare languages) are available
+                        <br> ・Cloud type translation available delivered after 30 minutes at earliest, operating for 24 hours
+                        <br> ・Estimate, payment, delivery via the site possible
+                        <br> ・Reliable because you can confirm past jobs and customer evaluations of a translator
+                        <br> ・Not only prompt payment using a credit card but payment after receiving a bill possible (Review of the first customer necessary)
+                        <br> ・Issuance of estimates, bills, delivery statements or receipts possible
+                    </P>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Agreement requirements</h3>
+                    <P>・You need to acquire your company's own domain
+                        <br> ・Please create the menu for this service on your company's website
+                        <br> ・Please prepare flyers to promote sales of this service
+                        <br> ※Please ask us any questions regarding contents above.
+                        <br> ※Neither contract fee nor fixed cost is required
+                        <br> ※The bill is closed at the end of the month and paid at the end of next month
+                        <br> ※50% of gross revenue (= sales minus cost, including payment to a translator and discount) will be paid</P>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box businessstyle">
+                    <h3> Example of business partners</h3><br>
+                    <div class="col-md-6">
+                        <P><i class="fa fa fa-chevron-circle-right"></i> A temporary foreign language instructor recruitment
+                            agency</p>
+                        <p><i class="fa fa fa-chevron-circle-right"></i> A narrator agency </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><i class="fa fa fa-chevron-circle-right"></i> A temporary forein staff againcy </p>
+                        <p><i class="fa fa fa-chevron-circle-right"></i> A temp staff agency </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Inquiry about Trans-Pro. Partnership</h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <form class="form-horizontal" name="businessForm">
+                
+                <div class="common-table table-style-1" style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i></td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <label class="radio-inline">
+                                            <input name="receive-mail" ng-model="vm.model.IsApplication" ng-value="false" type="radio">Contact Us
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input name="receive-mail" ng-model="vm.model.IsApplication" ng-value="true" type="radio"> Application
+                                        </label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span> Your company name</td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input class="form-control" type="text" name="companyname" ng-model="vm.model.CompanyName" ng-class="{'invalid-input':isTriedSave && businessForm.companyname.$error.required }"
+                                        required />
+                                    </div>
+                                    <div class="col-md-6 padding3">
+                                        <span>Ex) Yamada Inc</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span> Name </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input class="form-control" type="text" name="name" ng-model="vm.model.Name" ng-class="{'invalid-input':isTriedSave && businessForm.name.$error.required }"
+                                        required />
+                                    </div>
+                                    <div class="col-md-6 padding3">
+                                        <span>Ex) Yamada Inc</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> Division name </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input class="form-control" type="text" name="divisionname" ng-model="vm.model.DivisionName" ng-class="{'invalid-input':isTriedSave && businessForm.divisionname.$error.required }"
+                                        required />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> Tel number </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input class="form-control" type="text" name="telnumber" ng-model="vm.model.TelNumber" ng-class="{'invalid-input':isTriedSave && businessForm.telnumber.$error.required }"
+                                        required />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span> E-mail address </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-9 padding3">
+                                        <input class="form-control" type="text" name="emailaddress" required ng-pattern="check" ng-model="vm.model.Email" 
+                                        ng-class="{'invalid-input':isTriedSave && businessForm.emailaddress.$error.required }"
+                                         />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> Company strength・appeal </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-9 padding3">
+                                        <textarea name="companystrength"  ng-model="vm.model.Comment"  rows="2" cols="20" id="errorDescription" placeholder="Company strength" style="height:200px; width:100%;  max-width:100%; min-width: 200px; " ng-class="{'invalid-input':isTriedSave && businessForm.companystrength.$error.required }" required ></textarea>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> Your company Homepage </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-9 padding3">
+                                        <input class="form-control" name="companyurlone"  placeholder="http://www." ng-model="vm.model.CompanyURLOne" type="text" ng-class="{'invalid-input':isTriedSave && businessForm.companyurlone.$error.required }" required />
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="tbl_row margin-top5">
+                                    <div class="col-md-9 padding3">
+                                      <input class="form-control" name="companyurltwo" placeholder="http://www." ng-model="vm.model.CompanyURLTwo" type="text" ng-class="{'invalid-input':isTriedSave && businessForm.companyurltwo.$error.required }" required />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i> Preffered web system </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                            <div class="checkbox">
+                                                    <label> <input id="checkBox" name="URL" ng-model="checkboxSelection" ng-change="vm.isCheckboxSelected(this)" type="checkbox">                            
+                                                        <p>Unique domain</p>
+                                                    </label>
+                                                <input placeholder="http://www." name="prefferwebsystem" ng-model="vm.model.PrefferedWebSystem" ng-disabled="vm.isDisabled"
+                                                    type="text" ng-class="{'invalid-input':isTriedSave && businessForm.prefferwebsystem.$error.required }"
+                                                    required /><br>
+                                                <span class="tbl_asstext">* You need to acquire a unique domain<br>
+                                                     * Please note that your application may be reviewed</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                
+                
+                
+                
+                <!-- <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input name="receive-mail" ng-model="vm.model.IsApplication" ng-value="false" type="radio">Contact Us
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="receive-mail" ng-model="vm.model.IsApplication" ng-value="true" type="radio"> Application
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Your company name </p>
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="companyname" ng-model="vm.model.CompanyName" ng-class="{'invalid-input':isTriedSave && businessForm.companyname.$error.required }"
+                                           required />
+                                    <span>Ex) Yamada Inc</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Name </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="name" ng-model="vm.model.Name" ng-class="{'invalid-input':isTriedSave && businessForm.name.$error.required }"
+                                           required />
+                                    <span>Ex) Taro Yamada</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Division name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="divisionname" ng-model="vm.model.DivisionName" ng-class="{'invalid-input':isTriedSave && businessForm.divisionname.$error.required }"
+                                           required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Tel number </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="telnumber" ng-model="vm.model.TelNumber" ng-class="{'invalid-input':isTriedSave && businessForm.telnumber.$error.required }"
+                                           required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> E-mail address </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="emailaddress" required ng-pattern="check" ng-model="vm.model.Email" 
+                                           ng-class="{'invalid-input':isTriedSave && businessForm.emailaddress.$error.required }"
+                                            />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x p3x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Company strength・appeal</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <textarea name="companystrength"  ng-model="vm.model.Comment"  rows="2" cols="20" id="errorDescription" placeholder="Company strength" style="height:250px; width:98%;  max-width:100%; min-width: 200px; " ng-class="{'invalid-input':isTriedSave && businessForm.companystrength.$error.required }" required ></textarea>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h5x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Your company Homepage </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input name="companyurlone"  placeholder="http://wwww." ng-model="vm.model.CompanyURLOne" type="text" ng-class="{'invalid-input':isTriedSave && businessForm.companyurlone.$error.required }" required />
+                                    <input name="companyurltwo" placeholder="http://wwww." ng-model="vm.model.CompanyURLTwo" type="text" ng-class="{'invalid-input':isTriedSave && businessForm.companyurltwo.$error.required }" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!--div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h4x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Preffered web system</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input id="checkBox" name="URL" ng-model="checkboxSelection" ng-change="vm.isCheckboxSelected(this)" type="checkbox">
+                                            <!--<input value="" type="checkbox">Unique domain->
+                                        </label>
+                                        <input placeholder="http://wwww." name="prefferwebsystem" ng-model="vm.model.PrefferedWebSystem" ng-disabled="vm.isDisabled"
+                                            type="text" ng-class="{'invalid-input':isTriedSave && businessForm.prefferwebsystem.$error.required }"
+                                            required />
+                                        <p class="orange">* You need to acquire a unique domain</p>
+                                        <p class="orange">* Please note that your application may be reviewed</p>
+                                    </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div-->
+
+                <br>
+                <div class="button-holder text-center">
+                    <input type="button" name="" class="btn btn-primary" value="Clear">
+                    <input type="button" name="" class="btn btn-primary" value="Submit" ng-click="OpenConfirmationWindow()">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

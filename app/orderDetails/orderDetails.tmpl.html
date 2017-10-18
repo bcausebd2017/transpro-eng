@@ -1,0 +1,250 @@
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Order detail </h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <div class="spinner" ng-if="!vm">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <form action="" ng-if="vm">
+                    <div class="common-table table-style-1" style="overflow-x:auto;">
+                            <table>
+                                <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Order detail </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.OrderNo}} 
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Target language </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.TargetLanguage}} ⇒ {{vm.SourceLanguage}} Translation
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Translation field </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.TranslationFieldName}} 
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Delivery plan </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.DeliveryPlan}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Delivery level </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                               {{vm.DeliveryLevelName}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Order date </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.OrderDate | utcToLocal:'dd/MM/yyyy hh:mm:ss a'}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Translation startdate </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.StartDate | utcToLocal:'dd/MM/yyyy hh:mm:ss a'}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Delivery date </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                <strong><span style="font-weight: bold;color: #3e74a2;">
+                                                        {{vm.DeliveryDate | utcToLocal:'dd/MM/yyyy hh:mm:ss a'}}
+                                                        </span>
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Delivery completion date </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.CompletionDate | utcToLocal:'dd/MM/yyyy hh:mm:ss a'}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Translation status </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                    <span ng-class="{'trans-operation':vm.OrderStatus == OrderStatus.InProgress,
+                                                    'trans-complete':vm.OrderStatus == OrderStatus.OrderCompleted,
+                                                    'trans-looking':vm.OrderStatus == OrderStatus.WaitingForConfirmation,
+                                                    'trans-cancel':vm.OrderStatus == OrderStatus.Cancel}">{{vm.OrderStatusName}}</span> 
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Word count </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                    <p class="orange">{{vm.WordCount}} characters</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Fee </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.PaymentAmount}} {{vm.CurrencyCode}}(Tax included)
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                  <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Translator payment amount </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.TranslatorFee}}{{vm.CurrencyCode}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                  <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Charge translator </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                                <div class="col-md-1" ng-if="vm.TranslatorNo"><a ui-sref="tranDetailProfile({no:vm.TranslatorNo})">{{vm.TranslatorNo}}</a></div>
+                                                <button class="col-md-3 btn btn-primary" value="Add in FavouriteList" ng-if="(vm.OrderStatus == OrderStatus.InProgress || vm.OrderStatus == OrderStatus.Delivered) && CurrentUser.UserType == UserType.Customer">Add in FavouriteList</button>
+                                                <div class="col-md-3  logout-btn" ng-if="(vm.OrderStatus == OrderStatus.InProgress || vm.OrderStatus == OrderStatus.Delivered) && CurrentUser.UserType == UserType.Customer">
+                                                    <a class="btn btn-primary">Add in Blacklist</a>
+                                                </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Sentence style of translation </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.SentenceStyle}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Comments for translators </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                {{vm.CommentToTranslator}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Manuscript </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                <textarea cols="100" rows="10">{{vm.MenuScript}}.</textarea>
+                                                <p class="orange">*The whole draft can be seen only by the customer and the translator.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><i class="fa fa-chevron-circle-right"></i> Customer evaluation </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-9 padding3">
+                                                <img src="assets/img/rating_stars_80x34.png">
+                                                <p>{{vm.EvaluationComment}}. </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+            </form>
+        </div>
+    </div>
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Case management </h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <p ng-if="(CurrentUser && CurrentUser.UserType == UserType.Translator  && vm.OrderStatus == OrderStatus.InProgress && vm.AssignedTranslatorID != CurrentUser.ID)" class="orange"> This Order is already handled by another translator. </p>
+            <div ng-if="!CurrentUser" class="col-md-12 col-sm-12 col-xs-12">
+                <input  type="button" class="b_button button-green" value="Translator Log-in" name="" ng-click="login()">
+            </div>
+            <div ng-if="CurrentUser && CurrentUser.UserType == UserType.Translator && !vm.AssignedTranslatorID" class="col-md-12 col-sm-12 col-xs-12">
+                <input  type="button" class="btn btn-primary" value="Accept this plan" name="" ng-click="acceptOrder(vm)">
+            </div>
+            <div ng-if="CurrentUser && CurrentUser.UserType == UserType.Translator && vm.AssignedTranslatorID && vm.OrderStatus == OrderStatus.InProgress && vm.AssignedTranslatorID == CurrentUser.ID" class="col-md-12 col-sm-12 col-xs-12">
+                <input  type="button" class="btn btn-primary" value="Delivery document" name="" ng-click="deliverDocument(vm)">
+            </div>
+              
+            <div ng-if="CurrentUser.UserType == UserType.Customer && (vm.OrderStatus == OrderStatus.InProgress || vm.OrderStatus == OrderStatus.Delivered)" class="col-md-12 col-sm-12 col-xs-12">
+                <input type="button" ng-click="sendMessage()" class="b_button button-green" value="Send Message" name="">
+            </div>
+            <div ng-if="CurrentUser.UserType == UserType.Translator && vm.AssignedTranslatorID == CurrentUser.ID && (vm.OrderStatus == OrderStatus.InProgress || vm.OrderStatus == OrderStatus.Delivered)" class="col-md-12 col-sm-12 col-xs-12">
+                <input type="button" ng-click="sendMessage()" class="b_button button-green" value="Send Message" name="">
+            </div>
+            <div ng-if="CurrentUser.UserType == UserType.Customer && vm.OrderStatus != OrderStatus.Cancel && (!vm.PaymentStatus || vm.PaymentStatus == PaymentStatus.Unpaid)" class="col-md-12 col-sm-12 col-xs-12">
+                <input type="button" class="b_button button-green" value="To pay screen" name="">
+            </div>
+            <div ng-if="CurrentUser.UserType == UserType.Customer && vm.OrderStatus < OrderStatus.InProgress" class="col-md-12 col-sm-12 col-xs-12">
+                <input type="button" class="b_button button-red" value="Cancel" name="" ng-click="cancelOrder()">
+                <span class="orange">* In cancelling this project for reregistration, please click a cancel button first.</span>
+            </div>
+            <div ng-if="CurrentUser.UserType == UserType.Customer && (!vm.PaymentStatus || vm.PaymentStatus == PaymentStatus.Unpaid)" class="col-md-12 col-sm-12 col-xs-12">
+                <input type="button" class="b_button button-green" value="Make a request with the same content" name="">
+                <span class="orange">*Move to estimate entry screen. Target language or plan is changeable.</span>
+            </div>
+                <!--</div>-->
+         </div>       
+    </div>
+    <!-- user-registration-area end -->
+</div>

@@ -1,0 +1,660 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="fa fa-close pull-right" ng-click="$ctrl.Close()"></button>
+    <div class="site-title">
+      <i class="fa fa-th-large"></i>
+      <h3 align="center">Translator profile </h3>
+    </div>
+  </div>
+  <!-- user-registration-area start -->
+  <div class="individuals-reg-area ">
+
+    <div class="individuals-reg-wrap border-none">
+      <form action="">   
+        <div class="pro text-center ">
+          <div class="row">
+            <div class="col-sm-4">
+              <p>Customers' rating </p>
+            </div>
+            <div class="col-sm-4">
+              <p>Appointed rate </p>
+            </div>
+            <div class="col-sm-4 ">
+              <p>Number of registered as Favorites </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <span class="rating "><span class="rating " style="background-position: 0px -17px; width: 100.00%; "><span class="value-title " title="5.0 "></span></span>
+              </span>
+            </div>
+            <div class="col-sm-4">
+              <p>100.0% (1 / 1) </p>
+            </div>
+            <div class="col-sm-4 ">
+              <p>54 times! </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pro1">
+          <div class="col-sm-3">
+            <b><i class="fa fa-chevron-circle-right"></i> Translator No. : {{vm.TranslatorNo}}</b>
+            <img id="" ng-src="{{vm.Image ? vm.Image : '../assets/img/avatar.png'}}" class="img-responsive imgt">
+            <input type="button" value="Request" class="btn-primary btn-lg reqbtn">
+          </div>
+
+          <div class="col-sm-6">
+            <div class="row margin-bottom-5">
+              <div class="col-sm-5">
+                <b><i class="fa fa-chevron-circle-right"></i> Native language </b>
+              </div>
+              <div class="col-sm-7">
+                <p>{{vm.NativeLanguageName}}</p>
+              </div>
+            </div>
+
+            <div class="row margin-bottom-5">
+              <div class="col-sm-5">
+                <b><i class="fa fa-chevron-circle-right"></i> Nationality </b>
+              </div>
+              <div class="col-sm-7">
+                <p>{{vm.NationalityName}}</p>
+              </div>
+            </div>
+
+            <div class="row margin-bottom-5">
+              <div class="col-sm-5">
+                <b><i class="fa fa-chevron-circle-right"></i> Address </b>
+              </div>
+              <div class="col-sm-7">
+                <p>{{vm.Address}}</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12  margin-bottom-5">
+                <b><i class="fa fa-chevron-circle-right"></i> Highest level of schooling</b>
+              </div>
+              <div class="col-sm-12">               
+                <p> {{vm.EducationDegree3Name}} </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12  margin-bottom-5">
+                <b><i class="fa fa-chevron-circle-right"></i> Graduating school</b>
+              </div>
+              <div class="col-sm-12">
+                  <p>{{vm.EducationDegree2Name}}</p>
+              </div>
+            </div>
+
+            <b><i class="fa fa-chevron-circle-right "></i> Translator appeal </b>
+            <div class="box_gray"> Aside from my regular job, I have worked as a freelancer doing translation work in various fields, such as translating
+              business emails, articles, advertisements, subtitles for television series etc. I always make sure to deliver
+              on time, and to provide an accurate and natural translation.
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <b><i class="fa fa-chevron-circle-right"></i> Special fields</b>
+            <div class="margin-bottom-5"></div>
+            <p>IT computer </p>
+            <p>Business documents </p>
+            <p>Thesis</p>
+            <p>scholarship </p>
+            <p>movie </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="individuals-reg-area ">
+    <div class="site-title">
+      <i class="fa fa-th-large"></i>
+      <h3>Translation experience </h3>
+    </div>
+   
+    <div class="individuals-reg-wrap pht4 border-none ">
+        <form action="">
+            <div class="common-table table-style-1" style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i>  Online translation </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    {{vm.OnlineTranslation}} times 
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i>  Appointed translation </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    {{vm.AppointedTranslation}} times
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i>  Native check </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    {{vm.NativeTranslation}} times
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i>  All translation jobs </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    {{vm.AllTranslation}} times 
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+  </div>
+
+
+
+   
+   
+    <!-- <div class="individuals-reg-wrap pht4 border-none ">
+      <form action=""> -->
+        <!-- <div class="reg-row">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Online translation</p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.OnlineTranslation}} times </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Appointed translation </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.AppointedTranslation}} times </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Native check </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p> {{vm.NativeTranslation}} times </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> All translation jobs </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.AllTranslation}} times </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div> -->
+  <!-- Profile -->
+  <div class="individuals-reg-area">
+    <div class="site-title">
+      <i class="fa fa-th-large"></i>
+      <h3>Profile</h3>
+    </div>
+
+
+    <div class="individuals-reg-wrap border-none">
+        <form action="">
+        <div class="common-table table-style-1" style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Translator No. </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.TranslatorNo}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Nationality </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.NationalityName}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Japan </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Year of birth </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.BirthDate | date: format : timezone}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Languages </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.FoeignLanguage1Name}} {{vm.FoeignLanguage2Name}} {{vm.FoeignLanguage3Name}} {{vm.FoeignLanguage4Name}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Field of translation </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                <p>IT & computer</p>
+                                <p>Business documents</p>
+                                <p>Thesis</p>
+                                <p> scholarship</p>
+                                <p> research & development
+                                <p>Special permission & Intellectual property</p>
+                                <p> Video picture</p>
+                                <p> movie</p>
+                                <p>drama</p>
+                                <p>and entertainment</p>
+                                <p> Normal documents (letters etc.)</p>
+                                <p>Manuals</p>
+                                <p>catalogs</p>
+                                <p>and pamphlet </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i>Software you can use</td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                WORD, EXCEL, POWER POINT, PHTOSHOP
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i>Educational background </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                Lund University / Japanese Language Department
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Degree </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.EducationDegree1Name}},{{vm.EducationDegree2Name}},{{vm.EducationDegree3Name}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> The main career </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.MainCareer}} 
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Self-PR </td>
+                    <td>
+                        <div class="tbl_row">
+                            <div class="col-md-6 padding3">
+                                {{vm.SelfPR}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </form>
+    </div>
+
+
+
+    <!-- <div class="individuals-reg-wrap border-none">
+      <form action=""> -->
+        <!-- <div class="reg-row">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Translator No. </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p> {{vm.TranslatorNo}} </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Nationality </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.NationalityName}} </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Japan </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p> </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Year of birth</p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p> {{vm.BirthDate | date: format : timezone}} </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Languages</p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.FoeignLanguage1Name}} {{vm.FoeignLanguage2Name}} {{vm.FoeignLanguage3Name}} {{vm.FoeignLanguage4Name}}</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name h13x p13x">
+                <p><i class="fa fa-chevron-circle-right"></i> Field of translation </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+                <p>IT & computer</p>
+                <p>Business documents</p>
+                <p>Thesis</p>
+                <p> scholarship</p>
+                <p> research & development
+                <p>Special permission & Intellectual property</p>
+                <p> Video picture</p>
+                <p> movie</p>
+                <p>drama</p>
+                <p>and entertainment</p>
+                <p> Normal documents (letters etc.)</p>
+                <p>Manuals</p>
+                <p>catalogs</p>
+                <p>and pamphlet </p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Software you can use </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>WORD, EXCEL, POWER POINT, PHTOSHOP </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Educational background </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>Lund University / Japanese Language Department </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Degree </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.EducationDegree1Name}},{{vm.EducationDegree2Name}},{{vm.EducationDegree3Name}}</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> The main career </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>{{vm.MainCareer}} </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name h2x">
+                <p><i class="fa fa-chevron-circle-right"></i> Self-PR </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p> {{vm.SelfPR}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div> -->
+  <!-- customer evalution -->
+  <div class="individuals-reg-area txt">
+    <div class="site-title">
+      <i class="fa fa-th-large"></i>
+      <h3>Customer evaluation</h3>
+    </div>
+
+    <div class="individuals-reg-wrap border-none">
+        <form action="">
+            <div class="common-table table-style-1" style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Number of evaluators </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    495 times
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Accumulated translation scores </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    2,418.2 point
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Average score </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    (Highest score set at 5) 
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="row" align="center">
+      <button id="btnClose" type="button" class="btn btn-danger" ng-click="$ctrl.Close()">Close</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <!-- <div class="individuals-reg-wrap border-none">
+      <form action=""> -->
+        <!-- <div class="reg-row">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Number of evaluators </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>495 times </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Accumulated translation scores </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p> 2,418.2 point </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="reg-row bt0">
+          <div class="row">
+            <div class="col-sm-3 pr0">
+              <div class="item-name">
+                <p><i class="fa fa-chevron-circle-right"></i> Average score </p>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="item-value">
+                <p>(Highest score set at 5) </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!-- </form>
+    </div>
+  </div> -->
+  <!-- <div class="modal-footer">
+    <div class="row" align="center">
+      <button id="btnClose" type="button" class="btn btn-danger" ng-click="$ctrl.Close()">Close</button>
+    </div>
+  </div>
+</div> -->

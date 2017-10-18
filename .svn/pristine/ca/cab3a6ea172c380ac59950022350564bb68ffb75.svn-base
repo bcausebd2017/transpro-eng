@@ -1,0 +1,49 @@
+﻿(function () {
+    'use strict';
+    function homeController($scope, $state, $uibModal, transproService) {
+        var vm = this;
+        Activate();
+        function Activate() {
+            $state.go("home");
+            getLanguages();
+            getTranslationFields();          
+       }
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+                $scope.srcLanguage = "eng" ;
+                $scope.destLanguage = "jpn";
+            }).catch(function (error) {
+                
+            });
+        }
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+            }).catch(function (error) {
+
+            });
+        }
+        $scope.srcLangChanged = function (lang) {
+            $scope.srcLanguage = lang;
+        }
+        $scope.destLangChanged = function (lang) {
+            $scope.destLanguage = lang;
+        }
+        $scope.open = function (type) {
+            $uibModal.open({
+                component: "loginWindow",
+                transclude: true,
+                resolve: {
+                   
+                },
+                size: 'sm'
+            });
+        };
+        
+    }
+    angular
+       .module("app")
+       .controller("homeController", homeController);
+    homeController.$inject = ["$scope","$state", "$uibModal", "transproService","$resolve"]
+})();

@@ -1,0 +1,225 @@
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Display based on specific trade law</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                    <div class="reg-row">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Name of the sales company </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        b-cause co,. Inc
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Name of the superintendent of sales </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        Chun-gu Kim
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Address (Headquarters, regional offices)</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        〒105-0013 The Second Mori Building 4F, Hamamatsucho 2-1-3, Minato-ku, Tokyo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Contact </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        TEL：03-5733-4264
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> E-mail address </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        info@Trans-Pro.net
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Sales price </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        You can confirm before in the estimate screen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Order method </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        Internet
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h4x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Payment method</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h2x">
+                                    <p class="red-text wd70">
+                                        Credit card: withdrawal date depends on each card company
+                                        <br>Usable cards are:
+                                        <p style="color:#FF0000">VISA, Master, JCB, American Express, Tokyo Credit, JACCS, Central Finance, OMC, Rakuten, KC, SASOIN・APLUS, TS CUBIC (Toyota card)</p>
+                                        If you have registered yourself as a corporate member, university or public organization, payment by billing is possible (Registration needs to be reviewed).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h4x p2x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Payment due date </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        In case of credit card payment, please follow each card company's membership regulation.<br> If you are a corporate member with payment by billing, fee will be deducted at the end of the next month after the project being complete.<br> If you are a university or a public organization with payment by billing, you can choose whether fee will shall be deducted at the end of the next month after the project being complete, or another month later.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h2x ">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Application due date </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        In the case of credit card payment, application and payment end at the hour once the credit card payment is done. In the case of Bill payment, application will end after the order is made.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x ">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Deliver method </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        It depends on the type of service or price plan you chose and applied.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h4x ">
+                                    <p><i class="fa fa-arrow-circle-right"></i> About refund</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        Considering the feature of the service, we basically accept refund request. Only when it is apparent that we made serious defects (including significant misinterpretation) and when you submit documented inspection of delivered translation, we will respond.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x ">
+                                    <p><i class="fa fa-arrow-circle-right"></i> Suggested environment・terminals </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        PC terminal
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

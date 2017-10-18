@@ -1,0 +1,66 @@
+<!-- Acceptance confirmation -->
+
+<div class="modal-header modal-box">
+    <button type="button" class="fa fa-close pull-right" ng-click="$ctrl.Dismiss()"></button>
+    <h4 class="modal-title" id="gridSystemModalLabel">Affected by promise</h4>
+</div>
+
+<div class="modal-body">
+        <table style="border: medium none;">
+            <tbody>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;text-align:right"><b>Order No:</b></td>
+                    <td style="border: medium none;"><span>{{order.OrderNo}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;text-align:right"><b>Translation language:</b></td>
+                    <td style="border: medium none;"><span>{{order.SourceLanguage}} => {{order.TargetLanguage}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;text-align:right"><b>DeliveryDate:</b></td>
+                    <td style="border: medium none;">
+                    <span>{{order.DeliveryDate | utcToLocal:'yyyy/MM/dd hh:mm:ss '}}</span>
+                    <span class="orange">({{order.DeliveryPlan}})</span>
+                    </td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;text-align:right"><b>word/Character count:</b></td>
+                    <td style="border: medium none;"><span>{{order.WordCount}} words</span> 
+                    <!--<span>*for Chinese, Japanese, Korean, we count charactors</span>-->
+                    </td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;text-align:right"><b>translation fee (tax included)</b></td>
+                    <td style="border: medium none;"><span>{{order.TranslatorFee}} {{order.CurrencySymbol}}</span> 
+                    <!--<span>*how much we pay for staff</span>-->
+                    </td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;text-align:right"><b>Payment date:</b></td>
+                    <td style="border: medium none;"><span>{{order.DeliveryDate | utcToLocal:'yyyy/MM '}} End of month</span></td>
+                </tr>
+            </tbody>
+        </table>
+	<div class="box text-center">
+		<p>Do you agree with the confidentiality agreement of the information given by the customer?</p>
+        <div>
+            <input type="radio" id="agree"
+                   name="content" value="agree" ng-click="checkAgreement(true)">
+            <label for="agree">Agree</label>
+            <input type="radio" id="disagree"
+                   name="content" value="disagree" ng-click="checkAgreement(false)" checked>
+            <label for="disagree">Disagree</label>
+        </div>
+</div>
+<div class="modal-footer">
+    <div class="text-center">
+        <p>You can't cancel the order once you have accepted</p>
+		<p>Do you accept this order?</p>
+        <button type="button" class="btn btn-primary"  value="OK" ng-click="$ctrl.acceptPlan()">OK</button>
+        <button type="button" class="btn btn-default" value="Cancel" ng-click="$ctrl.Dismiss()">Cancel</button>
+    </div>
+</div>
+
+
+
+

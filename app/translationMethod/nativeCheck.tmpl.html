@@ -1,0 +1,260 @@
+﻿
+<div class="total-content">
+
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-pencil-square-o"></i>
+            <h3>Native check</h3>
+        </div>
+
+        <div class="transpro-content">
+        <div class="estimate-wrap">
+            <form>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            <i class="fa fa-chevron-circle-right"></i> Language
+                            <select id="srcLanguage" class="form-control"
+                                    ng-model="Variable.srcLanguage" ng-change="srcLangChanged(Variable.srcLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in Variable.languages"></select>
+                            <i class="fa fa-play"></i>
+                            <select id="destLanguage" class="form-control"
+                                    ng-model="Variable.destLanguage" ng-change="destLangChanged(Variable.destLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in Variable.languagesTarget"></select>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 remove-padding">
+                        <p>
+                            <i class="fa fa-chevron-circle-right"></i> Translation field
+                            <select id="selectField" class="form-control"
+                                    ng-model="Variable.selectField" ng-change="fieldChanged(Variable.selectField)"
+                                    ng-options="t.ID as t.Name for t in ::translationFields"
+                                    ng-class="{'invalid-input': isProceedToEstimation && Variable.selectField == ''}">
+                                <option value="" selected="selected">▼--------------</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--<div class="transpro-tab-area">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" >Input manuscript directly</a></li>
+                        <li><a data-toggle="tab" >Upload a file</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-item-1" class="tab-pane transpro-tabpan fade in active">
+                            <div class="transpro-text-area">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                            </div>
+                            <p>* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.</p>
+                            <p>(For other languages, ​​you can enter up to 20,000 words.)</p>
+                        </div>
+                        <div id="tab-item-2" class="tab-pane transpro-tabpan fade">
+                            <p>Some content in menu 1.</p>
+                        </div>/>
+                    </div>
+                </div>-->
+                <uib-tabset active="activePill">
+                    <uib-tab index="0" heading="Input Manuscript Directly">
+                        <div class="estimate-tab-contact">
+                            <div class="transpro-text-area">
+                                <textarea cols="30" rows="10" ng-model="Estimation.Manuscript.InputText" placeholder="Enter text directly here"></textarea>
+                            </div>
+                            <div class="orange">
+                                * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                                <br>
+                                (For other languages, ​​you can enter up to 20,000 words.)
+                            </div>
+                        </div>
+                    </uib-tab>
+                    <uib-tab index="1" heading="Upload a File">
+                        <div class="estimate-tab-contact">
+                            <div class="transpro-fileupload-area">
+                                <div class="col-sm-12">
+                                    <div class="col-sm-3 padding-left0">
+                                        <input type="file" ng-change="UpdateFileInfo()" ng-model="Estimation.FileList"
+                                               multiple load-file use-document-filter broadcast="listenTranslationFileSelection" id="fileName" />
+
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <span style="float:right;" ng-if="Estimation.FileList != null">
+                                            {{Estimation.FileList.length}} files selected, total size {{Estimation.FileSizeTotalString}}&nbsp&nbsp
+                                            <button class="b_button b_small b_red" style="float:right; min-width:60px" ng-click="ClearFileSelector()">Clear</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button ng-if="Estimation.FileList != null" ng-disabled="Estimation.DocumentList != null && Estimation.DocumentList.length > 0"
+                                            class="b_button b_black b_small" style="min-width: 90px;" ng-click="UploadTranslationDocuments()">
+                                        Upload
+                                    </button>
+                                    <span ng-if="Estimation.DocumentList != null && Estimation.DocumentList.length > 0">{{Variable.UploadStatus}}</span>
+
+                                </div>
+                                <!--<button class="btn" ng-click="ClearFileSelector()">Clear</button>-->
+                                <div class="col-sm-12">
+                                    <br />
+                                    Supported file formats for uploading:
+                                    <ul>
+                                        <li>
+                                            Adobe's Portable Document Format (.PDF)
+                                        </li>
+                                        <li>
+                                            Microsoft Word 97 - 2003 (.DOC)
+                                        </li>
+                                        <li>
+                                            Microsoft Word 2007 (.DOCX)
+                                        </li>
+                                        <li>
+                                            Microsoft Excel 97 - 2003 (.XLS)
+                                        </li>
+                                        <li>
+                                            Microsoft Excel 2007 (.XLSX)
+                                        </li>
+                                        <li>
+                                            Microsoft PowerPoint 97 - 2003 (.PPT)
+                                        </li>
+                                        <li>
+                                            Microsoft PowerPoint 2007 (.PPTX)
+                                        </li>
+                                        <li>
+                                            Rich Text Format (.RTF)
+                                        </li>
+                                        <li>
+                                            Unicode & ASCII Plain Text (.TXT)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                    </uib-tab>
+
+                </uib-tabset>
+                <div class="sample-tab-btn text-center">
+                    <button type="button" class="b_blue b_button" ng-click="CheckEstimation()">Check Estimation</button>
+                </div>
+            </form>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> About native check </h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <div class="flex-container">
+                <div class="box1">
+                    <p>
+                        For "native check", your translation will be checked by a native speaker of the target language. For example, if you translated the draft by yourself but are uneasy about its quality, you can use this service to improve the quality of translation.
+                        <br>
+                        <br> Send your translated draft through <strong><a ui-sref="/">estimation form</a></strong> to confirm information including delivery time.
+                        <br> You can order <strong>24 hours a day, 365 days a year,</strong> and receive translation in <strong>30 minutes (shortest).</strong>
+                        <br>
+                        <br><strong>
+                            * However, we decline checking machine-translated draft using services such as Google or Yahoo.
+                            <br> * Please note that we may charge additional fee for machine-translated drafts made by services such as Google or Yahoo.
+                            <br>
+                            <br>Register first! →
+                        </strong>
+                        <input ui-sref="userRegistration" id="" class="b_blue b_button b_small" name="" value=" To the registration screen " type="button">
+                    </p>
+                    <hr>
+                    <h3>Application</h3><br>
+                    <div class="trans-appli-area">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-1.png" alt="" />
+                                    <p><a  ui-sref="/">Estimate</a> using our form</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-2.png" alt="" />
+                                    <p><a ui-sref="userRegistration">Membership registration (free)</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-3.png" alt="" />
+                                    <p>Choose payment method</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-4.png" alt="" />
+                                    <p>
+                                        Log in with a registered
+                                        <br><a href="">ID and password</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-5.png" alt="" />
+                                    <p>Reconfirm and order</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-6.png" alt="" />
+                                    <p>Choose up to Payment process </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-7.png" alt="" />
+                                    <p>Notify a Checker </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-8.png" alt="" />
+                                    <p>Checker confirms the order </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-9.png" alt="" />
+                                    <p>Check complete </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-10.png" alt="" />
+                                    <p>
+                                        Deliver
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-11.png" alt="" />
+                                    <p>
+                                        Receive the documents
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box total-content text-right">
+                                    <a ui-sref="application" class="b_blue b_button">More information</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>
+        <div class="gotopBox">
+                <a ui-sref="contact" href="#/contact">Contact Us</a><span>|</span><a ui-sref="/" href="#/">Estimate</a><span>|</span><a ui-sref="/" href="#/">TOP</a>
+            </div>
+    </div>
+</div>
+
+

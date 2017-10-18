@@ -1,0 +1,130 @@
+﻿<div class="total-content">
+    <!-- User Guide Links start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>To University, public organization or public office customer</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <ul class="list-inline guide-menu">
+                <li><a ui-sref="userguideIndividual">Personal Individuals</a> </li>
+                <li><a ui-sref="userguide">Legal entity customer  </a> </li><br>
+                <li><a ui-sref="userguideOffice">For Universities/Public Organizations/Offices </a> </li>
+                <li class="last"><a ui-sref="userguideTranslator">Translators</a> </li>
+            </ul>
+            <div class="flex-container">
+                <div class="box">
+                    <p>
+                        You can order <strong> hours a day, 365 days a year, and receive translation in 30 minutes (shortest)</strong>.<br>                        If you enter the necessary information in the automatic estimation form of this site, estimates and<br>                        delivery time can be confirmed on the spot for you to request.<br> You will need member registration
+                        to request translation. Service can be used right after you registered.<br> Payable by <strong> public expense/Grant-in-Aid for scientific research </strong>(needs
+                        investigation for the first time)<br> Estimates, statements of delivery, bills, and receipts are
+                        issuable (except for credit card payments)<br> Can pay by credit card before the investigation<br>                        Can send the estimation to participants through e-mail
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Automatic estimation</h3>
+                    <a href="/" class="btn btn-primary pull-right"> Estimate </a>
+                    <ul class="list-unstyled">
+                        <li>To estimate Text, Word, and Excel data.</li>
+                        <li>Translation requests for picture data/PDF, please <strong><a ui-sref="translatorCoordinator">click here.</a></li></strong>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Confirm estimated price </h3>
+                    <ul class="list-unstyled">
+                        <li>* Please choose the field and plan of translation</li>
+                        <li>* Translators are appointable</li>
+                        <li>* Please input comments to translators</li>
+                        <li>Special discount for <strong> time (10%))</strong> or anytime you <strong>evaluate a translator (10%)</strong></li>
+                        <li><strong>A maximum of 20% discount</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Registration・Log-in・Choose payment method</h3>
+                    <a ui-sref="userRegistration" class="btn btn-primary pull-right"> Registration </a>
+                    <ul class="list-unstyled">
+                        <li> * Free registration</li>
+                        <li> * Service can be used right after you registered</li>
+                        <li> * E-mail will be sent to you after registration</li>
+                        <li>Choose your payment method </li>
+                        <li>※*Payment by credit cards<br> *The credit card pay screen will open once you clicked "<strong>To pay screen</strong>"
+                            <br> Enter credit card information after confirming the fee and press <strong>transmit</strong>                            button to finish your order.<br>
+                        </li>
+                        <li>*Payment by bank transfer (Petition)</li>
+                        <li>Investigation is required for the first time. Usually it will take 1 business day for the investigation
+                            to be<br> completed. Sat., Sun., and holidays are not applicable.<br> Estimates, statements of
+                            delivery, and bills are issuable by requesting on the registration screen<br> Pay sites are appointable
+                            on registration screen.<br>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Translator arrangements starts </h3>
+                    <ul class="list-unstyled">
+                        <li> * Please hold on until the translator takes your order </li>
+                        <li> About appointing the priority of translators</li><br>
+                        <li>Place checks from 1-4 on the "appoint box" in "appointing priority of translators" by clicking "rearrange
+                            registered information" on MY PAGE. You may appoint the priority of the translators</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Translator arranged→notification</h3>
+                    <ul class="list-unstyled">
+                        <li> * Your order mail is sent to the native translator acquainted in the field.</li>
+                        <li> An e-mail notifying that the translation has started will be send to you</li>
+                        <li> You may interact with the translator using the message system to confirm the situation of the translation.</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3> Document delivered by the translator </h3>
+                    <ul class="list-unstyled">
+                        <li> * After the translation is finished, your document will be delivered by the translator </li>
+                        <li> Document will be uploaded onto the server. </li>
+                        <li>*An e-mail notifying that the translation has ended will be send to you </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Download document </h3>
+                    <ul class="list-unstyled">
+                        <li> * Please download the translation from the server </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>After service after delivery </h3>
+                    <ul class="list-unstyled">
+                        <li> * You may ask questions about the translation after it is delivered </li>
+                        <li> * You may ask questions as many times as you wish within 2 weeks after delivery.</li>
+                        <li>.<strong>Evaluate the translators</strong> and get a 10% discount next time.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="flex-container button">
+                <div class="button-holder">
+                    <div class="clearfix"></div>
+                    <a class="btn btn-primary">Estimate</a>
+                    <a class="btn btn-primary">Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Guide Links end -->
+</div>

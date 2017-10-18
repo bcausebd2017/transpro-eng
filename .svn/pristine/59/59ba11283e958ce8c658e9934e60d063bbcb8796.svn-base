@@ -1,0 +1,85 @@
+﻿(function () {
+    'use strict';
+
+    function homeController($scope, $state, $uibModal, transproService, STORAGE_TYPE, appStorageFactory, USER_TYPE, API_URL, fileUploadService) {
+
+        var vm = this;
+
+        $scope.Estimation = {};
+        $scope.Estimation.File = null;
+        $scope.Estimation.WordCount = 0;
+        $scope.Estimation.TranslationText = null;
+        $scope.CurrentUser = {};
+        $scope.selectField = "";
+        Activate();
+
+        function Activate() {
+            getLanguages();
+            getTranslationFields();
+            $scope.CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            $scope.UserType = USER_TYPE;
+        }
+
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+                $scope.srcLanguage = _.find(response,function(f){return f.Code == 'eng'}).ID;
+                $scope.destLanguage = _.find(response, function (f) { return f.Code == 'jpn' }).ID;
+            }).catch(function (error) {
+                
+            });
+        }
+
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+            }).catch(function (error) {
+
+            });
+        }
+
+        $scope.srcLangChanged = function (lang) {
+            $scope.srcLanguage = lang;
+        };
+        $scope.destLangChanged = function (lang) {
+            $scope.destLanguage = lang;
+        };
+        $scope.fieldChanged = function (field) {
+            $scope.selectField = field;
+        };
+        $scope.logout = function () {
+            $state.reload();
+            appStorageFactory.ClearAll();
+        };
+
+
+        $scope.open = function (type) {
+            $uibModal.open({
+                component: "loginWindow",
+                transclude: true,
+                resolve: {},
+                size: 'sm'
+            });
+        };
+
+        $scope.UploadDocument = function () {
+            var url = API_URL.URL + "fileUpload/uploadDocument";
+            fileUploadService.uploadFileToUrl($scope.Estimation.File, url, onSuccessUpload, onError);
+        };
+
+        var onSuccessUpload = function (response) {
+            $scope.Estimation.WordCount = response.data[0].WordCount;
+            $scope.Estimation.TranslationText = response.data[0].TranslationText;
+            alert("Files: " + response.data.length + "WordCount: " + response.data[0].WordCount + ", Text: " + response.data[0].TranslationText);
+        };
+
+        var onError = function (response) {
+            console.log("Error while uploading estimation document " + response);
+        };
+    }
+
+    angular
+       .module("app")
+       .controller("homeController", homeController);
+    homeController.$inject = ["$scope", "$state", "$uibModal", "transproService", "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL", "fileUploadService"];
+})();

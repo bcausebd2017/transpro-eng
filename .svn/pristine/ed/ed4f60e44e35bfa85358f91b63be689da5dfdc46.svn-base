@@ -1,0 +1,27 @@
+﻿(function () {
+    "use strict";
+    function MessageService($q, $http, API_URL, $httpParamSerializer) {
+        var vm = this;
+
+        function sendMessage(obj) {
+            return $http({
+                url: API_URL.URL + "SendMessage/save",
+                method: "POST",
+                data: obj
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data.Message);
+            });
+        }
+        var service =
+            {
+                sendMessage: sendMessage,
+            }
+        return service;
+    }
+    angular
+    .module("app")
+    .service("MessageService", MessageService);
+    MessageService.$inject = ["$q", "$http", "API_URL", "$httpParamSerializer"]
+})();

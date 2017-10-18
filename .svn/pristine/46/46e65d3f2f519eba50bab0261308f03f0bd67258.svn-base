@@ -1,0 +1,70 @@
+<div class="total-content">
+    <!-- my-page-area-area start -->
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-envelope-o"></i>
+            <h3>Translation fee inquiry</h3>
+        </div>
+        <div class="receive-msg-wrap common-sub-block">
+            <p style="color:#e70f0f; margin:0px;">* Updated on 3rd every month.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Number of projects</th>
+                        <th>Total payment</th>
+                        <th>Card payment amount</th>
+                        <th>Later payment amount</th>
+                        <th>Issue petition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">01</a></td>
+                        <td><a href="">Mr. Jibon</a></td>
+                        <td><a href="">1987</a></td>
+                        <td><a href="">Some title goes here..</a></td>
+                        <td><a href="">31/08/2017</a></td>
+                        <td><a href="">text</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" colspan="6">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>2017/07 Order list</h3>
+        </div>
+        <div class="order-breakdown-wrap receive-msg-wrap common-sub-block">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order No.</th>
+                        <th>Status</th>
+                        <th>Service name</th>
+                        <th>Payment method</th>
+                        <th>Translator</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">105</a></td>
+                        <td><a href="">Pending</a></td>
+                        <td><a href="">Service name goes here...</a></td>
+                        <td><a href=""></a></td>
+                        <td><a href="">Japanese</a></td>
+                        <td><a href=""></a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left" colspan="6">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

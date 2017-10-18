@@ -1,0 +1,13 @@
+﻿<div class="total-content">
+    <!-- my-page-area-area start -->
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Process from application to completion of translation</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <img src="assets/img/flow_710x1350.png" alt=" Process from application to completion of translation" style="width: 100%; height: 100%">
+        </div>
+    </div>
+    <!-- my-page-area end -->
+</div>

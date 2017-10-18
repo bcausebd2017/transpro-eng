@@ -1,0 +1,123 @@
+﻿<div class="total-content">
+    <!-- Report-errors-page-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Contact Us</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <p class="orange">* At Trans-pro we know your time is precious. Therefore we aim to have a cost estimate response to you within 24 hours. </p>
+            <form action="">
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                    <span>Ex) Taro Yamada</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Division name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Tel number </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                    <span>Ex)000-0000-0000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> FAX </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                    <span>Ex)000-0000-0000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> E-mail address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x p3x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Comment</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <textarea name="" rows="2" cols="20" style="height:240px; width:98%;  max-width:100%; min-width: 200px;"></textarea>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="contact-us">
+                        <div class="reg-trams text-center cont">
+                            <input type="submit" value="Clear" />
+                        </div>
+                        <div class="reg-trams text-center cont">
+                            <input type="submit" value="Send" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

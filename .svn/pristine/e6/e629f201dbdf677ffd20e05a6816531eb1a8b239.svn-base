@@ -1,0 +1,167 @@
+﻿(function () {
+    "use strict";
+    function transproService($q, $http, API_URL, $httpParamSerializer, APP_SETTINGS) {
+        var vm = this;     
+        //get hotel specifications
+        function getLanguages() {
+            return $http({
+                url: API_URL.URL + "language/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode}
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+
+        function getLanguageslvl() {
+            return $http({
+                url: API_URL.URL + "languagelvlist/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getCountries() {
+            return $http({
+                url: API_URL.URL + "country/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getEducatinalDegree() {
+            return $http({
+                url: API_URL.URL + "education/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getCurrentState() {
+            return $http({
+                url: API_URL.URL + "currentstate/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        //function getProfessional() {
+        //    return $http({
+        //        url: API_URL.URL + "profession/list",
+        //        method: "POST",
+        //        data: { CurrentCulture: APP_SETTINGS.CultureCode }
+        //    }).then(function (response) {
+        //        return response.data;
+        //    }).catch(function (error) {
+        //        return $q.reject(error.data);
+        //    });
+        //}
+        function getTranslationFileds() {
+            return $http({
+                url: API_URL.URL + "estSpecializedFields/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+
+        function getIndustryClassifications() {
+            return $http({
+                url: API_URL.URL + "companyindustryclassification/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        
+        function getTransproDeliveryTypeList() {
+            return $http({
+                url: API_URL.URL + "transproDeliveryPlan/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+
+        function getBankAccountType() {
+            return $http({
+                url: API_URL.URL + "bankAccountType/list",
+                method: "POST",
+                data: { CurrentCulture: APP_SETTINGS.CultureCode }
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function getCustomerById(customerId, cultureId) {
+            return $http({
+                url: API_URL.URL + "customer/getCustomerById" + "/" + customerId + "/" + cultureId,
+                method: "GET"
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+
+        function getTranslatorById(translatorId, cultureId) {
+            return $http({
+                url: API_URL.URL + "translator/getTranslatorById" + "/" + translatorId + "/" + cultureId,
+                method: "GET"
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+		
+
+        var service =
+            {
+                getEducatinalDegree:getEducatinalDegree,
+                getLanguages: getLanguages,
+                getCurrentState: getCurrentState,
+                getCountries: getCountries,
+                getTranslationFileds: getTranslationFileds,
+                getIndustryClassifications: getIndustryClassifications,
+                getBankAccountType: getBankAccountType,
+                //getProfessional: getProfessional,
+                getTranslatorId: getTranslatorById,
+                getCustomerById: getCustomerById,
+                getTransproDeliveryTypeList: getTransproDeliveryTypeList,
+                getLanguageslvl: getLanguageslvl
+            }
+
+
+        return service;
+    }
+
+    angular
+    .module("app")
+    .service("transproService", transproService);
+    transproService.$inject = ["$q", "$http", "API_URL", "$httpParamSerializer","APP_SETTINGS"]
+})();

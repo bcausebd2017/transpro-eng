@@ -1,0 +1,25 @@
+﻿(function () {
+	'use strict';
+	//angular.module("app").controller("reportErrorController", function ($scope, $state, $rootScope, $uibModel, transproService, reportErrorService, APP_SETTINGS, appStorageFactory, STORAGE_TYPE, alertMsg) {
+	angular.module("app").controller("reportErrorController", function ($scope, $state, $rootScope, $uibModal, transproService, reportErrorService, APP_SETTINGS, appStorageFactory, STORAGE_TYPE, alertMsg) {
+	    var vm = this;
+	    vm.model = {};
+
+		$scope.saveReportError = function () {
+			$scope.isTriedSave = true;
+			//if (!isValidInput())
+			//	return;
+			vm.model.ApplicationID = APP_SETTINGS.ApplicationId;
+			reportErrorService.submitReportError(vm.model).then(onSuccessSave).catch(function (error) {
+			}).catch(function (error) {
+				alertMsg.show('error', error);
+			});
+		}
+
+		var onSuccessSave = function (response) {
+		    alertMsg.show('success', 'Your report has been submitted successfully.');
+		    $state.go("/");
+		}
+
+	});
+})();

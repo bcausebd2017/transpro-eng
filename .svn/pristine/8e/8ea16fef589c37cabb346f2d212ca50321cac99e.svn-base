@@ -1,0 +1,82 @@
+﻿(function () {
+    'use strict';
+
+    function estimationController($scope, $state, $uibModal, transproService, STORAGE_TYPE, appStorageFactory, USER_TYPE, API_URL, $stateParams, APP_SETTINGS) {
+
+        var vm = this;
+
+        $scope.Estimation = {};
+        $scope.Estimation.File = null;
+        $scope.Estimation.WordCount = 0;
+        $scope.Estimation.TranslationText = null;
+        $scope.CurrentUser = {};
+        //$scope.Variable = {};
+        //$scope.Variable.PriceDetails = null;
+
+        Activate();
+
+        function Activate() {
+            $scope.CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            $scope.UserType = USER_TYPE;
+            $scope.selectTargetlang = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            getLanguages();
+            getTranslationFields();
+            $scope.Estimation = $stateParams.Estimation;
+            $scope.Estimation.Price = 0;
+            $scope.Estimation.PriceType = 0;
+            $scope.Estimation.PriceDetails = null;
+            $scope.Estimation.DeliveryAnticipatedDate = null;
+            getTransproLanguagePriceCategory();
+        }
+
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+            }).catch(function (error) {
+
+            });
+        }
+
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+            }).catch(function (error) {
+
+            });
+        }
+
+        function getTransproLanguagePriceCategory() {
+            var TransproModel = {};
+            API_URL;
+            TransproModel.CurrentCulture = APP_SETTINGS.CultureCode;
+            TransproModel.SourceLanguageID = $scope.Estimation.srcLanguage;
+            TransproModel.TargetLanguageID = $scope.Estimation.destLanguage;
+            TransproModel.SpecialityFieldID = $scope.selectField;
+            transproService.getTransproLanguagePriceCategory(TransproModel).then(function (response) {
+                $scope.LanguagePriceCategoryList = response;
+            }).catch(function (error) {
+
+            });
+        }
+
+        $scope.ModifyPriceDetails = function (PriceDetails, type) {
+            $scope.Estimation.PriceType = type;
+            $scope.Estimation.PriceDetails = PriceDetails;
+            if (type == 1) {
+                $scope.Estimation.Price = PriceDetails.LightPrice * $scope.Estimation.WordCount;
+            }
+            else if (type == 2) {
+                $scope.Estimation.Price = PriceDetails.BusinessPrice * $scope.Estimation.WordCount;
+            }
+            else if (type == 3) {
+                $scope.Estimation.Price = PriceDetails.ExpertPrice * $scope.Estimation.WordCount;
+            }
+            console.log("Price: " + $scope.Estimation.Price + " , Type: " + type);
+        };
+    }
+
+    angular
+       .module("app")
+       .controller("estimationController", estimationController);
+    estimationController.$inject = ["$scope", "$state", "$uibModal", "transproService", "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL", "$stateParams", "APP_SETTINGS"];
+})();

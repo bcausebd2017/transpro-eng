@@ -1,0 +1,162 @@
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Display based on specific trade law</h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <div class="common-table notation-style" style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Name of the sales company </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    b-cause co,. Inc
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Name of the superintendent of sales </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    Chun-gu Kim
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Address (Headquarters, regional offices) </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    〒105-0013 The Second Mori Building 4F, Hamamatsucho 2-1-3, Minato-ku, Tokyo
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Contact </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    TEL：03-5733-4264
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> E-mail address </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    info@Trans-Pro.net
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Sales price </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    You can confirm before in the estimate screen.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Order method </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-6 padding3">
+                                    Internet
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Payment method </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-12 padding3">
+                                    Credit card: withdrawal date depends on each card company
+                                    <br>Usable cards are:
+                                    <p style="color:#f26522; margin-bottom:0">VISA, Master, JCB, American Express, Tokyo Credit, JACCS, Central Finance, OMC, Rakuten,
+                                        KC, SASOIN・APLUS, TS CUBIC (Toyota card)</p>
+                                    If you have registered yourself as a corporate member, university or public organization, payment by billing is possible
+                                    (Registration needs to be reviewed).
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Payment due date </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-12 padding3">
+                                    In case of credit card payment, please follow each card company's membership regulation.<br>                                    If you are a corporate member with payment by billing, fee will be deducted at the end
+                                    of the next month after the project being complete.<br> If you are a university or a
+                                    public organization with payment by billing, you can choose whether fee will shall be
+                                    deducted at the end of the next month after the project being complete, or another month
+                                    later.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Application due date </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-12 padding3">
+                                    In the case of credit card payment, application and payment end at the hour once the credit card payment is done. In the
+                                    case of Bill payment, application will end after the order is made.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Deliver method </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-12 padding3">
+                                    It depends on the type of service or price plan you chose and applied.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> About refund </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-12 padding3">
+                                    Considering the feature of the service, we basically accept refund request. Only when it is apparent that we made serious
+                                    defects (including significant misinterpretation) and when you submit documented inspection
+                                    of delivered translation, we will respond.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa fa-chevron-circle-right"></i> Suggested environment・terminals </td>
+                        <td>
+                            <div class="tbl_row">
+                                <div class="col-md-12 padding3">
+                                    PC terminal
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="gotopBox">
+            <a ui-sref="contact" href="#/contact">Contact Us</a><span>|</span><a ui-sref="/" href="#/">Estimate</a><span>|</span>
+            <a ui-sref="/" href="#/">TOP</a>
+        </div>
+    </div>
+
+</div>

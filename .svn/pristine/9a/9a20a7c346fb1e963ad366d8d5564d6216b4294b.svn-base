@@ -1,0 +1,628 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Translation price list</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="">
+                <div class="pricelist-top-fillter">
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Language：</label>
+                                    <select id="srcLanguage" 
+                                            data-ng-model="srcLanguage" 
+                                            ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                    ⇔
+                                    <select id="destLanguage"
+                                            data-ng-model="destLanguage" 
+                                            ng-options="lang.ID as lang.Name for lang in ::languages">
+                                        <option value="" selected="selected">Native check</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Specialized field: </label>
+                                    <select id="selectField"
+                                            data-ng-model="selectField" 
+                                            ng-options="t.ID as t.Name for t in ::translationFields">
+                                        <option value="" selected="selected">▼--------------</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <a  class="btn btn-primary pull-right"> Search </a>
+                                </div>                                
+                            </div>
+                        </div>
+                     </form>
+                </div>
+            </div>
+            <div class="flex-container col-one">
+                <p class="orange">
+                    * Translation fee is set according to languages, text volume, fields and delivery time <br />
+                    * One page equals to 200 Words in English or 300 Characters in Chinese(Mandarin).
+                </p>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 24 hours(SMS) </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Eng ⇒ Chi	</th>
+                                <th>Chi ⇒ Eng	</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.10 </td>
+                                <td class="text-right">＄ 0.07	</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.15	 </td>
+                                <td class="text-right">＄ 0.10	</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.17	 </td>
+                                <td class="text-right">＄ 0.11	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 12 hours(SMS)</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.08	 </td>
+                                <td class="text-right">＄ 0.05	</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.13		 </td>
+                                <td class="text-right">＄ 0.08	</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.18	 </td>
+                                <td class="text-right">＄ 0.12	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 4 hours(SMS)</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.10		 </td>
+                                <td class="text-right">＄ 0.07</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.23		 </td>
+                                <td class="text-right">＄ 0.10	</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.23	 </td>
+                                <td class="text-right">＄ 0.15	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 30 minutes(SMS)</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.15		 </td>
+                                <td class="text-right">＄ 0.09</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.23			 </td>
+                                <td class="text-right">＄ 0.15</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.33		 </td>
+                                <td class="text-right">＄ 0.21	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 90 minutes</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.16			 </td>
+                                <td class="text-right">＄ 0.10</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.24			 </td>
+                                <td class="text-right">
+                                    ＄ 0.15
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.35		 </td>
+                                <td class="text-right">＄ 0.22	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>
+                        Delivered within 4 hours
+                    </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.13				 </td>
+                                <td class="text-right">＄ 0.08</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.20		 </td>
+                                <td class="text-right">＄ 0.13			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.30			 </td>
+                                <td class="text-right">＄ 0.19	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 8 hours	</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.12					 </td>
+                                <td class="text-right">＄ 0.08</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.19			 </td>
+                                <td class="text-right">＄ 0.12			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.27			 </td>
+                                <td class="text-right">＄ 0.17	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>
+                        Delivered within 12 hours
+                    </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.11						 </td>
+                                <td class="text-right">＄ 0.07</td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.25		 </td>
+                                <td class="text-right">＄ 0.16			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.27			 </td>
+                                <td class="text-right">＄ 0.17	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>
+                        Delivered within 24 hours
+                    </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.10							 </td>
+                                <td class="text-right">
+                                    ＄ 0.07
+                                </td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.16		 </td>
+                                <td class="text-right">＄ 0.10			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.23			 </td>
+                                <td class="text-right">＄ 0.15	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>
+                        Delivered within 3 days
+                    </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.09							 </td>
+                                <td class="text-right">
+                                    ＄ 0.06
+                                </td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.14		 </td>
+                                <td class="text-right">＄ 0.09			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.21			 </td>
+                                <td class="text-right">＄ 0.13	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Delivered within 5 days</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.09							 </td>
+                                <td class="text-right">
+                                    ＄ 0.06
+                                </td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.14		 </td>
+                                <td class="text-right">＄ 0.09			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.20			 </td>
+                                <td class="text-right">＄ 0.13	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>
+                        Delivered within 10 to 30 days
+                    </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 pricelist" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> &nbsp;	</th>
+                                <th>Jap ⇒ Eng</th>
+                                <th>Eng ⇒ Jap</th>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td class="text-right">＄ 0.08 ～ ＄ 0.08							 </td>
+                                <td class="text-right">
+                                    ＄ 0.05 ～ ＄ 0.05
+                                </td>
+                                <td rowspan="3">
+                                    This is a perfect plan for a
+                                    relatively easier and quickly-wanted
+                                    translation, such as email reply and SNS
+                                    conversation.
+                                    Approx. 0.5 page or less
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="text-right">＄ 0.12 ～ ＄ 0.13		 </td>
+                                <td class="text-right">＄ 0.07 ～ ＄ 0.08			</td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="text-right">＄ 0.17 ～ ＄ 0.18			 </td>
+                                <td class="text-right">＄ 0.11 ～ ＄ 0.12	</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container col-one">
+                <p class="text-left pricelist">
+                    In trans-Pro, various price plans are available according to your various needs on levels and translation time.
+                </p>
+            </div>
+            <div class="flex-container">
+                <div class="box1" style="overflow-x:auto;">
+                    <table>
+                        <thead>
+                        <tbody>
+                            <tr>
+                                <th class="light">Light</th>
+                                <td>
+                                    A recommended plan for e-mail/letter communication with close ones, or daily conversation such as communication over SNS with foreign people. This service is also suitable for simple English translation of in-house e-mails or gathering information from English websites during work.
+                                    Please make good use of this service for cheap and fast translation
+                                    For communication with clients, we recommend services from Business rank.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="business">Business</th>
+                                <td class="">
+                                    For individual customers, personal use, such as contact to foreign Internet mail order sites and hotel reservation, is available..
+                                    For corporate customers, business use, such as daily communication with clients, bosses or colleagues in foreign countries.
+                                    For more important contents such as contracts with clients, Expert service is recommended.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="expert">Expert</th>
+                                <td class="">
+                                    Please use this service for important business communication which affects the business success, such as contract with the clients.
+                                    Expert service is recommended for contents, including annual reports, contracts and legal documents related business alliance, disregard to the volume.
+                                    Experienced translators with more than five years of translation provides you the most appropriate translation service meeting your object or environment.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>
+<br><br><br>

@@ -1,0 +1,56 @@
+﻿(function () {
+    'use strict';
+
+    function estimationController($scope, $state, $uibModal, transproService, STORAGE_TYPE, appStorageFactory, USER_TYPE, API_URL, $stateParams) {
+
+        var vm = this;
+
+        $scope.Estimation = {};
+        $scope.Estimation.File = null;
+        $scope.Estimation.WordCount = 0;
+        $scope.Estimation.TranslationText = null;
+        $scope.CurrentUser = {};
+        $scope.Estimation = {};
+
+        Activate();
+
+        function Activate() {
+            $scope.CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            $scope.UserType = USER_TYPE;
+            $scope.selectTargetlang = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            getLanguages();
+            getTranslationFields();
+            getTransproDeliveryTypes();          
+            $scope.Estimation = $stateParams.Estimation;
+        }
+
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+            }).catch(function (error) {
+
+            });
+        }
+
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+            }).catch(function (error) {
+
+            });
+        }
+
+        function getTransproDeliveryTypes() {
+            transproService.getTransproDeliveryTypeList().then(function (response) {
+                $scope.transproDeliveryTypeList = response;
+            }).catch(function (error) {
+
+            });
+        }
+    }
+
+    angular
+       .module("app")
+       .controller("estimationController", estimationController);
+    estimationController.$inject = ["$scope", "$state", "$uibModal", "transproService", "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL", "$stateParams"];
+})();

@@ -1,0 +1,55 @@
+﻿angular.module('app').component('loginWindow', {
+    templateUrl: 'app/login/login.tmpl.html',
+    bindings: {
+        modalInstance: "<",
+        resolve: "<"
+    },
+    controller: loginController
+});
+
+function loginController($scope, $rootScope, $filter, loginService, $uibModal, $state, APP_SETTINGS, appStorageFactory, STORAGE_TYPE,USER_TYPE) {
+    var $ctrl = this;
+    $ctrl.emailFormat = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{1,5}$/;
+    $ctrl.Close = function () {
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    };
+    $ctrl.openResetWindow = function (type) {
+            //$uibModal.open({
+            //    component: "resetPasswordWindow",
+            //    transclude: true,
+            //    resolve: {
+
+            //    },
+            //    size: 'sm'
+        //});      
+        $state.go("resetPassword");
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    }
+    $ctrl.login = function () {
+        if ($ctrl.Email && $ctrl.Password) {
+            loginService.login($ctrl.Email, $ctrl.Password, APP_SETTINGS.CultureCode).then(function (response) {
+                appStorageFactory.RemoveByKey(STORAGE_TYPE.CurrentUser);
+                appStorageFactory.SetStorageObject(STORAGE_TYPE.CurrentUser, response);
+                $ctrl.modalInstance.dismiss("cancel");
+                $state.reload();
+            }).catch(function (error) {
+                toastr.error(error);
+            });
+        }
+    }
+    $ctrl.Dismiss = function () {
+        $ctrl.modalInstance.dismiss("cancel");
+    };
+    $ctrl.GoRegistration = function () {
+        $state.go("userRegistration");
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    };
+    $ctrl.GoTranslatorReg = function () {
+        $state.go("translatorReg");
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    };
+}

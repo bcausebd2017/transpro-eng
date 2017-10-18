@@ -1,0 +1,372 @@
+﻿
+<div class="total-content">
+    <div class="appointed-trans-area">
+
+        <!-- editing-sample-area start -->
+        <div class="editing-sample-area">
+            <div class="site-title">
+                <i class="fa fa-pencil-square-o"></i>
+                <h3>Appointed translation</h3>
+            </div>
+            <div class="transpro-content">
+                <div class="estimate-wrap">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Language
+                                <select id="srcLanguage" class="form-control"
+                                        ng-model="Variable.srcLanguage" ng-change="srcLangChanged(Variable.srcLanguage)"
+                                        ng-options="lang.ID as lang.Name for lang in Variable.languages"></select>
+                                <i class="fa fa-play"></i>
+                                <select id="destLanguage" class="form-control"
+                                        ng-model="Variable.destLanguage" ng-change="destLangChanged(Variable.destLanguage)"
+                                        ng-options="lang.ID as lang.Name for lang in Variable.languagesTarget"></select>
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Translation field
+                                <select id="selectField" class="form-control"
+                                        ng-model="Variable.selectField" ng-change="fieldChanged(Variable.selectField)"
+                                        ng-options="t.ID as t.Name for t in ::translationFields"
+                                        ng-class="{'invalid-input': isProceedToEstimation && Variable.selectField == ''}">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <uib-tabset active="activePill">
+                        <uib-tab index="0" heading="Input Manuscript Directly">
+                            <div class="estimate-tab-contact">
+                                <div class="transpro-text-area">
+                                    <textarea cols="30" rows="10" ng-model="Estimation.Manuscript.InputText" placeholder="Enter text directly here"></textarea>
+                                </div>
+                                <div class="orange">
+                                    * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                                    <br>
+                                    (For other languages, ​​you can enter up to 20,000 words.)
+                                </div>
+                            </div>
+                        </uib-tab>
+                        <uib-tab index="1" heading="Upload a File">
+                            <div class="estimate-tab-contact">
+                                <div class="transpro-fileupload-area">
+                                    <div class="col-sm-12">
+                                        <div class="col-sm-3 padding-left0">
+                                            <input type="file" ng-change="UpdateFileInfo()" ng-model="Estimation.FileList"
+                                                   multiple load-file use-document-filter broadcast="listenTranslationFileSelection" id="fileName" />
+
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <span style="float:right;" ng-if="Estimation.FileList != null">
+                                                {{Estimation.FileList.length}} files selected, total size {{Estimation.FileSizeTotalString}}&nbsp&nbsp
+                                                <button class="b_button b_small b_red" style="float:right; min-width:60px" ng-click="ClearFileSelector()">Clear</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button ng-if="Estimation.FileList != null" ng-disabled="Estimation.DocumentList != null && Estimation.DocumentList.length > 0"
+                                                class="b_button b_black b_small" style="min-width: 90px;" ng-click="UploadTranslationDocuments()">
+                                            Upload
+                                        </button>
+                                        <span ng-if="Estimation.DocumentList != null && Estimation.DocumentList.length > 0">{{Variable.UploadStatus}}</span>
+
+                                    </div>
+                                    <!--<button class="btn" ng-click="ClearFileSelector()">Clear</button>-->
+                                    <div class="col-sm-12">
+                                        <br />
+                                        Supported file formats for uploading:
+                                        <ul>
+                                            <li>
+                                                Adobe's Portable Document Format (.PDF)
+                                            </li>
+                                            <li>
+                                                Microsoft Word 97 - 2003 (.DOC)
+                                            </li>
+                                            <li>
+                                                Microsoft Word 2007 (.DOCX)
+                                            </li>
+                                            <li>
+                                                Microsoft Excel 97 - 2003 (.XLS)
+                                            </li>
+                                            <li>
+                                                Microsoft Excel 2007 (.XLSX)
+                                            </li>
+                                            <li>
+                                                Microsoft PowerPoint 97 - 2003 (.PPT)
+                                            </li>
+                                            <li>
+                                                Microsoft PowerPoint 2007 (.PPTX)
+                                            </li>
+                                            <li>
+                                                Rich Text Format (.RTF)
+                                            </li>
+                                            <li>
+                                                Unicode & ASCII Plain Text (.TXT)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                        </uib-tab>
+
+                    </uib-tabset>
+                    <div class="sample-tab-btn text-center">
+                        <button type="button" class="btn btn-primary" ng-click="CheckEstimation()">Check Estimation</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        <!-- editing-sample-area start -->
+
+
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>About appointed translation</h3>
+        </div>
+        <div class="about-appointed_trans common-sub-block mb30 border-top0">
+            <p><b>What is appointed translation?</b></p>
+            <p>In "appointed translation" service, you can choose up to <b>5 translators</b> who have received high evaluation in each field. You can use this service easily in the similar manner to "online translation" service, but can expect <b>higher translation quality</b>.</p>
+            <p>Send your draft through <a ui-sref="/">estimation form</a> to confirm information including delivery time. For "online translation" service, you will go straight to the payment method, while in "appointed translation" service, you are required to <b>"appoint translators"</b>.</p>
+            <p>
+                <span><b>Register first! →</b></span>
+                <span><input ui-sref="userRegistration" id="" class="btn-primary btn-sm appoi-trans-reg-btn" name="" value="To the registration screen" type="submit"></span>
+            </p>
+
+            <div class="trans-appli-area">
+                <p><b>Application</b></p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-1.png" alt="">
+                            <p><a ui-sref="/">Estimate</a> using our form</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-2.png" alt="">
+                            <p><a ui-sref="userRegistration">Membership registration (free)</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-3.png" alt="">
+                            <p>Choose payment method</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-4.png" alt="">
+                            <p>Log in with a registered <a href="">ID and password</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-5.png" alt="">
+                            <p>Reconfirm and order</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-6.png" alt="">
+                            <p>Choose up to <strong>5 translators</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-7.png" alt="">
+                            <p>Payment process</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-8.png" alt="">
+                            <p>Notify a translator</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-9.png" alt="">
+                            <p>Translator confirms the order</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-10.png" alt="">
+                            <p>Deliver</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <img src="assets/img/appli-bg-11.png" alt="">
+                            <p>Receive the documents</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="single-appli-box">
+                            <a ui-sref="application" class="btn btn-primary">More information</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="individuals-reg-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>List of translators</h3>
+            </div>
+            <div class="transpro-content">
+                <div class="estimate-wrap">
+                <form action="">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Language
+                                <select id="srcLanguage" class="form-control"
+                                        data-ng-model="srcLanguage" ng-change="srcLangChanged(Variable.languages)"
+                                        ng-options="lang.ID as lang.Name for lang in Variable.languages">
+                                </select>
+                                <i class="fa fa-play"></i>
+                                <select id="destLanguage" class="form-control"
+                                        data-ng-model="destLanguage" ng-change="destLangChanged(Variable.languages)"
+                                        ng-options="lang.ID as lang.Name for lang in Variable.languages">
+                                </select>
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>
+                                <i class="fa fa-play-circle"></i> Translation field
+                                <select id="selectField" class="form-control"
+                                        data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                        ng-options="t.ID as t.Name for t in ::translationFields">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="checkbox">
+                                <label><input value="" type="checkbox">Search for native speakers </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="text-right">
+                                <input value="Search" class="btn btn-primary" type="submit"> <input value="Clear" class="btn btn-primary" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+            <div class="individuals-reg-wrap bt0 ">
+                <div class="">
+                    <div class="">
+                       
+                            <div class="row">
+                              
+                                <div class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="translator in filterTranslators">
+                                    <div ng-click="openTranslatorWindow(translator)" class="feedback-box">
+                                        <img ng-src="{{translator.Image ? translator.Image : '../assets/img/avatar.png'}}">
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="feedback-name appointed-trans">
+                                            <p>{{translator.FullName}} </p>
+                                            <a class="btn btn-primary">Appoint</a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                <paging class="small"
+                                        ng-if="translators.length > numPerPage"
+                                        page="1"
+                                        page-size="numPerPage"
+                                        total="totalTranslators"
+                                        show-prev-next="true"
+                                        show-first-last="true"
+                                        paging-action="doCtrlPagingAct( page )"
+                                        text-next-class="glyphicon glyphicon-chevron-right"
+                                        text-prev-class="glyphicon glyphicon-chevron-left"
+                                        text-first-class="glyphicon glyphicon-backward"
+                                        text-last-class="glyphicon glyphicon-forward">
+                                </paging>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <br>
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>List of on-line translation projects</h3>
+        </div>
+        <div class="receive-msg-wrap common-sub-block border-top0" style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th><a href="">Request Dates</a></th>
+                        <th><a href="">Status</a></th>
+                        <th><a href="">Plan</a></th>
+                        <th><a href="">Original language</a></th>
+                        <th><a href="">Target language</a></th>
+                        <th><a href="">Field</a></th>
+                        <th><a href="">Translator</a></th>
+                        <th><a href="">Fee</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="orders && orders.length>0" ng-repeat="ord in orders">
+                        <td><a href="">{{ord.RequestDate | utcToLocal:'dd/MM/yyyy hh:mm:ss'}}</a></td>
+                        <td><a href="">{{ord.OrderStatusName}}</a></td>
+                        <td><a href="">{{ord.DeliveryPlan}}</a></td>
+                        <td><a href="">{{ord.SourceLanguage}}</a></td>
+                        <td><a href="">{{ord.TargetLanguage}}</a></td>
+                        <td><a href="">{{ord.TranslationFieldName}}</a></td>
+                        <td><a href="">{{ord.TranslatorNo}}</a></td>
+                        <td><a href="">{{ord.CurrencySymbol}}{{ord.OrderAmount}}</a></td>
+                    </tr>
+
+                    <tr ng-if="!orders || orders.length<=0">
+                        <td class="text-left" colspan="8">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="gotopBox">
+                <a ui-sref="contact" href="#/contact">Contact Us</a><span>|</span><a ui-sref="/" href="#/">Estimate</a><span>|</span><a ui-sref="/" href="#/">TOP</a>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+</div>

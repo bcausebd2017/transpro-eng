@@ -1,0 +1,38 @@
+﻿
+
+angular.module("app").service('fileUploadService', ['$http', '$rootScope', 'APP_SETTINGS',
+    function ($http, $rootScope, APP_SETTINGS) {
+        this.uploadFileToUrl = function (file, uploadUrl, successFunction, errorFunction) {
+
+            if (typeof (file) == "undefined")
+                return;
+            if (file == null)
+                return;
+
+            var fd = new FormData();
+            angular.forEach(file, function (value, key) {
+                fd.append(key, value);
+            });
+
+            $http({
+                method: 'POST',
+                url: uploadUrl,
+                headers: { 'Content-Type': undefined },
+
+                //transformRequest: function (data) {
+                //    var formData = new FormData();
+                //    formData.append("file", data.file);
+                //    return formData;
+                //},
+                //data: { file: file },
+
+                data: fd,
+                params: { userID: 0, culture: APP_SETTINGS.CultureCode }
+            })
+            .then(function (response) {
+                successFunction(response);
+            }, function (error) {
+                errorFunction(error);
+            });
+        }
+    }]);

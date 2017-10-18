@@ -1,0 +1,104 @@
+<div class="total-content">
+    <!-- Report-errors-page-area start -->
+    <div class="individuals-reg-area">
+       <div class="site-title">
+          <i class="fa fa-th-large"></i>
+          <h3>Confirmation of a message </h3>
+       </div>
+       <div class="individuals-reg-wrap">
+          <form action="form-horizontal" name="MessageForm">
+             <div class="reg-row">
+                <div class="row">
+                   <div class="col-sm-3 pr0">
+                      <div class="item-name h1x">
+                         <p><i class="fa fa-arrow-circle-right"></i> Title</p>
+                      </div>
+                   </div>
+                   <div class="col-sm-6 pl5">
+                      <div class="item-value h1x">
+                         <p class="red-text wd70">
+                         <input type="text" name="title" ng-model="vm.model.Title" placeholder="Message Title"  
+                                 ng-class="{'invalid-input':isTriedSave && MessageForm.title.$error.required }" required/>
+                         </p>
+                      </div>
+                   </div>
+                   <div class="col-sm-3 pl5">
+                      <div class="item-value h1x">
+                         <p class="red-text wd70">
+                            <input type="button" value="send" ng-click="SendMessage()" class="btn btn-primary">
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="reg-row bt0">
+                <div class="row">
+                   <div class="col-sm-3 pr0">
+                      <div class="item-name h1x">
+                         <p><i class="fa fa-arrow-circle-right"></i> receiver</p>
+                      </div>
+                   </div>
+                   <div class="col-sm-3 pl5">
+                      <div class="item-value h1x">
+                         <p class="red-text wd70">
+                          <label> <input ng-model="vm.model.ReceiverName" readonly /> </label>
+                         </p>
+                      </div>
+                   </div>
+                   <div class="col-sm-3 pr0">
+                      <div class="item-name h1x">
+                         <p><i class="fa fa-arrow-circle-right"></i> Order No. </p>
+                      </div>
+                   </div>
+                   <div class="col-sm-3 pl5">
+                      <div class="item-value h1x">
+                         <p class="red-text wd70">
+                         <label> <input ng-model="vm.OrderNumber" readonly/> </label>
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="reg-row bt0">
+                <div class="row">
+                   <div class="col-sm-3 pr0">
+                      <div class="item-name h1x">
+                         <p><i class="fa fa-arrow-circle-right"></i> Attach file</p>
+                      </div>
+                   </div>
+                   <div class="col-sm-9 pl5">
+                      <div class="item-value h1x">
+                         <p class="red-text wd70">
+                            <input id="file" type="file" name="fileupload" ng-model="vm.model.AttachedFile" load-file >
+                            <input ng-if="vm.model.AttachedFile != null" style="float:right;" id="btn1" type="button" value="Upload" ng-click="uploadFile()" />
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="reg-row bt0">
+                <div class="row">
+                   <div class="col-sm-12 pl5 ">
+                      <div class="item-value  p2x">
+                         <p class="red-text wd70">
+                         <textarea style="width:100%;height:300px" name="msgBody"
+                            ng-model="vm.model.Body" ng-class="{'invalid-input':isTriedSave && MessageForm.msgBody.$error.required }" required >
+                         </textarea>
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </div><br>
+             <div class="text-center">
+                <div class="reg-trams btn01">
+                   <input  value="Back" class="btn btn-primary" />
+                </div>
+                <div class="reg-trams btn01 text-right">
+                   <!--<input value="send" class="btn btn-primary" ng-click="SendMessage()"/>-->
+                    <input type="button" value="Send" ng-click="SendMessage()" class="btn-primary btn-sm">
+                </div>
+             </div>
+          </form>
+       </div>
+    </div>
+ </div>

@@ -1,0 +1,46 @@
+﻿<div class="total-content">
+    <!-- About privacy section start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>About Privacy Policy</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <p>
+                Our company is committed to respect privacy of our customers, and will safeguard the personal information. This homepage will treat the personal information with care and respect
+                <strong><a ui-sref="terms"><< User agreement >></strong></a>
+            </p>
+            <div class="flex-container">
+                <div class="box prilc">
+                    <h3> The usage of personal information </h3>
+                    <p>In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service. In other cases when personal information are asked, please confirm the usage listed, and we assure you the user's personal information will not be used for inappropriate usages.</p>
+                    <h3> Collecting personal information </h3>
+                    <p>To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way. </p>
+                    <h3> Personal information management  </h3>
+                    <strong><p>Personal information will not be shown to a third party unless in the following situations.</p></strong>
+                    <ul class="list-unstyled">
+                        <li>(1) With the agreement of the client</li>
+                        <li>(2) In the case where the client cannot be defined unless personal information is shown.</li>
+                        <li>
+                            (3) Reasons during consignment in order to make the task smoother.
+                            <br> (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management)
+                        </li>
+                        <li>(4) Questions which our company consider appropriate to answer</li>
+                        <li>
+                            (5) When petition for paid service or product orders are necessary.
+                            <br> (In this case, we will only exchange personal information with the financial institution.)
+                        </li>
+                        <li>(6) When asked to release the information by laws and regulations. </li>
+                    </ul>
+                    <h3>The use of cookies </h3>
+                    <p>
+                        We will ask you to consent to our use of cookies, a file containing an identifier that is sent by a web server to a web browser and is stored by the browser, in accordance with the terms of this policy when you first visit our website.
+                        <br> Cookies do not typically contain any information that personally identifies a user, and you may refuse to accept cookies by resetting your browser.
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- end -->
+</div>

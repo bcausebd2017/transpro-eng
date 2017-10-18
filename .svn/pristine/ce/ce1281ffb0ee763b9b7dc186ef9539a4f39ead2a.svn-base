@@ -1,0 +1,103 @@
+﻿<div class="total-content">
+    <div class="individuals-reg-wrap">
+
+
+        <div class="common-table table-style-1" style="overflow-x:auto;" ng-init="vm.onInit()">
+            <table>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span>Your company name</td>
+                    <td>{{vm.BillingCompanyName}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span>Name</td>
+                    <td>{{vm.BillingTo}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Postal code</td>
+                    <td>{{vm.PostCode}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Address</td>
+                    <td>{{vm.Address}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> City</td>
+                    <td>{{vm.City}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Street</td>
+                    <td>{{vm.Street}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span>Tel number</td>
+                    <td>{{vm.TelephoneNo}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> FAX</td>
+                    <td>{{vm.BillingFax}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> <span class="tbl_redtext">*</span>E-mail Address</td>
+                    <td>{{vm.Email}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Contents and purpose (field)</td>
+                    <td>{{vm.content}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Type of purpose</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Word count</td>
+                    <td>{{vm.WordCount1 + vm.WordCount2 + vm.WordCount3}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Data delivery method</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i>  Priority</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Translation field (Type original characters directly here.)</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Source Language</td>
+                    <td>{{vm.sourceLanguage}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Target Language</td>
+                    <td>{{vm.targetLanguage}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Service Type</td>
+                    <td>{{vm.Service}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Attached File</td>
+                    <td>{{vm.file1}}<br />{{vm.file2}}<br />{{vm.file3}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Delivery time you require</td>
+                    <td>{{vm.DeliveryDate | date:"dd/MM/yyyy" }}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> PC environment</td>
+                    <td>{{}}</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa fa-chevron-circle-right"></i> Software type</td>
+                    <td>{{}}</td>
+                </tr>
+            </table>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center margin-top5">
+                <input type="button" class="btn btn-sm" value="Modify" ui-sref="translatorCoordinator({ modelData: vm })" />
+                <input type="button" class="btn btn-sm btn-success" value="Send" ng-click="EstimationSubmit(vm)" />
+            </div>
+        </div>
+    </div>
+</div>

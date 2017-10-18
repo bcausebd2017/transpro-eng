@@ -1,0 +1,116 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Knack for higher quality and requesting translation</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>About translation level of trans-Pro </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1 mb15">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="tbln">
+                                    Light <br />
+                                    …Native speaker with some <br /> experience of translation
+                                </th>
+                                <td>
+                                    Staffs with one to three year experience of translation who do not have any special expertise field.
+                                    Please choose them for simple translation such as private letters or mails.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tbln">
+                                    Business  <br />
+                                    …Professional translator
+                                </th>
+                                <td>
+                                    Staffs with three to five year experience of translation who have more than one field they are good at
+                                    Please choose them for business documents including product manuals and guidebooks.
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tbln">
+                                    Expert <br />
+                                    …Selected professional translator
+                                </th>
+                                <td>
+                                    Staffs with five or more year experience of translation who have more than one expertise field who are specially good at
+                                    Please choose them for highly specialized documents such as patents, medical documents and contracts.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>Reasonable price, delivery time and about quality</h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box quality_box">
+                    At Trans-Pro., we provide translation at reasonable price, delivery time and quality according to your budget and delivery time/quality request.
+                    You can select translation level and delivery time in the estimate page.
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box1">
+                    <h2>
+                        Knack of translation request
+                    </h2>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box quality_box">
+                    <p>
+                        If you ask 100 translators to translate a same document,
+                        100 translation different in levels and styles will be delivered.
+                        For you to receive translation matching your request, it is recommended for you to consider following aspects.
+                    </p>
+                    <ol>
+                        <li>
+                            Notify a translator who are the target readers<br />
+                            →By understanding whether the document is for researchers, adult or children, and male or female, the translator can choose proper writing style.
+                        </li>
+                        <li>
+                            Notify a translator the image the translation should be about.
+                            →By understanding your image or hope about translation, the translator can try to meet your request more closely.
+                        </li>
+                        <li>
+                            Notify a translator glossaries and related sites<br />
+                            →By referring to glossaries and related sites, the translator can have deeper understanding about the document.
+                        </li>
+                        <li>
+                            Choose translation level<br />
+                            →At Trans-Pro., you can choose one from three levels, "Light," "Business," and "Expert" depending on quality level.
+                            Translators are grouped into these three levels based on their experience and customers' evaluation.
+                            Please note that if you choose short delivery time, it becomes more likely for the translator to make mistakes because he/she does not have enough time to read the translation over again.
+                        </li>
+                    </ol>
+                    For your information, we request our translators to do the followings:<br />
+                    <ul class="list-unstyled">
+                        <li>・Use appropriate terms at all time.</li>
+                        <li>・Follow the translation format.</li>
+                        <li>・Ask whatever questions you have.</li>
+                        <li>・Leave no careless mistakes.</li>
+                        <li>・Leave comments, if necessary, at proper sections.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container button">
+                <div class="button-holder">
+                    <a ui-sref="/" class="btn btn-primary">Estimate</a>
+                    <a ui-sref="userRegistration" class="btn btn-primary">Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

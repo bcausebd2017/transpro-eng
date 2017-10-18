@@ -1,0 +1,175 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>FAQ (For translators)</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <ul class="list-inline faq-menu">
+                <li><a href="#">For first-time users</a> </li>
+                <li><a href="#">Translation, Translation fee</a> </li>
+                <li><a href="#">Quality and delivery time About penalties</a> </li>
+                <li><a href="#">About trans-Pro </a> </li>
+                <li><a href="#">Duty of a translator </a> </li>
+            </ul>
+            <div class="flex-container">
+                <div class="box-white">
+                    <h3>For a first timer </h3>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> Can anyone register? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> Basically yes, while you are required to abide by the <a ui-sref="terms">regulations</a> and <a ui-sref="caution">rules</a> of Trans-Pro. In case customers' evaluation of your translation jobs in "Business" and "Expert" categories continues to be low, you may receive less and less requests. Please start with "Light" category and make sure you continue to receive high evaluation from customers, then move forward to "Business," then "Expert."
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> Can I work from overseas? </li>
+                        <li class="pd5"><img src="/assets/img/qna_a_16x16.png" alt=""> Yes. Where you are resided does not matter in this cloud system. Please note though that operation will be based on Japan time.</li>
+                    </ul>
+                    <br>
+                    <h3> About translation and translation fee  </h3>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> What is the rate for one character? </li>
+                        <li class="pd5"><img src="/assets/img/qna_a_16x16.png" alt=""> The rate varies depending on a language and contents. Each project will notify you the project-specific fee.</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> I have few experience in translation. Can I handle "Business" or "Expert" jobs? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> In case customers' evaluation of your translation jobs in "Business" and "Expert" categories continues to be low, you may receive less and less requests. Please start with "Light" category and make sure you continue to receive high evaluation from customers, then move forward to "Business," then "Expert."
+                            <br>
+                            <p style="color: orangered">* You need to receive a certain level of evaluation from customers + certification from trans-Pro management office to become an "Expert" translator.</p>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> How can I confirm the fee for my translation jobs? </li>
+                        <li class="pd5"><img src="/assets/img/qna_a_16x16.png" alt=""> You can confirm your data, including past payments, in <a ui-sref="mypage">MyPage.</a> </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> How will I receive payment? </li>
+                        <li class="pd5"><img src="/assets/img/qna_a_16x16.png" alt=""> You will receive payment through your bank account at the end of next month for jobs closed in previous months. </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> Can you send fee to a bank overseas? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> Yes, international transfer is possible.
+                            <br> * <strong>For oversea translators, </strong> the transfer will be done once the total payment <strong>reaches 50,000 JPY</strong> (overseas remittance)
+                            <br> In the case of transferring without reaching this amount, translators have to pay their own remittance fee of 2500 JPY.
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> Can I receive payment via PayPal? If so, what information do you need? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> We can pay via PayPal.
+                            <br> Please enter the following information at account information section of MyPage's.
+                            <br> Name of Financial institution：PayPal
+                            <br> Account number: Account number Name: Your name
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box">
+                    <h3>Cautions for translation payment</h3>
+                    <p>
+                        Any bank other than <strong>Mitsubishi Tokyo</strong> UFJ or the Post Office will have certain amount of fee taken.
+                        <br> Also, <strong>income tax</strong> will be deducted.
+                        <br> along with the <strong>special income tax</strong> for reconstruction.
+                        <br> <strong><a href="http://www.nta.go.jp/tetsuzuki/shinsei/annai/gensen/fukko/index.htm">http://www.nta.go.jp/tetsuzuki/shinsei/annai/gensen/fukko/index.htm</a></strong>
+                        <br>
+                        <br> The transfer will be done once the total payment reaches 2000 JPY.
+                        <br> <strong>* For oversea translators,</strong> the transfer will be done once the total payment reaches 50,000 JPY (overseas remittance)
+                        <br> In the case of transferring without reaching this amount, translators have to pay their own remittance fee of 2500 JPY.
+                        <br> * If you are a PayPal user, your fee will be transferred when it reaches 2,000 yen or more without transfer fee being deducted.
+                    </p>
+                </div>
+            </div>
+            <div class="gotopText">
+                <a ui-sref="contact">Contact Us</a><span>|</span><a ui-sref="/">Estimate</a><span>|</span><a ui-sref="/">TOP</a>
+            </div>
+            <!-- About quality and delivery time section -->
+            <div class="flex-container">
+                <div class="box-white">
+                    <h3>About quality and delivery time</h3>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> Tell us about your concept of quality.</li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> In Trans-Pro., it is difficult for be-cause' staff to check translation quality, so quality depends on skills and manners of each translator. <strong>If customers' evaluation of your jobs continues to be low, you will receive less and less requests.</strong>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> What will happen if I cannot meet a deadline? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> A deadline is a protocol you have to abide by for your customer. Unless a natural disaster prevents you from meeting the deadline, you need to meet it. In case you cannot meet it, please tell so to your customer with reasons, plus <strong><a ui-sref="contact"> tell trans-Pro management office,</a> too.<br> * In time of hurry, calls us at 03-5733-4264 (9:00 am to 7:00 pm).</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- About penalties  -->
+            <div class="flex-container">
+                <div class="box-white">
+                    <h3> About penalties </h3>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> What will happen if I make a mistake in my translation job? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> Interact with the client appropriately even when you made a mistake. In some cases the coordinator from the office will correspond as well. You will be judged if penalty is imposed after the problem is confirmed.
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> In what cases do I receive the penalty? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> Please check trans-Pro's rules for penalty.
+                            <br> <strong><a href="">For more information please click here.</a></strong>
+                            <br> Caution: you may be forbidden to access due to the content of your penalty.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- About on-line translation and trans-Pro (how to use)   -->
+            <div class="flex-container">
+                <div class="box-white">
+                    <h3> About on-line translation and trans-Pro (how to use) </h3>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> I want to do many translations, is that possible? </li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> First, register by filling out all the details. It is also important to appeal to the customers. Polish your work and try to earn <strong><a ui-sref="transevaluation">high evaluations</a></strong> from the customers. The higher evaluation you get,, the topper you'll be on the <strong><a ui-sref="translator">Search translators</a></strong> . You can also earn reputation by having a customer you've worked before appointing you.
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> I can't find my ID (photo) through the search engine.</li>
+                        <li class="pd5">
+                                <img src="/assets/img/qna_a_16x16.png" alt=""> The ranking is determined by registration info updates, evaluation of past cases, and
+                            <br>appointing rate. You'll have to wait for your ID to come up.
+                            <br> The most efficient way is the earn high evaluation.
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="light-faq"><img src="/assets/img/qna_q_16x16.png" alt=""> What can I do if I can't log-in? </li>
+                        <li class="pd5"><img src="/assets/img/qna_a_16x16.png" alt=""> Reissue your password→<strong><a ui-sref="resetPassword">Reissue password</a></strong></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- The responsibility as a trans-Pro -->
+            <div class="flex-container">
+                <div class="box">
+                    <h3> The responsibility as a trans-Pro <a href="">translator</a></h3>
+                    <p>
+                        Always finish and deliver the job you took.
+                        <br> "Always inform the customer and office in the case where you
+                        <br> →03-5408-9540 (9:00am-7:00pm on weekdays)
+                        <br> Use the internet or other resources to translate terms and contents to match the customer's needs.
+                        <br> If there is any trouble occurred between the customer and you, make sure to let the office know.
+                    </p>
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <div class="form-group"></div>
+                    <a ui-sref="translatorReg" class="btn btn-primary">Translator Registration</a>
+                </div>
+        </div>
+        <div class="gotopBox">
+                <a ui-sref="contact" href="#/contact">Contact Us</a><span>|</span><a ui-sref="translatorReg" href="#/">Translator registration</a><span>|</span><a ui-sref="/" href="#/">TOP</a>
+             </div>
+    </div>
+    
+    <!-- user-registration-area end -->
+</div>

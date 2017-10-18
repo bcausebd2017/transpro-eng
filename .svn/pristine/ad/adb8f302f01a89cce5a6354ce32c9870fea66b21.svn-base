@@ -1,0 +1,283 @@
+﻿
+    <div class="total-content">
+        <!-- user-registration-area start -->
+        <div class="individuals-reg-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>Estimate</h3>
+            </div>
+            <div class="individuals-reg-wrap">
+                <form action="">
+                    <div class="reg-row bg-sky">
+                        <div class="row text-center">
+                            <div class="col-sm-6">
+                                <div class="est3">
+                                    <h2>Delivery anticipated date </h2>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="est3">
+                                    <h2>Translation fee(Tax not included) </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="est3">
+                                    <input type="text" name="" value="2017/08/29 23:05 (fastest)" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="est3">
+                                    <input type="text" name="" value="{{Estimation.Price | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name p7x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Languages </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="">
+                                    <div class="table-responsive tblc">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select id="srcLanguage" style="width: 100%;"
+                                                                data-ng-model="Estimation.srcLanguage"
+                                                                ng-options="lang.ID as lang.Name for lang in ::languages">
+
+                                                        </select>
+                                                    </td>
+                                                    <td style="text-align: center;">▶</td>
+                                                    <td>
+                                                        <select id="srcLanguage" style="width: 100%;"
+                                                                data-ng-model="Estimation.destLanguage"
+                                                                ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name  p7x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Translation field </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="">
+                                    <div class="table-responsive tblc">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select id="selectField" style="width: 100%;"
+                                                                data-ng-model="Estimation.selectField"
+                                                                ng-options="t.ID as t.Name for t in ::translationFields">
+                                                            <option value="" selected="selected">▼--------------</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name p7x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Word count </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="item-value tblc">
+                                    <p>
+                                        <input type="text" value="{{Estimation.WordCount}}" style="width: 100px" />
+                                        <label>Words</label>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Appointed translator</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="item-value">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="receive-mail" checked="checked">Yes
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="receive-mail">No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ctryre">
+                        <div class="row">
+                            <div class="col-sm-12 pr5">
+                                <div class="item-name-est">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Translation plan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p1x ">
+                            <h3 class="text-center "><strong>Please choose delivery time and translation level according to your budget.</strong></h3>
+                            <div class="col-sm-3 text-right ">
+                                <div class="est1 ">
+                                    <ul style="list-style-type:none">
+                                        <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList">
+                                            <label>{{PriceDetails.DeliveryPlanName}}</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div data-toggle="buttons">
+                                <div class="col-sm-3 text-center ">
+                                    <div class="est ">
+                                        <h2 class="green ">LIGHT</h2>
+                                        <strong><p class="green ">Native speaker with some <br>experience of translation</p></strong>
+                                        <ul class="list-unstyled ">
+                                            <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList">
+                                                <!--<input type="button" name="" value="{{PriceDetails.LightPrice * Estimation.WordCount | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}" class="btn btn-success ">-->
+                                                <label class="btn btn-success" ng-click="ModifyPriceDetails(PriceDetails, 1)">
+                                                    <input style="display: none;" type="radio"
+                                                           name="options">
+                                                        {{PriceDetails.LightPrice * Estimation.WordCount | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 text-center ">
+                                    <div class="est ">
+                                        <h2 class="sky ">BUSINESS</h2>
+                                        <strong><p class="sky ">professional <br> translator</p></strong>
+                                        <ul class="list-unstyled ">
+                                            <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList">
+                                                <!--<input type="button" name="" value="{{PriceDetails.BusinessPrice * Estimation.WordCount | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}" class="btn btn-info ">-->
+                                                <label class="btn btn-info" ng-click="ModifyPriceDetails(PriceDetails, 2)">
+                                                    <input style="display: none;" type="radio"
+                                                           name="options">
+                                                        {{PriceDetails.BusinessPrice * Estimation.WordCount | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 text-center ">
+                                    <div class="est ">
+                                        <h2 class="sky ">EXPERT</h2>
+                                        <strong><p class="sky ">Expert <br> translator</p></strong>
+                                        <ul class="list-unstyled ">
+                                            <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList">
+                                                <!--<input type="button" name="" value="{{PriceDetails.ExpertPrice * Estimation.WordCount | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}" class="btn btn-warning ">-->
+                                                <label class="btn btn-warning" ng-click="ModifyPriceDetails(PriceDetails, 3)">
+                                                    <input style="display: none;" type="radio"
+                                                           name="options">
+                                                        {{PriceDetails.ExpertPrice * Estimation.WordCount | number: 2}} {{LanguagePriceCategoryList[0].CurrencySymbol}}
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 ">
+                                <p class="text-center orange ">* The deliver hour starts after a translator accepts the request.</p>
+                                <p class="text-center orange ">* The hour does not start after you made your offer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row">
+                        <div class="row ">
+                            <div class="col-sm-3 pr5 ">
+                                <div class="item-name item-name h4x p1x ">
+                                    <p>
+                                        <i class="fa fa-arrow-circle-right "></i> <span>*</span> Manuscript
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5 ">
+                                <div class="item-value h2x ">
+                                    <textarea ng-model="Estimation.manuscript" rows="2 " cols="20 " style="height: 113px; width: 607px; max-width: 100%; min-width: 200px; "></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0 ">
+                        <div class="row ">
+                            <div class="col-sm-3 pr5 ">
+                                <div class="item-name item-name h4x p1x ">
+                                    <p>
+                                        <i class="fa fa-arrow-circle-right "></i> <span>*</span> Comments for translators <a href=" ">※Knack of translation request</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5 ">
+                                <div class="item-value h2x ">
+                                    <textarea name=" " rows="2 " cols="20 " style="height: 113px; width: 607px; max-width: 100%; min-width: 200px; "></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0 ">
+                        <div class="row ">
+                            <div class="col-sm-3 pr5 ">
+                                <div class="item-name h4x p2x ">
+                                    <p><i class="fa fa-arrow-circle-right "></i> <span>*</span> Upload reference file </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5 ">
+                                <div class="item-value h1x ">
+                                    <strong>
+                                        <p class="red-text wd70 ">
+                                            ＊You can only upload 1 file at once. Please compress if you have multiple files. Reference file：
+                                        </p>
+                                    </strong>
+                                    <br>
+                                    <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                                    <br>
+                                    <input type="submit" value="Upload" class="btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-trams text-center ">
+                        <h4 class="mt30 ">Terms of Service</h4>
+                        <textarea name=" " id=" " cols="30 " rows="10 ">
+                            株式会社 ビーコス(referred as our company) uses this homepage(referred as homepage) to introduce, promote, and gather information for the online translation service "trans-Pro, " and only offer it for personal use of all who uses this homepage (referred as user) By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. There may be times that we update the term of use without notification, please be sure to confirm before using our service. 【To use our homepage】 This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required. All terms of registration should be precise and truthful, following the format our company provided and the rules set. Registered ID and password are to be carefully kept by the registrants, and all results of the use of ID and password will fall into the registrant's responsibility. Users should take responsibility of all information transmitted on this homepage, and deal no damage to our company. In the case when user causes damage to our company or a third party by using this homepage, or conflicts happened between users or a third party, the user should take full responsibility to solve the problem without causing damage to our company. 【About information and disclaimer of this homepage】 Although the information contained on this homepage have been formulated with all due care, our company does not warrant or represent that the information is free from errors or omissions, nor that they are exhaustive. The information may change without notice, changes are periodically added to the information, and our company may make improvements or changes in the information or stop the operation of the homepage at any time. our company is in no way warrant or responsible for any change or omission of the information, or the damage caused by stopping or temporally stopping the operation of the homepage. This homepage further does not warrant or accept any liability in relation to the quality, operability or accuracy of the Data. 【About stopping the operation of the homepage】 In the case of the following situations, the homepage may stop or omit the registration without notice. 1) Falsehood in registering information 2) Abuse use of ID or password 3) Abuse use of the information using the translation result or any service this homepage provides. 4) Violation of this term of use 5) Other situations which our company considers inappropriate 【About the operation of this homepage】 This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the system, or any form of natural disasters, fire, and breakdown. our company is in no way warrant or responsible for any damage occurred due to stopping the service. 【Indicated Price】 All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are placed. In this case, we will put the price listed when orders are actually placed as first priority. We appreciate your understanding due to the nature of this service. In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual price will be based on the fixed price (less). On the contrary, if the price has risen after the order is placed, the actual price will be based on the price before it has risen. All indicated price for our service are not tax-included. Please check the order confirmation e-mail for the final service fee. In the case when the indicated price is not correct, we will immediately resend an e-mail with the correct price indicated. In such case, the final fee will be based on the price notified despite the automatic responding e-mail. Any discount after the order confirmation e-mail will not be applicable. 【About the establishment time】 The order is established when both sides are confirmed of willing to seal the contract. Specifically, the order is established after the user requests to make an order through this homepage, and the translator uses the system of this homepage to accept the final request. Please confirm the following. After the order is established, the user is expected to agree to the "term of use ". 【About revision after the translation is delivered】 If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made. 1. Revision due to changes in original document are to be paid separately. 2. Request for revision after 2 weeks are not applicable. 【About cancelations due to the user's circumstance】 You can cancel any time from when the request is made until the translator accepts the order. You cannot cancel for any reason after the translator accepts the order. 【About compensation】 Although all service provided by our company are formulated all due care, in the case where the service provided caused damage to the user, our company will compensate the damage. The compensation is limited to the exact order price indicated, and our company will not be warrant to any other responsibility. 【About copyrights and trademarks】 The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks all belongs to our company. Any copy, alternation, or distribution, sale, release to third party will be prohibited. All trademarks, logos, service marks shown in this homepage belongs to our company and associated companies. 【About personal information protection】 1. The usage of personal information In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service. In other cases when personal information are asked, please confirm 2. Collecting personal information To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way. 3. Personal information management Personal information will not be shown to a third party unless in the following situations. (1) With the agreement of the client (2) In the case where the client cannot be defined unless personal information is shown. (3) Reasons during consignment in order to make the task smoother. (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management) (4) Questions which our company consider appropriate to answer (5) When petition for paid service or product orders are necessary. (In this case, we will only exchange personal information with the financial institution.) (6) When asked to release the information by laws and regulations. 【About headhunting of translators】 Headhunting of translators is strictly prohibited. Any action discovered will result in us taking the appropriate legal actions. 【About governing law】 Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws of Japan the Terms of Use shall be governed in accordance with the laws of Japan
+                        </textarea>
+                        <div class="item-value">
+                            <label class="radio-inline">
+                                <input type="radio" name="reg-trams" checked="checked">Agree
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="reg-trams">Disagree
+                            </label>
+                        </div>
+                        <input type="submit" value="Estimate Result" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- user-registration-area end -->
+    </div>

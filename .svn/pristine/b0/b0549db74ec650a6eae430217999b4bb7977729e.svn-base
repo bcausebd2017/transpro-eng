@@ -1,0 +1,1094 @@
+﻿
+<div class="total-content" >
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3 id="StartingDiv">Estimate</h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <form action="">
+			
+				<div class="estimate-sky-box">
+					<div class="estimate-box-top">
+						<div class="row">
+							<div class="col-md-6 col-sm-5">
+								<h3>Delivery Anticipated Date</h3>
+								<input class="estimate-date" type="text" value="2017/10/09 17:17 (fastest)" />
+							</div>
+							<div class="col-md-6 col-sm-7 text-right">
+								<h3>Translation fee (Tax not included)</h3>
+								<input class="estimate-amount" type="text" value="3.85 AUD"/>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="row margin-top5">
+							<div class="col-lg-3 col-lg-offset-6 col-sm-4 col-sm-offset-4">
+								<h3>Tax</h3>
+							</div>
+							<div class="col-lg-3 col-sm-4 text-right">
+								<input class="estimate-amount" type="text" value="3.85 AUD"/>
+							</div>
+						</div>
+					</div>
+					<div class="estimate-box-bottom">
+						<div class="row">
+							<div class="col-lg-3 col-lg-offset-6 col-sm-4 col-sm-offset-4">
+								<h3>Total (Tax included)</h3>
+							</div>
+							<div class="col-lg-3 col-sm-4 text-right">
+								<input class="estimate-amount" type="text" value="3.85 AUD"/>
+							</div>
+						</div>					
+					</div>
+				</div>
+				<div class="estimate-pdf-btn text-right">
+					<input value="Download a PDF file with this content" id="" class="b_button b_green b_small" type="submit">
+				</div>
+				
+				
+				
+			
+<!--                 <div class="reg-row bg-sky">
+                    <div class="row text-center">
+                        <div class="col-sm-6">
+                            <div class="est3">
+                                <h2>Delivery Anticipated Date </h2>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="est3">
+                                <h2>Translation Fee (Tax not included) </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="est3">
+                                <input ng-if="Estimation.DeliveryAnticipatedDate == null" type="text" name="" value="< Choose your delivery type >" />
+                                <input type="text" name="" ng-if="Estimation.DeliveryAnticipatedDate != null" readonly
+                                        value="{{Estimation.DeliveryAnticipatedDate | date : 'yyyy/MM/dd h:mma'}} (fastest)" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="est3">
+                                <input type="text" name="" value="< Choose your delivery type >" ng-if="Estimation.Price == null"/>
+                                <input type="text" name="" ng-if="Estimation.Price != null" readonly
+                                        value="{{LanguagePriceCategoryList[0].CurrencySymbol}} {{Estimation.Price | number: 2}}" />
+                            </div>
+                        </div>
+                    </div>
+			
+					
+ 			        <div class="row" ng-if="Estimation.Status == 1">
+				        <div class="col-sm-6">
+				            <div class="est3">
+					            <h2 class="text-right">Tax</h2>
+				            </div>
+				            <div class="est3">
+					            <h2 class="text-right">Total Tax</h2>
+				            </div>
+				        </div>
+				        <div class="col-sm-6">
+				            <div class="est3">
+					            <input type="text" name="" value="< Choose your delivery type >" ng-if="Estimation.Price == null" />
+					            <input type="text" name="" ng-if="Estimation.Price != null" readonly
+					                    value="{{LanguagePriceCategoryList[0].CurrencySymbol}} {{Estimation.Tax | number: 2}}" />
+				            </div>
+				            <div class="est3">
+					            <input type="text" name="" value="< Choose your delivery type >" ng-if="Estimation.Price == null" />
+					            <input type="text" name="" ng-if="Estimation.Price != null" readonly
+					                    value="{{LanguagePriceCategoryList[0].CurrencySymbol}} {{Estimation.PriceWithTax | number: 2}}" />
+                            </div>
+				        </div>
+			        </div>
+			
+                </div> -->
+				
+				
+				<div class="estimate-content-wrap">
+					<div class="row margin-bottom5">
+						<div class="col-md-3 col-sm-4">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Languages</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<select id="" style="width:130px;">
+								<option value="" selected="selected">▼--------------</option>
+							</select>
+							<i class="fa fa-play"></i>
+							<select id="" style="width:130px;">
+								<option value="" selected="selected">▼--------------</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="row margin-bottom5">
+						<div class="col-md-3 col-sm-4">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Translation field</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<select id="" style="width:180px;">
+								<option value="" selected="selected">▼--------------</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="row margin-bottom5">
+						<div class="col-md-3 col-sm-4">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Word count</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<input class="form-controls" type="text" style="width:70px;" value="" />
+							<span>Words</span>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Appointed Translator</p>
+						</div>
+						<div class="col-md-9 col-sm-8">
+							<label class="radio-inline">
+								<input type="radio" name="optradio">Yes
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="optradio">None
+							</label>
+						</div>
+					</div>
+					<div class="appointed-translator-box margin-bottom5">
+						<div class="translators-appointed-panel" ng-class="{'active':Estimation.AppointedTranslation}">
+							<div class="site-title">
+								<i class="fa fa-th-large"></i>
+								<h3>List of translators</h3>
+							</div>                    
+							<div class="individuals-reg-wrap bt0">
+								<div class="">
+									<div class="">
+										<div class="feedback-wrap">
+											<div class="row">
+												<div class="spinner" ng-if="!TranslatorList">
+													<div class="bounce1"></div>
+													<div class="bounce2"></div>
+													<div class="bounce3"></div>
+												</div>
+												<div id="appointedRemove" class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="translator in TranslatorList | filter: {disabled: true}">                                         
+													<a id="remove-btn" ui-sref="tranDetailProfile({no:translator.TranslatorNo})" class="btn btn-primary">
+														<span>{{translator.TranslatorNo}}</span>
+														<i id="close-btn" class="fa fa-close" ng-click="translator.disabled = false"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="individuals-reg-wrap bt0">
+								<div class="">
+									<div class="">
+										<div class="feedback-wrap">
+											<div class="row">
+												<div class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="translator in filterTranslators | filter: {disabled: false}">
+													<div ng-click="openTranslatorWindow(translator)" class="feedback-box">
+														<div class="stars">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+														</div>
+														<img width="80" height="100" ng-src="{{translator.Image ? translator.Image : '../assets/img/avatar.png'}}">                                               
+														<div class="feedback-name trans-desc">
+															<span class="no-padding">{{translator.NativeLanguageName}} </span>
+															<span class="no-padding">{{translator.EducationDegree3Name}} </span>                                                                                                     
+														</div>
+														<a class="btn btn-primary" style="margin-top:2px;" ng-click="translator.disabled = true">Appoint</a>
+													</div>
+												</div>
+												<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+													<paging class="small"
+															ng-if="TranslatorList.length > numPerPage"
+															page="1"
+															page-size="numPerPage"
+															total="TranslatorList.length"
+															show-prev-next="true"
+															show-first-last="true"
+															paging-action="doCtrlPagingTranslators( page )"
+															text-next-class="glyphicon glyphicon-chevron-right"
+															text-prev-class="glyphicon glyphicon-chevron-left"
+															text-first-class="glyphicon glyphicon-backward"
+															text-last-class="glyphicon glyphicon-forward">
+													</paging>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-3 col-sm-4">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Translation plan</p>
+						</div>
+						<div class="col-md-9 col-sm-8"></div>
+					</div>
+					
+					<div class="" style="overflow-x:auto;">
+						<div class="translation-plan-wrap">
+							<div class="row">
+								<div class="col-xs-3"></div>
+								<div class="col-xs-3">
+									<div class="plan-heading plan_light_bg"></div>
+								</div>
+								<div class="col-xs-3">
+									<div class="plan-heading plan_business_bg"></div>
+								</div>
+								<div class="col-xs-3">
+									<div class="plan-heading plan_expert_bg"></div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p>24 hours</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p class="active_plan_business">4 hours (SMS)</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_blue b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p class="active_plan_light">5 days</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_green b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p class="active_plan_expert">12 hours (SMS)</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_purple b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p>5 days</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p>10 to 30 days</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p>90 minutes</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-3 text-right">
+									<div class="plan-title">
+										<p>30 minutes (SMS)</p>
+									</div>
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+								<div class="col-xs-3 plan_width">
+									<input value="＄ 2.00 " id="" class="b_button b_grey b_small" style="width:100%;" type="submit">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="row estimate_textarea margin-bottom5">
+						<div class="col-md-12">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Manuscript</p>
+						</div>
+						<div class="col-md-12">
+							<textarea style="height:120px;" name="" id="" cols="30" rows="10" placeholder="* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean."></textarea>
+						</div>
+					</div>
+					
+					<div class="row margin-bottom5">
+						<div class="col-md-12">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Selection of translation method</p>
+						</div>
+						<div class="margin-top5">
+							<div class="col-sm-12 form-inline">
+								<div class="form-group">
+									<label class="radio-inline">
+										<input name="paymentway" type="radio">"De-aru" style
+									</label>
+									<label class="radio-inline">
+										<input name="paymentway" type="radio">"Desu・Masu" style
+									</label>
+									<label class="radio-inline">
+										<input name="paymentway" type="radio">Other <input type="text" style="width:150px;" />
+									</label>									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="row estimate_textarea margin-bottom5">
+						<div class="col-md-12">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Comments for translators <a href=" ">※Knack of translation request</a></p>
+						</div>
+						<div class="col-md-12">
+							<textarea style="height:75px;" name="" id="" cols="30" rows="10" placeholder=""></textarea>
+						</div>
+					</div>
+					
+					<div class="row margin-bottom5">
+						<div class="col-md-12">
+							<p><i class="fa fa fa-chevron-circle-right"></i> Upload reference file</p>
+						</div>
+						<div class="col-md-12">
+							<div class="upload_file_box">
+								<span class="tbl_orangetext" style="font-size:13px;"> ＊You can only upload 1 file at once. Please compress if you have multiple files. </span>
+								<div class="row">
+									<div class="col-md-6 col-sm-7 form-inline">
+										<div class="form-group">
+											<label>Reference file：</label>
+											<input type="file" class="form-control">
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-5 padding0">
+										 <input value="Upload" class="b_button b_black b_small" style="width:90px;" type="submit">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+<!--                 <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name p7x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Languages </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="">
+                                <div class="table-responsive tblc">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <select id="srcLanguage" style="" ng-disabled="Estimation.Status != null"
+                                                            data-ng-model="Estimation.srcLanguage" ng-change="getTransproLanguagePriceCategory()"
+                                                            ng-options="lang.ID as lang.Name for lang in ::languages">
+                                                        <option value="" selected="selected" disabled>▼--------------</option>
+                                                    </select>
+                                                </td>
+                                                <td style="text-align: center;">▶</td>
+                                                <td>
+                                                    <select id="srcLanguage" style="" ng-disabled="Estimation.Status != null"
+                                                            data-ng-model="Estimation.destLanguage" ng-change="getTransproLanguagePriceCategory()"
+                                                            ng-options="lang.ID as lang.Name for lang in ::languages">
+                                                        <option value="" selected="selected" disabled>▼--------------</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name  p7x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Translation Field </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="">
+                                <div class="table-responsive tblc">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <select id="selectField" style="height: 25px; width: 100%;" ng-disabled="Estimation.Status != null"
+                                                            data-ng-model="Estimation.selectField" ng-change="getTransproLanguagePriceCategory()"
+                                                            ng-options="t.ID as t.Name for t in ::translationFields">
+                                                        <option value="" selected="selected" disabled>▼--------------</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name  p7x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Sub-Speciality Field </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="">
+                                <div class="table-responsive tblc">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <select id="selectField" style="height: 25px; width: 100%;" ng-disabled="Estimation.Status != null"
+                                                            data-ng-model="Estimation.SubSpecialityID"
+                                                            ng-options="t.ID as t.Name for t in ::SubSpecialityList">
+                                                        <option value="" selected="selected" disabled>▼--------------</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name p7x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Word Count </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value tblc">
+                                <p>
+                                    <input type="text" value="{{Estimation.WordCount | number: 0}}" style="width: 100px;text-align:right;" ng-disabled="Estimation.Status != null" readonly />
+                                    <label>Words</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Appointed Translator</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <label class="radio-inline">
+                                    <input type="radio" name="receive-mail" ng-disabled="Estimation.Status != null"
+                                           ng-model="Estimation.AppointedTranslation" ng-value="true">
+                                           Yes
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="receive-mail" ng-disabled="Estimation.Status != null"
+                                           ng-model="Estimation.AppointedTranslation" ng-value="false">
+                                           No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="translators-appointed-panel" ng-class="{'active':Estimation.AppointedTranslation}">
+                    <div class="site-title">
+                        <i class="fa fa-th-large"></i>
+                        <h3>List of translators</h3>
+                    </div>                    
+                    <div class="individuals-reg-wrap bt0">
+                        <div class="">
+                            <div class="">
+                                <div class="feedback-wrap">
+                                    <div class="row">
+                                        <div class="spinner" ng-if="!TranslatorList">
+                                            <div class="bounce1"></div>
+                                            <div class="bounce2"></div>
+                                            <div class="bounce3"></div>
+                                        </div>
+                                        <div id="appointedRemove" class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="translator in TranslatorList | filter: {disabled: true}">                                         
+                                            <a id="remove-btn" ui-sref="tranDetailProfile({no:translator.TranslatorNo})" class="btn btn-primary">
+                                                <span>{{translator.TranslatorNo}}</span>
+                                                <i id="close-btn" class="fa fa-close" ng-click="translator.disabled = false"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="individuals-reg-wrap bt0">
+                        <div class="">
+                            <div class="">
+                                <div class="feedback-wrap">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-3 col-xs-6 p5" ng-repeat="translator in filterTranslators | filter: {disabled: false}">
+                                            <div ng-click="openTranslatorWindow(translator)" class="feedback-box">
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                                <img width="80" height="100" ng-src="{{translator.Image ? translator.Image : '../assets/img/avatar.png'}}">                                               
+                                                <div class="feedback-name trans-desc">
+                                                    <span class="no-padding">{{translator.NativeLanguageName}} </span>
+                                                    <span class="no-padding">{{translator.EducationDegree3Name}} </span>                                                                                                     
+                                                </div>
+                                                <a class="btn btn-primary" style="margin-top:2px;" ng-click="translator.disabled = true">Appoint</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                            <paging class="small"
+                                                    ng-if="TranslatorList.length > numPerPage"
+                                                    page="1"
+                                                    page-size="numPerPage"
+                                                    total="TranslatorList.length"
+                                                    show-prev-next="true"
+                                                    show-first-last="true"
+                                                    paging-action="doCtrlPagingTranslators( page )"
+                                                    text-next-class="glyphicon glyphicon-chevron-right"
+                                                    text-prev-class="glyphicon glyphicon-chevron-left"
+                                                    text-first-class="glyphicon glyphicon-backward"
+                                                    text-last-class="glyphicon glyphicon-forward">
+                                            </paging>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="ctryre">
+                    <div class="row">
+                        <div class="col-sm-12 pr5">
+                            <div class="item-name-est">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Translation Plan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p1x ">
+                        <h3 class="text-center" ng-if="LanguagePriceCategoryList.length == 0">
+                            <strong>
+                                <br />
+                                <br />
+                                There is no delivery plan found according to the selection you have made.
+                                <br />
+                                <br />
+                                Please choose different language or tanslation field to select a delivery plan.
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                            </strong>
+                        </h3>
+                        <h3 class="text-center" ng-if="LanguagePriceCategoryList.length > 0">
+                            <strong>
+                                Please choose delivery time and translation level according to your budget.
+                            </strong>
+                        </h3>
+                        <div class="col-sm-3 text-right " ng-if="LanguagePriceCategoryList.length > 0">
+                            <div class="est1 ">
+                                <ul style="list-style-type:none">
+                                    <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList"
+                                        ng-show="Estimation.Status == null || PriceDetails == Estimation.PriceDetails">
+                                        <label>
+                                            {{PriceDetails.DeliveryPlanName}}
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-toggle="buttons" ng-if="LanguagePriceCategoryList.length > 0">
+                            <div class="col-sm-3 text-center" ng-if="LanguagePriceCategoryList[0].PriceDetailsList[0].LightPrice > 0">
+                                <div class="est ">
+                                    <h2 class="green ">LIGHT</h2>
+                                    <strong><p class="green ">Native speaker with some <br>experience of translation</p></strong>
+                                    <ul class="list-unstyled ">
+                                        <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList"
+                                            ng-show="Estimation.Status == null || PriceDetails == Estimation.PriceDetails" >
+                                            <label ng-class="{'btn btn-light active' : $index == 0 && Variable.DeliveryPriority == 1, 'btn btn-light': $index > 0 || Variable.DeliveryPriority != 1}"
+                                                   ng-click="CalculateExactPrices(PriceDetails, 1)" >
+                                                <input style="display: none;" type="radio" name="options">
+                                                    {{LanguagePriceCategoryList[0].CurrencySymbol}} {{PriceDetails.LightPrice * Estimation.WordCount | number: 2}}
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center" ng-if="LanguagePriceCategoryList[0].PriceDetailsList[0].BusinessPrice > 0">
+                                <div class="est ">
+                                    <h2 class="sky ">BUSINESS</h2>
+                                    <strong><p class="sky ">Professional <br> Translator</p></strong>
+                                    <ul class="list-unstyled ">
+                                        <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList"
+                                            ng-show="Estimation.Status == null || PriceDetails == Estimation.PriceDetails" >
+                                            <label ng-class="{'btn btn-business active' : $index == 0 && Variable.DeliveryPriority == 2, 'btn btn-business': $index > 0 || Variable.DeliveryPriority != 2}"
+                                                   ng-click="CalculateExactPrices(PriceDetails, 2)">
+                                                <input style="display: none;" type="radio" name="options">
+                                                    {{LanguagePriceCategoryList[0].CurrencySymbol}} {{PriceDetails.BusinessPrice * Estimation.WordCount | number: 2}}
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 text-center " ng-if="LanguagePriceCategoryList[0].PriceDetailsList[0].ExpertPrice > 0">
+                                <div class="est ">
+                                    <h2 >EXPERT</h2>
+                                    <strong><p>Expert Translator with<br />full native capability</p></strong>
+                                    <ul class="list-unstyled ">
+                                        <li ng-repeat="PriceDetails in LanguagePriceCategoryList[0].PriceDetailsList"
+                                            ng-show="Estimation.Status == null || PriceDetails == Estimation.PriceDetails" >
+                                            <label ng-class="{'btn btn-expert active' : $index == 0 && Variable.DeliveryPriority == 3, 'btn btn-expert': $index > 0 || Variable.DeliveryPriority != 3}"
+                                                   ng-click="CalculateExactPrices(PriceDetails, 3)">
+                                                <input style="display: none;" type="radio" name="options">
+                                                    {{LanguagePriceCategoryList[0].CurrencySymbol}} {{PriceDetails.ExpertPrice * Estimation.WordCount | number: 2}}
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 " ng-if="LanguagePriceCategoryList.length > 0">
+                            <p class="text-center orange ">* The deliver hour starts after a translator accepts the request.</p>
+                            <p class="text-center orange ">* The hour does not start after you made your offer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row ">
+                        <div class="col-sm-3 pr5 ">
+                            <div class="item-name item-name h4x p1x ">
+                                <p>
+                                    <i class="fa fa-arrow-circle-right "></i> <span>*</span> Manuscript
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h2x ">
+                                <textarea ng-model="Estimation.Manuscript.TranslationText" rows="2" cols="20" ng-disabled="Estimation.Status != null"
+                                          style="height: 113px; width: 607px; max-width: 100%; min-width: 200px; "></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0 ">
+                    <div class="row ">
+                        <div class="col-sm-3 pr5 ">
+                            <div class="item-name item-name h4x p1x ">
+                                <p>
+                                    <i class="fa fa-arrow-circle-right "></i> <span>*</span> Comments for translators <a href=" ">※Knack of translation request</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h2x ">
+                                <textarea ng-model="Estimation.CommentForTranslators" rows="2" cols="20" ng-disabled="Estimation.Status != null"
+                                          style="height: 113px; width: 607px; max-width: 100%; min-width: 200px; "></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0 ">
+                    <div class="row ">
+                        <div class="col-sm-3 pr5 ">
+                            <div class="item-name h4x p2x ">
+                                <p><i class="fa fa-arrow-circle-right "></i> <span>*</span> Upload reference file </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5 ">
+                            <div class="item-value h1x ">
+                                <strong>
+                                    <p class="red-text wd70 ">
+                                        ＊You can only upload 1 file at once. Please compress if you have multiple files. Reference file：
+                                    </p>
+                                </strong>
+                                <br>
+                                <input type="file" name="fileupload" value="fileupload" id="fileupload"
+                                       load-file ng-model="Estimation.ReferenceManual.File">
+                                <br>
+                                <input type="button" value="Upload" class="btn btn-success" ng-click="UploadReferenceManual()" />
+                                <span>
+                                    {{Variable.UploadReferenceState}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+				
+				
+				
+				
+                <div class="reg-trams text-center ">
+                    <h4 class="mt30 ">Terms of Service</h4>
+                    <div class="individuals-reg-wrap" style="overflow-y:auto; max-height:250px;">
+						<div class="flex-container block">
+							<div class="box full-col margin-top0">
+								<p>
+									b-cause co,. Inc (refered as we/us) offers the use of this Home page (refered as this Home page) for anyone using this Home
+									page (refered as user) for personal use to increase sales and collect information referred to the
+									online translation service "trans-Pro."
+								</p>
+								<p>
+									By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and
+									that you agree to be bound by all of its provisions.
+								</p>
+								<p>
+									There may be times that we update the term of use without notification, please be sure to confirm before using our service.
+								</p>
+							</div>
+							<table class="terms">
+								<tbody>
+									<tr>
+										<th>
+											【To use our homepage】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the
+												Website, you acknowledge that you have read and understood the terms and conditions of
+												this Agreement and that you agree to be bound by all of its provisions.</p>
+											<p>
+												In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required.
+												All terms of registration should be precise and truthful, following the format our company
+												provided and the rules set. Registered ID and password are to be carefully kept by the
+												registrants, and all results of the use of ID and password will fall into the registrant's
+												responsibility. Users should take responsibility of all information transmitted on this
+												homepage, and deal no damage to our company. In the case when user causes damage to our
+												company or a third party by using this homepage, or conflicts happened between users
+												or a third party, the user should take full responsibility to solve the problem without
+												causing damage to our company. </p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About information and disclaimer of this homepage】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												Although the information contained on this homepage have been formulated with all due care, our company does not warrant
+												or represent that the information is free from errors or omissions, nor that they are
+												exhaustive. The information may change without notice, changes are periodically added
+												to the information, and our company may make improvements or changes in the information
+												or stop the operation of the homepage at any time. <br>                                    our company is in no way warrant or responsible for any change or omission of the information,
+												or the damage caused by stopping or temporally stopping the operation of the homepage.
+												This homepage further does not warrant or accept any liability in relation to the quality,
+												operability or accuracy of the Data.<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About stopping the operation of the homepage】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												In the case of the following situations, the homepage may stop or omit the registration without notice.<br>                                    1) Falsehood in registering information<br> 2) Abuse use of ID or password<br> 3) Abuse
+												use of the information using the translation result or any service this homepage provides.<br>                                    4) Violation of this term of use<br> 5) Other situations which our company considers
+												inappropriate<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About the operation of this homepage】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the
+												system, or any form of natural disasters, fire, and breakdown. our company is in no way
+												warrant or responsible for any damage occurred due to stopping the service.<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【Indicated Price】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are
+												placed. In this case, we will put the price listed when orders are actually placed as
+												first priority. We appreciate your understanding due to the nature of this service.<br>
+											</p>
+											<p>
+												In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual
+												price will be based on the fixed price (less). On the contrary, if the price has risen
+												after the order is placed, the actual price will be based on the price before it has
+												risen.<br> All indicated price for our service are
+												not tax-included. Please check the order confirmation e-mail for the final service fee.
+												In the case when the indicated price is not correct, we will immediately resend an e-mail
+												with the correct price indicated. In such case, the final fee will be based on the price
+												notified despite the automatic responding e-mail. Any discount after the order confirmation
+												e-mail will not be applicable.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About the establishment time】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												The order is established when both sides are confirmed of willing to seal the contract. Specifically, the order is established
+												after the user requests to make an order through this homepage, and the translator uses
+												the system of this homepage to accept the final request. Please confirm the following.
+												After the order is established, the user is expected to agree to the "term of use".
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About revision after the translation is delivered】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made.<br>                                    1. Revision due to changes in original document are to be paid separately.<br> 2. Request
+												for revision after 2 weeks are not applicable.<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About cancelations due to the user's circumstance】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												You can cancel any time from when the request is made until the translator accepts the order.
+												<br> You cannot cancel for any reason after the translator accepts the order.<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About compensation】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												Although all service provided by our company are formulated all due care, in the case where the service provided caused damage
+												to the user, our company will compensate the damage. The compensation is limited to the
+												exact order price indicated, and our company will not be warrant to any other responsibility.<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About copyrights and trademarks】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks
+												all belongs to our company. Any copy, alternation, or distribution, sale, release to
+												third party will be prohibited. All trademarks, logos, service marks shown in this homepage
+												belongs to our company and associated companies.<br>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About personal information protection】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												1. The usage of personal information<br> In the case when user provides personal information,
+												the information will only be used for the product and service for the user, or to improve
+												the quality of product and service.
+												<br> In other cases when personal information are asked, please confirm<br>
+											</p>
+											<p>
+												2．Collecting personal information
+												<br> To pay the contract responsibility with the client, provide better products/service,
+												and notify useful information, we may collect the necessary personal information in an
+												appropriate and fair way.
+											</p>
+											<p>
+												3. Personal information management<br> Personal information will not be shown to a third
+												party unless in the following situations.<br> (1) With the agreement of the client<br>                                    (2) In the case where the client cannot be defined unless personal information is shown.<br>                                    (3) Reasons during consignment in order to make the task smoother.<br> (In this case,
+												the chosen contractors are capable of full protection of the information, and will be
+												bound by the rules of personal information management)<br> (4) Questions which our company
+												consider appropriate to answer<br> (5) When petition for paid service or product orders
+												are necessary.<br> (In this case, we will only exchange personal information with the
+												financial institution.)<br> (6) When asked to release the information by laws and regulations.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About headhunting of translators】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												Headhunting of translators is strictly prohibited.
+												<br> Any action discovered will result in us taking the appropriate legal actions.
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<th>
+											【About governing law】
+										</th>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws
+												of Japan
+											</p>
+											<p>
+
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+                    <div class="item-value">
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" ng-model="Variable.AgreeEstimation"
+                                   ng-value="true" ng-disabled="Estimation.Status != null" >Agree
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" ng-model="Variable.AgreeEstimation"
+                                   ng-value="false" ng-disabled="Estimation.Status != null" >Disagree
+                        </label>
+                    </div>
+                    <div ng-if="Estimation.Status == null">
+                        <input type="button" value="Estimate Result" class="btn btn-info" ng-click="EstimateTranslation()" />
+                    </div>
+                    <div ng-if="Estimation.Status == 1">
+                        <input type="button" value="Modify" class="btn btn-default" ng-click="ModifyEstimation()" />
+                        <input type="button" value="To Pay Screen" class="btn btn-info" ng-click="RedirectToPayScreen()" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

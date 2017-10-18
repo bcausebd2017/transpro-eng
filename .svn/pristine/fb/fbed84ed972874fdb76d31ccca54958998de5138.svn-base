@@ -1,0 +1,68 @@
+<div class="total-content">
+        <!-- user-registration-area start -->
+        <div class="individuals-reg-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>Reissue your password</h3>
+            </div>
+            <div class="individuals-reg-wrap">
+                <form action="">
+                    <h3>Sections with * need to be entered</h3>
+                    <h4>Account</h4>
+                    <div class="reg-row">
+                        <div class="row">
+                            <div class="col-sm-3 pr0">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>E-mail address</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        <input type="text" placeholder="bc-test123@becausebd.com" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr0">
+                                <div class="item-name h1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Old password </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        <input type="text" placeholder=" password" />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr0">
+                                <div class="item-name h5X">
+                                    <p><i class="fa fa-arrow-circle-right"></i><span>*</span> New Password</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 pl5">
+                                <div class="item-value h1x">
+                                    <p class="red-text wd70">
+                                        <input type="text" placeholder=" New password" /> <span> * 8 or more characters</span>
+                                        <input type="text" placeholder=" Enter again" /><span> * Enter again</span>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <input type="submit" value="Update Password" class="btn-primary btn-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- user-registration-area end -->
+    </div>

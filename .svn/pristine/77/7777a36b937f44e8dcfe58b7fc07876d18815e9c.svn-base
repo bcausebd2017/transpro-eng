@@ -1,0 +1,18 @@
+﻿<div class="total-content">
+    <!-- Notice section-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Notice</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="box">
+                    <p> Under construction....</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- end notice section -->
+</div>

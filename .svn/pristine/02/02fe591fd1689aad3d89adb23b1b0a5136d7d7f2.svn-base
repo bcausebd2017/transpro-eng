@@ -1,0 +1,25 @@
+﻿<div class="total-content">
+    <div class="site-title">
+        <i class="fa fa-th-large"/>
+        <h3>Reissue password</h3>
+    </div>
+        <form name="loginCustomerForm">
+            <!--<span style="color:red;" ng-show="isInvalidUser">{{'INVALIDUSER' | translator}}</span>-->
+            <div class="form-group has-feedback">
+                <!--<input type="email" class="form-control" placeholder="Email">-->
+                <input type="text" name="username" class="form-control" placeholder="ID@e-mail" required>
+
+                <!--<span style="color:red;" ng-show="isTriedForLogin && loginForm.username.$error.required">{{'ENTERUSER' | translator}}</span>-->
+            </div>
+            <div class="form-group">
+
+                <!-- /.col -->
+                <div class="col-xs-12 text-center">
+                    <button ng-click="send()" class="btn btn-primary ">Send Email</button>
+                </div>
+                <!-- /.col -->
+
+            </div>
+       </form>
+
+</div>

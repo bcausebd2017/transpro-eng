@@ -1,0 +1,205 @@
+<div class="total-content">
+        <!-- my-page-area-area start -->
+        <div class="my-page-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>Translation fee inquiry </h3>
+            </div>
+            <div class="border-top0 order-breakdown-wrap receive-msg-wrap common-sub-block " style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Period</th>
+                            <th>Orders completed</th>
+                            <th>Total fee</th>
+                            <th>Withholding Tax</th>
+                            <th>Payment</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">17/08/15</a></td>
+                            <td><a href="">Provisional registration</a></td>
+                            <td><a href="">30 min.</a></td>
+                            <td><a href="">Czech</a></td>
+                            <td><a href="">Japanese</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" colspan="8">Data not available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- my-page-area end -->
+        <!-- order list-area-area start -->
+        <div class="my-page-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>{{currentMonth | date: 'yyyy/MM' : timezone}} Order list </h3>
+            </div>
+            <div class="border-top0 order-breakdown-wrap receive-msg-wrap common-sub-block " style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order No</th>
+                            <th>Status</th>
+                            <th>Service name</th>
+                            <th>Acceptance</th>
+                            <th>Delivery</th>
+                            <th>Deadline</th>
+                            <th>Translation fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-if="orderCompleted && orderCompleted.length>0" ng-repeat="ord in orderCompleted">
+                            <td style="text-align:center;"><a ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.OrderId}}</a></td>
+                            <td style="text-align:center;"><a ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.OrderStatusName}}</a></td>
+                            <td style="text-align:center;
+                                            max-width:100%; 
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;">
+                                <a ui-sref="orderDetails({orderNo:ord.OrderNo})">
+                                   {{ord.DeliveryPlan}} {{ord.DeliveryLevelName}} {{ord.SourceLanguage}}=>{{ord.TargetLanguage}} {{ord.TranslationFieldName}}
+                                </a>
+                            </td>
+                            <td style="text-align:center;"><a ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.StartDate| utcToLocal:'yy/MM/dd hh:mm:ss'}}</a></td>
+                            <td style="text-align:center;"><a ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.DeliveryDate| utcToLocal:'MM/dd'}}</a></td>
+                            <td style="text-align:center;"><a ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.EndDate| utcToLocal:'MM/dd'}}</a></td>
+                            <td style="text-align:right;"><a ui-sref="orderDetails({orderNo:ord.OrderNo})">{{ord.CurrencySymbol}}{{ord.TranslatorFee}}</a></td>
+                        </tr>
+
+                        <tr ng-if="!orderCompleted || orderCompleted.length<=0">
+                            <td class="text-left" colspan="8">Data not available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- order list-area end -->
+        <!-- Account information -->
+        <div class="individuals-reg-area">
+            <div class="site-title">
+                <div class="col-sm-12 col-xs-3 pdd0">
+                    <i class="fa fa-th-large"></i>
+                    <h3>Registered account information <a href="#" class="btn btn-gray" style="float:right"> Account Information </a></h3>
+                </div>
+            </div>
+            <div class="individuals-reg-wrap border-top0">
+                <form action="">
+        
+                        <div class="common-table table-style-1" style="overflow-x:auto;">
+                                <table>
+                                    <tr>
+                                        <td><i class="fa fa fa-chevron-circle-right"></i> Name of Financial institution</td>
+                                        <td>
+                                            <div class="tbl_row">
+                                                <div class="col-md-6 padding3">
+                                                   
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa fa-chevron-circle-right"></i> Account number </td>
+                                        <td>
+                                            <div class="tbl_row">
+                                                <div class="col-md-6 padding3">
+                                                   
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fa fa fa-chevron-circle-right"></i> Name </td>
+                                        <td>
+                                            <div class="tbl_row">
+                                                <div class="col-md-6 padding3">
+                                                   
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+
+
+
+
+                    <!-- <div class="reg-row">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name of Financial institution </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p2x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Branch name </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account type </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account number </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </form>
+
+                <!-- Cautions for translation payment section -->
+                <div class="box">
+                    <h3>  Cautions for translation payment </h3>
+                    <p>Any bank other than <strong>Mitsubishi Tokyo UFJ or the Post Office</strong> will have certain amount of fee taken.<br> Also, <strong>income tax</strong> will be deducted.<br> along with the <strong>special income tax</strong> for reconstruction. <a href="http://www.nta.go.jp/tetsuzuki/shinsei/annai/gensen/fukko/index.htm" target="_blank">http://www.nta.go.jp/tetsuzuki/shinsei/annai/gensen/fukko/index.htm</a>
+                    </p>
+                    <p>The transfer will be done once the total payment <strong>reaches 2000 JPY.</strong>
+                        <br>* <strong>For oversea translators,</strong> the transfer will be done once the total payment <strong>reaches 50,000 JPY</strong>
+                        <br>(overseas remittance) In the case of transferring without reaching this amount, translators have to pay their own remittance fee of 2500 JPY. <br>* If you are a PayPal user, your fee will be transferred when it reaches 2,000 yen or more without transfer fee being deducted. </p>
+                </div>
+            </div>
+        </div>
+    </div>

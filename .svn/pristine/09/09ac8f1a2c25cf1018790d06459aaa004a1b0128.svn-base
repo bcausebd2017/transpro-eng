@@ -1,0 +1,37 @@
+﻿angular.module('app').component('loginWindow', {
+    templateUrl: 'app/login/login.tmpl.html',
+    bindings: {
+        modalInstance: "<",
+        resolve: "<"
+    },
+    controller: loginController
+});
+
+function loginController($scope, $rootScope, $filter, loginService, $uibModal,$state) {
+    var $ctrl = this;
+    $ctrl.Close = function () {
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    };
+    $ctrl.openResetWindow = function (type) {
+            //$uibModal.open({
+            //    component: "resetPasswordWindow",
+            //    transclude: true,
+            //    resolve: {
+
+            //    },
+            //    size: 'sm'
+        //});      
+        $state.go("resetPassword");
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    }
+    $ctrl.Dismiss = function () {
+        $ctrl.modalInstance.dismiss("cancel");
+    };
+    $ctrl.GoRegistration = function () {
+        $state.go("userRegistration");
+        $ctrl.resolve = null;
+        $ctrl.modalInstance.close($ctrl.resolve);
+    };
+}

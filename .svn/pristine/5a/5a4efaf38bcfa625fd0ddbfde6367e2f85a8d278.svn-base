@@ -1,0 +1,338 @@
+﻿
+<div class="total-content">
+  
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-pencil-square-o"></i>
+            <h3>Online translation</h3>
+        </div>
+
+        <div class="transpro-content">         
+
+            <form>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Language
+                            <select id="srcLanguage" class="form-control"
+                                    data-ng-model="srcLanguage" ng-change="srcLangChanged(srcLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                            <i class="fa fa-play"></i>
+                            <select id="destLanguage" class="form-control"
+                                    data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+                                    ng-options="lang.ID as lang.Name for lang in ::languages"></select>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Translation field
+                            <select id="selectLanguage" class="form-control"
+                                    data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                    ng-options="t.ID as t.Name for t in ::translationFields">
+                                <option value="" selected="selected">▼--------------</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--<div class="transpro-tab-area">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" >Input manuscript directly</a></li>
+                        <li><a data-toggle="tab" >Upload a file</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-item-1" class="tab-pane transpro-tabpan fade in active">
+                            <div class="transpro-text-area">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                            </div>
+                            <p>* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.</p>
+                            <p>(For other languages, ​​you can enter up to 20,000 words.)</p>
+                        </div>
+                        <div id="tab-item-2" class="tab-pane transpro-tabpan fade">
+                            <p>Some content in menu 1.</p>
+                        </div>/>
+                    </div>
+                </div>-->
+                <uib-tabset active="activePill">
+                    <uib-tab index="0" heading="Input manuscript directly">
+                        <div class="transpro-text-area">
+                            <textarea cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                        </div>
+                        <div class="orange">
+                            * You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.
+                            <br>
+                            (For other languages, ​​you can enter up to 20,000 words.)
+                        </div>
+                    </uib-tab>
+                    <uib-tab index="1" heading="Upload a file">
+                        <div class="transpro-fileupload-area">
+                            <input type="file" multiple load-file ng-model="Estimation.File" id="fileName" />
+                        </div>
+                    </uib-tab>
+
+                </uib-tabset>
+                <div class="sample-tab-btn text-center">
+                    <button type="button" class="btn btn-primary" ng-click="UploadDocument()">Check Estimation</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <!-- editing-sample-area start -->
+    <!-- strength section -->
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> The strength of Trans-Pro. </h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="flowcircle blue">
+                    <div class="fc_aquacircle">
+                        <a href="#Quick_estimate">
+                            <div class="fc_number">
+                                1
+                            </div>
+                            <div class="fc_title">
+                                30 minutes (shortest)
+                            </div>
+                            <div class="fc_descript">
+                                Minimum of 30 minutes to deliver, 24-hours operating
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fc_aquacircle">
+                        <a href="#Reasonable_price">
+                            <div class="fc_number">
+                                2
+                            </div>
+                            <div class="fc_title">
+                                Reasonable price
+                            </div>
+                            <div class="fc_descript">
+                                Direct contact made lowest price
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fc_aquacircle">
+                        <a href="#Quick_estimate">
+                            <div class="fc_number">
+                                3
+                            </div>
+                            <div class="fc_title">
+                                Quick estimation
+                            </div>
+                            <div class="fc_descript">
+                                Check the price and delivery time on the spot
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fc_aquacircle">
+                        <a href="#multi_languages_response">
+                            <div class="fc_number">
+                                4
+                            </div>
+                            <div class="fc_title">
+                                38 languages available
+                            </div>
+                            <div class="fc_descript">
+                                Natives speakers for 38 languages standing by
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About On-line translation -->
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> About On-line translation </h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="box1">
+                    <h3> What is online translation?</h3>
+                    <p>
+                        The <a ui-sref="onlinetranslation">online translation</a> provided by trans-Pro is not a machine translation service like other portal sites, but a service directly provided by <a ui-sref="quality">professional translators</a> of native languages around the world.
+                        <br> If you enter the necessary information in the <a ui-sref="/">automatic estimation form</a>of this site, estimates and delivery time can be confirmed on the spot for you to request. Professional translator will be waiting at all time, and we will undertake your request in real time.
+                        <br>
+                        <br> You can order <strong>24 hours a day, 365 days a year</strong>, and receive translation in <strong>30 minutes (shortest).<br><br> Register first! →</strong>
+                        <input ui-sref="userRegistration" id="" class="btn-primary btn-sm" name="" value=" To the registration screen " type="submit">
+                    </p>
+                    <!-- application -->
+                    <h3> Application</h3>
+                    <div class="trans-appli-area">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-1.png" alt="" />
+                                    <p><a ui-sref="/">Estimate</a> using our form</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-2.png" alt="" />
+                                    <p><a ui-sref="userRegistration">Membership registration (free)</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-3.png" alt="" />
+                                    <p>Choose payment method</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-4.png" alt="" />
+                                    <p>
+                                        Log in with a registered
+                                        <br><a href="">ID and password</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-5.png" alt="" />
+                                    <p>Reconfirm and order</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-6.png" alt="" />
+                                    <p>Choose up to Payment process </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-7.png" alt="" />
+                                    <p>Notify a translator </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-8.png" alt="" />
+                                    <p>Notify a translator Translator confirms the order </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-9.png" alt="" />
+                                    <p>Deliver </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <img src="assets/img/appli-bg-10.png" alt="" />
+                                    <p>
+                                        Receive the documents
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-appli-box">
+                                    <a ui-sref="application" class="btn btn-primary">More information</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end application -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end strength  -->
+    <!-- List of on-line translation projects -->
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> List of on-line translation projects </h3>
+        </div>
+        <div class="order-breakdown-wrap receive-msg-wrap common-sub-block " style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Request Dates</th>
+                        <th>Status</th>
+                        <th>Plan</th>
+                        <th>Original language</th>
+                        <th>Target language</th>
+                        <th>Field</th>
+                        <th>Translator</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">17/08/15</a></td>
+                        <td><a href="">delivery</a></td>
+                        <td><a href="">1 day</a></td>
+                        <td><a href="">Japanese</a></td>
+                        <td><a href="">English</a></td>
+                        <td><a href="">Commercial &amp; IR</a></td>
+                        <td><a href="">220154</a></td>
+                        <td><a href="">＄285.03</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">16/09/28</a></td>
+                        <td><a href="">delivery</a></td>
+                        <td><a href=""> 3days.</a></td>
+                        <td><a href="">Japanese</a></td>
+                        <td><a href="">English</a></td>
+                        <td><a href="">MfgT &amp; science technology</a></td>
+                        <td><a href="">220154</a></td>
+                        <td><a href="">＄170.37</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">16/09/28</a></td>
+                        <td><a href="">delivery</a></td>
+                        <td><a href="">24 hr.</a></td>
+                        <td><a href="">Japanese</a></td>
+                        <td><a href="">English</a></td>
+                        <td><a href="">Commercial &amp; IR</a></td>
+                        <td><a href="">401104</a></td>
+                        <td><a href="">＄4.37</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">17/08/15</a></td>
+                        <td><a href="">delivery</a></td>
+                        <td><a href=""> 1day</a></td>
+                        <td><a href="">Japanese</a></td>
+                        <td><a href="">English</a></td>
+                        <td><a href="">Medicalcare,Medicine</a></td>
+                        <td><a href="">400809</a></td>
+                        <td><a href="">＄105.84</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">16/09/28</a></td>
+                        <td><a href="">delivery</a></td>
+                        <td><a href="">24 hr.</a></td>
+                        <td><a href="">Japanese</a></td>
+                        <td><a href="">English</a></td>
+                        <td><a href="">Business documents</a></td>
+                        <td><a href="">220154</a></td>
+                        <td><a href="">＄6.14</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">16/09/28</a></td>
+                        <td><a href="">delivery</a></td>
+                        <td><a href="">30 hr.</a></td>
+                        <td><a href="">English</a></td>
+                        <td><a href="">Chinese</a></td>
+                        <td><a href="">Business documents</a></td>
+                        <td><a href="">400003</a></td>
+                        <td><a href="">＄2.20</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end List of on-line translation projects -->
+    <!-- feedback-area start -->
+</div>
+
+

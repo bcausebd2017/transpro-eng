@@ -1,0 +1,41 @@
+<div class="total-content">
+    <!-- my-page-area-area start -->
+    <div class="my-page-area">
+        <div class="site-title">
+            <i class="fa fa-share-square-o"></i>
+            <h3>Sent message</h3>
+        </div>
+        <div class="receive-msg-wrap common-sub-block">
+            <div class="spinner" ng-if="!sendmessage">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Sender</th>
+                        <th>Order No.</th>
+                        <th>Title</th>
+                        <th>Date sent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="sendmessage && sendmessage.length>0" ng-repeat="sendmsg in sendmessage">
+                        <td>{{$index + 1}}</td>
+                        <td><a ui-sref="sendMessageRead({msgId:sendmsg.ID})">{{sendmsg.SenderName}}</a></td>
+                        <td><a ui-sref="sendMessageRead({msgId:sendmsg.ID})">{{sendmsg.OrderWeb.OrderNo}}</a></td>
+                        <td><a ui-sref="sendMessageRead({msgId:sendmsg.ID})">{{sendmsg.Title}}</a></td>
+                        <td><a ui-sref="sendMessageRead({msgId:sendmsg.ID})">{{sendmsg.CreatedDate| utcToLocal:'dd/MM/yyyy'}}</a></td>
+                    </tr>
+
+                    <tr ng-if="!sendmessage || sendmessage.length<=0">
+                        <td class="text-left" colspan="8">Data not available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- my-page-area end -->
+</div>

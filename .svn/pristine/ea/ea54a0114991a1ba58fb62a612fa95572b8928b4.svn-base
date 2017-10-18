@@ -1,0 +1,66 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("registrationController", function ($scope, $state, $rootScope, $uibModal, transproService, registrationService, APP_SETTINGS) {
+        var vm = this;
+        $scope.isIndustryLoaded = false;
+        vm.ReEmail = "";
+        vm.RePass = "";
+        vm.RecieveEmail = true;
+        vm.NoRecieveEmail = false;
+        vm.AllowPostingTransactions = true;
+        vm.DisAllowPostingTransactions = false;
+        vm.model = {};
+        Activate();
+        function Activate() {
+            transproService.getCountries().then(function (response) {
+                vm.countries = response;
+            }).catch(function (error) {
+
+            });
+
+            transproService.getIndustryClassifications().then(function (response) {
+                vm.classifications = response;                
+                _.forEach(vm.classifications,function(f){
+                    _.forEach(f.itemList,function(g){
+                        g.IsSelected = false;
+                        g.IndustryClassificationID = f.Id;
+                        g.IndustryClassificationItemID = g.Id;
+                    });
+                });
+                $scope.isIndustryLoaded = true;
+            }).catch(function (error) {
+
+            });
+        }
+        $scope.goIndividualReg = function (type) {
+            vm.regType = type;
+            $state.go("registration");
+        }
+        $scope.goTranslatorReg = function () {
+            $state.go("translatorReg");
+        }
+        $scope.register = function () {
+            $scope.isTriedSave = true;
+           
+            vm.model.ApplicationId = APP_SETTINGS.ApplicationId;
+            vm.model.CurrentCulture = APP_SETTINGS.CultureCode;
+            vm.model.RegistrationType = vm.regType;
+            vm.model.IndustryClassifications = [];
+            _.forEach(vm.classifications, function (f) {
+                _.forEach(f.itemList, function (g) {
+                    if (g.IsSelected)
+                        vm.model.IndustryClassifications.push(g);
+                });
+            });
+            vm.model.IsRecieveEmail = vm.RecieveEmail ? true : false;
+            vm.model.IsPostTransactionAllowed = vm.AllowPostingTransactions ? true : false;
+            registrationService.registerCustomer(vm.model).then(function (response) {
+                toastr.success('Your have been registered successfully.');
+                $state.go("successRegistration");
+            }).catch(function (error) {
+
+            });
+        }
+    });
+
+})();

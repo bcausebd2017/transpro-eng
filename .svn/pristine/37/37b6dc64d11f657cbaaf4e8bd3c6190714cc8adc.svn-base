@@ -1,0 +1,200 @@
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Setting up for receiving mails</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <h3>Sections with * need to be entered</h3>
+                <h4>E-mail address</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> E-mail address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Cell text address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h4x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Cell text address Receivable time frame</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h4x">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="celltext" checked="checked">Receivable only before or after business hours(18:00-09:00)</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="celltext">
+                                        <div class="celltext-rdo">
+                                            <span>Set hours to receive mail</span>
+                                            <span>
+                                                <select class="form-control" id="sel1">
+                                                    <option>00</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                </select> 
+                                            </span>
+                                            <span>Hour～</span>
+                                            <span>
+                                                <select class="form-control" id="sel1">
+                                                    <option>00</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                </select> 
+                                            </span>
+                                            <span>Hour</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="celltext">Any time</label>
+                                </div>
+                                <p class="red-text"><span>Message will be sent to PC before or after business hours.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt30">Setting up for receiving mails</h4>
+                <div class="rcv-mail order-breakdown-wrap receive-msg-wrap common-sub-block">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fields</th>
+                                <th>E-mail(ID)</th>
+                                <th>Cell text address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Translator arranged notice</td>
+                                <td>
+                                    <input value="" type="checkbox">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>※Translation delivery notice</td>
+                                <td>
+                                    <input value="" type="checkbox">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Request translation to a translator you choose</td>
+                                <td>
+                                    <input value="" type="checkbox">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>※Message notice</td>
+                                <td>
+                                    <input value="" type="checkbox">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>※Translator not confirmed</td>
+                                <td>
+                                    <input value="" type="checkbox">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Notification of review of payment after delivery completed</td>
+                                <td>
+                                    <input value="" type="checkbox">
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left" colspan="3">Data not available</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="reg-trams text-center">
+                    <input type="submit" value="To confirmation of update" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

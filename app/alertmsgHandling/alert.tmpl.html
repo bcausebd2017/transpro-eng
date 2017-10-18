@@ -1,0 +1,23 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="fa fa-close pull-right" ng-click="$ctrl.Close()"></button>
+        <h4 class="modal-title" ng-if="type == 'success'" style="color:green;">
+            <i class="fa fa-check-circle" style="padding-right:8px;" aria-hidden="true"></i>Success
+        </h4>
+        <h4 class="modal-title" ng-if="type == 'error'" style="color:red;">
+          <i class="fa fa-exclamation-triangle" style="padding-right:8px;" aria-hidden="true"></i>Error
+        </h4>
+        <h4 class="modal-title" ng-if="type == 'alert'" style="color:red;">
+            <i class="fa fa-exclamation-triangle" style="padding-right:8px;" aria-hidden="true"></i>Alert
+        </h4>
+    </div>
+    <div class="modal-body">
+         <p style="font-size:14px;" ng-style="(type === 'error' ||  type === 'alert') ? {color:'red'} : {color:'green'}">{{description}}</p>
+    </div>
+    <div class="clearfix" style="height: 20px;"></div>
+    <div class="modal-footer">
+        <div class="col-xs-12 text-center">
+            <a class="btn btn-primary" ng-click="$ctrl.Close()">OK</a>
+        </div>
+    </div>
+</div>

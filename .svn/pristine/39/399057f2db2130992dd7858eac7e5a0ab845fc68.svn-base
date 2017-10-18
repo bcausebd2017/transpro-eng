@@ -1,0 +1,73 @@
+﻿<div class="total-content">
+    <!-- sitemap section-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Site map</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="col-sm-4">
+                <div class="stmap stm2">
+                    <h3>Translation</h3>
+                    <ul class="list-unstyled box">
+                        <li><a ui-sref="/">HOME</a></li>
+                        <li><a ui-sref="onlineTranslation">Online translation</a></li>
+                        <li><a ui-sref="appointedTranslation">Appointed translation</a></li>
+                        <li><a ui-sref="nativecheck">Native check</a></li>
+                        <li><a ui-sref="translatorCoordinator">Translator + coordinator</a></li>
+                        <li><a ui-sref="pricelist">Price list</a></li>
+                        <li><a ui-sref="estimate">Automatic estimation</a></li>
+                        <li><a ui-sref="application">Application</a></li>
+                        <li><a ui-sref="faq">FAQ</a></li>
+                        <li><a ui-sref="transevaluation">Translator evaluation method</a></li>
+                        <li><a ui-sref="evaluation">Customer evaluation</a></li>
+                        <li><a ui-sref="quality">About quality</a></li>
+                        <li><a ui-sref="translator">Search translators</a></li>
+                        <li><a ui-sref="notice">Notice</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="stmap stm2">
+                    <!-- <ul class="list-unstyled">
+                        <li><a ui-sref="translator">Search translators</a></li>
+                        <li><a ui-sref="notice">Notice</a></li>
+                    </ul> -->
+                    <h3>Client</h3>
+                    <ul class="list-unstyled box">
+                        <li><a href="#" >Client log-in</a></li>
+                        <li><a ui-sref="userRegistration">User Registration</a></li>
+                        <li><a ui-sref="resetPassword">Reissue a password</a></li>
+                    </ul>
+                    <h3>User Guide</h3>
+                    <ul class="list-unstyled box">
+                        <li><a ui-sref="userguideIndividual">Personal Individuals</a></li>
+                        <li><a ui-sref="userguide">Legal entity customer</a></li>
+                        <li><a ui-sref="userguideOffice">University, public organization or public office customer</a></li>
+                        <li><a ui-sref="userguideTranslator">Translator</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="stmap stm2">
+                    <h3>Translator</h3>
+                    <ul class="list-unstyled box">
+                        <li><a href="#" >Translator Log-in</a></li>
+                        <li><a ui-sref="translatorReg">Translator registration</a></li>
+                        <li><a ui-sref="resetPassword">Reissue a password</a></li>
+                    </ul>
+                    <h3>General</h3>
+                    <ul class="list-unstyled box">
+                        <li><a ui-sref="aboutus">Company Profile</a></li>
+                        <li><a ui-sref="contact">Contact Us</a></li>
+                        <li><a ui-sref="terms">Terms of Service</a></li>
+                        <li><a ui-sref="privacy">About Privacy Policy</a></li>
+                        <li><a ui-sref="notation">Display based on specific trade law</a></li>
+                        <li><a ui-sref="sitemenu">Site map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sitemap section -->
+</div>

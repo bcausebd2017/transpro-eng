@@ -1,0 +1,402 @@
+﻿
+<div class="total-content">
+    <!-- pricing-table-area start -->
+    <div class="pricing-table-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>You can choose the translational level.</h3>
+        </div>
+        <p>エディティングプロでは専門のエディターにより英語校正を提供しております。 またご希望の納期や品質に併せてカスタマイズサービスを提供致します。以下のプランよりご選択下さい。</p>
+        <div class="pricing-box">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single-pricing-box light">
+                        <div class="pricing-photo">
+                            <img src="assets/img/price-light.png" alt="" />
+                        </div>
+                        <div class="pricing-btn">
+                            <a href="">詳細は >></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="single-pricing-box business">
+                        <div class="pricing-photo">
+                            <img src="assets/img/price-business.png" alt="" />
+                        </div>
+                        <div class="pricing-btn">
+                            <a href="">詳細は >></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="single-pricing-box expert">
+                        <div class="pricing-photo">
+                            <img src="assets/img/price-expert.png" alt="" />
+                        </div>
+                        <div class="pricing-btn">
+                            <a href="">詳細は >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pricing-table-area end -->
+    <!-- editing-transpro-area start -->
+    <div class="editing-transpro-area">
+        <div class="site-title">
+            <i class="fa fa-pencil-square-o"></i>
+            <h3>You can upload menuscripts and estimate here</h3>
+        </div>
+
+        <div class="transpro-content">
+            <!--<p>エディティングプロではお客様のご希望に合わせたカスタマイズサービスを提供しております。 校正のサンプルを参考に、必要なレベルのサービスを選択下さい。</p>
+            <div class="transpro-box light">
+                <h4>Lightサービスの校正サンプル</h4>
+                <p>基本的なチェックと校正のみが必要な場合にお勧め！</p>
+                <img src="assets/img/smple-light.png" alt="" />
+            </div>
+            <div class="transpro-box expert">
+                <h4>Lightサービスの校正サンプル</h4>
+                <p>基本的なチェックと校正のみが必要な場合にお勧め！</p>
+                <img src="assets/img/smple-expert.png" alt="" />
+            </div>-->
+
+            <form action="">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Language
+                            <select id="srcLanguage" class="form-control"
+                                    data-ng-model="srcLanguage"  ng-change="srcLangChanged(srcLanguage)"
+                                    ng-options="lang.Code as lang.Name for lang in ::languages"></select>
+                            <i class="fa fa-play"></i>
+                            <select id="destLanguage" class="form-control"
+                                    data-ng-model="destLanguage" ng-change="destLangChanged(destLanguage)"
+                                    ng-options="lang.Code as lang.Name for lang in ::languages"></select>
+                        </p>
+                    </div>
+                    <div class="col-sm-5">
+                        <p>
+                            <i class="fa fa-play-circle"></i> Translation field
+                            <select id="selectLanguage" class="form-control"
+                                    data-ng-model="selectField" ng-change="fieldChanged(selectField)"
+                                    ng-options="t.Code as t.Name for t in ::translationFields">
+                                <option value="" selected="selected">▼--------------</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!--<div class="transpro-tab-area">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" >Input manuscript directly</a></li>
+                        <li><a data-toggle="tab" >Upload a file</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-item-1" class="tab-pane transpro-tabpan fade in active">
+                            <div class="transpro-text-area">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                            </div>
+                            <p>* You can enter up to 40,000 double-byte characters for Japanese, Chinese, Korean.</p>
+                            <p>(For other languages, ​​you can enter up to 20,000 words.)</p>
+                        </div>
+                        <div id="tab-item-2" class="tab-pane transpro-tabpan fade">
+                            <p>Some content in menu 1.</p>
+                        </div>/>
+                    </div>
+                </div>-->
+                <uib-tabset active="activePill">
+                    <uib-tab index="0" heading="Input manuscript directly">
+                        <div class="transpro-text-area">
+                            <textarea cols="30" rows="10" placeholder="Enter text directly here"></textarea>
+                        </div>
+                    </uib-tab>
+                    <uib-tab index="1" heading="Upload a file">
+                        <div class="transpro-fileupload-area">
+                            <input type="file" />
+                        </div>
+                    </uib-tab>
+                          
+                </uib-tabset>
+                <div class="transpro-tab-btn text-center">
+                    <input type="submit" value="Check Estimation" />
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    <!-- editing-transpro-area start -->
+    <!-- feedback-area start -->
+    <div class="feedback-area">
+        <div class="site-title">
+            <i class="fa fa-users"></i>
+            <h3>List of Trnaslators</h3>
+        </div>
+
+        <div class="feedback-wrap">
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-1.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-2.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-3.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-4.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-5.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-6.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-4.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-7.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-2.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-8.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-9.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 col-sm-3 col-xs-6 p5">
+                    <div class="feedback-box">
+                        <img src="assets/img/feedback-5.jpg" alt="" />
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <div class="feedback-name">
+                            <p>日本学（学士） ライプチヒ大学 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feedback-area end -->
+    <!-- service-area start -->
+    <div class="service-area">
+        <div class="site-title">
+            <i class="fa fa-table"></i>
+            <h3>エディティングプロの信頼出来る品質</h3>
+        </div>
+
+        <div class="service-wrap">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="single-service">
+                        <img src="assets/img/service-icon-1.png" alt="" />
+                        <h4>安心の品質管理</h4>
+                        <p>エディターは全員が英語ネイティブ！また、独自の認定システムにより、専門性や品質を評価しています。</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="single-service">
+                        <img src="assets/img/service-icon-2.png" alt="" />
+                        <h4>再校正依頼が可能</h4>
+                        <p>最長で半年間、無料で再校正依頼が可能です。</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="single-service">
+                        <img src="assets/img/service-icon-3.png" alt="" />
+                        <h4>ビジネス・経済に特化！</h4>
+                        <p>ビジネス、経済分野を専門に扱ってきた、実績のあるエディターによるプロの校正を提供しています。</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="single-service">
+                        <img src="assets/img/service-icon-4.png" alt="" />
+                        <h4>英語翻訳</h4>
+                        <p>翻訳に自信がない方でも安心！翻訳会社ならではの高品質の翻訳と、校正を同時に依頼できます。</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="single-service">
+                        <img src="assets/img/service-icon-5.png" alt="" />
+                        <h4>医療・科学分野に特化！</h4>
+                        <p>医療・科学分野を専門に扱ってきた、実績のあるエディターによるプロの校正を提供しています。</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="single-service">
+                        <img src="assets/img/service-icon-6.png" alt="" />
+                        <h4>法律分野に特化！</h4>
+                        <p>法律関連の分野を専門に扱ってきた、実績のあるエディターによるプロの校正を提供しています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service-area end -->
+</div>
+
+

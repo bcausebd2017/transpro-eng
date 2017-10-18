@@ -1,0 +1,656 @@
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	
+.main-menu ul li {
+	display: inline-block;
+	float: left;
+	padding: 10px 8px 10px 0;
+}
+.menu-item i.fa {
+    padding-right: 0px;
+    border-right: none;
+}
+.menu-item p {
+	font-size: 11px;
+	line-height: 14px;
+	padding: 0 8px 0 0;
+}
+.menu-item i.fa {
+    font-size: 14px;
+}
+
+.slider-area {
+    top: 74px;
+}
+
+.sgl_coordi_top {
+    height: 45px;
+}
+.sgl_coordi_text {
+    min-height: 125px;
+}
+
+
+.item-name.h6x.p2x {
+    padding: 26px 10px;
+}
+
+
+.pricelist-top-fillter .form-group select {
+    width: 105px;
+}
+
+
+.single-slider {
+    margin-top: 1px;
+}
+
+.sldm1 p.pmt {
+    margin-top: 5px;
+}    
+
+.sldm1 {
+	height: 70px;
+	margin-top: 114px;
+}
+.sldm1 h4 {
+    font-size: 20px;
+}
+
+.slidebox3 p {
+    font-size: 12px;
+    transform: scale(1, 1.25);
+}
+.slidebox1 p {
+    font-size: 18px;
+    padding-bottom: 6px;
+    transform: scale(1, 1.25);
+}
+
+
+
+.individuals-reg-wrap {
+    padding: 10px;
+}
+.flowcircle .fc_aquacircle {
+    background-size: 155px 155px;
+    height: 155px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 155px;
+}
+.flowcircle .fc_aquacircle .fc_number {
+    margin: 25px auto -12px 15px;
+}
+.flowcircle .fc_aquacircle .fc_descript {
+    line-height: 1.15em;
+}
+
+
+
+
+.nw_pricecircle {
+    bottom: 20px;
+    left: 30px;
+}
+.nw_pricecircle h2 {
+    font-size: 13px;
+}
+
+.transpro-content form .form-control {
+    padding: 0;
+    width: 115px;
+}
+
+.transpro-content i.fa-play {
+    margin-left: 7px;
+    padding-right: 7px;
+}
+
+
+.stars i.fa {
+    font-size: 15px;
+    padding: 1px;
+}
+.single-service {
+    min-height: 125px;
+    padding: 15px 15px 15px 100px;
+}
+.single-service img {
+    top: 20px;
+    width: 70px;
+}
+.single-service h4 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+.single-service p {
+    font-size: 12px;
+}
+.pricing-btn a {
+    font-size: 14px;
+    padding: 8px 22px;
+}
+
+
+
+.sample-content form .form-control {
+    width: 112px;
+}
+
+.pricecircle, .pricecircleb, .pricecirclee {
+    border-radius: 50%;
+    box-shadow: 0 -1px 7px dimgray;
+    height: 88px;
+    margin: auto;
+    padding: 13px;
+    text-align: center;
+    width: 88px;
+  }
+  .priceittle > h4 {
+    margin-top: 3px;
+  }
+
+.tab-menu-area {
+    display: none;
+}
+
+.mobile-menu-area {
+    display: none;
+}
+
+.appstyle1 h4, .appstyle2 h4, .appstyle3 h4 {
+    font-size: 18px;
+  }
+
+.add-box1 h2{
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+.add-box1 p{
+	font-size: 8px;
+	margin-bottom: 5px;
+}
+.add-box2 h2 {
+    font-size: 12px;
+  }
+.add-box2 p {
+font-size: 9px;
+}
+.feedback-box img {
+    height: 105px;
+}
+div.box_gray {
+width: auto;
+}
+
+.footer-top {
+    margin-top: 6%;
+}
+
+
+.plan-heading{
+	height: 50px;
+}
+.plan_light_bg{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_light_normal.png") no-repeat scroll center top / 85% auto;
+}
+.plan_light_bg_active{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_light_hover.png") no-repeat scroll center top / 85% auto;
+}
+.plan_business_bg{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_business_normal.png") no-repeat scroll center top / 85% auto;
+}
+.plan_business_bg_active{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_business_hover.png") no-repeat scroll center top / 85% auto;
+}
+
+.plan_expert_bg{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_expert_normal.png") no-repeat scroll center top / 85% auto;
+}
+.plan_expert_bg_active{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_expert_hover.png") no-repeat scroll center top / 85% auto;
+}
+
+
+
+
+
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+.main-menu-area {
+    display: none;
+}
+.tab-menu-area {
+    display: block;
+}
+.mobile-menu-area {
+    display: none;
+}
+
+
+
+.item-name.h6x.p2x {
+    padding: 26px 10px;
+}
+
+
+.single-slider {
+    margin-top: 0;
+}
+.slider-area {
+    top: 70px;
+}
+.transpro-content form .form-control {
+    padding: 0;
+    width: 120px;
+}
+
+
+.pricelist-top-fillter .form-group select {
+    width: 105px;
+}
+
+.sgl_coordi_top {
+    height: 45px;
+}
+
+
+.sldm1 {
+    margin-top: 19px;
+}
+.single-slider .pr0 {
+    padding-right: 15px;
+}
+.single-slider .pl0 {
+    padding-left: 15px;
+}
+.sldm1:hover {
+    transform: scale(1.15);
+}
+
+
+
+.pricing-btn a {
+    font-size: 14px;
+    padding: 7px 18px;
+}
+.single-service {
+    padding: 15px 15px 15px 100px;
+	min-height: 145px;
+}
+
+.sample-content form .form-control {
+    width: 112px;
+}
+
+
+.pricecircle, .pricecircleb, .pricecirclee {
+    border-radius: 50%;
+    box-shadow: 0 -1px 7px dimgray;
+    height: 88px;
+    margin: auto;
+    padding: 13px;
+    text-align: center;
+    width: 88px;
+  }
+  .priceittle > h4 {
+    margin-top: 3px;
+  }
+
+  .appstyle1 h4, .appstyle2 h4, .appstyle3 h4 {
+    font-size: 18px;
+  }
+
+  .add-box1 h2{
+      font-size: 18px;
+  }
+
+  div.box_gray {
+    width: 390px;
+  }
+  
+  
+
+
+.plan-heading{
+	height: 50px;
+}
+.plan_light_bg{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_light_normal.png") no-repeat scroll center top / 85% auto;
+}
+.plan_light_bg_active{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_light_hover.png") no-repeat scroll center top / 85% auto;
+}
+.plan_business_bg{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_business_normal.png") no-repeat scroll center top / 85% auto;
+}
+.plan_business_bg_active{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_business_hover.png") no-repeat scroll center top / 85% auto;
+}
+
+.plan_expert_bg{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_expert_normal.png") no-repeat scroll center top / 85% auto;
+}
+.plan_expert_bg_active{
+	background: rgba(0, 0, 0, 0) url("/assets/img/plan_expert_hover.png") no-repeat scroll center top / 85% auto;
+}
+  
+
+ 
+  
+  
+    
+}
+
+
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+
+
+.main-menu-area {
+    display: none;
+}
+.tab-menu-area {
+    display: none;
+}
+
+.mobile-menu-area {
+    display: block;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#01b9fe+0,0075bf+100 */
+	background: #01b9fe; /* Old browsers */
+	background: -moz-linear-gradient(top, #01b9fe 0%, #0075bf 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #01b9fe 0%,#0075bf 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #01b9fe 0%,#0075bf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b9fe', endColorstr='#0075bf',GradientType=0 ); /* IE6-9 */
+	border-bottom: 1px solid #004982;	
+}
+.header-top-area {
+    border-top: 0 none;
+    padding-bottom: 5px;
+    text-align: center;
+    top: -1px;
+}
+.header-top-area .text-right {
+    text-align: center;
+}
+.top-right {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.pricing-btn a {
+    font-size: 14px;
+    padding: 7px 18px;
+}
+.single-service {
+    padding: 15px 15px 15px 100px;
+}
+
+.sgl_coordi_top {
+    height: auto;
+}
+
+.top-left {
+    display: none;
+}
+.header-top-area {
+    height: auto;
+}
+.header-top-area .login-area {
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+
+.pricelist-top-fillter .form-group select {
+    width: 100%;
+  }
+
+
+.mobile_logo img {
+    padding-top: 5px;
+    width: 150px;
+}
+.single-slider .slider_logo {
+    display: none;
+}
+
+
+.top-left p {
+    font-size: 11px;
+}
+.top-right ul li a {
+    font-size: 11px;
+}
+.top-right ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.top-right a.top-btn {
+    margin-top: 5px;
+}
+
+
+
+
+.sldm1 {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.single-slider {
+    height: 380px;
+}
+.single-slider .pl0 {
+    padding-left: 15px;
+}
+.single-slider .pr0 {
+    padding-right: 15px;
+}
+
+.sldm1:hover {
+    transform: scale(1.1);
+}
+
+
+.single-pricing-box {
+    margin-bottom: 30px;
+}
+.site-title h3 {
+    font-size: 13px;
+}
+.sample-content p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.sample-btn a {
+    font-size: 14px;
+    padding: 12px 30px;
+}
+.stars i.fa {
+    font-size: 15px;
+    padding: 2px;
+}
+.feedback-name p {
+    font-size: 11px;
+}
+.single-service h4 {
+    font-size: 16px;
+}
+.single-service p {
+    font-size: 12px;
+    height: auto;
+}
+.single-service img {
+    width: 60px;
+}
+.single-service {
+    padding: 15px 15px 15px 90px;
+}
+
+
+
+.mobile-menu-area {
+    float: right;
+    height: 50px;
+    left: 0;
+    position: fixed;
+    top: 26px;
+    width: 100%;
+    z-index: 10002;
+}
+.responsive-menu-wrap {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 200px;
+    z-index: 999;
+}
+.slicknav_menu {
+    background: transparent none repeat scroll 0 0;
+}
+.slicknav_nav, .slicknav_nav ul {
+    background: #555 none repeat scroll 0 0;
+}
+
+
+
+
+.sample-content form .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.tab-pane.sample-tabpan {
+    height: auto;
+}
+
+
+.sgl_coordi_text {
+    min-height: auto;
+}
+.pr0 {
+    padding-right: 15px;
+}
+.item-name {
+    border-right: 0 none;
+}
+.item-value {
+    padding: 5px;
+}
+.h25x {
+    height: auto;
+}
+.h5x {
+    height: auto;
+}
+.h2x {
+    height: auto;
+}
+.h1x {
+    height: auto;
+}
+.item-name.h_tarea {
+    height: auto;
+    padding-top: 10px;
+}
+.item-value.coordi {
+    padding: 5px;
+}
+.item-name.h52x.p2x {
+    height: auto;
+}
+.h4x {
+    height: auto;
+}
+.p2x {
+    padding: 5px;
+}
+.item-name.h4x p {
+    padding-top: 5px;
+}
+
+p.wd40 input[type="text"] {
+    width: 100%;
+}
+p.wd70 input[type="text"] {
+    width: 100%;
+}
+.item-value p input[type="text"] {
+    width: 100%;
+}
+
+.bl1p {
+    text-align: center;
+  }
+  .bl1p1 {
+    text-align: center;
+  }
+
+  .pd0{
+      margin-bottom: 15px;
+  }
+
+  .appstyle1 h4, .appstyle2 h4, .appstyle3 h4 {
+    font-size: 18px;
+  }
+
+  div.box_gray {
+    width: 200px;
+  }
+
+  .tbln{
+    width:80px;
+}
+
+
+.translation-plan-wrap {
+    width: 670px;
+}
+
+
+
+
+
+
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    .container, .container-fluid {
+        width: 450px;
+        margin: 0 auto;
+    }    
+    .bl1p {
+    text-align: center;
+  }
+  .bl1p1 {
+    text-align: center;
+  }
+
+
+  .pd0{
+      margin-bottom: 15px;
+  }
+    
+  .appstyle1 h4, .appstyle2 h4, .appstyle3 h4 {
+    font-size: 18px;
+   }
+   div.box_gray {
+    width: 344px;
+  }
+
+
+}
+

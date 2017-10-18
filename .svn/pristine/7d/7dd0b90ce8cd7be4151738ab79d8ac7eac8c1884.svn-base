@@ -1,0 +1,395 @@
+﻿<div class="total-content" >
+    <div class="site-title">
+        <i class="fa fa-th-large"></i>
+        <h3 align="center">Translator profile </h3>
+    </div>
+    <div class="spinner" ng-if="!vm">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area" ng-if="vm">
+
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <div class="pro text-center ">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p>Customers' rating </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Appointed rate </p>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <p>Number of registered as Favorites </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <span class="rating ">
+                                <span class="rating " style="background-position: 0px -17px; width: 100.00%; "><span class="value-title " title="5.0 "></span></span>
+                            </span>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>100.0% (1 / 1) </p>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <p>54 times! </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pro1">
+                    <div class="col-sm-3">
+                        <b><i class="fa fa-chevron-circle-right"></i> Translator No. : {{vm.TranslatorNo}}</b>
+                        <img id="" ng-src="{{vm.Image ? vm.Image : '../assets/img/avatar.png'}}" class="img-responsive imgt">
+                        <input type="button" value="Request" class="btn-primary btn-lg reqbtn">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="row margin-bottom-5">
+                            <div class="col-sm-5">
+                                <b><i class="fa fa-chevron-circle-right"></i> Native language </b>
+                            </div>
+                            <div class="col-sm-7">
+                                <p>{{vm.NativeLanguageName}}</p>
+                            </div>
+                        </div>
+
+                        <div class="row margin-bottom-5">
+                            <div class="col-sm-5">
+                                <b><i class="fa fa-chevron-circle-right"></i> Nationality </b>
+                            </div>
+                            <div class="col-sm-7">
+                                <p>{{vm.NationalityName}}</p>
+                            </div>
+                        </div>
+
+                        <div class="row margin-bottom-5">
+                            <div class="col-sm-5">
+                                <b><i class="fa fa-chevron-circle-right"></i> Address </b>
+                            </div>
+                            <div class="col-sm-7">
+                                <p>{{vm.Address}}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12  margin-bottom-5">
+                                <b><i class="fa fa-chevron-circle-right"></i> Highest level of schooling</b>
+                            </div>
+                            <div class="col-sm-12">
+                                <p> {{vm.EducationDegree3Name}} </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12  margin-bottom-5">
+                                <b><i class="fa fa-chevron-circle-right"></i> Graduating school</b>
+                            </div>
+                            <div class="col-sm-12">
+                                <p>{{vm.EducationDegree2Name}}</p>
+                            </div>
+                        </div>
+
+                        <b><i class="fa fa-chevron-circle-right "></i> Translator appeal </b>
+                        <div class="box_gray">
+                           {{vm.SelfPR}}
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <b><i class="fa fa-chevron-circle-right"></i> Special fields</b>
+                        <div class="margin-bottom-5"></div>
+                        <p ng-repeat="n in vm.ProfessionSpecialities">{{n.Name}}</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Translation experience </h3>
+        </div>
+        <div class="individuals-reg-wrap pht4 ">
+            <form action="">
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Online translation</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.OnlineTranslation}} times </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Appointed translation </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.AppointedTranslation}} times </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Native check </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p> {{vm.NativeTranslation}} times </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> All translation jobs </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.AllTranslation}} times </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Profile -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Profile</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Translator No. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p> {{vm.TranslatorNo}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Nationality </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.NationalityName}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Japan </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Year of birth</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p> {{vm.BirthDate | date: format : timezone}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Languages</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.FoeignLanguage1Name}} {{vm.FoeignLanguage2Name}} {{vm.FoeignLanguage3Name}} {{vm.FoeignLanguage4Name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h13x p13x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Field of translation </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <p ng-repeat="n in vm.ProfessionSpecialities">{{n.Name}}</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Software you can use </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p ng-repeat="n in vm.SoftwareUses">{{n.Name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Educational background </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.EducationDegree1Name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Degree </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.EducationDegree1Name}},{{vm.EducationDegree2Name}},{{vm.EducationDegree3Name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> The main career </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>{{vm.MainCareer}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h2x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Self-PR </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p> {{vm.SelfPR}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- customer evalution -->
+    <div class="individuals-reg-area txt">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Customer evaluation</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form action="">
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Number of evaluators </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>495 times </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Accumulated translation scores </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p> 2,418.2 point </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name">
+                                <p><i class="fa fa-chevron-circle-right"></i> Average score </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="item-value">
+                                <p>(Highest score set at 5) </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

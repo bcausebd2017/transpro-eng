@@ -1,0 +1,71 @@
+﻿<div class="total-content">
+    <!-- sitemap section-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Site map</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="col-sm-4">
+                <div class="stmap stm2">
+                    <h3>Translation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">Online translation</a></li>
+                        <li><a href="#">Appointed translation</a></li>
+                        <li><a href="#">Native check</a></li>
+                        <li><a href="#">Translator + coordinator</a></li>
+                        <li><a href="#">Price list</a></li>
+                        <li><a href="#">Automatic estimation</a></li>
+                        <li><a href="#">Application</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Translator evaluation method</a></li>
+                        <li><a href="#">Customer evaluation</a></li>
+                        <li><a href="#">About quality</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="stmap">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Search translators</a></li>
+                        <li><a href="#">Notice</a></li>
+                    </ul>
+                    <h3>Client</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Client log-in</a></li>
+                        <li><a href="#">User Registration</a></li>
+                        <li><a href="#">Reissue a password</a></li>
+                    </ul>
+                    <h3>User Guide</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Personal Individuals</a></li>
+                        <li><a href="#">Legal entity customer</a></li>
+                        <li><a href="#">University, public organization or public office customer</a></li>
+                        <li><a href="#">Translator</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="stmap stm2">
+                    <h3>Translator</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Translator Log-in</a></li>
+                        <li><a href="#">Translator registration</a></li>
+                        <li><a href="#">Reissue a password</a></li>
+                    </ul>
+                    <h3>General</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Company Profile</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">About Privacy Policy</a></li>
+                        <li><a href="#">Display based on specific trade law</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sitemap section -->
+</div>

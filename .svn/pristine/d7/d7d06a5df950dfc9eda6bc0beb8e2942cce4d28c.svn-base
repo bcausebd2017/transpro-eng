@@ -1,0 +1,134 @@
+﻿(function () {
+    'use strict';
+
+    function homeController($scope, $rootScope, $state, $uibModal, transproService, STORAGE_TYPE, appStorageFactory, USER_TYPE, API_URL, fileUploadService, APP_SETTINGS) {
+
+        var vm = this;
+
+        $scope.Estimation = {};
+        $scope.Estimation.File = null;
+        $scope.Estimation.WordCount = 0;
+        $scope.Estimation.TranslationText = null;
+        $scope.CurrentUser = {};
+        $scope.selectField = "";
+        Activate();
+
+        function Activate() {
+            $scope.selectLanguage = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            $scope.CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            $scope.UserType = USER_TYPE;
+            getLanguages();
+            getTranslationFields();           
+        }
+
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+                $scope.srcLanguage = _.find(response, function (f) { return f.Code == 'eng' }).ID;
+
+                if (!$scope.selectLanguage)
+                    $scope.destLanguage = _.find(response, function (f) { return f.Code == 'jpn' }).ID;
+                else
+                    $scope.destLanguage = $scope.selectLanguage;
+
+                var currentState = $state.current.name;
+                if (currentState === 'nativecheck') {
+                    $scope.selectLanguage = "";
+                    $scope.destLanguage = "";
+                }
+            }).catch(function (error) {
+                alertMsg.show('error', error);
+            });
+        }
+
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+            }).catch(function (error) {
+                alertMsg.show('error', error);
+            });
+        }
+
+        $scope.srcLangChanged = function (lang) {
+            $scope.srcLanguage = lang;
+        };
+        $scope.destLangChanged = function (lang) {
+            $scope.destLanguage = lang;
+        };
+        $scope.selectLangChanged = function (lang) {
+            $scope.selectLanguage = lang;
+            appStorageFactory.SetStorageObject("SetTargetLang", lang);
+            $scope.destLanguage = lang;
+            $rootScope.$broadcast('targetLanguageChanged', lang);
+        };
+        $scope.$on('targetLanguageChanged', function (event, data) {
+            var currentState = $state.current.name;
+            if (currentState === 'nativecheck') {
+                $scope.destLanguage = "";
+            } else {
+                $scope.destLanguage = data;
+            }
+        });
+        $scope.fieldChanged = function (field) {
+            $scope.selectField = field;
+        };
+        $scope.logout = function () {
+            $state.reload();
+            $scope.CurrentUser = {};
+            $state.go('.', { modelData: undefined });
+            appStorageFactory.ClearAll();
+        };
+        $scope.getUserById = function () {
+            if ($scope.CurrentUser.UserType == USER_TYPE.Customer) {
+                transproService.getCustomerById($scope.CurrentUser.ID, APP_SETTINGS.CultureCode).then(function (response) {
+                    $scope.modifyData = response;
+                    $state.go('registration', { modelData: response });
+                }).catch(function (error) {
+                    alertMsg.show('error', error);
+                });
+            }
+
+            if ($scope.CurrentUser.UserType == USER_TYPE.Translator) {
+                transproService.getTranslatorById($scope.CurrentUser.ID, APP_SETTINGS.CultureCode).then(function (response) {
+                    $scope.modifyData = response;
+                    $state.go('registration', { modelData: response });
+                }).catch(function (error) {
+                    toastr.error(error);
+                });
+            }
+        }
+
+        $scope.open = function (type) {
+            $uibModal.open({
+                component: "loginWindow",
+                transclude: true,
+                resolve: {},
+                size: 'sm'
+            });
+        };
+
+        $scope.UploadDocument = function () {
+            var url = API_URL.URL + "fileUpload/uploadDocument";
+            fileUploadService.uploadFileToUrl($scope.Estimation.File, url, onSuccessUpload, onError);
+        };
+
+        var onSuccessUpload = function (response) {
+            $scope.Estimation.WordCount = response.data[0].WordCount;
+            $scope.Estimation.TranslationText = response.data[0].TranslationText;
+            $scope.Estimation.srcLanguage = $scope.srcLanguage;
+            $scope.Estimation.destLanguage = $scope.destLanguage;
+            $scope.Estimation.selectField = $scope.selectField;
+            $state.go("estimation", { "Estimation": $scope.Estimation});
+            //alert("Files: " + response.data.length + "WordCount: " + response.data[0].WordCount + ", Text: " + response.data[0].TranslationText);
+        };
+
+        var onError = function (response) {
+            console.log("Error while uploading estimation document " + response);
+        };
+    }
+
+    angular
+       .module("app")
+       .controller("homeController", homeController);
+    homeController.$inject = ["$scope","$rootScope", "$state", "$uibModal", "transproService", "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL", "fileUploadService","APP_SETTINGS"];
+})();

@@ -1,0 +1,72 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("translatorController", function ($scope, $state, $rootScope, $uibModal, transproService, translatorService, APP_SETTINGS) {
+        var vm = this;
+        $scope.isTranslatorLoaded = false;
+
+        vm.model = {};
+        $scope.selectField = "";
+        Activate();
+        function Activate() {
+            transproService.getCountries().then(function (response) {
+                vm.country = response;
+            }).catch(function (error) {
+                console.log("My error")
+            });
+
+            transproService.getEducatinalDegree().then(function (response) {
+                vm.educations = response;
+            }).catch(function (error) {
+                console.log("My error")
+            });
+
+            transproService.getLanguages().then(function (response) {
+                vm.languages = response;
+                $scope.languageList = response;
+                $scope.srcLanguage = _.find(response, function (f) { return f.Code == 'eng' }).ID;
+                $scope.destLanguage = _.find(response, function (f) { return f.Code == 'jpn' }).ID;
+            }).catch(function (error) {
+
+            });
+
+            transproService.getCurrentState().then(function (response) {
+                vm.currentstate = response;
+                var c;
+                for (c = 0; c < vm.response.length; c++) {
+                    Object.defineProperties(vm.currentstate[c], "IsSelected", { value: false, writable: true, enumerable: true, configurable: true })
+                    vm.currentstate[i].IsSelected = false;
+                }
+            }).catch(function (error) {
+
+            });
+
+            transproService.getProfessional().then(function (response) {
+                vm.profession = response;
+                var i;
+                for (i = 0; i < response.length; i += 1) {
+                    Object.defineProperty(vm.profession[i], "IsSelected", { value: false, writable: true, enumerable: true, configurable: true });
+                    vm.profession[i].IsSelected = false;
+                }
+                $scope.isTranslatorLoaded = true;
+            }).catch(function (error) {
+
+            });
+          
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationField = response;
+            }).catch(function (error) {
+
+            });
+            
+
+        }
+      
+
+        $scope.SaveTranslator = function () {
+            $scope.isTriedSave = true;
+            vm.model.ApplicationId = APP_SETTINGS.ApplicationId;
+            vm.model.CurrentCulture = APP_SETTINGS.CultureCode;
+        }
+    });
+
+})();

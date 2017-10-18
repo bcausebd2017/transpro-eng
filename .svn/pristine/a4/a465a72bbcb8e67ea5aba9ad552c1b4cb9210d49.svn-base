@@ -1,0 +1,747 @@
+﻿<div class="total-content">
+    <!-- user-registration-translator-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Translator Registration</h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <form class="form-horizontal" name="translatorForm">
+                <div class="spinner" ng-if="!isTranslatorLoaded">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+                <h3>Sections with * need to be entered</h3>
+                <h4>Account</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>E-mail address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pl5">
+                            <div class="item-value h2x">
+                                <p>
+                                    <input type="text" ng-model="vm.model.RegEmail" name="regemail" uib-tooltip="Please enter your email address"
+                                            tooltip-is-open="translatorForm.regemail.$invalid" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/"
+                                            tooltip-trigger="none" tooltip-placement="top"  ng-class="{'invalid:-input':isTriedSave && translatorForm.regemail.$error.required }" required/>
+                                    <span><input type="submit" value="ID Check" /></span>
+                                </p>
+                                <p class="red-text">
+                                    <input type="text" ng-model="vm.RegEmail2" name="regemail2" ng-class="{'invalid:-input':isTriedSave && translatorForm.regemail2.$error.required }" required />
+                                    <span>* Enter again</span></p>
+                                <p ng-if="vm.RegEmail2.length > 0 && vm.model.RegEmail!== vm.RegEmail2" ng-style="{'color':'red'}">Email does not match</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>PW</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 pl5">
+                            <div class="item-value h2x">
+                                <p class="red-text">
+                                    <input class="input-pass" type="password" name="password" ng-minlength="8" ng-model="vm.model.Password" ng-class="{'invalid-input':isTriedSave && translatorForm.password.$error.required || $ctrl.vm.model.Password < 8}" required /><span ng-show="translatorForm.password.$error.minlength" class="help-block">Password is too short.Please enter more than 8 characters.</span>
+                                 </p>
+                               
+                                <p class="red-text">
+                                    <input type="password" id="repass" name="repass" ng-model="vm.Repass" ng-class="{'invalid-input':isTriedSave && translatorForm.repass.$error.required}" required /> <span>* Enter again <p ng-if="vm.vm.Repass.length > 0 && vm.model.Password !== vm.Repass" ng-style="{'color':'red'}">Password does not match</p> </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt30">Your information</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Last Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" id="Lastname" name="lastname" ng-model="vm.model.LastName" ng-class="{'invalid-input':isTriedSave && translatorForm.lastname.$error.required}" required/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>First Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text"  id="Firstname" name="firstname" ng-model="vm.model.FirstName" ng-class="{'invalid-input':isTriedSave && translatorForm.firstname.$error.required}" required/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Gender</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label class="radio-inline">
+                                        <input name="reg-gender" checked="checked" type="radio" ng-checked="vm.model.gendermale" ngh-model="vm.gendermale">Male
+                                        <label class="radio-inline">
+                                            <input name="reg-gender" type="radio" ng-model="vm.gendermodel.female">Female
+                                        </label>
+                                        </label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Birthday</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text"
+                                       id="birthDate"
+                                       class="form-control"
+                                       uib-datepicker-popup="dd/MM/yyyy"
+                                       placeholder="Birthday"
+                                       min-date="dateFrom"
+                                       max-date="dateTo"
+                                       close-text="Close"
+                                       ng-model="vm.model.Birthdate"
+                                       show-weeks="true"
+                                       is-open="dateFromOpened"
+                                       ng-click="dateFromOpened = true"
+                                       filter-by="placed"
+                                       filter-type="dateFrom" />
+                                <span class="input-group-btn">
+                                    <label for="birthDate" class="btn btn-default remove-padding">
+                                        <i class="fa fa-calendar"></i>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>                                             
+                   </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Nationality</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="nationality"
+                                        data-ng-model="vm.model.NationalityID"
+                                        ng-options="l.ID as l.Name for l in ::vm.country">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Native Language</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="nativelanguage"
+                                         data-ng-model="vm.model.LanguageID"
+                                         ng-options="l.ID as l.Name for l in ::vm.languages">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Foreign Language 1 </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="foreignlanguage1"
+                                        data-ng-model="vm.model.foreignLanguage1ID"
+                                        ng-options="l.ID as l.Name for l in ::vm.languages">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Level </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="foreignlanguge1level"
+                                        data-ng-model="vm.model.foreignLanguagelvl1ID">
+                                    <option value="0">▼------</option>
+                                    <option value="1">Native Level</option>
+                                    <option value="2">Business Level</option>
+                                    <option value="3">Daily Conversation Level</option>
+                                    <option value="4">Amateur Level</option>
+                                    <option value="5">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Foreign Language 2</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="foreignlanguage2"
+                                        data-ng-model="vm.model.foreignLanguage2ID"
+                                        ng-options="l.ID as l.Name for l in ::vm.languages">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Level </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="foreignlanguge2level"
+                                        data-ng-model="vm.model.foreignLanguagelvl2ID">
+                                    <option value="0">▼------</option>
+                                    <option value="1">Native Level</option>
+                                    <option value="2">Business Level</option>
+                                    <option value="3">Daily Conversation Level</option>
+                                    <option value="4">Amateur Level</option>
+                                    <option value="5">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Foreign Language 3 </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="foreignlanguage3"
+                                        data-ng-model="vm.model.foreignLanguage3ID"
+                                        ng-options="l.ID as l.Name for l in ::vm.languages">
+                                    <option value="" selected="selected">▼--------------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Level </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select id="foreignlanguge3level"
+                                        data-ng-model="vm.model.foreignLanguagelvl3ID" >
+                                    <option value="0">▼------</option>
+                                    <option value="1">Native Level</option>
+                                    <option value="2">Business Level</option>
+                                    <option value="3">Daily Conversation Level</option>
+                                    <option value="4">Amateur Level</option>
+                                    <option value="5">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name hi4x pi4x">
+                                <p><i class="fa fa-arrow-circle-right"></i> *Current state</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div>
+                            <div class="item-value">
+                                <div ng-repeat="currentstate in vm.currentstate">
+                                    <label>
+                                        <input type="checkbox" ng-model="currentstate.IsSelected" />{{currentstate.Name}}
+                                    </label>
+                                </div>
+                             </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Postal Code</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" name="postalcode"ng-model="vm.postalcode" ng-class="{'invalid-input':isTriedSave && translatorForm.postalcode.$error.required}" required/><span>* Ex)000-0000</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <!--<input type="radio" />-->
+                                    <label> Country/Region </label>
+                                    <select id="address"
+                                            data-ng-model="vm.model.TranslatorCountryID"
+                                            ng-options="c.ID as c.Name for c in vm.country">
+                                        <option value ="" selected="selected">---------------------------</option>
+                                       
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> City</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" name="city" ng-model="vm.City" ng-class="{'invalid-input':isTriedSave && translatorForm.city.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Street</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" name="street" ng-model="vm.model.Street" ng-class="{'invalid-input':isTriedSave && translatorForm.street.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Room number and the building name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p class="red-text">
+                                    <input type="text" id="RoadandBuilding" name="RoadBuilding" ng-model="vm.RoadandBuilding" ng-class="{'invalid-input':isTriedSave && translatorForm.RoadBuilding.$error.required}" required  />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h3x p3x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Professional and specialty</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+
+                        <div class="item-value">
+                            <div class="industry-check-wrap">
+                                <div class="row">
+
+                                    <div class="col-sm-6 remove-padding-left" ng-repeat="Profession in vm.profession">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" ng-model="Profession.IsSelected" />{{Profession.Name}}
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name hi4x pi4x">
+                                <p><i class="fa fa-arrow-circle-right"></i>Software you can use</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value">
+                                <div class="check-wrap2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="1"> WORD
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="2"> ACCESS
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="3"> PHOTOSHOP
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="4"> TRADOS
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="5"> EXCEL
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="6"> DREAM WEAVER
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="7"> ILLUSTRATOR
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="8">QuarkXPress
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="9">IT & computer
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="10">Commercial, IR, marketing, and media
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Educational background1 (highest)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label> Degree </label>
+                                    <select id="educational1"
+                                    data-ng-model="vm.model.EducatinalID1"
+                                    ng-options="e.ID as e.Name for e in ::vm.educations">
+                                    <option value="" selected="selected">------------------------------</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Educational background2</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label> Degree </label>
+                                    <select id="educational2"
+                                            data-ng-model="vm.model.EducatinalID2"
+                                            ng-options="e.ID as e.Name for e in ::vm.educations">
+                                        <option value="" selected="selected">------------------------------</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span>Educational background3</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <label> Degree </label>
+                                    <select id="educational3"
+                                            data-ng-model="vm.model.EducatinalID3"
+                                            ng-options="e.ID as e.Name for e in ::vm.educations">
+                                        <option value="" selected="selected">------------------------------</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h4x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> The main career</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p>Please enter your past jobs which you think will appeal to the clients</p>
+                                <p class="red-text">
+                                    <!--<input type="text" placeholder="Please type in English" name="career" ng-model="vm.Career" required/>-->
+                                    <textarea class="form-control" placeholder="Please type in English" cols="100" rows="2" name="selfpr" ng.model="vm.model.Career" required></textarea>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h4x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Self-PR</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value p2x">
+                                <p>Please enter your past jobs which you think will appeal to the clients</p>
+                                <p class="red-text">
+                                    <!--<input type="text" placeholder="Please type in English" name="selfpr" ng.model="vm.Selfpr" required/>-->
+                                    <textarea class="form-control" placeholder="Please type in English" cols="100" rows="2" name="selfpr" ng.model="vm.model.Selfpr" required></textarea>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Tel No</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="tel" ng-model="vm.model.Telephone" ng-class="{'invalid-input':isTriedSave && translatorForm.tel.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Mobile Phone No</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="mobile"  ng-model="vm.model.Mobile" ng-class="{'invalid-input':isTriedSave && translatorForm.mobile.$error.required}" required/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Cell text address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="celladdress" ng-model="vm.model.Celladdress" ng-class="{'invalid-input':isTriedSave && translatorForm.celladdress.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt30">Account information</h4>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name of Financial institution</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="financialinstitute" ng-model="vm.model.FinancialInstitute" ng-class="{'invalid-input':isTriedSave && translatorForm.financialinstitute.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Branch name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="branchname" ng-model="vm.model.BranchName" ng-class="{'invalid-input':isTriedSave && translatorForm.branchname.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account type</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="accounttype" ng-model="vm.Accounttype" ng-class="{'invalid-input':isTriedSave && translatorForm.accounttype.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account number</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" name="accountnumber" ng-model="vm.AccountNumber" ng-class="{'invalid-input':isTriedSave && translatorForm.accountnumber.$error.required}" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">`
+                                    <input type="text" name="accountname" ng-model="vm.model.AccountPersonName" ng-class="{'invalid-input':isTriedSave && translatorForm.accountname.$error.required}" required  />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reg-trams text-center">
+                    <h4 class="mt30">Terms of Service</h4>
+                    <textarea name="" id="" cols="30" rows="10">
+                        株式会社 ビーコス(referred as our company) uses this homepage(referred as homepage) to introduce, promote, and gather information for the online translation service "trans-Pro," and only offer it for personal use of all who uses this homepage (referred as user) By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. There may be times that we update the term of use without notification, please be sure to confirm before using our service. 【To use our homepage】 This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required. All terms of registration should be precise and truthful, following the format our company provided and the rules set. Registered ID and password are to be carefully kept by the registrants, and all results of the use of ID and password will fall into the registrant's responsibility. Users should take responsibility of all information transmitted on this homepage, and deal no damage to our company. In the case when user causes damage to our company or a third party by using this homepage, or conflicts happened between users or a third party, the user should take full responsibility to solve the problem without causing damage to our company. 【About information and disclaimer of this homepage】 Although the information contained on this homepage have been formulated with all due care, our company does not warrant or represent that the information is free from errors or omissions, nor that they are exhaustive. The information may change without notice, changes are periodically added to the information, and our company may make improvements or changes in the information or stop the operation of the homepage at any time. our company is in no way warrant or responsible for any change or omission of the information, or the damage caused by stopping or temporally stopping the operation of the homepage. This homepage further does not warrant or accept any liability in relation to the quality, operability or accuracy of the Data. 【About stopping the operation of the homepage】 In the case of the following situations, the homepage may stop or omit the registration without notice. 1) Falsehood in registering information 2) Abuse use of ID or password 3) Abuse use of the information using the translation result or any service this homepage provides. 4) Violation of this term of use 5) Other situations which our company considers inappropriate 【About the operation of this homepage】 This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the system, or any form of natural disasters, fire, and breakdown. our company is in no way warrant or responsible for any damage occurred due to stopping the service. 【Indicated Price】 All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are placed. In this case, we will put the price listed when orders are actually placed as first priority. We appreciate your understanding due to the nature of this service. In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual price will be based on the fixed price (less). On the contrary, if the price has risen after the order is placed, the actual price will be based on the price before it has risen. All indicated price for our service are not tax-included. Please check the order confirmation e-mail for the final service fee. In the case when the indicated price is not correct, we will immediately resend an e-mail with the correct price indicated. In such case, the final fee will be based on the price notified despite the automatic responding e-mail. Any discount after the order confirmation e-mail will not be applicable. 【About the establishment time】 The order is established when both sides are confirmed of willing to seal the contract. Specifically, the order is established after the user requests to make an order through this homepage, and the translator uses the system of this homepage to accept the final request. Please confirm the following. After the order is established, the user is expected to agree to the "term of use". 【About revision after the translation is delivered】 If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made. 1. Revision due to changes in original document are to be paid separately. 2. Request for revision after 2 weeks are not applicable. 【About cancelations due to the user's circumstance】 You can cancel any time from when the request is made until the translator accepts the order. You cannot cancel for any reason after the translator accepts the order. 【About compensation】 Although all service provided by our company are formulated all due care, in the case where the service provided caused damage to the user, our company will compensate the damage. The compensation is limited to the exact order price indicated, and our company will not be warrant to any other responsibility. 【About copyrights and trademarks】 The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks all belongs to our company. Any copy, alternation, or distribution, sale, release to third party will be prohibited. All trademarks, logos, service marks shown in this homepage belongs to our company and associated companies. 【About personal information protection】 1. The usage of personal information In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service. In other cases when personal information are asked, please confirm 2. Collecting personal information To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way. 3. Personal information management Personal information will not be shown to a third party unless in the following situations. (1) With the agreement of the client (2) In the case where the client cannot be defined unless personal information is shown. (3) Reasons during consignment in order to make the task smoother. (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management) (4) Questions which our company consider appropriate to answer (5) When petition for paid service or product orders are necessary. (In this case, we will only exchange personal information with the financial institution.) (6) When asked to release the information by laws and regulations. 【About headhunting of translators】 Headhunting of translators is strictly prohibited. Any action discovered will result in us taking the appropriate legal actions. 【About governing law】 Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws of Japan the Terms of Use shall be governed in accordance with the laws of Japan
+                    </textarea>
+                    <div class="item-value">
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" checked="checked">Agree
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams">Disagree
+                        </label>
+                    </div>
+                    <input type="submit" value="To registration confirmation"  ng-click="SaveTranslator()"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

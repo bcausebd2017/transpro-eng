@@ -1,0 +1,383 @@
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Choosing payment method </h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <h4 class="mt10">Ordering Information</h4>
+            <form action="">
+                    <div class="common-table table-style-1" style="overflow-x:auto;">
+                            <table>
+                                <tr>
+                                    <td><i class="fa fa fa-chevron-circle-right"></i> Order No. </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-6 padding3">
+                                                {{Order.OrderNo}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa fa-chevron-circle-right"></i> Content </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-6 padding3">
+                                                {{Order.Content}}
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                   <tr>
+                                    <td><i class="fa fa fa-chevron-circle-right"></i> Payment amount(Tax included) </td>
+                                    <td>
+                                        <div class="tbl_row">
+                                            <div class="col-md-6 padding3">
+                                                {{Order.CurrencySymbol}} {{Order.EstimatedPrice | number: 2}} ({{Order.CurrencyName}})
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h4 class="mt10"> Setting up for receiving documents</h4>
+                        <div class="common-table table-style-1" style="overflow-x:auto;">
+                                <table>
+                                    <tr>
+                                        <td><i class="fa fa fa-chevron-circle-right"></i> Payment method</td>
+                                        <td>
+                                            <div class="tbl_row">
+                                                <div class="col-md-6 padding3">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" ng-model="Order.IsImmediatePayment" ng-value="true"> Immediate payment (credit card)
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <h4 class="mt10">Setting up for various receiving documents </h4>
+                            <div class="common-table settlement_style" style="overflow-x:auto;">
+                                    <table>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td colspan="2" style="background:#F3F2EE; text-align:center; font-weight:bold;"> Delivery method </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa fa-chevron-circle-right"></i> Receipts </td>
+                                            <td>
+                                                <div class="tbl_row padding3">
+                                                    <label class="radio-inline">
+                                                       <input name="needed" type="radio" ng-model="Order.IsNeeded" ng-value="true">Needed
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input name="needed" type="radio" ng-model="Order.IsNeeded" ng-value="false">Not Needed
+                                                    </label>
+                                                </div>
+                                                <div class="tbl_row margin-top5 padding3">
+                                                    <select ng-model="Order.DeliveryMethodID" id="SelectDeliveryMethod" name="SelectDeliveryMethod"
+                                                        ng-options="Method.ID as Method.Name for Method in Variable.DeliveryMethodList">
+                                                        <option selected="selected" value="" >▼--------------</option>
+                                                     </select>						
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="checkbox padding3">
+                                                        <label><input type="checkbox" ng-model="Order.IsPDFbyEmail">PDF by email</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="checkbox padding3">
+                                                        <div class="checkbox">
+                                                            <label><input type="checkbox" ng-model="Order.IsAfterPaperOutput">
+                                                                    After paper output, mail<br>
+                                                                    <span class="tbl_orangetext">※ As a fee · shipping fee
+                                                                    I get 210 yen</span>
+                                                            </label>
+                                                        </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td colspan="4" style="background:#fff; font-weight:normal;"><span class="tbl_orangetext padding3">Each document can be downloaded at any time on the case details and delivery page.</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+
+<!-- 
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x p13">
+                                <p><i class="fa fa-chevron-circle-right"></i> Order No. </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p>{{Order.OrderNo}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x p13">
+                                <p><i class="fa fa-chevron-circle-right"></i> Content </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p>{{Order.Content}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x p13">
+                                <p><i class="fa fa-chevron-circle-right"></i> Payment amount(Tax included) </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <strong><p>{{Order.CurrencySymbol}} {{Order.EstimatedPrice}} ({{Order.CurrencyName}})</p></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <br>
+
+                <h3> Setting up for receiving documents</h3> -->
+
+                <!-- <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr5">
+                            <div class="item-name h1x p13">
+                                <p><i class="fa fa-chevron-circle-right"></i> Payment method </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <label class="radio-inline">
+                                    <input type="radio" ng-model="Order.IsImmediatePayment" ng-value="true"> Immediate payment (credit card)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <br>
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-6 pr0">
+                            <div class="item-name h1x  border-bottom-1">
+                                .
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl0">
+                            <div class="item-name h1x">
+                                <p>Delivery method </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 pr0 border-bottom-1">
+                            <div class="item-name h2x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Receipts</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 ">
+                            <div class="item-value h2x ">
+                                <label class="radio-inline">
+                                   <input name="needed" type="radio" ng-model="Order.IsNeeded" ng-value="true">Needed
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="needed" type="radio" ng-model="Order.IsNeeded" ng-value="false">Not Needed
+                                </label>
+                                <select ng-model="Order.DeliveryMethodID" id="SelectDeliveryMethod" name="SelectDeliveryMethod"
+                                        ng-options="Method.ID as Method.Name for Method in Variable.DeliveryMethodList">
+                                    <option selected="selected" disabled>▼--------------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="item-value h2x">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" ng-model="Order.IsPDFbyEmail">PDF by email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <div class="item-value h2x">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" ng-model="Order.IsAfterPaperOutput">
+                                        After paper output, mail<br>
+                                        ※ As a fee · shipping fee
+                                        I get 210 yen
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br> -->
+                <!-- <p class="orange">Each document is downloadable anytime in the project details page or delivery page. </p> -->
+                <div class="common-table settlement_style2" style="overflow-x:auto;">
+					<table>
+						<tr>
+							<td class="settlement_td" rowspan="5">
+								<div class="tbl_row padding3">
+									<i class="fa fa fa-chevron-circle-right"></i> Postal Address
+								</div>
+							</td>
+							<td class="settlement_td">
+								<div class="tbl_row padding3">
+									<i class="fa fa fa-chevron-circle-right"></i> Address update
+								</div>
+							</td>
+							<td>
+								<div class="tbl_row padding3">
+									<label class="radio-inline">
+										<input name="address" ng-model="Order.IsSendRegisteredAddress" ng-value="true" type="radio">Send to registered address
+									</label>
+									<label class="radio-inline">
+                                        <input name="address" ng-model="Order.IsSendRegisteredAddress" ng-value="false" type="radio">Change the address
+                                    </label>
+                                    
+								</div>
+							</td>
+						</tr>
+						<tr ng-hide="address">
+							<td class="settlement_td">
+								<div class="tbl_row padding3">
+									<i class="fa fa fa-chevron-circle-right"></i> postal code
+								</div>
+							</td>
+							<td>
+								<div class="tbl_row">
+									<div class="col-md-4 padding3">
+										<input type="text" ng-model="Order.PostalCode">
+									</div>
+                                </div>
+                                
+							</td>
+						</tr>
+						<tr ng-hide="address">
+							<td class="settlement_td">
+								<div class="tbl_row padding3">
+									<i class="fa fa fa-chevron-circle-right"></i> Address
+								</div>
+							</td>
+							<td>
+								<div class="tbl_row">
+									<div class="col-md-8 padding3">
+										<input type="text" ng-model="Order.Address">
+									</div>
+								</div>
+								
+								<div class="clearfix"></div>
+				
+								<div class="tbl_row margin-top5">
+									<div class="col-md-8 padding3">
+										<input class="form-control" style="" type="text">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr ng-hide="address">
+							<td class="settlement_td">
+								<div class="tbl_row padding3">
+									<i class="fa fa fa-chevron-circle-right"></i> Name of address
+								</div>
+							</td>
+							<td>
+								<div class="tbl_row">
+									<div class="col-md-6 padding3">
+										<input type="text" ng-model="Order.NameOfAddress">
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr ng-hide="address">
+							<td class="settlement_td">
+								<div class="tbl_row padding3">
+									<i class="fa fa fa-chevron-circle-right"></i> Person in charge
+								</div>
+							</td>
+							<td>
+								<div class="tbl_row">
+									<div class="col-md-6 padding3">
+										<input type="text" ng-model="Order.PersonInCharge">
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+                </div>
+                
+
+
+                <!-- <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x p3iix">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Postal destination address </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl0">
+                            <div class="item-name h1x p1x">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Address update</p>
+                            </div>
+                            <div ng-hide="address" class="item-name h1x p1x border-top-1">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> postal code</p>
+                            </div>
+                            <div ng-hide="address" class="item-name h1x p1x border-top-1">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Address</p>
+                            </div>
+                            <div ng-hide="address" class="item-name h1x p1x border-top-1">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Name of address</p>
+                            </div>
+                            <div ng-hide="address" class="item-name h1x p1x border-top-1">
+                                <p><i class="fa fa fa-chevron-circle-right"></i> Person in charge</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl0">
+                            <div class="item-value h1x p1x">
+                                <label class="radio-inline">
+                                    <input name="address" ng-model="Order.IsSendRegisteredAddress" ng-value="true" type="radio">Send to registered address
+                                </label>
+                                <label class="radio-inline">
+                                    <input name="address" ng-model="Order.IsSendRegisteredAddress" ng-value="false" type="radio">Change the address
+                                </label>
+                            </div>
+                            <div ng-hide="address" class="item-value h1x p1x">
+                                <p class="red-text wd80"><input type="text" ng-model="Order.PostalCode"></p>
+                            </div>
+                            <div ng-hide="address" class="item-value h1x p1x">
+                                <p class="red-text wd80"><input type="text" ng-model="Order.Address"></p>
+                            </div>
+                            <div ng-hide="address" class="item-value h1x p1x">
+                                <p class="red-text wd80"><input type="text" ng-model="Order.NameOfAddress"></p>
+                            </div>
+                            <div ng-hide="address" class="item-value h1x p1x">
+                                <p class="red-text wd80"><input type="text" ng-model="Order.PersonInCharge"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <br>
+                <div class=" text-center">
+                       <button value="Next" class="button-green" >Next</button>
+                 </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- user-registration-area end -->
+</div>

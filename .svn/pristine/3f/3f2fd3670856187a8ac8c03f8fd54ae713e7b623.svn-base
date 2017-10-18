@@ -1,0 +1,143 @@
+﻿<div class="total-content">
+    <!-- User Guide Links start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3> Strengths of Trans-Pro. </h3>
+        </div>
+        <div class="individuals-reg-wrap">
+            <div class="flex-container">
+                <div class="flowcircle blue">
+                    <div class="fc_aquacircle">
+                        <a href="#Quick_estimate">
+                            <div class="fc_number">
+                                1
+                            </div>
+                            <div class="fc_title">
+                                30 minutes (shortest)
+                            </div>
+                            <div class="fc_descript">
+                                Minimum of 30 minutes to deliver, 24-hours operating
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fc_aquacircle">
+                        <a href="#Reasonable_price">
+                            <div class="fc_number">
+                                2
+                            </div>
+                            <div class="fc_title">
+                                Reasonable price
+                            </div>
+                            <div class="fc_descript">
+                                Direct contact made lowest price
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fc_aquacircle">
+                        <a href="#Quick_estimate">
+                            <div class="fc_number">
+                                3
+                            </div>
+                            <div class="fc_title">
+                                Quick estimation
+                            </div>
+                            <div class="fc_descript">
+                                Check the price and delivery time on the spot
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fc_aquacircle">
+                        <a href="#multi_languages_response">
+                            <div class="fc_number">
+                                4
+                            </div>
+                            <div class="fc_title">
+                                38 languages available
+                            </div>
+                            <div class="fc_descript">
+                                Natives speakers for 38 languages standing by
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Quick estimate. You can confirm the price according to the level and delivery time on the spot</h3>
+                    <p>
+                        →Online estimate is possible for text files, MS Word or Excel files
+                        <br> →You can compare various types of services, so you can make an order according to your budget and time needs
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>This cloud system is operating 24 hours and provides <a href="#">translation</a> service at reasonable price.</h3>
+                    <p>
+                        →There are translators around the world and translation taking advantage of time difference is possible
+                        <br> →Because you do not need a sales representative or coordinator to get your job done, price is lower and delivery time is shorter
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>You can appoint a skilled translator of your choice </h3>
+                    <p>
+                        →You can check translators' evaluation by other customers before choosing a translator.
+                        <br> →In MyPage, you can appoint translators registered as your favorite or whom you asked to translate before
+                    </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Unique system to manage <a href="#">translation quality</a> </h3>
+                    <p><a href="">Translation</a> requests go to translators with higher evaluation on a preferential basis * Evaluation are done by customers </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Payable by a credit card </h3>
+                    <strong><p>For corporate or governmental customers, Pay after the delivery. Forms of estimates, delivery, and invoices can be issued as you request</p></strong>
+                    <p>→This becomes possible by your entry such request at registration </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Projects difficult to be handled in the cloud can be taken care by us with expertise of a <a href="#">translation </a>company </h3>
+                    <strong><p>Total of 16 years of experience + more than 13,000 corporate customers</p></strong>
+                    <p>* CEO is <a href="http://jtf.jp">a director of the Japan Translation Federation </a></p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>Direct communication with the translator is possible (* Up to two weeks after delivery) </h3>
+                    <p>→Messaging function enables you to directly contact the translator </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3><a href="#">Translation</a> or proofreading by a native speaker of the target language realized </h3>
+                    <p>→A native speaker of the target language translates or proofread, making the target draft natural </p>
+                </div>
+            </div>
+            <div class="flex-container">
+                <div class="box ">
+                    <h3>38 languages available </h3>
+                    <p>
+                        →38 languages, including English, Chinese and Korean, are available
+                        <br> →You can not only choose a language but also a region where the language is used
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="flex-container button">
+                <div class="button-holder text-center">
+                    <div class="clearfix"></div>
+                    <a class="btn btn-primary"> Estimate </a> <a class="btn btn-primary"> Registration</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- User Guide Links end -->
+</div>

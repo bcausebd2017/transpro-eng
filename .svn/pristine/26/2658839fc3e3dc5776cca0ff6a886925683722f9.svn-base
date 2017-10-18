@@ -1,0 +1,19 @@
+﻿(function () {
+    'use strict';
+    angular.module("app").controller("receivingmailController", function ($scope, $state, $rootScope, $uibModal, transproService, registrationService, APP_SETTINGS, COMPANY_REGISTRATION_TYPE, appStorageFactory, STORAGE_TYPE, alertMsg) {
+        var vm = this;
+        vm.CurrentCulture = APP_SETTINGS.CultureCode;
+
+        $scope.Save = function ()
+        {
+            registrationService.SaveEmailSettings(vm).then(function (response) {
+    
+              alertMsg.show('success', 'Email Delivery Settings Successfully.');
+              
+            }).catch(function (error) {
+                alertMsg.show('error', error);
+            });
+        }
+    });
+    
+}) ();

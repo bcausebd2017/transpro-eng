@@ -1,0 +1,380 @@
+﻿(function () {
+    'use strict';
+
+    function estimationController($http,
+        $scope, $state, $uibModal, transproService, STORAGE_TYPE,
+        appStorageFactory, USER_TYPE, API_URL, $stateParams, APP_SETTINGS, DeliveryPlanType, LangPriceDetailsType,
+        alertMsg, fileUploadService, $anchorScroll, $location, translatorService, TRANSLATION_TYPE, ORDER_STATUS,
+        PAYMENT_STATUS, PAYMENT_METHOD) {
+
+        var vm = this;
+
+        $scope.CurrentUser = null;
+        $scope.Variable = {};
+        $scope.Variable.DeliveryPriority = null;
+        $scope.Variable.AgreeEstimation = false;
+        $scope.Variable.WaitingForClientLogin = false;
+        $scope.UploadReferenceState = '';
+
+        $scope.currentPage = 1
+        $scope.numPerPage = 12
+        $scope.TranslatorList = [];
+
+
+
+        $scope.getTransproLanguagePriceCategory = function () {
+            if ($scope.Estimation.selectField == "" || $scope.Estimation.selectField == null
+                || $scope.Estimation.AppointedTranslation == true) {
+                $scope.LanguagePriceCategoryList = [];
+                $scope.Estimation.DeliveryAnticipatedDate = null;
+                $scope.Estimation.PriceType = null;
+                $scope.Estimation.Price = null;
+                return;
+            }
+            var TransproModel = {};
+            TransproModel.CurrentCulture = APP_SETTINGS.CultureCode;
+            TransproModel.SourceLanguageID = $scope.Estimation.srcLanguage;
+            TransproModel.TargetLanguageID = $scope.Estimation.destLanguage;
+            TransproModel.SpecialityFieldID = $scope.Estimation.selectField;
+            transproService.getTransproLanguagePriceCategory(TransproModel).then(function (response) {
+                $scope.LanguagePriceCategoryList = response;
+                if (response.length == 0) {
+                    $scope.Estimation.DeliveryAnticipatedDate = null;
+                    $scope.Estimation.PriceType = null;
+                    $scope.Estimation.Price = null;
+                    return;
+                }
+                var PriceDetails = response[0].PriceDetailsList[0];
+                if (PriceDetails.BusinessPrice > 0) {
+                    $scope.Variable.DeliveryPriority = 2;
+                    $scope.Estimation.PriceType = 2;
+                    $scope.Estimation.Price = response[0].PriceDetailsList[0].BusinessPrice * $scope.Estimation.WordCount;
+                }
+                else if (PriceDetails.LightPrice > 0) {
+                    $scope.Estimation.PriceType = 1;
+                    $scope.Variable.DeliveryPriority = 1;
+                    $scope.Estimation.Price = response[0].PriceDetailsList[0].LightPrice * $scope.Estimation.WordCount;
+                }
+                else if (PriceDetails.ExpertPrice > 0) {
+                    $scope.Estimation.PriceType = 3;
+                    $scope.Variable.DeliveryPriority = 3;
+                    $scope.Estimation.Price = response[0].PriceDetailsList[0].ExpertPrice * $scope.Estimation.WordCount;
+                }
+                $scope.Estimation.Tax = $scope.Estimation.Price * 0.1;
+                $scope.Estimation.PriceWithTax = $scope.Estimation.Tax + $scope.Estimation.Price;
+                $scope.Estimation.PriceDetails = response[0].PriceDetailsList[0];
+                CalculateAnticipatedDate();
+            }).catch(function (error) { });
+        };
+
+        Activate();
+
+        function Activate() {
+            $scope.CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            $scope.UserType = USER_TYPE;
+            $scope.selectTargetlang = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            getLanguages();
+            getTranslationFields();
+            GetSubSpecialityFields();
+            $scope.Estimation = $stateParams.Estimation;
+            $scope.Estimation.Status = null;
+            $scope.Estimation.Price = null;
+            $scope.Estimation.Tax = null;
+            $scope.Estimation.PriceWithTax = null;
+            $scope.Estimation.PriceType = 0;
+            $scope.Estimation.PriceDetails = null;
+            $scope.Estimation.DeliveryAnticipatedDate = null;
+            $scope.Estimation.ReferenceManual = {};
+            $scope.Estimation.ReferenceManual.File = null;
+            $scope.Estimation.ReferenceManual.Name = null;
+            $scope.Estimation.ReferenceManual.DownloadURL = null;
+            $scope.Estimation.ReferenceManual.Size = null;
+            $scope.Estimation.ReferenceManual.CreatedDate = null;
+            $scope.Estimation.ReferenceManual.Extension = null;
+            $scope.Estimation.CommentForTranslators = null;
+            $scope.Estimation.AppointedTranslation = false;
+            $scope.Estimation.AppointedTranslators = [];
+            $scope.getTransproLanguagePriceCategory();
+        }
+
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+            }).catch(function (error) {});
+        }
+
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+                searchTranslators("0", "0", "0");
+            }).catch(function (error) {});
+        }
+
+        function GetSubSpecialityFields() {
+            transproService.GetSubSpecialityFields().then(function (response) {
+                $scope.SubSpecialityList = response;
+            }).catch(function (error) { });
+        }
+
+        function searchTranslators(srcLangId, trgLangId, specialFieldId) {
+            translatorService.searchTranslator(srcLangId, trgLangId, specialFieldId).then(function (response) {
+                $scope.TranslatorList = response;
+                $scope.filterTranslators = response;
+                var i;
+                for (i = 0; i < $scope.TranslatorList.length; i += 1) {
+                    $scope.TranslatorList[i].disabled = false;
+                }
+                if ($scope.TranslatorList.length > $scope.numPerPage)
+                $scope.doCtrlPagingTranslators(1);
+            }).catch(function (error) { });
+        }
+
+        $scope.CalculateExactPrices = function (PriceDetails, type) {
+            var WordCount = $scope.Estimation.WordCount;
+            $scope.Estimation.PriceType = type;
+            $scope.Estimation.PriceDetails = PriceDetails;
+            switch (type) {
+                case LangPriceDetailsType.LightPrice:
+                    $scope.Estimation.Price = PriceDetails.LightPrice * WordCount;
+                    break;
+                case LangPriceDetailsType.BusinessPrice:
+                    $scope.Estimation.Price = PriceDetails.BusinessPrice * WordCount;
+                    break;
+                case LangPriceDetailsType.ExpertPrice:
+                    $scope.Estimation.Price = PriceDetails.ExpertPrice * WordCount;
+                    break;
+            }
+            $scope.Estimation.Tax = $scope.Estimation.Price * 0.1;
+            $scope.Estimation.PriceWithTax = $scope.Estimation.Tax + $scope.Estimation.Price;
+            CalculateAnticipatedDate();
+            return;
+        };
+
+        function CalculateAnticipatedDate() {
+            var TimeStamp = Date.now();
+            var Minutes = 1000 * 60;
+            var Hours, Days;
+            var DeliveryType = $scope.Estimation.PriceDetails.DeliveryPlanType;
+            var DeliveryTime = $scope.Estimation.PriceDetails.DeliveryPlanTime;
+            switch (DeliveryType) {
+                case DeliveryPlanType.RangeInMinutes:
+                    Minutes = Minutes * DeliveryTime;
+                    TimeStamp += Minutes;
+                    break;
+                case DeliveryPlanType.RangeInHours:
+                    Hours = Minutes * DeliveryTime * 60;
+                    TimeStamp += Hours;
+                    break;
+                case DeliveryPlanType.RangeInDays:
+                    Hours = Minutes * 60;
+                    Days = Hours * DeliveryTime * 24;
+                    TimeStamp += Days;
+                    break;
+            }
+            var AnticipatedDate = new Date(TimeStamp);
+            $scope.Estimation.DeliveryAnticipatedDate = AnticipatedDate;
+            return;
+        }
+
+        $scope.UploadReferenceManual = function () {
+            if ($scope.Estimation.ReferenceManual.File == null) {
+                return;
+            }
+            var url = API_URL.URL + "fileUpload/uploadDataFile";
+            $scope.Variable.UploadReferenceState = 'Uploading....';
+            fileUploadService.uploadFileToUrl($scope.Estimation.ReferenceManual.File, url, onSuccessUpload, onErrorUpload);
+        }
+        var onSuccessUpload = function (response) {
+            $scope.Estimation.ReferenceManual.Name = response.data[0].FileName;
+            $scope.Estimation.ReferenceManual.DownloadURL = response.data[0].DownloadURL;
+            $scope.Estimation.ReferenceManual.Size = response.data[0].FileSize;
+            $scope.Estimation.ReferenceManual.CreatedDate = response.data[0].CreatedDate;
+            $scope.Estimation.ReferenceManual.Extension = response.data[0].Extension;
+            $scope.Variable.UploadReferenceState = 'Reference manual has been uploaded successfully';
+        };
+        var onErrorUpload = function (response) {
+            alertMsg.show('error', "Error while uploading estimation document or manuscript : " + response);
+        };
+
+        $scope.EstimateTranslation = function () {
+            if ($scope.Variable.AgreeEstimation == false) {
+                alertMsg.show("alert", "Please agree with our terms and conditions to proceed.");
+            }
+            else {
+                $scope.Estimation.Status = 1;
+                //$location.hash('StartingDiv');
+                $anchorScroll();
+            }
+        };
+
+        $scope.ModifyEstimation = function () {
+            $scope.Estimation.Status = null;
+            //$location.hash('StartingDiv');
+            $anchorScroll();
+        };
+
+        $scope.RedirectToPayScreen = function () {
+            var CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            var i;
+            var Order = new Object();
+            Order.ApplicationId = APP_SETTINGS.ApplicationId;
+            Order.CurrentCulture = APP_SETTINGS.CultureCode;
+            Order.SourceLanguageID = $scope.Estimation.srcLanguage;
+            Order.TargetLanguageID = $scope.Estimation.destLanguage;
+            Order.TranslationFieldID = $scope.Estimation.selectField;
+            Order.AssignedTranslatorID = null;
+            Order.DeliveryPlanID = $scope.Estimation.PriceDetails.DeliveryPlanID;
+            Order.DeliveryPlan = $scope.Estimation.PriceDetails.DeliveryPlanName;
+
+            switch ($scope.Estimation.PriceType) {
+                case 1:
+                    Order.DeliveryLevelName = "Light";
+                    Order.UnitPrice = $scope.Estimation.PriceDetails.LightPrice;
+                    break;
+                case 2:
+                    Order.DeliveryLevelName = "Business";
+                    Order.UnitPrice = $scope.Estimation.PriceDetails.BusinessPrice;
+                    break;
+                case 3:
+                    Order.DeliveryLevelName = "Expert";
+                    Order.UnitPrice = $scope.Estimation.PriceDetails.ExpertPrice;
+                    break;
+            }
+            Order.CurrencyID = $scope.LanguagePriceCategoryList[0].CurrencyID;
+            Order.IntroducerID = null;
+            Order.TranslationType = TRANSLATION_TYPE.Online;
+            Order.OrderDate = new Date();
+            Order.StartDate = null;
+            Order.EndDate = null;
+            Order.DeliveryDate = $scope.Estimation.DeliveryAnticipatedDate;
+            Order.CompletionDate = null;
+            Order.OrderStatus = ORDER_STATUS.WaitingForConfirmation;
+            Order.PaymentStatus = PAYMENT_STATUS.Unpaid;
+            Order.PaymentMethod = PAYMENT_METHOD.RequestedPayment;
+            Order.WordCount = $scope.Estimation.WordCount;
+            Order.PaymentAmount = $scope.Estimation.PriceWithTax;
+            Order.TranslatorFee = null;
+            Order.EstimatedPrice = $scope.Estimation.Price;
+            Order.Discount = 0;
+            Order.PriceAfterDiscount = Order.PaymentAmount;
+            Order.ConsumptionTax = $scope.Estimation.Tax;
+            Order.RequestDate = null;
+            Order.CommentToTranslator = $scope.Estimation.CommentForTranslators;
+            Order.MenuScript = $scope.Estimation.Manuscript.TranslationText;
+            Order.DeliveryComment = null;
+            Order.CompanyNotes = null;
+            Order.CommentToBcause = null;
+            Order.ReferenceFileName = $scope.Estimation.ReferenceManual.Name;
+            Order.ReferenceDownloadURL = $scope.Estimation.ReferenceManual.DownloadURL;
+            Order.WebDocumentList = new Array($scope.Estimation.DocumentList.length);
+
+            var WebDocument;
+            for (i = 0; i < $scope.Estimation.DocumentList.length; i += 1) {
+                WebDocument = new Object();
+                WebDocument.Name = $scope.Estimation.DocumentList[i].FileName;
+                WebDocument.DownloadURL = $scope.Estimation.DocumentList[i].DownloadURL;
+                Order.WebDocumentList[i] = WebDocument;
+            }
+            $scope.Order = Order;
+
+            if (CurrentUser && CurrentUser.UserType == USER_TYPE.Customer) {
+                $scope.Order.ClientID = CurrentUser.ID;
+                transproService.SaveOrderWeb($scope.Order).then(function (response) {
+                    $state.go("payment", { Order: response });
+                })
+                .catch(function (error) {
+                    console.log("Error occured while generating order data: " + error);
+                });
+            }
+            else {
+                $scope.Variable.WaitingForClientLogin = true;
+                var config = {};
+                config.component = "loginWindow";
+                config.transclude = true;
+                config.resolve = {};
+                config.resolve.modalData = {};
+                config.resolve.modalData.BroadcastSuccessLoginAddress = "LoginPerformed";
+                config.resolve.modalData.BroadcastErrorLoginAddress = "ErronOnLogin";
+                config.resolve.modalData.LoginForCustomer = true;
+                config.size = "sm";
+                $uibModal.open(config);
+            }
+        };
+
+        $scope.$on("LoginPerformed", function (event, response) {
+            if ($scope.Variable.WaitingForClientLogin == true) {
+                $scope.Variable.WaitingForClientLogin = false;
+                var CurrentUser = response;
+                if (CurrentUser && CurrentUser.UserType == USER_TYPE.Customer) {
+                    console.log("Login info received... ");
+                    $scope.Order.ClientID = CurrentUser.ID;
+                    transproService.SaveOrderWeb($scope.Order).then(function (response) {
+                        var OrderFilter = { };
+                        OrderFilter.OrderNo= response;
+                        OrderFilter.cultureId = APP_SETTINGS.CultureCode;
+                        OrderFilter.ApplicationId = APP_SETTINGS.ApplicationId;
+                        var config = {};
+                        config.url = API_URL.URL + "order/getWebOrders";
+                        config.method = "POST";
+                        config.data = OrderFilter;
+                        $http(config).then(function (response) {
+                            $state.go("payment", { Order: response.data[0] }, { reload: true });
+                        }, function (error) {
+                            alertMsg.show("error", "An error occured while retriving stored order data.");
+                            console.log("Error occured while retriving saved order");
+                        });
+                    })
+                    .catch(function (error) {
+                        console.log("Error occured while generating order data: " + error);
+                        alertMsg.show("error", "An error occured while storing order data into TransPro database.");
+                    });
+                }
+            }
+        });
+
+
+        // Translators Pagination
+
+        $scope.doCtrlPagingTranslators = function (page) {
+
+            var begin = ((page - 1) * $scope.numPerPage);
+            var end = begin + $scope.numPerPage;
+
+            $scope.filterTranslators = $scope.TranslatorList.slice(begin, end);
+
+        }
+
+        $scope.openTranslatorWindow = function (translator) {
+            $uibModal.open({
+                component: "translatorProfileWindow",
+                transclude: true,
+                animation: true,
+                resolve: {
+                    Translator: function () {
+                        return translator;
+                    }
+                },
+                size: 'lg',
+
+            });
+        };
+
+
+        $scope.$on("ErrorOnLogin", function (error) {
+            if ($scope.Variable.WaitingForClientLogin == true) {
+                $scope.Variable.WaitingForClientLogin = false;
+                alertMsg.show("error", "The requested login was not confirmed. Please try with a valid email id and a valid password.");
+            }
+        })
+    }
+
+    angular
+       .module("app")
+       .controller("estimationController", estimationController);
+    estimationController.$inject = ["$http", "$scope", "$state", "$uibModal", "transproService",
+                                    "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL",
+                                    "$stateParams", "APP_SETTINGS", "DeliveryPlanType",
+                                    "LangPriceDetailsType", 'alertMsg', 'fileUploadService', '$anchorScroll',
+                                    '$location', "translatorService", "TRANSLATION_TYPE", "ORDER_STATUS",
+                                    "PAYMENT_STATUS", "PAYMENT_METHOD"];
+})();

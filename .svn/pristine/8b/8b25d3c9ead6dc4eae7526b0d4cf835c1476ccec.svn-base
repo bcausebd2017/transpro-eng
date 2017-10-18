@@ -1,0 +1,870 @@
+﻿<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area trans_coordi">
+
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>What is "Translator + coordinator" service?</h3>
+        </div>
+        <div class="common-sub-block">
+            <div class="coordi_top">
+                <p>An experienced coordinator confirms your request, answers your questions, and suggests the best plan for you.</p>
+                <ul>
+                    <li>In the case of only holding <span>paper documents</span>, or cannot extract texts from <span>image or PDF</span></li>
+                    <li>In the case of cannot trust digital communication without <span>consultation</span>…</li>
+                    <li>In the case that a document includes <span>delicate private information</span>, and you need a consultant who confirms your minute request…</li>
+                </ul>
+                <p>A b-cause coordinator confirms the content of your draft and assign the best translator for your request.</p>
+            </div>
+
+            <div class="coordi_boxs">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="sgl_coordi_box">
+                            <div class="sgl_coordi_top">
+                                <h5>Specialty with higher precision</h5>
+                            </div>
+                            <div class="sgl_coordi_text">
+                                <p>Professional translators and checkers will pursue the highest quality</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="sgl_coordi_box">
+                            <div class="sgl_coordi_top">
+                                <h5>Polite and precise hearing</h5>
+                            </div>
+                            <div class="sgl_coordi_text">
+                                <p>Coordinator will ask for your request in detail</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="sgl_coordi_box">
+                            <div class="sgl_coordi_top">
+                                <h5>Supported by team</h5>
+                            </div>
+                            <div class="sgl_coordi_text">
+                                <p>Support staff directly visit you if necessary, then share information with in-house staff to provide you attentive service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="sgl_coordi_box">
+                            <div class="sgl_coordi_top">
+                                <h5>166 countries,160 languages</h5>
+                            </div>
+                            <div class="sgl_coordi_text">
+                                <p>From major languages to rare languages</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="sgl_coordi_box">
+                            <div class="sgl_coordi_top">
+                                <h5>Request is met In a variety of ways</h5>
+                            </div>
+                            <div class="sgl_coordi_text">
+                                <p>Flexible care is possible including dispatching an on-site translator to your office</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Translator + coordinator estimate form</h3>
+        </div>
+        <div class="individuals-reg-wrap coordi_form">
+
+            <p>This is recommended to customers who prioritize quality. Your estimate request will be taken care of by a sales representative.</p>
+            <p>After submitting your order, your draft will be translated by a translator and checked by a coordinator, then delivered to you. If you are in hurry or in order to reduce the <a href="">estimate</a> by approx. 30%, automatic estimation is recommended.</p>
+            <p class="red_text">* At Trans-pro we know your time is precious. Therefore we aim to have a cost estimate response to you within 24 hours.</p>
+
+            <form action="">
+                <h3>Sections with * need to be entered</h3>
+            <!--
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h6x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Type of service you need (multiple selections possible)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Translation
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Proofreading
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Typing characters
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">DTP
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Indicating the pronunciation
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Web making (htmlizing)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+                <h4 class="mt30">Your information</h4>
+
+                <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Your company name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>Ex) Yamada Inc.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>Ex) Taro Yamada</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Postal code</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>Ex)000-000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h25x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 pl5">
+                            <div class="item-value h25x">
+                                <p class="red-text wd70">
+                                    <label>
+                                        <input type="radio" name="coo_add" />
+                                        Domestic
+                                    </label>
+                                    <select>
+                                        <option selected="selected" value="000"></option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                        <option value="">北海道</option>
+                                    </select>
+                                </p>
+                                <p class="red-text wd70">
+                                    <label>
+                                        <input type="radio" name="coo_add" />
+                                        Country/Region
+                                    </label>
+                                    <select>
+                                        <option selected="selected" value="000">▼------</option>
+                                        <option value="">Abkhazia</option>
+                                        <option value="">Afghanistan</option>
+                                        <option value="">Albania</option>
+                                        <option value="">Algeria</option>
+                                        <option value="">Andorra</option>
+                                        <option value="">Angola</option>
+                                        <option value="">Antigua and Barbuda</option>
+                                        <option value="">Argentine Republic</option>
+                                        <option value="">Armenia</option>
+                                        <option value="">Australia</option>
+                                        <option value="">Austria</option>
+                                        <option value="">Azerbaijan</option>
+                                        <option value="">Bahamas</option>
+                                        <option value="">Bahrain</option>
+                                        <option value="">Bangladesh</option>
+                                        <option value="">Barbados</option>
+                                        <option value="">Belarus</option>
+                                        <option value="">Belgium</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> City</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Street</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70"><input type="text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Tel number	</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>Ex)000-0000-0000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> FAX	</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>Ex)000-0000-0000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> E-mail Address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p class="red-text"><input type="text"></p>
+                                <p class="red-text"><input type="text"><span>* Enter again</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!--
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h2x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Languages</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x">
+                                <p class="red-text">
+                                    <select>
+                                        <option selected="selected" value="000">▼------</option>
+                                        <option value="">Japanese</option>
+                                        <option value="">English</option>
+                                        <option value="">Chinese(Cantonese)</option>
+                                        <option value="">Chinese(Mandarin)</option>
+                                        <option value="">Korean</option>
+                                        <option value="">Icelandic</option>
+                                        <option value="">Irish</option>
+                                        <option value="">Azerbaijani</option>
+                                        <option value="">Akkadian</option>
+                                        <option value="">Assamese</option>
+                                        <option value="">Afghani</option>
+                                        <option value="">Afrikaans</option>
+                                        <option value="">Amharic</option>
+                                        <option value="">Arabic</option>
+                                    </select>
+                                    ⇒
+                                    <select>
+                                        <option selected="selected" value="000">1 Languge</option>
+                                        <option value="">2 Languge</option>
+                                        <option value="">3 Languge</option>
+                                        <option value="">4 Languge</option>
+                                    </select>
+                                </p>
+                                <p class="red-text">
+                                    <select>
+                                        <option selected="selected" value="000">▼------</option>
+                                        <option value="">Japanese</option>
+                                        <option value="">English</option>
+                                        <option value="">Chinese(Cantonese)</option>
+                                        <option value="">Chinese(Mandarin)</option>
+                                        <option value="">Korean</option>
+                                        <option value="">Icelandic</option>
+                                        <option value="">Irish</option>
+                                        <option value="">Azerbaijani</option>
+                                        <option value="">Akkadian</option>
+                                        <option value="">Assamese</option>
+                                        <option value="">Afghani</option>
+                                        <option value="">Afrikaans</option>
+                                        <option value="">Amharic</option>
+                                        <option value="">Arabic</option>
+                                    </select>
+                                    <span class="sml-text">(In case there is one target language or more, tell us so in "Other/Comment" section.)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->    
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h6x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Contents and purpose (field)</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h2x p2x">
+                                <p class="red-text"><input type="text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h5x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Type of purpose</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h5x">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">For internal use
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">For external use
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">For print
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">For web
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Others
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="red-text"><input type="text"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Word count</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>words</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h5x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Data delivery method</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h5x">
+                                <div class="row mt10">
+                                    <div class="col-sm-3">
+                                        <label class="radio-inline">
+                                            <input name="data-delivery" checked="checked" type="radio">Send by mail
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label class="radio-inline">
+                                            <input name="data-delivery" type="radio">FAX
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="radio-inline">
+                                            <input name="data-delivery" type="radio">Email (attach file(s))
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row mt10">
+                                    <div class="col-sm-5">
+                                        <label class="radio-inline">
+                                            <input name="data-delivery" type="radio">Type characters in this form and send
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <label class="radio-inline">
+                                            <input name="data-delivery" type="radio">Others
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <p class="red-text mt0"><input type="text"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h11x p11x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Priority</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h11x">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Quality
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Price
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Delivery time
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h_tarea">
+                                <p><i class="fa fa-arrow-circle-right"></i> Priority</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value coordi">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!--
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h52x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Attach file</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="row mtb5">
+                                <div class="col-lg-2 col-sm-3">Draft file 1 : </div>
+                                <div class="col-lg-8 col-sm-7"><input type="file" /></div>
+                            </div>
+                            <div class="row mtb5">
+                                <div class="col-lg-2 col-sm-3">Draft file 2 : </div>
+                                <div class="col-lg-8 col-sm-7"><input type="file" /></div>
+                            </div>
+                            <div class="row mtb5">
+                                <div class="col-lg-2 col-sm-3">Draft file 3 : </div>
+                                <div class="col-lg-8 col-sm-7"><input type="file" /></div>
+                            </div>
+                            <div class="row mtb5">
+                                <div class="col-lg-2 col-sm-3"></div>
+                                <div class="col-lg-8 col-sm-7">
+                                    <input id="" class="btn-primary btn-sm" name="" value="Upload" type="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+
+				<div class="reg-row bt0">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="trans-lang-box">
+								<div style="overflow-x:auto;">
+									<table>
+										<thead>
+											<tr>
+												<th>Source Language</th>
+												<th>Target Language</th>
+												<th>Service Type</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+                                                    <select>
+                                                        <option selected="selected" value="000">Select...</option>
+                                                        <option value="">Japanese</option>
+                                                        <option value="">English</option>
+                                                        <option value="">Chinese(Cantonese)</option>
+                                                        <option value="">Chinese(Mandarin)</option>
+                                                        <option value="">Korean</option>
+                                                        <option value="">Icelandic</option>
+                                                        <option value="">Irish</option>
+                                                        <option value="">Azerbaijani</option>
+                                                        <option value="">Akkadian</option>
+                                                        <option value="">Assamese</option>
+                                                        <option value="">Afghani</option>
+                                                        <option value="">Afrikaans</option>
+                                                        <option value="">Amharic</option>
+                                                        <option value="">Arabic</option>
+                                                    </select>                                                    
+                                                </td>
+												<td>
+                                                    <select>
+                                                        <option selected="selected" value="000">Select...</option>
+                                                        <option value="">Japanese</option>
+                                                        <option value="">English</option>
+                                                        <option value="">Chinese(Cantonese)</option>
+                                                        <option value="">Chinese(Mandarin)</option>
+                                                        <option value="">Korean</option>
+                                                        <option value="">Icelandic</option>
+                                                        <option value="">Irish</option>
+                                                        <option value="">Azerbaijani</option>
+                                                        <option value="">Akkadian</option>
+                                                        <option value="">Assamese</option>
+                                                        <option value="">Afghani</option>
+                                                        <option value="">Afrikaans</option>
+                                                        <option value="">Amharic</option>
+                                                        <option value="">Arabic</option>
+                                                    </select>                                                    
+                                                </td>
+												<td>
+                                                    <select>
+                                                        <option selected="selected" value="000">Select...</option>
+                                                        <option value="">type of service 1</option>
+                                                        <option value="">type of service 2</option>
+                                                        <option value="">type of service 3</option>
+                                                        <option value="">type of service 4</option>
+                                                    </select>                                                    
+                                                </td>
+											</tr>
+											<tr>
+												<td>Word count 0</td>
+												<td></td>
+												<td><a href="">Upload document 1</a></td>
+											</tr>
+											<tr>
+												<td>Word count 0</td>
+												<td></td>
+												<td><a href="">Upload document 2</a></td>
+											</tr>
+											<tr>
+												<td>Word count 0</td>
+												<td></td>
+												<td><a href="">Upload document 3</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Delivery time you require</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="">1951</option>
+                                    <option value="">1952</option>
+                                    <option value="">1953</option>
+                                    <option value="">1954</option>
+                                    <option value="">1955</option>
+                                    <option value="">1956</option>
+                                    <option value="">1957</option>
+                                    <option value="">1958</option>
+                                    <option value="">1959</option>
+                                </select>
+                                <label> Year</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                </select>
+                                <label> Month</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 pl5">
+                            <div class="item-value h1x">
+                                <select>
+                                    <option value="01">01</option>
+                                    <option value="01">02</option>
+                                    <option value="01">03</option>
+                                    <option value="01">04</option>
+                                    <option value="01">05</option>
+                                    <option value="01">06</option>
+                                    <option value="01">07</option>
+                                    <option value="01">08</option>
+                                    <option value="01">09</option>
+                                    <option value="01">10</option>
+                                    <option value="01">11</option>
+                                </select>
+                                <label> Day</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-arrow-circle-right"></i> PC environment</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd40 p-code"><input type="text"> <span>Ex)  EX)Window XP, Mac, etc.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h4x p2x">
+                                <p><i class="fa fa-arrow-circle-right"></i> Software type</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h5x">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Word
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Excel
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Illustrator
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">PPT
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">    PDF
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input value="" type="checkbox">Others
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-10">
+                                        <p class="red-text"><input type="text"></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="reg-trams text-center">
+                    <h4 class="mt30">Terms of Service</h4>
+                    <textarea name="" id="" cols="30" rows="10">
+                        株式会社 ビーコス(referred as our company) uses this homepage(referred as homepage) to introduce, promote, and gather information for the online translation service "trans-Pro," and only offer it for personal use of all who uses this homepage (referred as user) By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. There may be times that we update the term of use without notification, please be sure to confirm before using our service. 【To use our homepage】 This service is provided for access in and out of Japan, with our company stating other specific terms. By accessing the Website, you acknowledge that you have read and understood the terms and conditions of this Agreement and that you agree to be bound by all of its provisions. In order to use this service, despite personal individuals or legal entities, a user registration (free) will be required. All terms of registration should be precise and truthful, following the format our company provided and the rules set. Registered ID and password are to be carefully kept by the registrants, and all results of the use of ID and password will fall into the registrant's responsibility. Users should take responsibility of all information transmitted on this homepage, and deal no damage to our company. In the case when user causes damage to our company or a third party by using this homepage, or conflicts happened between users or a third party, the user should take full responsibility to solve the problem without causing damage to our company. 【About information and disclaimer of this homepage】 Although the information contained on this homepage have been formulated with all due care, our company does not warrant or represent that the information is free from errors or omissions, nor that they are exhaustive. The information may change without notice, changes are periodically added to the information, and our company may make improvements or changes in the information or stop the operation of the homepage at any time. our company is in no way warrant or responsible for any change or omission of the information, or the damage caused by stopping or temporally stopping the operation of the homepage. This homepage further does not warrant or accept any liability in relation to the quality, operability or accuracy of the Data. 【About stopping the operation of the homepage】 In the case of the following situations, the homepage may stop or omit the registration without notice. 1) Falsehood in registering information 2) Abuse use of ID or password 3) Abuse use of the information using the translation result or any service this homepage provides. 4) Violation of this term of use 5) Other situations which our company considers inappropriate 【About the operation of this homepage】 This homepage may stop part or all of the service without notice due to periodic maintenance, unexpected troubles of the system, or any form of natural disasters, fire, and breakdown. our company is in no way warrant or responsible for any damage occurred due to stopping the service. 【Indicated Price】 All indicated price listed on this homepage is the price stated in the beginning, and might differ when actual orders are placed. In this case, we will put the price listed when orders are actually placed as first priority. We appreciate your understanding due to the nature of this service. In the case when the price listed on our order confirmation e-mail is less than the price when the order is placed, the actual price will be based on the fixed price (less). On the contrary, if the price has risen after the order is placed, the actual price will be based on the price before it has risen. All indicated price for our service are not tax-included. Please check the order confirmation e-mail for the final service fee. In the case when the indicated price is not correct, we will immediately resend an e-mail with the correct price indicated. In such case, the final fee will be based on the price notified despite the automatic responding e-mail. Any discount after the order confirmation e-mail will not be applicable. 【About the establishment time】 The order is established when both sides are confirmed of willing to seal the contract. Specifically, the order is established after the user requests to make an order through this homepage, and the translator uses the system of this homepage to accept the final request. Please confirm the following. After the order is established, the user is expected to agree to the "term of use". 【About revision after the translation is delivered】 If the user is not satisfied with the service or quality, revision is available 2 weeks after the delivery is made. 1. Revision due to changes in original document are to be paid separately. 2. Request for revision after 2 weeks are not applicable. 【About cancelations due to the user's circumstance】 You can cancel any time from when the request is made until the translator accepts the order. You cannot cancel for any reason after the translator accepts the order. 【About compensation】 Although all service provided by our company are formulated all due care, in the case where the service provided caused damage to the user, our company will compensate the damage. The compensation is limited to the exact order price indicated, and our company will not be warrant to any other responsibility. 【About copyrights and trademarks】 The copyright for everything shown in this homepage, including the logos, service marks, and registered/unregistered trademarks all belongs to our company. Any copy, alternation, or distribution, sale, release to third party will be prohibited. All trademarks, logos, service marks shown in this homepage belongs to our company and associated companies. 【About personal information protection】 1. The usage of personal information In the case when user provides personal information, the information will only be used for the product and service for the user, or to improve the quality of product and service. In other cases when personal information are asked, please confirm 2. Collecting personal information To pay the contract responsibility with the client, provide better products/service, and notify useful information, we may collect the necessary personal information in an appropriate and fair way. 3. Personal information management Personal information will not be shown to a third party unless in the following situations. (1) With the agreement of the client (2) In the case where the client cannot be defined unless personal information is shown. (3) Reasons during consignment in order to make the task smoother. (In this case, the chosen contractors are capable of full protection of the information, and will be bound by the rules of personal information management) (4) Questions which our company consider appropriate to answer (5) When petition for paid service or product orders are necessary. (In this case, we will only exchange personal information with the financial institution.) (6) When asked to release the information by laws and regulations. 【About headhunting of translators】 Headhunting of translators is strictly prohibited. Any action discovered will result in us taking the appropriate legal actions. 【About governing law】 Use of this Website and interpretations and applications of the Terms of Use shall be governed in accordance with the laws of Japan the Terms of Use shall be governed in accordance with the laws of Japan
+                    </textarea>
+                    <div class="item-value">
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams" checked="checked">Agree
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="reg-trams">Disagree
+                        </label>
+                    </div>
+                    <div class="button-holder">
+                    <input type="submit" value="Confirm" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div><br><br>

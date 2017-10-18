@@ -1,0 +1,28 @@
+﻿(function () {
+    "use strict";
+    function registrationService($q, $http, API_URL, $httpParamSerializer) {
+        var vm = this;
+        //get hotel specifications
+        function login() {
+            return $http({
+                url: API_URL.URL + "transproLogin",
+                method: "POST",
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+
+        var service =
+            {
+                login: login//get photos specifications              
+            }
+        return service;
+    }
+
+    angular
+    .module("app")
+    .service("registrationService", registrationService);
+    registrationService.$inject = ["$q", "$http", "API_URL", "$httpParamSerializer"]
+})();

@@ -1,0 +1,89 @@
+﻿
+<!-- 
+<div class="modal-body"> -->
+    <!--<div class="col-sm-6">
+            b><p>Your company name</p></b>
+                <b><p>Name</p></b>
+                <b><p>Tel number</p></b>
+                <b><p>E-mail Address</p></b>
+                <b><p>Appeal</p></b>
+                <b><p>Your company homepage</p></b>
+                <b><p>Preffered web system</p></b>
+        </div>
+    <div class="com-md-12">
+        <span>{{vm.model.CompanyName}}</span>
+        <span>{{vm.model.Name}}</span>
+        <span>{{vm.model.DivisionName}}</span>
+        <span>{{vm.model.TelNumber}}</span>
+        <span>{{vm.model.Email}}</span>
+        <span>{{vm.model.Comment}}: </span>
+        <span>{{vm.model.CompanyURLOne}}</span>
+        <span>{{vm.model.CompanyURLTwo}}</span>
+        <span>{{vm.model.PrefferedWebSystem}}</span>
+
+    </div>
+
+    <div class="row text-center">
+        <p>Will you send this</p>
+        <input type="button" class="btn-primary" value="OK" ng-click="vm.Save()">
+        <input type="button" class="btn-primary" value="Cancel" ng-click="vm.Close()">
+    </div>
+</div>
+-->
+
+<div class="modal-header modal-box">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="gridSystemModalLabel">Contents</h4>
+</div>
+
+<div class="modal-body">
+    <div id="inquirytable" class="inquirytable">
+        <table style="border: medium none;">
+            <tbody>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Your company name :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.CompanyName}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Name :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.Name}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Division Name :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.DivisionName}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Tel number :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.TelNumber}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>E-mail Address :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.Email}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Comment :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.Comment}}: </span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Home Page :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.CompanyURLOne}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"></td>
+                    <td style="border: medium none;"><span>{{vm.model.CompanyURLTwo}}</span></td>
+                </tr>
+                <tr style="border: medium none;">
+                    <td style="border: medium none;"><b>Preffered web system :</b></td>
+                    <td style="border: medium none;"><span>{{vm.model.PrefferedWebSystem}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="modal-footer">
+    <div class="inquiry-center">
+        <p>Will you send this</p>
+        <button type="button" class="btn btn-primary" value="OK" ng-click="vm.Save()" data-dismiss="modal">OK</button>
+        <button type="button" class="btn btn-default" value="Cancel" ng-click="vm.Close()">Cancel</button>
+    </div>
+</div>

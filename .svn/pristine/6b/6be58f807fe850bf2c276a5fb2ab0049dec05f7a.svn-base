@@ -1,0 +1,283 @@
+<div class="total-content">
+        <!-- my-page-area-area start -->
+        <div class="my-page-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>Translation fee inquiry </h3>
+            </div>
+            <div class="order-breakdown-wrap receive-msg-wrap common-sub-block " style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Request Dates</th>
+                            <th>Status</th>
+                            <th>Plan</th>
+                            <th>Original language</th>
+                            <th>Target language</th>
+                            <th>Field</th>
+                            <th>Translator</th>
+                            <th>Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">17/08/15</a></td>
+                            <td><a href="">Provisional registration</a></td>
+                            <td><a href="">30 min.</a></td>
+                            <td><a href="">Czech</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">Medicalcare, Medicine, Pharmacy</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄14.31</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄3.01</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄2.20</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">17/08/15</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">30 min.</a></td>
+                            <td><a href="">Czech</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">Medicalcare, Medicine, Pharmacy</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄14.31</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄3.01</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄2.20</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" colspan="8">Data not available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- my-page-area end -->
+        <!-- order list-area-area start -->
+        <div class="my-page-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>2017/08 Order list </h3>
+            </div>
+            <div class="order-breakdown-wrap receive-msg-wrap common-sub-block " style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Request Dates</th>
+                            <th>Status</th>
+                            <th>Plan</th>
+                            <th>Original language</th>
+                            <th>Target language</th>
+                            <th>Field</th>
+                            <th>Translator</th>
+                            <th>Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">17/08/15</a></td>
+                            <td><a href="">Provisional registration</a></td>
+                            <td><a href="">30 min.</a></td>
+                            <td><a href="">Czech</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">Medicalcare, Medicine, Pharmacy</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄14.31</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄3.01</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄2.20</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">17/08/15</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">30 min.</a></td>
+                            <td><a href="">Czech</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">Medicalcare, Medicine, Pharmacy</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄14.31</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄3.01</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">16/09/28</a></td>
+                            <td><a href="">Cancel</a></td>
+                            <td><a href="">12 hr.</a></td>
+                            <td><a href="">Japanese</a></td>
+                            <td><a href="">English</a></td>
+                            <td><a href="">Normal documents</a></td>
+                            <td><a href=""></a></td>
+                            <td><a href="">＄2.20</a></td>
+                        </tr>
+                        <tr>
+                            <td class="text-left" colspan="8">Data not available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- order list-area end -->
+        <!-- Account information -->
+        <div class="individuals-reg-area">
+            <div class="site-title">
+                <div class="col-sm-6 col-xs-3 pdd0">
+                    <i class="fa fa-th-large"></i>
+                    <h3>Registered account information </h3>
+                </div>
+                <div class="col-sm-6 pdd0">
+                    <a href="#" class="btn btn-default btn-sm button-acc"> Account Information </a>
+                </div>
+            </div>
+            <div class="individuals-reg-wrap">
+                <form action="">
+                    <div class="reg-row">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name of Financial institution </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                    <!--                                                     <p>
+                                        <input type="text"></p>
+                                    <p class="red-text">
+                                        <input type="text"></p> -->
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p2x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Branch name </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                    <!--                                                   <p>
+                                        <input type="text"></p>
+                                    <p class="red-text">
+                                        <input type="text"></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account type </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                    <!--                                                     <p>
+                                        <input type="text"></p>
+                                    <p class="red-text">
+                                        <input type="text"></p> -->
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Account number </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                    <!--                                                   <p>
+                                        <input type="text"></p>
+                                    <p class="red-text">
+                                        <input type="text"></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reg-row bt0">
+                        <div class="row">
+                            <div class="col-sm-3 pr5">
+                                <div class="item-name h1x p1x">
+                                    <p><i class="fa fa-arrow-circle-right"></i> <span>*</span> Name </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 pl5">
+                                <div class="item-value h1x">
+                                    <!--                                                     <p>
+                                        <input type="text"></p>
+                                    <p class="red-text">
+                                        <input type="text"></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Cautions for translation payment section -->
+                <div class="box">
+                    <h3>  Cautions for translation payment </h3>
+                    <p>Any bank other than <strong>Mitsubishi Tokyo UFJ or the Post Office</strong> will have certain amount of fee taken. Also, <strong>income tax</strong> will be deducted. along with the <strong>special income tax</strong> for reconstruction. <a href="http://www.nta.go.jp/tetsuzuki/shinsei/annai/gensen/fukko/index.htm" target="_blank">http://www.nta.go.jp/tetsuzuki/shinsei/annai/gensen/fukko/index.htm</a>
+                    </p>
+                    <p>The transfer will be done once the total payment <strong>reaches 2000 JPY.</strong>
+                        <br>* <strong>For oversea translators,</strong> the transfer will be done once the total payment <strong>reaches 50,000 JPY</strong>
+                        <br>(overseas remittance) In the case of transferring without reaching this amount, translators have to pay their own remittance fee of 2500 JPY. * If you are a PayPal user, your fee will be transferred when it reaches 2,000 yen or more without transfer fee being deducted. </p>
+                </div>
+            </div>
+        </div>
+    </div>

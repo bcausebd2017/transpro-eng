@@ -1,0 +1,47 @@
+<div class="total-content" ng-init="onInit()">
+        <!-- my-page-area-area start -->
+        <div class="my-page-area">
+            <div class="site-title">
+                <i class="fa fa-th-large"></i>
+                <h3>About translators' penalty</h3>
+            </div>
+            <div class="order-breakdown-wrap receive-msg-wrap common-sub-block penalty border-top0" style="overflow-x:auto;">
+                <p>Penalty is imposed if there are mistakes in the translation. Although mistakes tend to occur due to translation being a human task, it is the translator's responsibility to reduce mistakes to the least before delivering it to the customer.</p>
+                <h3 class="txt2">The penalties for translation mistakes are listed as below.</h3>
+                <p>Translators with 3 penalty points will be put into a black list, and cannot receive or accept any order. Translators on the black list will not be put off the list until they improve and earn enough creditability as a translator, judge by b-cause.</p>
+                <br>
+                <a  ng-click="makepdf()" style="font-weight: bold;cursor:pointer">＞＞Download a PDF file listing trans-Pro penalties</a>
+                <br><br>
+            
+            <div class="penalty-table receive-msg-wrap" style="overflow-x:auto;">
+                <table class="penalty">
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                            <th>Item</th>
+                            <th>Contents</th>
+                            <th>Response</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in penalty">
+                            <td>{{x.Score}}</td>
+                            <td>{{x.Name}}</td>
+                            <td>{{x.Contents}}</td>
+                            <td>{{x.Response}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <br>
+                <!-- inquiry button section -->
+                <div class="individuals-reg-area">
+                    <div class="flex-container">
+                        <div class="button-holder text-center">
+                            <input type="button" value="Inguiry from here" ui-sref="contact" class="b_button b_blue">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

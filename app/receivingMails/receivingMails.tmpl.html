@@ -1,0 +1,442 @@
+<div class="total-content">
+    <!-- user-registration-area start -->
+    <div class="individuals-reg-area">
+        <div class="site-title">
+            <i class="fa fa-th-large"></i>
+            <h3>Setting up for receiving mails</h3>
+        </div>
+        <div class="individuals-reg-wrap border-top0">
+            <form class="form-horizontal" name="receivingMail" ng-init="vm.init();">
+                <h3>Sections with * need to be entered</h3>
+                <h4>E-mail address</h4>
+                
+                <div class="common-table table-style-1" style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i>  E-mail address </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input type="email" name="email" ng-model="vm.Email" uib-tooltip="Please enter your email address"
+                                        tooltip-placement="top"  ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{1,5}$/"
+                                       tooltip-trigger="none"   
+                                       ng-class="{'invalid-input':isTriedSave && receivingMail.email.$error.required }" required />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i>  Cell text address </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input type="text" ng-model="vm.MobileNumber" />
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa fa-chevron-circle-right"></i>   Cell text address Receivable time frame </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-9 padding3">
+                                        <label class="radio-inline"><input type="radio" ng-model="vm.IsBusinessHour" ng-value="vm.IsBusinessHour" name="celltext">Receivable only before or after business hours(18:00-09:00)</label>
+                                    </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="col-md-9 padding3">
+                                        <label class="radio-inline">    
+                                        <input type="radio" ng-model="vm.IsInterval" ng-value="vm.IsInterval" name="celltext">
+                                            <span class="celltext-rdo">
+                                                <span>Set hours to receive mail</span>
+                                                <span>
+                                                    <select class="form-control" ng-model="vm.StartTime"  id="sel1">
+                                                        <option>00</option>
+                                                        <option>01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                        <option>05</option>
+                                                        <option>06</option>
+                                                        <option>07</option>
+                                                        <option>08</option>
+                                                        <option>09</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                    </select> 
+                                                </span>
+                                                <span>Hour～</span>
+                                                <span>
+                                                    <select class="form-control" ng-model="vm.EndTime"  id="sel1">
+                                                        <option>00</option>
+                                                        <option>01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                        <option>05</option>
+                                                        <option>06</option>
+                                                        <option>07</option>
+                                                        <option>08</option>
+                                                        <option>09</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                        <option>13</option>
+                                                        <option>14</option>
+                                                        <option>15</option>
+                                                        <option>16</option>
+                                                        <option>17</option>
+                                                        <option>18</option>
+                                                        <option>19</option>
+                                                        <option>20</option>
+                                                        <option>21</option>
+                                                        <option>22</option>
+                                                        <option>23</option>
+                                                        <option>24</option>
+                                                    </select> 
+                                                </span>
+                                                <span>Hour</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="tbl_row">
+                                    <div class="col-md-9 padding3">
+                                        <label class="radio-inline">
+                                        <input type="radio" ng-model="vm.IsAnyTime" ng-value="vm.IsAnyTime" name="celltext">Any time
+                                        </label>
+                                        <div class="clearfix"></div>
+                                        <span class="tbl_orangetext">Message will be sent to PC before or after business hours.</span>
+                                       
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+               
+ 
+                <!-- <div class="reg-row">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> E-mail address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <input type="hidden" ng-model="vm.ID" class="form-control" />
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="email" name="email" ng-model="vm.Email" uib-tooltip="Please enter your email address"
+                                             tooltip-placement="top"  ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{1,5}$/"
+                                            tooltip-trigger="none"   
+                                            ng-class="{'invalid-input':isTriedSave && receivingMail.email.$error.required }" required />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h1x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Cell text address</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h1x">
+                                <p class="red-text wd70">
+                                    <input type="text" ng-model="vm.MobileNumber" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="reg-row bt0">
+                    <div class="row">
+                        <div class="col-sm-3 pr0">
+                            <div class="item-name h4x">
+                                <p><i class="fa fa-chevron-circle-right"></i> Cell text address Receivable time frame</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 pl5">
+                            <div class="item-value h4x">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" ng-model="vm.IsBusinessHour" ng-value="vm.IsBusinessHour" name="celltext">Receivable only before or after business hours(18:00-09:00)</label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" ng-model="vm.IsInterval" ng-value="vm.IsInterval" name="celltext">
+                                        <span class="celltext-rdo">
+                                            <span>Set hours to receive mail</span>
+                                            <span>
+                                                <select class="form-control" ng-model="vm.StartTime"  id="sel1">
+                                                    <option>00</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                </select> 
+                                            </span>
+                                            <span>Hour～</span>
+                                            <span>
+                                                <select class="form-control" ng-model="vm.EndTime"  id="sel1">
+                                                    <option>00</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                    <option>13</option>
+                                                    <option>14</option>
+                                                    <option>15</option>
+                                                    <option>16</option>
+                                                    <option>17</option>
+                                                    <option>18</option>
+                                                    <option>19</option>
+                                                    <option>20</option>
+                                                    <option>21</option>
+                                                    <option>22</option>
+                                                    <option>23</option>
+                                                    <option>24</option>
+                                                </select> 
+                                            </span>
+                                            <span>Hour</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" ng-model="vm.IsAnyTime" ng-value="vm.IsAnyTime" name="celltext">Any time</label>
+                                </div>
+                                <p class="red-text"><span>Message will be sent to PC before or after business hours.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <h4 class="mt10">Setting up for receiving mails</h4>
+                <div class="common-table table-style-1" style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                                <td>Fields</td>
+                                <td style="background:#F3F2EE; text-align:center; font-weight:bold;">E-mail(ID)</td>
+                                <td style="background:#F3F2EE; text-align:center; font-weight:bold;">Cell text address</td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa fa-chevron-circle-right"></i> Translator arranged notice </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input value="" type="checkbox" ng-model="vm.IsArrangedNotice">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa fa-chevron-circle-right"></i> <span class="tbl_orangetext">※</span> Translation delivery notice </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input value="" type="checkbox" ng-model="vm.IsDeliveryNotice">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                      
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa fa-chevron-circle-right"></i> Request translation to a translator you choose </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input value="" type="checkbox" ng-model="vm.IsTranslatorRequest">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                      
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa fa-chevron-circle-right"></i> <span class="tbl_orangetext">※</span> Message notice </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input value="" type="checkbox" ng-model="vm.IsMessageNotice">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                      
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa fa-chevron-circle-right"></i> <span class="tbl_orangetext">※</span>Translator not confirmed </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input value="" type="checkbox" ng-model="vm.IsTranslatiorConfirmed">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                      
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <i class="fa fa-chevron-circle-right"></i> Notification of review of payment after delivery completed </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                        <input value="" type="checkbox" ng-model="vm.IsPaymentNotification">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tbl_row">
+                                    <div class="col-md-6 padding3">
+                                      
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <!-- <div class="rcv-mail order-breakdown-wrap receive-msg-wrap common-sub-block">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fields</th>
+                                <th>E-mail(ID)</th>
+                                <th>Cell text address</th>
+                            </tr>
+                        </thead>
+                        <tbody> -->
+                            <!-- <tr>
+                                <td>Translator arranged notice</td>
+                                <td>
+                                    <input value="" type="checkbox" ng-model="vm.IsArrangedNotice">
+                                </td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>※Translation delivery notice</td>
+                                <td>
+                                    <input value="" type="checkbox" ng-model="vm.IsDeliveryNotice">
+                                </td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>Request translation to a translator you choose</td>
+                                <td>
+                                    <input value="" type="checkbox" ng-model="vm.IsTranslatorRequest">
+                                </td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>※Message notice</td>
+                                <td>
+                                    <input value="" type="checkbox" ng-model="vm.IsMessageNotice">
+                                </td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>※Translator not confirmed</td>
+                                <td>
+                                    <input value="" type="checkbox" ng-model="vm.IsTranslatiorConfirmed">
+                                </td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>Notification of review of payment after delivery completed</td>
+                                <td>
+                                    <input value="" type="checkbox" ng-model="vm.IsPaymentNotification">
+                                </td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td class="text-left" colspan="3">Data not available</td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div> -->
+                <br>
+                <div class="text-center">
+                    <input type="submit" class="b_blue b_button" value="To confirmation of update" ng-click="Save(vm)"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- user-registration-area end -->
+</div>

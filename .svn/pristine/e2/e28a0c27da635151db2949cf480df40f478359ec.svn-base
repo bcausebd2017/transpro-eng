@@ -1,0 +1,333 @@
+﻿(function () {
+    'use strict';
+
+    function homeController($scope, $rootScope, $state, $uibModal, transproService, STORAGE_TYPE, appStorageFactory, USER_TYPE, API_URL, fileUploadService, APP_SETTINGS, alertMsg, TRANSLATION_TYPE, translatorService, ORDER_STATUS) {
+        var vm = this;
+        $scope.Estimation = {};
+        $scope.Estimation.FileList = null;
+        $scope.Estimation.FileSizeTotalString = null;
+        $scope.Estimation.WordCount = 0;
+        $scope.Estimation.DocumentList = null;
+        $scope.Estimation.Manuscript = {};
+        $scope.Estimation.Manuscript.WordCount = 0;
+        $scope.Estimation.Manuscript.TranslationText = null;
+        $scope.Estimation.Manuscript.InputText = null;
+        $scope.CurrentUser = null;
+        $scope.selectField = "";
+        $scope.Variable = {};
+        $scope.Variable.UploadStatus = '';
+        $scope.srcLanguage = '';
+        $scope.destLanguage = '';
+        $scope.selectField = '';
+        $scope.OrderStatus = ORDER_STATUS;
+        $scope.currentPage = 1;
+        $scope.numPerPage = 18;
+        $scope.totalTranslators = null;
+        $scope.totalOrders = null;
+        $scope.translators = null;
+        $scope.orders = null;
+        $scope.numPerPageOrders = 26;
+        var translationType = TRANSLATION_TYPE.Online;
+        Activate();
+
+        function Activate() {           
+            $scope.selectLanguage = appStorageFactory.GetStorageObject(STORAGE_TYPE.SetTargetLang);
+            $scope.CurrentUser = appStorageFactory.GetStorageObject(STORAGE_TYPE.CurrentUser);
+            $scope.UserType = USER_TYPE;
+            getLanguages();
+            getTranslationFields();
+        }
+
+        function getLanguages() {
+            transproService.getLanguages().then(function (response) {
+                $scope.languages = response;
+                $scope.srcLanguage = _.find(response, function (f) { return f.Code == 'eng' }).ID;
+
+                if (!$scope.selectLanguage)
+                    $scope.destLanguage = _.find(response, function (f) { return f.Code == 'jpn' }).ID;
+                else
+                    $scope.destLanguage = $scope.selectLanguage;
+
+                $scope.languageName = _.find($scope.languages, function (f) { return f.ID == $scope.destLanguage }).Name;
+                $scope.srcSearchLanguage = $scope.srcLanguage;
+                $scope.destSearchLanguage = $scope.destLanguage;
+
+                var currentState = $state.current.name;
+                if (currentState === 'nativecheck') {
+                    $scope.selectLanguage = "";
+                    $scope.destLanguage = "";
+                }
+               
+            }).catch(function (error) {
+                //alertMsg.show('error', error);
+            });
+        }
+        function getWebOrders(srcLangId, trgLangId, specialFieldId) {
+            var clientId = $scope.CurrentUser && $scope.CurrentUser.UserType == USER_TYPE.Customer ? $scope.CurrentUser.ID : null;
+            var trnslatorId = $scope.CurrentUser && $scope.CurrentUser.UserType == USER_TYPE.Translator ? $scope.CurrentUser.ID : null;
+            var filterModel = { cultureId: APP_SETTINGS.CultureCode, clientId: clientId, translationType: translationType, srcLangId: srcLangId, trgLangId: trgLangId, specialFieldId: specialFieldId }
+            transproService.getWebOrders(filterModel).then(function (response) {
+                $scope.orders = response;
+                $scope.totalOrders = response.length;
+                $scope.filterOrders = response;
+                if ($scope.totalOrders > $scope.numPerPageOrders)
+                $scope.doCtrlPagingOrders(1);
+            }).catch(function (error) {
+                $scope.orders = [];
+                //alertMsg.show('error', error);
+            });
+        }
+        function getTranslationFields() {
+            transproService.getTranslationFileds().then(function (response) {
+                $scope.translationFields = response;
+                getWebOrders(null, null, null);
+                searchTranslators(null, null, null);
+            }).catch(function (error) {
+               // alertMsg.show('error', error);
+            });
+        }
+        function searchTranslators(srcLangId, trgLangId, specialFieldId) {
+            translatorService.searchTranslator(srcLangId, trgLangId, specialFieldId).then(function (response) {
+                $scope.translators = response;
+                $scope.totalTranslators = response.length;
+                $scope.filterTranslators = response;
+                if ($scope.totalTranslators > $scope.numPerPage)
+                 $scope.doCtrlPagingAct(1);
+            }).catch(function (error) {
+              
+            });
+        }
+       
+        $scope.srcLangChanged = function (lang) {
+            $scope.srcLanguage = lang;
+        };
+        $scope.destLangChanged = function (lang) {
+            $scope.destLanguage = lang;
+        };
+        $scope.selectLangChanged = function (lang) {          
+            $rootScope.$broadcast('targetLanguageChanged', lang);
+            getWebOrders(null,null,null);
+            searchTranslators(null, $scope.destLanguage, null);
+        };
+        $scope.goHome = function () {
+            getWebOrders(null,null,null);
+            searchTranslators(null, null, null);
+        }
+        $scope.$on('targetLanguageChanged', function (event, data) {
+            if (data && data != "") {
+                $scope.destLanguage = "";
+                var currentState = $state.current.name;
+                if (currentState === 'nativecheck') {
+                    $scope.destLanguage = "";
+                } else {
+                    $scope.destLanguage = data;
+                }
+                $scope.languageName = _.find($scope.languages, function (f) { return f.ID == data }).Name;
+                $scope.selectLanguage = data;
+                appStorageFactory.SetStorageObject("SetTargetLang", data);
+                $scope.destLanguage = data;
+            }
+        });
+        $scope.fieldChanged = function (field) {
+            $scope.selectField = field;
+        };
+        $scope.ClearFileSelector = function () {
+            var elem = angular.element(document.querySelector("#fileName"));
+            elem.val(null);
+            $scope.Estimation.FileList = null;
+            $scope.Estimation.WordCount = 0;
+        }
+        $scope.logout = function () {
+            $state.reload();
+            $scope.CurrentUser = "";
+            $state.go('/', { modelData: undefined });
+            //$state.go('/');
+            appStorageFactory.ClearAll();
+        };
+        $scope.getUserById = function () {
+            if ($scope.CurrentUser.UserType == USER_TYPE.Customer) {
+                transproService.getCustomerById($scope.CurrentUser.ID, APP_SETTINGS.CultureCode).then(function (response) {
+                    $scope.modifyData = response;
+                    $state.go('registration', { modelData: response });
+                }).catch(function (error) {
+                    alertMsg.show('error', error);
+                });
+            }
+
+            if ($scope.CurrentUser.UserType == USER_TYPE.Translator) {
+                transproService.getTranslatorById($scope.CurrentUser.ID, APP_SETTINGS.CultureCode).then(function (response) {
+                    $scope.modifyData = response;
+                    $state.go('translatorReg', { "modelData": response });
+                }).catch(function (error) {
+                    toastr.error(error);
+                });
+            }
+        }
+      
+        $scope.getImageById = function () {
+                transproService.getImageById($scope.CurrentUser.ID, APP_SETTINGS.CultureCode).then(function (response) {
+                    //$scope.modifyData = response.Image;
+                    $scope.modifyData = response;
+                    $state.go('changePhoto', { "modelData": response });
+                }).catch(function (error) {
+                    alertMsg.show('error', error);
+                });
+        }
+
+        $scope.open = function (type) {
+            $uibModal.open({
+                component: "loginWindow",
+                transclude: true,
+                resolve: { },
+                size: 'sm'
+            });
+        };
+
+        $scope.openTranslatorWindow = function (translator) {
+            $uibModal.open({
+                component: "translatorProfileWindow",
+                transclude: true,
+                animation:true,
+                resolve: {
+                    translatorNo: function () {
+                        return  translator.TranslatorNo;
+                    }
+                },
+                size: 'lg',
+                
+            });
+        };
+
+        $scope.UpdateFileInfo = function () {
+            var i;
+            var FileSize, SizeUnit;
+            var A_KB = 1024, A_MB = A_KB * 1024, A_GB = A_MB * 1024;
+            var BinaryFileSize = 0;
+            for (i = 0; i < $scope.Estimation.FileList.length; i += 1) {
+                BinaryFileSize += $scope.Estimation.FileList[i].size;
+            }
+            if (BinaryFileSize >= A_GB) {
+                BinaryFileSize /= A_GB;
+                SizeUnit = "GB";
+            }
+            else if (BinaryFileSize >= A_MB) {
+                BinaryFileSize /= A_MB;
+                SizeUnit = "MB";
+            }
+            else if (BinaryFileSize >= A_KB) {
+                BinaryFileSize /= A_KB;
+                SizeUnit = "KB";
+            }
+            else {
+                SizeUnit = " Bytes";
+            }
+            FileSize = BinaryFileSize.toLocaleString(undefined, { useGrouping: false, minimumFractionDigits: 0, maximumFractionDigits: 1 });
+            FileSize = FileSize.concat(SizeUnit);
+            $scope.Estimation.FileSizeTotalString = FileSize;
+        };
+
+        $scope.$on('listenTranslationFileSelection', function (event, data) {
+            $scope.Estimation.WordCount = 0;
+            $scope.Estimation.DocumentList = [];
+        });
+
+
+        $scope.UploadTranslationDocuments = function () {
+            var HasDocumentSelected;
+            $scope.Estimation.WordCount = 0;
+            $scope.Estimation.DocumentList = [];
+            HasDocumentSelected = $scope.Estimation.FileList != null;
+            if (HasDocumentSelected == true) {
+                $scope.Variable.UploadStatus = "Uploading...";
+                var url = API_URL.URL + "fileUpload/uploadDocument";
+                fileUploadService.uploadFileToUrl($scope.Estimation.FileList, url, onSuccessUploadDocument, onError);
+            }
+        };
+
+
+        $scope.CheckEstimation = function () {
+            var HasManuscriptData;
+            HasManuscriptData = $scope.Estimation.Manuscript.InputText != null && $scope.Estimation.Manuscript.InputText.length > 0;
+
+            if ($scope.srcLanguage == '' || $scope.destLanguage == '' || $scope.selectField == ''
+                || $scope.selectField == null) {
+                alertMsg.show('error', "Please choose your source language, target language & translation field to proceed to the next step.");
+                return;
+            }
+
+            $scope.Estimation.srcLanguage = $scope.srcLanguage;
+            $scope.Estimation.destLanguage = $scope.destLanguage;
+            $scope.Estimation.selectField = $scope.selectField;
+
+            if (HasManuscriptData == true) {
+                var url = API_URL.URL + "transpro/estimatemanuscript";
+                transproService.EstimateManuscript($scope.Estimation.Manuscript.InputText)
+                .then(onSuccessUploadManuscript, function (error) { });
+            }
+            else if ($scope.Estimation.DocumentList != null && $scope.Estimation.DocumentList.length > 0) {
+                $state.go("estimation", { "Estimation": $scope.Estimation });
+            }
+            else {
+                alertMsg.show('error', 'Please choose either manuscript OR upload documents to translate OR both option.');
+            }
+
+            return;
+        };
+        var onSuccessUploadDocument = function (response) {
+            var HasManuscriptData;
+            var i, Document;
+            $scope.Estimation.WordCount = 0;
+            for (i = 0; i < response.data.length; i += 1) {
+                Document = new Object();
+                Document.FileName = response.data[i].FileName;
+                Document.WordCount = response.data[i].WordCount;
+                Document.TranslationText = response.data[i].TranslationText;
+                Document.DownloadURL = response.data[i].DownloadURL;
+                $scope.Estimation.DocumentList.push(Document);
+                $scope.Estimation.WordCount += Document.WordCount;
+            }
+            $scope.Variable.UploadStatus = "Translation documents have been uploaded successfully";
+        };
+
+        var onSuccessUploadManuscript = function (response) {
+            $scope.Estimation.Manuscript.WordCount = response.WordCount;
+            $scope.Estimation.WordCount += $scope.Estimation.Manuscript.WordCount;
+            $scope.Estimation.Manuscript.TranslationText = response.TranslationText;
+            $scope.Estimation.srcLanguage = $scope.srcLanguage;
+            $scope.Estimation.destLanguage = $scope.destLanguage;
+            $scope.Estimation.selectField = $scope.selectField;
+            $state.go("estimation", { Estimation: $scope.Estimation });
+        };
+
+        var onError = function (response) {
+            console.log("Error while uploading estimation document: " + response);
+        };
+        // Orders paginations
+
+        $scope.doCtrlPagingOrders = function (page) {
+
+            var begin = ((page - 1) * $scope.numPerPageOrders);
+            var end = begin + $scope.numPerPageOrders;
+
+            $scope.filterOrders = $scope.orders.slice(begin, end);
+
+        }
+      
+        // Translators Pagination
+
+        $scope.doCtrlPagingAct = function (page) {
+
+            var begin = ((page - 1) * $scope.numPerPage);
+            var end = begin + $scope.numPerPage;
+
+            $scope.filterTranslators = $scope.translators.slice(begin, end);
+
+        }
+       
+    }
+
+    angular
+       .module("app")
+       .controller("homeController", homeController);
+    homeController.$inject = ["$scope", "$rootScope", "$state", "$uibModal", "transproService", "STORAGE_TYPE", "appStorageFactory", "USER_TYPE", "API_URL", "fileUploadService", "APP_SETTINGS", "alertMsg", "TRANSLATION_TYPE", "translatorService", "ORDER_STATUS"];
+})();

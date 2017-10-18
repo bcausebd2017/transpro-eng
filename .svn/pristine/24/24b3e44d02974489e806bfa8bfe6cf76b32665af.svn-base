@@ -1,0 +1,50 @@
+﻿(function () {
+    "use strict";
+    function registrationService($q, $http, API_URL, $httpParamSerializer) {
+        var vm = this;
+        //get hotel specifications
+        function login() {
+            return $http({
+                url: API_URL.URL + "transproLogin",
+                method: "POST",
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function registerCustomer(obj) {
+            return $http({
+                url: API_URL.URL + "customer/register",
+                method: "POST",
+                data: obj  
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        function checkExistingCustomer(emailId, culture) {
+            return $http({
+                url: API_URL.URL + "customer/checkExistingCUstomer/" + emailId + "/" + culture,
+                method: "GET"
+            }).then(function (response) {
+                return response.data;
+            }).catch(function (error) {
+                return $q.reject(error.data);
+            });
+        }
+        var service =
+            {
+                login: login,
+                registerCustomer: registerCustomer,//get photos specifications              
+                checkExistingCustomer: checkExistingCustomer
+            }
+        return service;
+    }
+
+    angular
+    .module("app")
+    .service("registrationService", registrationService);
+    registrationService.$inject = ["$q", "$http", "API_URL", "$httpParamSerializer"]
+})();
